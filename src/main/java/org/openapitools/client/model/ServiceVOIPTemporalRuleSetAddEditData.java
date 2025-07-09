@@ -157,13 +157,10 @@ public class ServiceVOIPTemporalRuleSetAddEditData {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("name");
-    openapiFields.add("temporal_rules");
+    openapiFields = new HashSet<String>(Arrays.asList("name", "temporal_rules"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("name");
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("name"));
   }
 
   /**

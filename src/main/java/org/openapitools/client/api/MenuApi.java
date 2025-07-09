@@ -91,7 +91,7 @@ public class MenuApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDMenuGetCall(String accountID, String startKey, Integer pageSize, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDMenuGetCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -145,7 +145,7 @@ public class MenuApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDMenuGetValidateBeforeCall(String accountID, String startKey, Integer pageSize, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDMenuGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDMenuGet(Async)");
@@ -171,7 +171,7 @@ public class MenuApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public MenuOutputList v1AccountAccountIDMenuGet(String accountID, String startKey, Integer pageSize) throws ApiException {
+    public MenuOutputList v1AccountAccountIDMenuGet(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize) throws ApiException {
         ApiResponse<MenuOutputList> localVarResp = v1AccountAccountIDMenuGetWithHttpInfo(accountID, startKey, pageSize);
         return localVarResp.getData();
     }
@@ -192,7 +192,7 @@ public class MenuApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<MenuOutputList> v1AccountAccountIDMenuGetWithHttpInfo(String accountID, String startKey, Integer pageSize) throws ApiException {
+    public ApiResponse<MenuOutputList> v1AccountAccountIDMenuGetWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDMenuGetValidateBeforeCall(accountID, startKey, pageSize, null);
         Type localVarReturnType = new TypeToken<MenuOutputList>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -215,7 +215,7 @@ public class MenuApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDMenuGetAsync(String accountID, String startKey, Integer pageSize, final ApiCallback<MenuOutputList> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDMenuGetAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback<MenuOutputList> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDMenuGetValidateBeforeCall(accountID, startKey, pageSize, _callback);
         Type localVarReturnType = new TypeToken<MenuOutputList>(){}.getType();
@@ -237,7 +237,7 @@ public class MenuApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDMenuMenuIDDeleteCall(String accountID, String menuID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDMenuMenuIDDeleteCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String menuID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -284,7 +284,7 @@ public class MenuApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDMenuMenuIDDeleteValidateBeforeCall(String accountID, String menuID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDMenuMenuIDDeleteValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String menuID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDMenuMenuIDDelete(Async)");
@@ -314,7 +314,7 @@ public class MenuApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public MenuOutputDetail v1AccountAccountIDMenuMenuIDDelete(String accountID, String menuID) throws ApiException {
+    public MenuOutputDetail v1AccountAccountIDMenuMenuIDDelete(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String menuID) throws ApiException {
         ApiResponse<MenuOutputDetail> localVarResp = v1AccountAccountIDMenuMenuIDDeleteWithHttpInfo(accountID, menuID);
         return localVarResp.getData();
     }
@@ -334,7 +334,7 @@ public class MenuApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<MenuOutputDetail> v1AccountAccountIDMenuMenuIDDeleteWithHttpInfo(String accountID, String menuID) throws ApiException {
+    public ApiResponse<MenuOutputDetail> v1AccountAccountIDMenuMenuIDDeleteWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String menuID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDMenuMenuIDDeleteValidateBeforeCall(accountID, menuID, null);
         Type localVarReturnType = new TypeToken<MenuOutputDetail>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -356,7 +356,7 @@ public class MenuApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDMenuMenuIDDeleteAsync(String accountID, String menuID, final ApiCallback<MenuOutputDetail> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDMenuMenuIDDeleteAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String menuID, final ApiCallback<MenuOutputDetail> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDMenuMenuIDDeleteValidateBeforeCall(accountID, menuID, _callback);
         Type localVarReturnType = new TypeToken<MenuOutputDetail>(){}.getType();
@@ -378,7 +378,7 @@ public class MenuApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDMenuMenuIDGetCall(String accountID, String menuID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDMenuMenuIDGetCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String menuID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -425,7 +425,7 @@ public class MenuApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDMenuMenuIDGetValidateBeforeCall(String accountID, String menuID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDMenuMenuIDGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String menuID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDMenuMenuIDGet(Async)");
@@ -455,7 +455,7 @@ public class MenuApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public MenuOutputDetail v1AccountAccountIDMenuMenuIDGet(String accountID, String menuID) throws ApiException {
+    public MenuOutputDetail v1AccountAccountIDMenuMenuIDGet(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String menuID) throws ApiException {
         ApiResponse<MenuOutputDetail> localVarResp = v1AccountAccountIDMenuMenuIDGetWithHttpInfo(accountID, menuID);
         return localVarResp.getData();
     }
@@ -475,7 +475,7 @@ public class MenuApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<MenuOutputDetail> v1AccountAccountIDMenuMenuIDGetWithHttpInfo(String accountID, String menuID) throws ApiException {
+    public ApiResponse<MenuOutputDetail> v1AccountAccountIDMenuMenuIDGetWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String menuID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDMenuMenuIDGetValidateBeforeCall(accountID, menuID, null);
         Type localVarReturnType = new TypeToken<MenuOutputDetail>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -497,7 +497,7 @@ public class MenuApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDMenuMenuIDGetAsync(String accountID, String menuID, final ApiCallback<MenuOutputDetail> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDMenuMenuIDGetAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String menuID, final ApiCallback<MenuOutputDetail> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDMenuMenuIDGetValidateBeforeCall(accountID, menuID, _callback);
         Type localVarReturnType = new TypeToken<MenuOutputDetail>(){}.getType();
@@ -520,7 +520,7 @@ public class MenuApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDMenuMenuIDPutCall(String accountID, String menuID, MenuInputData reqBody, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDMenuMenuIDPutCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String menuID, @javax.annotation.Nonnull MenuInputData reqBody, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -568,7 +568,7 @@ public class MenuApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDMenuMenuIDPutValidateBeforeCall(String accountID, String menuID, MenuInputData reqBody, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDMenuMenuIDPutValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String menuID, @javax.annotation.Nonnull MenuInputData reqBody, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDMenuMenuIDPut(Async)");
@@ -604,7 +604,7 @@ public class MenuApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public MenuOutputDetail v1AccountAccountIDMenuMenuIDPut(String accountID, String menuID, MenuInputData reqBody) throws ApiException {
+    public MenuOutputDetail v1AccountAccountIDMenuMenuIDPut(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String menuID, @javax.annotation.Nonnull MenuInputData reqBody) throws ApiException {
         ApiResponse<MenuOutputDetail> localVarResp = v1AccountAccountIDMenuMenuIDPutWithHttpInfo(accountID, menuID, reqBody);
         return localVarResp.getData();
     }
@@ -625,7 +625,7 @@ public class MenuApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<MenuOutputDetail> v1AccountAccountIDMenuMenuIDPutWithHttpInfo(String accountID, String menuID, MenuInputData reqBody) throws ApiException {
+    public ApiResponse<MenuOutputDetail> v1AccountAccountIDMenuMenuIDPutWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String menuID, @javax.annotation.Nonnull MenuInputData reqBody) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDMenuMenuIDPutValidateBeforeCall(accountID, menuID, reqBody, null);
         Type localVarReturnType = new TypeToken<MenuOutputDetail>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -648,7 +648,7 @@ public class MenuApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDMenuMenuIDPutAsync(String accountID, String menuID, MenuInputData reqBody, final ApiCallback<MenuOutputDetail> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDMenuMenuIDPutAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String menuID, @javax.annotation.Nonnull MenuInputData reqBody, final ApiCallback<MenuOutputDetail> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDMenuMenuIDPutValidateBeforeCall(accountID, menuID, reqBody, _callback);
         Type localVarReturnType = new TypeToken<MenuOutputDetail>(){}.getType();
@@ -670,7 +670,7 @@ public class MenuApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDMenuPostCall(String accountID, MenuInputData menu, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDMenuPostCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull MenuInputData menu, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -717,7 +717,7 @@ public class MenuApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDMenuPostValidateBeforeCall(String accountID, MenuInputData menu, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDMenuPostValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull MenuInputData menu, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDMenuPost(Async)");
@@ -747,7 +747,7 @@ public class MenuApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public MenuOutputDetail v1AccountAccountIDMenuPost(String accountID, MenuInputData menu) throws ApiException {
+    public MenuOutputDetail v1AccountAccountIDMenuPost(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull MenuInputData menu) throws ApiException {
         ApiResponse<MenuOutputDetail> localVarResp = v1AccountAccountIDMenuPostWithHttpInfo(accountID, menu);
         return localVarResp.getData();
     }
@@ -767,7 +767,7 @@ public class MenuApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<MenuOutputDetail> v1AccountAccountIDMenuPostWithHttpInfo(String accountID, MenuInputData menu) throws ApiException {
+    public ApiResponse<MenuOutputDetail> v1AccountAccountIDMenuPostWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull MenuInputData menu) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDMenuPostValidateBeforeCall(accountID, menu, null);
         Type localVarReturnType = new TypeToken<MenuOutputDetail>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -789,7 +789,7 @@ public class MenuApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDMenuPostAsync(String accountID, MenuInputData menu, final ApiCallback<MenuOutputDetail> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDMenuPostAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull MenuInputData menu, final ApiCallback<MenuOutputDetail> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDMenuPostValidateBeforeCall(accountID, menu, _callback);
         Type localVarReturnType = new TypeToken<MenuOutputDetail>(){}.getType();

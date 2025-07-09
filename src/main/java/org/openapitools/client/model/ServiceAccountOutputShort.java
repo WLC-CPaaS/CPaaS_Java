@@ -235,15 +235,10 @@ public class ServiceAccountOutputShort {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("descendants_count");
-    openapiFields.add("flags");
-    openapiFields.add("id");
-    openapiFields.add("name");
-    openapiFields.add("realm");
+    openapiFields = new HashSet<String>(Arrays.asList("descendants_count", "flags", "id", "name", "realm"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

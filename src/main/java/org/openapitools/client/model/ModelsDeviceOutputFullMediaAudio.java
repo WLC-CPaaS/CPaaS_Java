@@ -131,11 +131,10 @@ public class ModelsDeviceOutputFullMediaAudio {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("codecs");
+    openapiFields = new HashSet<String>(Arrays.asList("codecs"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

@@ -225,15 +225,10 @@ public class ModelsBrand {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("brand_name");
-    openapiFields.add("created_at");
-    openapiFields.add("id");
-    openapiFields.add("is_active");
-    openapiFields.add("updated_at");
+    openapiFields = new HashSet<String>(Arrays.asList("brand_name", "created_at", "id", "is_active", "updated_at"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

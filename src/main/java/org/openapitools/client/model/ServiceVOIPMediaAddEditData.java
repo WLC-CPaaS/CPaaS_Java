@@ -254,15 +254,10 @@ public class ServiceVOIPMediaAddEditData {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("description");
-    openapiFields.add("media_source");
-    openapiFields.add("name");
-    openapiFields.add("tts");
+    openapiFields = new HashSet<String>(Arrays.asList("description", "media_source", "name", "tts"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("name");
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("name"));
   }
 
   /**

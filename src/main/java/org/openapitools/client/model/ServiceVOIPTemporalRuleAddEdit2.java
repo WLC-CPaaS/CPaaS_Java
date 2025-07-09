@@ -604,26 +604,10 @@ public class ServiceVOIPTemporalRuleAddEdit2 {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("cycle");
-    openapiFields.add("days");
-    openapiFields.add("enabled");
-    openapiFields.add("interval");
-    openapiFields.add("month");
-    openapiFields.add("name");
-    openapiFields.add("ordinal");
-    openapiFields.add("start_date");
-    openapiFields.add("start_date_req");
-    openapiFields.add("time_window_start");
-    openapiFields.add("time_window_start_req");
-    openapiFields.add("time_window_stop");
-    openapiFields.add("time_window_stop_req");
-    openapiFields.add("wdays");
+    openapiFields = new HashSet<String>(Arrays.asList("cycle", "days", "enabled", "interval", "month", "name", "ordinal", "start_date", "start_date_req", "time_window_start", "time_window_start_req", "time_window_stop", "time_window_stop_req", "wdays"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("cycle");
-    openapiRequiredFields.add("name");
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("cycle", "name"));
   }
 
   /**

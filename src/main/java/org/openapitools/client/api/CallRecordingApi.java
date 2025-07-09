@@ -88,7 +88,7 @@ public class CallRecordingApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDRecordingGetCall(String accountID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDRecordingGetCall(@javax.annotation.Nonnull String accountID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -134,7 +134,7 @@ public class CallRecordingApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDRecordingGetValidateBeforeCall(String accountID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDRecordingGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDRecordingGet(Async)");
@@ -158,7 +158,7 @@ public class CallRecordingApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsCallRecordingGetAll v1AccountAccountIDRecordingGet(String accountID) throws ApiException {
+    public ServiceDocsCallRecordingGetAll v1AccountAccountIDRecordingGet(@javax.annotation.Nonnull String accountID) throws ApiException {
         ApiResponse<ServiceDocsCallRecordingGetAll> localVarResp = v1AccountAccountIDRecordingGetWithHttpInfo(accountID);
         return localVarResp.getData();
     }
@@ -177,7 +177,7 @@ public class CallRecordingApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsCallRecordingGetAll> v1AccountAccountIDRecordingGetWithHttpInfo(String accountID) throws ApiException {
+    public ApiResponse<ServiceDocsCallRecordingGetAll> v1AccountAccountIDRecordingGetWithHttpInfo(@javax.annotation.Nonnull String accountID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDRecordingGetValidateBeforeCall(accountID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsCallRecordingGetAll>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -198,7 +198,7 @@ public class CallRecordingApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDRecordingGetAsync(String accountID, final ApiCallback<ServiceDocsCallRecordingGetAll> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDRecordingGetAsync(@javax.annotation.Nonnull String accountID, final ApiCallback<ServiceDocsCallRecordingGetAll> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDRecordingGetValidateBeforeCall(accountID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsCallRecordingGetAll>(){}.getType();
@@ -220,7 +220,7 @@ public class CallRecordingApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDRecordingRecordingIDDeleteCall(String accountID, String recordingID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDRecordingRecordingIDDeleteCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String recordingID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -267,7 +267,7 @@ public class CallRecordingApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDRecordingRecordingIDDeleteValidateBeforeCall(String accountID, String recordingID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDRecordingRecordingIDDeleteValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String recordingID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDRecordingRecordingIDDelete(Async)");
@@ -297,7 +297,7 @@ public class CallRecordingApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsCallRecordingGetSingle v1AccountAccountIDRecordingRecordingIDDelete(String accountID, String recordingID) throws ApiException {
+    public ServiceDocsCallRecordingGetSingle v1AccountAccountIDRecordingRecordingIDDelete(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String recordingID) throws ApiException {
         ApiResponse<ServiceDocsCallRecordingGetSingle> localVarResp = v1AccountAccountIDRecordingRecordingIDDeleteWithHttpInfo(accountID, recordingID);
         return localVarResp.getData();
     }
@@ -317,7 +317,7 @@ public class CallRecordingApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsCallRecordingGetSingle> v1AccountAccountIDRecordingRecordingIDDeleteWithHttpInfo(String accountID, String recordingID) throws ApiException {
+    public ApiResponse<ServiceDocsCallRecordingGetSingle> v1AccountAccountIDRecordingRecordingIDDeleteWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String recordingID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDRecordingRecordingIDDeleteValidateBeforeCall(accountID, recordingID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsCallRecordingGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -339,7 +339,7 @@ public class CallRecordingApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDRecordingRecordingIDDeleteAsync(String accountID, String recordingID, final ApiCallback<ServiceDocsCallRecordingGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDRecordingRecordingIDDeleteAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String recordingID, final ApiCallback<ServiceDocsCallRecordingGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDRecordingRecordingIDDeleteValidateBeforeCall(accountID, recordingID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsCallRecordingGetSingle>(){}.getType();
@@ -361,7 +361,7 @@ public class CallRecordingApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDRecordingRecordingIDGetCall(String accountID, String recordingID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDRecordingRecordingIDGetCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String recordingID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -413,7 +413,7 @@ public class CallRecordingApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDRecordingRecordingIDGetValidateBeforeCall(String accountID, String recordingID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDRecordingRecordingIDGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String recordingID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDRecordingRecordingIDGet(Async)");
@@ -443,7 +443,7 @@ public class CallRecordingApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsCallRecordingGetSingle v1AccountAccountIDRecordingRecordingIDGet(String accountID, String recordingID) throws ApiException {
+    public ServiceDocsCallRecordingGetSingle v1AccountAccountIDRecordingRecordingIDGet(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String recordingID) throws ApiException {
         ApiResponse<ServiceDocsCallRecordingGetSingle> localVarResp = v1AccountAccountIDRecordingRecordingIDGetWithHttpInfo(accountID, recordingID);
         return localVarResp.getData();
     }
@@ -463,7 +463,7 @@ public class CallRecordingApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsCallRecordingGetSingle> v1AccountAccountIDRecordingRecordingIDGetWithHttpInfo(String accountID, String recordingID) throws ApiException {
+    public ApiResponse<ServiceDocsCallRecordingGetSingle> v1AccountAccountIDRecordingRecordingIDGetWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String recordingID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDRecordingRecordingIDGetValidateBeforeCall(accountID, recordingID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsCallRecordingGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -485,7 +485,7 @@ public class CallRecordingApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDRecordingRecordingIDGetAsync(String accountID, String recordingID, final ApiCallback<ServiceDocsCallRecordingGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDRecordingRecordingIDGetAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String recordingID, final ApiCallback<ServiceDocsCallRecordingGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDRecordingRecordingIDGetValidateBeforeCall(accountID, recordingID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsCallRecordingGetSingle>(){}.getType();
@@ -507,7 +507,7 @@ public class CallRecordingApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDUserUserIDRecordingGetCall(String accountID, String userID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDUserUserIDRecordingGetCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String userID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -554,7 +554,7 @@ public class CallRecordingApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDUserUserIDRecordingGetValidateBeforeCall(String accountID, String userID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDUserUserIDRecordingGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String userID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDUserUserIDRecordingGet(Async)");
@@ -584,7 +584,7 @@ public class CallRecordingApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsCallRecordingGetAll v1AccountAccountIDUserUserIDRecordingGet(String accountID, String userID) throws ApiException {
+    public ServiceDocsCallRecordingGetAll v1AccountAccountIDUserUserIDRecordingGet(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String userID) throws ApiException {
         ApiResponse<ServiceDocsCallRecordingGetAll> localVarResp = v1AccountAccountIDUserUserIDRecordingGetWithHttpInfo(accountID, userID);
         return localVarResp.getData();
     }
@@ -604,7 +604,7 @@ public class CallRecordingApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsCallRecordingGetAll> v1AccountAccountIDUserUserIDRecordingGetWithHttpInfo(String accountID, String userID) throws ApiException {
+    public ApiResponse<ServiceDocsCallRecordingGetAll> v1AccountAccountIDUserUserIDRecordingGetWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String userID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDUserUserIDRecordingGetValidateBeforeCall(accountID, userID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsCallRecordingGetAll>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -626,7 +626,7 @@ public class CallRecordingApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDUserUserIDRecordingGetAsync(String accountID, String userID, final ApiCallback<ServiceDocsCallRecordingGetAll> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDUserUserIDRecordingGetAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String userID, final ApiCallback<ServiceDocsCallRecordingGetAll> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDUserUserIDRecordingGetValidateBeforeCall(accountID, userID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsCallRecordingGetAll>(){}.getType();

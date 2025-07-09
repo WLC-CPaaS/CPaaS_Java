@@ -29,7 +29,7 @@ import java.io.IOException;
 
 import org.openapitools.client.model.CPAASError;
 import org.openapitools.client.model.ServiceAPIResponse;
-import org.openapitools.client.model.ServiceDocsCallQueueResponseShort;
+import org.openapitools.client.model.ServiceDocsCallQueueRecipientLoginLogoutOutput;
 import org.openapitools.client.model.ServiceDocsGetQueueRecipients;
 import org.openapitools.client.model.ServiceVOIPCallQueueRecipientLoginLogoutData;
 import org.openapitools.client.model.ServiceVOIPCallQueueRecipientStatusData;
@@ -93,7 +93,7 @@ public class CallQueueRecipientApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDLoginrecipientRecipientIDPostCall(String accountID, String recipientID, ServiceVOIPCallQueueRecipientLoginLogoutData reqBody, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDLoginrecipientRecipientIDPostCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String recipientID, @javax.annotation.Nonnull ServiceVOIPCallQueueRecipientLoginLogoutData reqBody, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -141,7 +141,7 @@ public class CallQueueRecipientApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDLoginrecipientRecipientIDPostValidateBeforeCall(String accountID, String recipientID, ServiceVOIPCallQueueRecipientLoginLogoutData reqBody, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDLoginrecipientRecipientIDPostValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String recipientID, @javax.annotation.Nonnull ServiceVOIPCallQueueRecipientLoginLogoutData reqBody, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDLoginrecipientRecipientIDPost(Async)");
@@ -167,7 +167,7 @@ public class CallQueueRecipientApi {
      * @param accountID Account ID, 32 alpha numeric (required)
      * @param recipientID Recipient ID, 32 alpha numeric (required)
      * @param reqBody payload fields (required)
-     * @return ServiceDocsCallQueueResponseShort
+     * @return ServiceDocsCallQueueRecipientLoginLogoutOutput
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table border="1">
@@ -177,8 +177,8 @@ public class CallQueueRecipientApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsCallQueueResponseShort v1AccountAccountIDLoginrecipientRecipientIDPost(String accountID, String recipientID, ServiceVOIPCallQueueRecipientLoginLogoutData reqBody) throws ApiException {
-        ApiResponse<ServiceDocsCallQueueResponseShort> localVarResp = v1AccountAccountIDLoginrecipientRecipientIDPostWithHttpInfo(accountID, recipientID, reqBody);
+    public ServiceDocsCallQueueRecipientLoginLogoutOutput v1AccountAccountIDLoginrecipientRecipientIDPost(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String recipientID, @javax.annotation.Nonnull ServiceVOIPCallQueueRecipientLoginLogoutData reqBody) throws ApiException {
+        ApiResponse<ServiceDocsCallQueueRecipientLoginLogoutOutput> localVarResp = v1AccountAccountIDLoginrecipientRecipientIDPostWithHttpInfo(accountID, recipientID, reqBody);
         return localVarResp.getData();
     }
 
@@ -188,7 +188,7 @@ public class CallQueueRecipientApi {
      * @param accountID Account ID, 32 alpha numeric (required)
      * @param recipientID Recipient ID, 32 alpha numeric (required)
      * @param reqBody payload fields (required)
-     * @return ApiResponse&lt;ServiceDocsCallQueueResponseShort&gt;
+     * @return ApiResponse&lt;ServiceDocsCallQueueRecipientLoginLogoutOutput&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table border="1">
@@ -198,9 +198,9 @@ public class CallQueueRecipientApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsCallQueueResponseShort> v1AccountAccountIDLoginrecipientRecipientIDPostWithHttpInfo(String accountID, String recipientID, ServiceVOIPCallQueueRecipientLoginLogoutData reqBody) throws ApiException {
+    public ApiResponse<ServiceDocsCallQueueRecipientLoginLogoutOutput> v1AccountAccountIDLoginrecipientRecipientIDPostWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String recipientID, @javax.annotation.Nonnull ServiceVOIPCallQueueRecipientLoginLogoutData reqBody) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDLoginrecipientRecipientIDPostValidateBeforeCall(accountID, recipientID, reqBody, null);
-        Type localVarReturnType = new TypeToken<ServiceDocsCallQueueResponseShort>(){}.getType();
+        Type localVarReturnType = new TypeToken<ServiceDocsCallQueueRecipientLoginLogoutOutput>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -221,10 +221,10 @@ public class CallQueueRecipientApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDLoginrecipientRecipientIDPostAsync(String accountID, String recipientID, ServiceVOIPCallQueueRecipientLoginLogoutData reqBody, final ApiCallback<ServiceDocsCallQueueResponseShort> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDLoginrecipientRecipientIDPostAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String recipientID, @javax.annotation.Nonnull ServiceVOIPCallQueueRecipientLoginLogoutData reqBody, final ApiCallback<ServiceDocsCallQueueRecipientLoginLogoutOutput> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDLoginrecipientRecipientIDPostValidateBeforeCall(accountID, recipientID, reqBody, _callback);
-        Type localVarReturnType = new TypeToken<ServiceDocsCallQueueResponseShort>(){}.getType();
+        Type localVarReturnType = new TypeToken<ServiceDocsCallQueueRecipientLoginLogoutOutput>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -242,7 +242,7 @@ public class CallQueueRecipientApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDQueuerecipientGetCall(String accountID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDQueuerecipientGetCall(@javax.annotation.Nonnull String accountID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -288,7 +288,7 @@ public class CallQueueRecipientApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDQueuerecipientGetValidateBeforeCall(String accountID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDQueuerecipientGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDQueuerecipientGet(Async)");
@@ -312,7 +312,7 @@ public class CallQueueRecipientApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsGetQueueRecipients v1AccountAccountIDQueuerecipientGet(String accountID) throws ApiException {
+    public ServiceDocsGetQueueRecipients v1AccountAccountIDQueuerecipientGet(@javax.annotation.Nonnull String accountID) throws ApiException {
         ApiResponse<ServiceDocsGetQueueRecipients> localVarResp = v1AccountAccountIDQueuerecipientGetWithHttpInfo(accountID);
         return localVarResp.getData();
     }
@@ -331,7 +331,7 @@ public class CallQueueRecipientApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsGetQueueRecipients> v1AccountAccountIDQueuerecipientGetWithHttpInfo(String accountID) throws ApiException {
+    public ApiResponse<ServiceDocsGetQueueRecipients> v1AccountAccountIDQueuerecipientGetWithHttpInfo(@javax.annotation.Nonnull String accountID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDQueuerecipientGetValidateBeforeCall(accountID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsGetQueueRecipients>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -352,7 +352,7 @@ public class CallQueueRecipientApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDQueuerecipientGetAsync(String accountID, final ApiCallback<ServiceDocsGetQueueRecipients> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDQueuerecipientGetAsync(@javax.annotation.Nonnull String accountID, final ApiCallback<ServiceDocsGetQueueRecipients> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDQueuerecipientGetValidateBeforeCall(accountID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsGetQueueRecipients>(){}.getType();
@@ -375,7 +375,7 @@ public class CallQueueRecipientApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDRecipientRecipientIDStatusPostCall(String accountID, String recipientID, ServiceVOIPCallQueueRecipientStatusData reqBody, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDRecipientRecipientIDStatusPostCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String recipientID, @javax.annotation.Nonnull ServiceVOIPCallQueueRecipientStatusData reqBody, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -423,7 +423,7 @@ public class CallQueueRecipientApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDRecipientRecipientIDStatusPostValidateBeforeCall(String accountID, String recipientID, ServiceVOIPCallQueueRecipientStatusData reqBody, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDRecipientRecipientIDStatusPostValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String recipientID, @javax.annotation.Nonnull ServiceVOIPCallQueueRecipientStatusData reqBody, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDRecipientRecipientIDStatusPost(Async)");
@@ -459,7 +459,7 @@ public class CallQueueRecipientApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceAPIResponse v1AccountAccountIDRecipientRecipientIDStatusPost(String accountID, String recipientID, ServiceVOIPCallQueueRecipientStatusData reqBody) throws ApiException {
+    public ServiceAPIResponse v1AccountAccountIDRecipientRecipientIDStatusPost(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String recipientID, @javax.annotation.Nonnull ServiceVOIPCallQueueRecipientStatusData reqBody) throws ApiException {
         ApiResponse<ServiceAPIResponse> localVarResp = v1AccountAccountIDRecipientRecipientIDStatusPostWithHttpInfo(accountID, recipientID, reqBody);
         return localVarResp.getData();
     }
@@ -480,7 +480,7 @@ public class CallQueueRecipientApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceAPIResponse> v1AccountAccountIDRecipientRecipientIDStatusPostWithHttpInfo(String accountID, String recipientID, ServiceVOIPCallQueueRecipientStatusData reqBody) throws ApiException {
+    public ApiResponse<ServiceAPIResponse> v1AccountAccountIDRecipientRecipientIDStatusPostWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String recipientID, @javax.annotation.Nonnull ServiceVOIPCallQueueRecipientStatusData reqBody) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDRecipientRecipientIDStatusPostValidateBeforeCall(accountID, recipientID, reqBody, null);
         Type localVarReturnType = new TypeToken<ServiceAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -503,7 +503,7 @@ public class CallQueueRecipientApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDRecipientRecipientIDStatusPostAsync(String accountID, String recipientID, ServiceVOIPCallQueueRecipientStatusData reqBody, final ApiCallback<ServiceAPIResponse> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDRecipientRecipientIDStatusPostAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String recipientID, @javax.annotation.Nonnull ServiceVOIPCallQueueRecipientStatusData reqBody, final ApiCallback<ServiceAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDRecipientRecipientIDStatusPostValidateBeforeCall(accountID, recipientID, reqBody, _callback);
         Type localVarReturnType = new TypeToken<ServiceAPIResponse>(){}.getType();

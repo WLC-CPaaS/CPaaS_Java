@@ -355,20 +355,10 @@ public class ModelCallDetail {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("account_id");
-    openapiFields.add("call_duration");
-    openapiFields.add("call_id");
-    openapiFields.add("call_time");
-    openapiFields.add("call_type");
-    openapiFields.add("callee_name");
-    openapiFields.add("callee_number");
-    openapiFields.add("caller_name");
-    openapiFields.add("caller_number");
-    openapiFields.add("created_at");
+    openapiFields = new HashSet<String>(Arrays.asList("account_id", "call_duration", "call_id", "call_time", "call_type", "callee_name", "callee_number", "caller_name", "caller_number", "created_at"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

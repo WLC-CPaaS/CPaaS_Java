@@ -540,27 +540,10 @@ public class ServiceE911LocationURI {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("activatedTime");
-    openapiFields.add("address1");
-    openapiFields.add("address2");
-    openapiFields.add("callerName");
-    openapiFields.add("comments");
-    openapiFields.add("community");
-    openapiFields.add("customerOrderID");
-    openapiFields.add("latitude");
-    openapiFields.add("legacyData");
-    openapiFields.add("locationID");
-    openapiFields.add("longitude");
-    openapiFields.add("plusFour");
-    openapiFields.add("postalCode");
-    openapiFields.add("state");
-    openapiFields.add("status");
-    openapiFields.add("type");
-    openapiFields.add("updateTime");
+    openapiFields = new HashSet<String>(Arrays.asList("activatedTime", "address1", "address2", "callerName", "comments", "community", "customerOrderID", "latitude", "legacyData", "locationID", "longitude", "plusFour", "postalCode", "state", "status", "type", "updateTime"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

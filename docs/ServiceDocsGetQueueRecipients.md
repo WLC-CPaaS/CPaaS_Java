@@ -1,15 +1,18 @@
-# service.DocsGetQueueRecipients
+
+
+# ServiceDocsGetQueueRecipients
+
 
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**data** | [**ServiceQueueRecipientOutputFull**](ServiceQueueRecipientOutputFull.md) |  | [optional] 
-**nextStartKey** | **String** |  | [optional] 
-**pageSize** | **Integer** |  | [optional] 
-**requestId** | **String** |  | [optional] 
-**startKey** | **String** |  | [optional] 
-**statusCode** | **Integer** |  | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+|**data** | [**ServiceQueueRecipientOutput**](ServiceQueueRecipientOutput.md) |  |  [optional] |
+|**nextStartKey** | **String** | List Pagination: Used to get the next page of results. Will not exist if this is the last page. |  [optional] |
+|**pageSize** | **Integer** | List Pagination: The number of results returned in this page |  [optional] |
+|**requestId** | **String** | Unique id for each request |  [optional] |
+|**startKey** | **String** | List Pagination: Code for paged results |  [optional] |
+|**statusCode** | **Integer** | HTTP response status code |  [optional] |
+
 
 

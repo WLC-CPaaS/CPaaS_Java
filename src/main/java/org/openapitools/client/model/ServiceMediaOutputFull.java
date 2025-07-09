@@ -330,19 +330,10 @@ public class ServiceMediaOutputFull {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("content_length");
-    openapiFields.add("content_type");
-    openapiFields.add("description");
-    openapiFields.add("id");
-    openapiFields.add("language");
-    openapiFields.add("media_source");
-    openapiFields.add("name");
-    openapiFields.add("streamable");
-    openapiFields.add("tts");
+    openapiFields = new HashSet<String>(Arrays.asList("content_length", "content_type", "description", "id", "language", "media_source", "name", "streamable", "tts"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

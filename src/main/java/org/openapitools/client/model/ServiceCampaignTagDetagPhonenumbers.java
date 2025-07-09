@@ -157,13 +157,10 @@ public class ServiceCampaignTagDetagPhonenumbers {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("detag");
-    openapiFields.add("phone_numbers");
+    openapiFields = new HashSet<String>(Arrays.asList("detag", "phone_numbers"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("phone_numbers");
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("phone_numbers"));
   }
 
   /**

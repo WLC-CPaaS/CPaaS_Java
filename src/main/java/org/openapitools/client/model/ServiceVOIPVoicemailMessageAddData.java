@@ -279,16 +279,10 @@ public class ServiceVOIPVoicemailMessageAddData {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("caller_id_name");
-    openapiFields.add("caller_id_number");
-    openapiFields.add("folder");
-    openapiFields.add("from");
-    openapiFields.add("to");
+    openapiFields = new HashSet<String>(Arrays.asList("caller_id_name", "caller_id_number", "folder", "from", "to"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("folder");
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("folder"));
   }
 
   /**

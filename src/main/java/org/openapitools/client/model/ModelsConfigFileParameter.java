@@ -355,20 +355,10 @@ public class ModelsConfigFileParameter {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("extension");
-    openapiFields.add("https_host");
-    openapiFields.add("https_password");
-    openapiFields.add("https_username");
-    openapiFields.add("mac_address");
-    openapiFields.add("realm");
-    openapiFields.add("sip_password");
-    openapiFields.add("sip_username");
-    openapiFields.add("timezone");
-    openapiFields.add("voicemail_box_number");
+    openapiFields = new HashSet<String>(Arrays.asList("extension", "https_host", "https_password", "https_username", "mac_address", "realm", "sip_password", "sip_username", "timezone", "voicemail_box_number"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

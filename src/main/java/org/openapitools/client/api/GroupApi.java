@@ -91,7 +91,7 @@ public class GroupApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDGroupGetCall(String accountID, String startKey, Integer pageSize, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDGroupGetCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -145,7 +145,7 @@ public class GroupApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDGroupGetValidateBeforeCall(String accountID, String startKey, Integer pageSize, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDGroupGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDGroupGet(Async)");
@@ -171,7 +171,7 @@ public class GroupApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocGroupGetAll v1AccountAccountIDGroupGet(String accountID, String startKey, Integer pageSize) throws ApiException {
+    public ServiceDocGroupGetAll v1AccountAccountIDGroupGet(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize) throws ApiException {
         ApiResponse<ServiceDocGroupGetAll> localVarResp = v1AccountAccountIDGroupGetWithHttpInfo(accountID, startKey, pageSize);
         return localVarResp.getData();
     }
@@ -192,7 +192,7 @@ public class GroupApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocGroupGetAll> v1AccountAccountIDGroupGetWithHttpInfo(String accountID, String startKey, Integer pageSize) throws ApiException {
+    public ApiResponse<ServiceDocGroupGetAll> v1AccountAccountIDGroupGetWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDGroupGetValidateBeforeCall(accountID, startKey, pageSize, null);
         Type localVarReturnType = new TypeToken<ServiceDocGroupGetAll>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -215,7 +215,7 @@ public class GroupApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDGroupGetAsync(String accountID, String startKey, Integer pageSize, final ApiCallback<ServiceDocGroupGetAll> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDGroupGetAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback<ServiceDocGroupGetAll> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDGroupGetValidateBeforeCall(accountID, startKey, pageSize, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocGroupGetAll>(){}.getType();
@@ -237,7 +237,7 @@ public class GroupApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDGroupGroupIDDeleteCall(String accountID, String groupID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDGroupGroupIDDeleteCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String groupID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -284,7 +284,7 @@ public class GroupApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDGroupGroupIDDeleteValidateBeforeCall(String accountID, String groupID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDGroupGroupIDDeleteValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String groupID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDGroupGroupIDDelete(Async)");
@@ -314,7 +314,7 @@ public class GroupApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocGroupGetSingle v1AccountAccountIDGroupGroupIDDelete(String accountID, String groupID) throws ApiException {
+    public ServiceDocGroupGetSingle v1AccountAccountIDGroupGroupIDDelete(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String groupID) throws ApiException {
         ApiResponse<ServiceDocGroupGetSingle> localVarResp = v1AccountAccountIDGroupGroupIDDeleteWithHttpInfo(accountID, groupID);
         return localVarResp.getData();
     }
@@ -334,7 +334,7 @@ public class GroupApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocGroupGetSingle> v1AccountAccountIDGroupGroupIDDeleteWithHttpInfo(String accountID, String groupID) throws ApiException {
+    public ApiResponse<ServiceDocGroupGetSingle> v1AccountAccountIDGroupGroupIDDeleteWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String groupID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDGroupGroupIDDeleteValidateBeforeCall(accountID, groupID, null);
         Type localVarReturnType = new TypeToken<ServiceDocGroupGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -356,7 +356,7 @@ public class GroupApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDGroupGroupIDDeleteAsync(String accountID, String groupID, final ApiCallback<ServiceDocGroupGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDGroupGroupIDDeleteAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String groupID, final ApiCallback<ServiceDocGroupGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDGroupGroupIDDeleteValidateBeforeCall(accountID, groupID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocGroupGetSingle>(){}.getType();
@@ -378,7 +378,7 @@ public class GroupApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDGroupGroupIDGetCall(String accountID, String groupID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDGroupGroupIDGetCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String groupID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -425,7 +425,7 @@ public class GroupApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDGroupGroupIDGetValidateBeforeCall(String accountID, String groupID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDGroupGroupIDGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String groupID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDGroupGroupIDGet(Async)");
@@ -455,7 +455,7 @@ public class GroupApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocGroupGetSingle v1AccountAccountIDGroupGroupIDGet(String accountID, String groupID) throws ApiException {
+    public ServiceDocGroupGetSingle v1AccountAccountIDGroupGroupIDGet(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String groupID) throws ApiException {
         ApiResponse<ServiceDocGroupGetSingle> localVarResp = v1AccountAccountIDGroupGroupIDGetWithHttpInfo(accountID, groupID);
         return localVarResp.getData();
     }
@@ -475,7 +475,7 @@ public class GroupApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocGroupGetSingle> v1AccountAccountIDGroupGroupIDGetWithHttpInfo(String accountID, String groupID) throws ApiException {
+    public ApiResponse<ServiceDocGroupGetSingle> v1AccountAccountIDGroupGroupIDGetWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String groupID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDGroupGroupIDGetValidateBeforeCall(accountID, groupID, null);
         Type localVarReturnType = new TypeToken<ServiceDocGroupGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -497,7 +497,7 @@ public class GroupApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDGroupGroupIDGetAsync(String accountID, String groupID, final ApiCallback<ServiceDocGroupGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDGroupGroupIDGetAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String groupID, final ApiCallback<ServiceDocGroupGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDGroupGroupIDGetValidateBeforeCall(accountID, groupID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocGroupGetSingle>(){}.getType();
@@ -520,7 +520,7 @@ public class GroupApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDGroupGroupIDPutCall(String accountID, String groupID, ServiceVOIPGroupAddEdit2 reqBody, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDGroupGroupIDPutCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String groupID, @javax.annotation.Nonnull ServiceVOIPGroupAddEdit2 reqBody, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -568,7 +568,7 @@ public class GroupApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDGroupGroupIDPutValidateBeforeCall(String accountID, String groupID, ServiceVOIPGroupAddEdit2 reqBody, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDGroupGroupIDPutValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String groupID, @javax.annotation.Nonnull ServiceVOIPGroupAddEdit2 reqBody, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDGroupGroupIDPut(Async)");
@@ -604,7 +604,7 @@ public class GroupApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocGroupGetSingle v1AccountAccountIDGroupGroupIDPut(String accountID, String groupID, ServiceVOIPGroupAddEdit2 reqBody) throws ApiException {
+    public ServiceDocGroupGetSingle v1AccountAccountIDGroupGroupIDPut(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String groupID, @javax.annotation.Nonnull ServiceVOIPGroupAddEdit2 reqBody) throws ApiException {
         ApiResponse<ServiceDocGroupGetSingle> localVarResp = v1AccountAccountIDGroupGroupIDPutWithHttpInfo(accountID, groupID, reqBody);
         return localVarResp.getData();
     }
@@ -625,7 +625,7 @@ public class GroupApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocGroupGetSingle> v1AccountAccountIDGroupGroupIDPutWithHttpInfo(String accountID, String groupID, ServiceVOIPGroupAddEdit2 reqBody) throws ApiException {
+    public ApiResponse<ServiceDocGroupGetSingle> v1AccountAccountIDGroupGroupIDPutWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String groupID, @javax.annotation.Nonnull ServiceVOIPGroupAddEdit2 reqBody) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDGroupGroupIDPutValidateBeforeCall(accountID, groupID, reqBody, null);
         Type localVarReturnType = new TypeToken<ServiceDocGroupGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -648,7 +648,7 @@ public class GroupApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDGroupGroupIDPutAsync(String accountID, String groupID, ServiceVOIPGroupAddEdit2 reqBody, final ApiCallback<ServiceDocGroupGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDGroupGroupIDPutAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String groupID, @javax.annotation.Nonnull ServiceVOIPGroupAddEdit2 reqBody, final ApiCallback<ServiceDocGroupGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDGroupGroupIDPutValidateBeforeCall(accountID, groupID, reqBody, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocGroupGetSingle>(){}.getType();
@@ -670,7 +670,7 @@ public class GroupApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDGroupPostCall(String accountID, ServiceVOIPGroupAddEdit2 group, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDGroupPostCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPGroupAddEdit2 group, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -717,7 +717,7 @@ public class GroupApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDGroupPostValidateBeforeCall(String accountID, ServiceVOIPGroupAddEdit2 group, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDGroupPostValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPGroupAddEdit2 group, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDGroupPost(Async)");
@@ -747,7 +747,7 @@ public class GroupApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocGroupGetSingle v1AccountAccountIDGroupPost(String accountID, ServiceVOIPGroupAddEdit2 group) throws ApiException {
+    public ServiceDocGroupGetSingle v1AccountAccountIDGroupPost(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPGroupAddEdit2 group) throws ApiException {
         ApiResponse<ServiceDocGroupGetSingle> localVarResp = v1AccountAccountIDGroupPostWithHttpInfo(accountID, group);
         return localVarResp.getData();
     }
@@ -767,7 +767,7 @@ public class GroupApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocGroupGetSingle> v1AccountAccountIDGroupPostWithHttpInfo(String accountID, ServiceVOIPGroupAddEdit2 group) throws ApiException {
+    public ApiResponse<ServiceDocGroupGetSingle> v1AccountAccountIDGroupPostWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPGroupAddEdit2 group) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDGroupPostValidateBeforeCall(accountID, group, null);
         Type localVarReturnType = new TypeToken<ServiceDocGroupGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -789,7 +789,7 @@ public class GroupApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDGroupPostAsync(String accountID, ServiceVOIPGroupAddEdit2 group, final ApiCallback<ServiceDocGroupGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDGroupPostAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPGroupAddEdit2 group, final ApiCallback<ServiceDocGroupGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDGroupPostValidateBeforeCall(accountID, group, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocGroupGetSingle>(){}.getType();

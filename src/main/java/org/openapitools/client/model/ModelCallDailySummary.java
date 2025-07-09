@@ -225,15 +225,10 @@ public class ModelCallDailySummary {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("account_id");
-    openapiFields.add("call_date");
-    openapiFields.add("call_type");
-    openapiFields.add("created_at");
-    openapiFields.add("total_call_duration");
+    openapiFields = new HashSet<String>(Arrays.asList("account_id", "call_date", "call_type", "created_at", "total_call_duration"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

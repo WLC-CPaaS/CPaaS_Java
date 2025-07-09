@@ -303,18 +303,10 @@ public class ServiceCallQueueStatusStats {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("abandoned_sessions");
-    openapiFields.add("active_session_count");
-    openapiFields.add("average_wait");
-    openapiFields.add("estimated_wait");
-    openapiFields.add("longest_wait");
-    openapiFields.add("missed_sessions");
-    openapiFields.add("recipient_count");
-    openapiFields.add("total_sessions");
+    openapiFields = new HashSet<String>(Arrays.asList("abandoned_sessions", "active_session_count", "average_wait", "estimated_wait", "longest_wait", "missed_sessions", "recipient_count", "total_sessions"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

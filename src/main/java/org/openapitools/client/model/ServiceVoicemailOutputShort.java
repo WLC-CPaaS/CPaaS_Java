@@ -295,17 +295,10 @@ public class ServiceVoicemailOutputShort {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("features");
-    openapiFields.add("flags");
-    openapiFields.add("id");
-    openapiFields.add("mailbox");
-    openapiFields.add("messages");
-    openapiFields.add("name");
-    openapiFields.add("owner_id");
+    openapiFields = new HashSet<String>(Arrays.asList("features", "flags", "id", "mailbox", "messages", "name", "owner_id"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

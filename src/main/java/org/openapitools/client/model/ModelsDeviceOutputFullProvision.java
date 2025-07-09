@@ -20,7 +20,10 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import org.openapitools.client.model.ModelsVOIPDeviceOutputLineKey;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -69,6 +72,11 @@ public class ModelsDeviceOutputFullProvision {
   @SerializedName(SERIALIZED_NAME_ID)
   @javax.annotation.Nullable
   private String id;
+
+  public static final String SERIALIZED_NAME_LINE_KEYS = "line_keys";
+  @SerializedName(SERIALIZED_NAME_LINE_KEYS)
+  @javax.annotation.Nullable
+  private List<ModelsVOIPDeviceOutputLineKey> lineKeys = new ArrayList<>();
 
   public ModelsDeviceOutputFullProvision() {
   }
@@ -149,6 +157,33 @@ public class ModelsDeviceOutputFullProvision {
   }
 
 
+  public ModelsDeviceOutputFullProvision lineKeys(@javax.annotation.Nullable List<ModelsVOIPDeviceOutputLineKey> lineKeys) {
+    this.lineKeys = lineKeys;
+    return this;
+  }
+
+  public ModelsDeviceOutputFullProvision addLineKeysItem(ModelsVOIPDeviceOutputLineKey lineKeysItem) {
+    if (this.lineKeys == null) {
+      this.lineKeys = new ArrayList<>();
+    }
+    this.lineKeys.add(lineKeysItem);
+    return this;
+  }
+
+  /**
+   * Get lineKeys
+   * @return lineKeys
+   */
+  @javax.annotation.Nullable
+  public List<ModelsVOIPDeviceOutputLineKey> getLineKeys() {
+    return lineKeys;
+  }
+
+  public void setLineKeys(@javax.annotation.Nullable List<ModelsVOIPDeviceOutputLineKey> lineKeys) {
+    this.lineKeys = lineKeys;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -162,12 +197,13 @@ public class ModelsDeviceOutputFullProvision {
     return Objects.equals(this.endpointBrand, modelsDeviceOutputFullProvision.endpointBrand) &&
         Objects.equals(this.endpointFamily, modelsDeviceOutputFullProvision.endpointFamily) &&
         Objects.equals(this.endpointModel, modelsDeviceOutputFullProvision.endpointModel) &&
-        Objects.equals(this.id, modelsDeviceOutputFullProvision.id);
+        Objects.equals(this.id, modelsDeviceOutputFullProvision.id) &&
+        Objects.equals(this.lineKeys, modelsDeviceOutputFullProvision.lineKeys);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(endpointBrand, endpointFamily, endpointModel, id);
+    return Objects.hash(endpointBrand, endpointFamily, endpointModel, id, lineKeys);
   }
 
   @Override
@@ -178,6 +214,7 @@ public class ModelsDeviceOutputFullProvision {
     sb.append("    endpointFamily: ").append(toIndentedString(endpointFamily)).append("\n");
     sb.append("    endpointModel: ").append(toIndentedString(endpointModel)).append("\n");
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    lineKeys: ").append(toIndentedString(lineKeys)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -199,14 +236,10 @@ public class ModelsDeviceOutputFullProvision {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("endpoint_brand");
-    openapiFields.add("endpoint_family");
-    openapiFields.add("endpoint_model");
-    openapiFields.add("id");
+    openapiFields = new HashSet<String>(Arrays.asList("endpoint_brand", "endpoint_family", "endpoint_model", "id", "line_keys"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**
@@ -241,6 +274,20 @@ public class ModelsDeviceOutputFullProvision {
       }
       if ((jsonObj.get("id") != null && !jsonObj.get("id").isJsonNull()) && !jsonObj.get("id").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("id").toString()));
+      }
+      if (jsonObj.get("line_keys") != null && !jsonObj.get("line_keys").isJsonNull()) {
+        JsonArray jsonArraylineKeys = jsonObj.getAsJsonArray("line_keys");
+        if (jsonArraylineKeys != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("line_keys").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `line_keys` to be an array in the JSON string but got `%s`", jsonObj.get("line_keys").toString()));
+          }
+
+          // validate the optional field `line_keys` (array)
+          for (int i = 0; i < jsonArraylineKeys.size(); i++) {
+            ModelsVOIPDeviceOutputLineKey.validateJsonElement(jsonArraylineKeys.get(i));
+          };
+        }
       }
   }
 

@@ -245,14 +245,10 @@ public class ServiceMetaflowPattern {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("children");
-    openapiFields.add("data");
-    openapiFields.add("module");
+    openapiFields = new HashSet<String>(Arrays.asList("children", "data", "module"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("module");
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("module"));
   }
 
   /**

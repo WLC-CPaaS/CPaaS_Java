@@ -174,16 +174,10 @@ public class ModelsGenerateConfigFileRequest {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("parameters");
-    openapiFields.add("template_file_id");
-    openapiFields.add("template_id");
+    openapiFields = new HashSet<String>(Arrays.asList("parameters", "template_file_id", "template_id"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("parameters");
-    openapiRequiredFields.add("template_file_id");
-    openapiRequiredFields.add("template_id");
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("parameters", "template_file_id", "template_id"));
   }
 
   /**

@@ -485,25 +485,10 @@ public class ServiceParkingSlotData {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("attended");
-    openapiFields.add("call_id");
-    openapiFields.add("cid_name");
-    openapiFields.add("cid_number");
-    openapiFields.add("cid_uri");
-    openapiFields.add("from_tag");
-    openapiFields.add("node");
-    openapiFields.add("presence_id");
-    openapiFields.add("presence_realm");
-    openapiFields.add("presence_type");
-    openapiFields.add("presence_user");
-    openapiFields.add("ringback_id");
-    openapiFields.add("slot_call_id");
-    openapiFields.add("switch_uri");
-    openapiFields.add("to_tag");
+    openapiFields = new HashSet<String>(Arrays.asList("attended", "call_id", "cid_name", "cid_number", "cid_uri", "from_tag", "node", "presence_id", "presence_realm", "presence_type", "presence_user", "ringback_id", "slot_call_id", "switch_uri", "to_tag"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

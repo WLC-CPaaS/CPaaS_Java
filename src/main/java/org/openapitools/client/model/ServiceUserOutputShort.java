@@ -375,20 +375,10 @@ public class ServiceUserOutputShort {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("call_recording");
-    openapiFields.add("do_not_disturb");
-    openapiFields.add("email");
-    openapiFields.add("enabled");
-    openapiFields.add("features");
-    openapiFields.add("first_name");
-    openapiFields.add("flags");
-    openapiFields.add("id");
-    openapiFields.add("last_name");
-    openapiFields.add("presence_id");
+    openapiFields = new HashSet<String>(Arrays.asList("call_recording", "do_not_disturb", "email", "enabled", "features", "first_name", "flags", "id", "last_name", "presence_id"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

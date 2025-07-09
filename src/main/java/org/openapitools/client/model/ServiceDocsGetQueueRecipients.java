@@ -21,7 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.openapitools.client.model.ServiceQueueRecipientOutputFull;
+import org.openapitools.client.model.ServiceQueueRecipientOutput;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -54,7 +54,7 @@ public class ServiceDocsGetQueueRecipients {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
   @javax.annotation.Nullable
-  private ServiceQueueRecipientOutputFull data;
+  private ServiceQueueRecipientOutput data;
 
   public static final String SERIALIZED_NAME_NEXT_START_KEY = "next_start_key";
   @SerializedName(SERIALIZED_NAME_NEXT_START_KEY)
@@ -84,7 +84,7 @@ public class ServiceDocsGetQueueRecipients {
   public ServiceDocsGetQueueRecipients() {
   }
 
-  public ServiceDocsGetQueueRecipients data(@javax.annotation.Nullable ServiceQueueRecipientOutputFull data) {
+  public ServiceDocsGetQueueRecipients data(@javax.annotation.Nullable ServiceQueueRecipientOutput data) {
     this.data = data;
     return this;
   }
@@ -94,11 +94,11 @@ public class ServiceDocsGetQueueRecipients {
    * @return data
    */
   @javax.annotation.Nullable
-  public ServiceQueueRecipientOutputFull getData() {
+  public ServiceQueueRecipientOutput getData() {
     return data;
   }
 
-  public void setData(@javax.annotation.Nullable ServiceQueueRecipientOutputFull data) {
+  public void setData(@javax.annotation.Nullable ServiceQueueRecipientOutput data) {
     this.data = data;
   }
 
@@ -252,16 +252,10 @@ public class ServiceDocsGetQueueRecipients {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("data");
-    openapiFields.add("next_start_key");
-    openapiFields.add("page_size");
-    openapiFields.add("request_id");
-    openapiFields.add("start_key");
-    openapiFields.add("status_code");
+    openapiFields = new HashSet<String>(Arrays.asList("data", "next_start_key", "page_size", "request_id", "start_key", "status_code"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**
@@ -287,7 +281,7 @@ public class ServiceDocsGetQueueRecipients {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the optional field `data`
       if (jsonObj.get("data") != null && !jsonObj.get("data").isJsonNull()) {
-        ServiceQueueRecipientOutputFull.validateJsonElement(jsonObj.get("data"));
+        ServiceQueueRecipientOutput.validateJsonElement(jsonObj.get("data"));
       }
       if ((jsonObj.get("next_start_key") != null && !jsonObj.get("next_start_key").isJsonNull()) && !jsonObj.get("next_start_key").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `next_start_key` to be a primitive type in the JSON string but got `%s`", jsonObj.get("next_start_key").toString()));

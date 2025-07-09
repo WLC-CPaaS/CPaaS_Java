@@ -147,12 +147,10 @@ public class ServiceDocsPhonenumberAssignPayload {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("phonenumber");
-    openapiFields.add("to_account");
+    openapiFields = new HashSet<String>(Arrays.asList("phonenumber", "to_account"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

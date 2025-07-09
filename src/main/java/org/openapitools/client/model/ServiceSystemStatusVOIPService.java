@@ -251,16 +251,10 @@ public class ServiceSystemStatusVOIPService {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("apps");
-    openapiFields.add("backend");
-    openapiFields.add("call_manager");
-    openapiFields.add("media_server");
-    openapiFields.add("message_broker");
-    openapiFields.add("sip_proxy");
+    openapiFields = new HashSet<String>(Arrays.asList("apps", "backend", "call_manager", "media_server", "message_broker", "sip_proxy"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

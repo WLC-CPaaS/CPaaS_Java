@@ -121,11 +121,10 @@ public class ModelsVOIPAccountMusicOnHold {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("media_id");
+    openapiFields = new HashSet<String>(Arrays.asList("media_id"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

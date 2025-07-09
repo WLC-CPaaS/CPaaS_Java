@@ -218,14 +218,10 @@ public class ServiceStorageOutput {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("attachments");
-    openapiFields.add("connections");
-    openapiFields.add("id");
-    openapiFields.add("plan");
+    openapiFields = new HashSet<String>(Arrays.asList("attachments", "connections", "id", "plan"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

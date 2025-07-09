@@ -92,7 +92,7 @@ public class ChannelApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDChannelChannelIDGetCall(String accountID, String channelID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDChannelChannelIDGetCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String channelID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -139,7 +139,7 @@ public class ChannelApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDChannelChannelIDGetValidateBeforeCall(String accountID, String channelID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDChannelChannelIDGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String channelID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDChannelChannelIDGet(Async)");
@@ -169,7 +169,7 @@ public class ChannelApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsChannelGetSingle v1AccountAccountIDChannelChannelIDGet(String accountID, String channelID) throws ApiException {
+    public ServiceDocsChannelGetSingle v1AccountAccountIDChannelChannelIDGet(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String channelID) throws ApiException {
         ApiResponse<ServiceDocsChannelGetSingle> localVarResp = v1AccountAccountIDChannelChannelIDGetWithHttpInfo(accountID, channelID);
         return localVarResp.getData();
     }
@@ -189,7 +189,7 @@ public class ChannelApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsChannelGetSingle> v1AccountAccountIDChannelChannelIDGetWithHttpInfo(String accountID, String channelID) throws ApiException {
+    public ApiResponse<ServiceDocsChannelGetSingle> v1AccountAccountIDChannelChannelIDGetWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String channelID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDChannelChannelIDGetValidateBeforeCall(accountID, channelID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsChannelGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -211,7 +211,7 @@ public class ChannelApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDChannelChannelIDGetAsync(String accountID, String channelID, final ApiCallback<ServiceDocsChannelGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDChannelChannelIDGetAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String channelID, final ApiCallback<ServiceDocsChannelGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDChannelChannelIDGetValidateBeforeCall(accountID, channelID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsChannelGetSingle>(){}.getType();
@@ -234,7 +234,7 @@ public class ChannelApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDChannelChannelIDPostCall(String accountID, String channelID, ServiceVOIPChannelRunActionData reqBody, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDChannelChannelIDPostCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String channelID, @javax.annotation.Nonnull ServiceVOIPChannelRunActionData reqBody, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -282,7 +282,7 @@ public class ChannelApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDChannelChannelIDPostValidateBeforeCall(String accountID, String channelID, ServiceVOIPChannelRunActionData reqBody, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDChannelChannelIDPostValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String channelID, @javax.annotation.Nonnull ServiceVOIPChannelRunActionData reqBody, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDChannelChannelIDPost(Async)");
@@ -318,7 +318,7 @@ public class ChannelApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceAPIResponse v1AccountAccountIDChannelChannelIDPost(String accountID, String channelID, ServiceVOIPChannelRunActionData reqBody) throws ApiException {
+    public ServiceAPIResponse v1AccountAccountIDChannelChannelIDPost(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String channelID, @javax.annotation.Nonnull ServiceVOIPChannelRunActionData reqBody) throws ApiException {
         ApiResponse<ServiceAPIResponse> localVarResp = v1AccountAccountIDChannelChannelIDPostWithHttpInfo(accountID, channelID, reqBody);
         return localVarResp.getData();
     }
@@ -339,7 +339,7 @@ public class ChannelApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceAPIResponse> v1AccountAccountIDChannelChannelIDPostWithHttpInfo(String accountID, String channelID, ServiceVOIPChannelRunActionData reqBody) throws ApiException {
+    public ApiResponse<ServiceAPIResponse> v1AccountAccountIDChannelChannelIDPostWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String channelID, @javax.annotation.Nonnull ServiceVOIPChannelRunActionData reqBody) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDChannelChannelIDPostValidateBeforeCall(accountID, channelID, reqBody, null);
         Type localVarReturnType = new TypeToken<ServiceAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -362,7 +362,7 @@ public class ChannelApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDChannelChannelIDPostAsync(String accountID, String channelID, ServiceVOIPChannelRunActionData reqBody, final ApiCallback<ServiceAPIResponse> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDChannelChannelIDPostAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String channelID, @javax.annotation.Nonnull ServiceVOIPChannelRunActionData reqBody, final ApiCallback<ServiceAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDChannelChannelIDPostValidateBeforeCall(accountID, channelID, reqBody, _callback);
         Type localVarReturnType = new TypeToken<ServiceAPIResponse>(){}.getType();
@@ -385,7 +385,7 @@ public class ChannelApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDChannelChannelIDPutCall(String accountID, String channelID, ServiceVOIPChannelRunMetaflowData reqBody, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDChannelChannelIDPutCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String channelID, @javax.annotation.Nonnull ServiceVOIPChannelRunMetaflowData reqBody, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -433,7 +433,7 @@ public class ChannelApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDChannelChannelIDPutValidateBeforeCall(String accountID, String channelID, ServiceVOIPChannelRunMetaflowData reqBody, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDChannelChannelIDPutValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String channelID, @javax.annotation.Nonnull ServiceVOIPChannelRunMetaflowData reqBody, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDChannelChannelIDPut(Async)");
@@ -469,7 +469,7 @@ public class ChannelApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceAPIResponse v1AccountAccountIDChannelChannelIDPut(String accountID, String channelID, ServiceVOIPChannelRunMetaflowData reqBody) throws ApiException {
+    public ServiceAPIResponse v1AccountAccountIDChannelChannelIDPut(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String channelID, @javax.annotation.Nonnull ServiceVOIPChannelRunMetaflowData reqBody) throws ApiException {
         ApiResponse<ServiceAPIResponse> localVarResp = v1AccountAccountIDChannelChannelIDPutWithHttpInfo(accountID, channelID, reqBody);
         return localVarResp.getData();
     }
@@ -490,7 +490,7 @@ public class ChannelApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceAPIResponse> v1AccountAccountIDChannelChannelIDPutWithHttpInfo(String accountID, String channelID, ServiceVOIPChannelRunMetaflowData reqBody) throws ApiException {
+    public ApiResponse<ServiceAPIResponse> v1AccountAccountIDChannelChannelIDPutWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String channelID, @javax.annotation.Nonnull ServiceVOIPChannelRunMetaflowData reqBody) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDChannelChannelIDPutValidateBeforeCall(accountID, channelID, reqBody, null);
         Type localVarReturnType = new TypeToken<ServiceAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -513,7 +513,7 @@ public class ChannelApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDChannelChannelIDPutAsync(String accountID, String channelID, ServiceVOIPChannelRunMetaflowData reqBody, final ApiCallback<ServiceAPIResponse> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDChannelChannelIDPutAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String channelID, @javax.annotation.Nonnull ServiceVOIPChannelRunMetaflowData reqBody, final ApiCallback<ServiceAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDChannelChannelIDPutValidateBeforeCall(accountID, channelID, reqBody, _callback);
         Type localVarReturnType = new TypeToken<ServiceAPIResponse>(){}.getType();
@@ -534,7 +534,7 @@ public class ChannelApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDChannelGetCall(String accountID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDChannelGetCall(@javax.annotation.Nonnull String accountID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -580,7 +580,7 @@ public class ChannelApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDChannelGetValidateBeforeCall(String accountID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDChannelGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDChannelGet(Async)");
@@ -604,7 +604,7 @@ public class ChannelApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsChannelGetAll v1AccountAccountIDChannelGet(String accountID) throws ApiException {
+    public ServiceDocsChannelGetAll v1AccountAccountIDChannelGet(@javax.annotation.Nonnull String accountID) throws ApiException {
         ApiResponse<ServiceDocsChannelGetAll> localVarResp = v1AccountAccountIDChannelGetWithHttpInfo(accountID);
         return localVarResp.getData();
     }
@@ -623,7 +623,7 @@ public class ChannelApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsChannelGetAll> v1AccountAccountIDChannelGetWithHttpInfo(String accountID) throws ApiException {
+    public ApiResponse<ServiceDocsChannelGetAll> v1AccountAccountIDChannelGetWithHttpInfo(@javax.annotation.Nonnull String accountID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDChannelGetValidateBeforeCall(accountID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsChannelGetAll>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -644,7 +644,7 @@ public class ChannelApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDChannelGetAsync(String accountID, final ApiCallback<ServiceDocsChannelGetAll> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDChannelGetAsync(@javax.annotation.Nonnull String accountID, final ApiCallback<ServiceDocsChannelGetAll> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDChannelGetValidateBeforeCall(accountID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsChannelGetAll>(){}.getType();
@@ -666,7 +666,7 @@ public class ChannelApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDDeviceDeviceIDChannelGetCall(String accountID, String deviceID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDDeviceDeviceIDChannelGetCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String deviceID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -713,7 +713,7 @@ public class ChannelApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDDeviceDeviceIDChannelGetValidateBeforeCall(String accountID, String deviceID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDDeviceDeviceIDChannelGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String deviceID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDDeviceDeviceIDChannelGet(Async)");
@@ -743,7 +743,7 @@ public class ChannelApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsChannelGetAll v1AccountAccountIDDeviceDeviceIDChannelGet(String accountID, String deviceID) throws ApiException {
+    public ServiceDocsChannelGetAll v1AccountAccountIDDeviceDeviceIDChannelGet(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String deviceID) throws ApiException {
         ApiResponse<ServiceDocsChannelGetAll> localVarResp = v1AccountAccountIDDeviceDeviceIDChannelGetWithHttpInfo(accountID, deviceID);
         return localVarResp.getData();
     }
@@ -763,7 +763,7 @@ public class ChannelApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsChannelGetAll> v1AccountAccountIDDeviceDeviceIDChannelGetWithHttpInfo(String accountID, String deviceID) throws ApiException {
+    public ApiResponse<ServiceDocsChannelGetAll> v1AccountAccountIDDeviceDeviceIDChannelGetWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String deviceID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDDeviceDeviceIDChannelGetValidateBeforeCall(accountID, deviceID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsChannelGetAll>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -785,7 +785,7 @@ public class ChannelApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDDeviceDeviceIDChannelGetAsync(String accountID, String deviceID, final ApiCallback<ServiceDocsChannelGetAll> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDDeviceDeviceIDChannelGetAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String deviceID, final ApiCallback<ServiceDocsChannelGetAll> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDDeviceDeviceIDChannelGetValidateBeforeCall(accountID, deviceID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsChannelGetAll>(){}.getType();
@@ -807,7 +807,7 @@ public class ChannelApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDUserUserIDChannelGetCall(String accountID, String userID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDUserUserIDChannelGetCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String userID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -854,7 +854,7 @@ public class ChannelApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDUserUserIDChannelGetValidateBeforeCall(String accountID, String userID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDUserUserIDChannelGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String userID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDUserUserIDChannelGet(Async)");
@@ -884,7 +884,7 @@ public class ChannelApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsChannelGetAll v1AccountAccountIDUserUserIDChannelGet(String accountID, String userID) throws ApiException {
+    public ServiceDocsChannelGetAll v1AccountAccountIDUserUserIDChannelGet(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String userID) throws ApiException {
         ApiResponse<ServiceDocsChannelGetAll> localVarResp = v1AccountAccountIDUserUserIDChannelGetWithHttpInfo(accountID, userID);
         return localVarResp.getData();
     }
@@ -904,7 +904,7 @@ public class ChannelApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsChannelGetAll> v1AccountAccountIDUserUserIDChannelGetWithHttpInfo(String accountID, String userID) throws ApiException {
+    public ApiResponse<ServiceDocsChannelGetAll> v1AccountAccountIDUserUserIDChannelGetWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String userID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDUserUserIDChannelGetValidateBeforeCall(accountID, userID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsChannelGetAll>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -926,7 +926,7 @@ public class ChannelApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDUserUserIDChannelGetAsync(String accountID, String userID, final ApiCallback<ServiceDocsChannelGetAll> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDUserUserIDChannelGetAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String userID, final ApiCallback<ServiceDocsChannelGetAll> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDUserUserIDChannelGetValidateBeforeCall(accountID, userID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsChannelGetAll>(){}.getType();

@@ -28,7 +28,7 @@ import java.io.IOException;
 
 
 import org.openapitools.client.model.CPAASError;
-import org.openapitools.client.model.ServiceDocsParkedcallGet;
+import org.openapitools.client.model.ServiceDocsCallparkGet;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -87,7 +87,7 @@ public class CallParkApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDParkedcallGetCall(String accountID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDParkedcallGetCall(@javax.annotation.Nonnull String accountID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -133,7 +133,7 @@ public class CallParkApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDParkedcallGetValidateBeforeCall(String accountID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDParkedcallGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDParkedcallGet(Async)");
@@ -147,7 +147,7 @@ public class CallParkApi {
      * Get Call Park List
      * Retrieve a list of calls parked on hold in a numbered slot.
      * @param accountID Account ID, 32 alpha numeric (required)
-     * @return ServiceDocsParkedcallGet
+     * @return ServiceDocsCallparkGet
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table border="1">
@@ -157,8 +157,8 @@ public class CallParkApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsParkedcallGet v1AccountAccountIDParkedcallGet(String accountID) throws ApiException {
-        ApiResponse<ServiceDocsParkedcallGet> localVarResp = v1AccountAccountIDParkedcallGetWithHttpInfo(accountID);
+    public ServiceDocsCallparkGet v1AccountAccountIDParkedcallGet(@javax.annotation.Nonnull String accountID) throws ApiException {
+        ApiResponse<ServiceDocsCallparkGet> localVarResp = v1AccountAccountIDParkedcallGetWithHttpInfo(accountID);
         return localVarResp.getData();
     }
 
@@ -166,7 +166,7 @@ public class CallParkApi {
      * Get Call Park List
      * Retrieve a list of calls parked on hold in a numbered slot.
      * @param accountID Account ID, 32 alpha numeric (required)
-     * @return ApiResponse&lt;ServiceDocsParkedcallGet&gt;
+     * @return ApiResponse&lt;ServiceDocsCallparkGet&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table border="1">
@@ -176,9 +176,9 @@ public class CallParkApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsParkedcallGet> v1AccountAccountIDParkedcallGetWithHttpInfo(String accountID) throws ApiException {
+    public ApiResponse<ServiceDocsCallparkGet> v1AccountAccountIDParkedcallGetWithHttpInfo(@javax.annotation.Nonnull String accountID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDParkedcallGetValidateBeforeCall(accountID, null);
-        Type localVarReturnType = new TypeToken<ServiceDocsParkedcallGet>(){}.getType();
+        Type localVarReturnType = new TypeToken<ServiceDocsCallparkGet>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -197,10 +197,10 @@ public class CallParkApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDParkedcallGetAsync(String accountID, final ApiCallback<ServiceDocsParkedcallGet> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDParkedcallGetAsync(@javax.annotation.Nonnull String accountID, final ApiCallback<ServiceDocsCallparkGet> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDParkedcallGetValidateBeforeCall(accountID, _callback);
-        Type localVarReturnType = new TypeToken<ServiceDocsParkedcallGet>(){}.getType();
+        Type localVarReturnType = new TypeToken<ServiceDocsCallparkGet>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

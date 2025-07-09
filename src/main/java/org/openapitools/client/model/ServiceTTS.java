@@ -405,13 +405,10 @@ public class ServiceTTS {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("text");
-    openapiFields.add("voice");
+    openapiFields = new HashSet<String>(Arrays.asList("text", "voice"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("text");
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("text"));
   }
 
   /**

@@ -8,7 +8,7 @@ info:
   title: White Label Communications CPaas API Documentation
   version: "1.1"
 servers:
-- url: //API_HOSTNAME/
+- url: //api.beta.cpaaslabs.net/
 paths:
   /v1/account:
     get:
@@ -1303,7 +1303,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/service.DocsCallQueueResponseShort'
+                $ref: '#/components/schemas/service.DocsCallQueueRecipientLoginLogoutOutput'
           description: OK
         "400":
           content:
@@ -1802,7 +1802,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/service.DocsParkedcallGet'
+                $ref: '#/components/schemas/service.DocsCallparkGet'
           description: OK
         "400":
           content:
@@ -1925,8 +1925,9 @@ paths:
           description: Bad Request
       security:
       - BasicAuth: []
+      summary: Get Config File Details
       tags:
-      - provision
+      - Provisioning
       x-accepts:
       - '*/*'
   /v1/account/{accountID}/queuemembership:
@@ -1951,7 +1952,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/service.DocsCallQueueMemberGetSingle'
+                $ref: '#/components/schemas/service.DocsQueueMembershipOutput'
           description: OK
         "400":
           content:
@@ -4672,7 +4673,7 @@ paths:
       - application/json
   /v1/account/{accountid}/user/{userid}/userauth:
     post:
-      description: Impersonate as another user if you have access to admin.
+      description: Retrieve a token for making presence calls.
       parameters:
       - description: "Account ID, 32 alpha numeric"
         in: path
@@ -4759,7 +4760,7 @@ paths:
           description: Internal Server Error
       security:
       - BearerAuth: []
-      summary: Get Brand
+      summary: Get Brand List
       tags:
       - Provisioning
       x-accepts:
@@ -4795,7 +4796,7 @@ paths:
           description: Internal Server Error
       security:
       - BearerAuth: []
-      summary: Get Brand
+      summary: Get Brand Details
       tags:
       - Provisioning
       x-accepts:
@@ -4893,7 +4894,7 @@ paths:
           description: Internal Server Error
       security:
       - BearerAuth: []
-      summary: Get Family
+      summary: Get Family Details
       tags:
       - Provisioning
       x-accepts:
@@ -5003,7 +5004,7 @@ paths:
           description: Internal Server Error
       security:
       - BearerAuth: []
-      summary: Get Model
+      summary: Get Model Details
       tags:
       - Provisioning
       x-accepts:
@@ -5130,7 +5131,7 @@ paths:
           description: Internal Server Error
       security:
       - BearerAuth: []
-      summary: Get Template
+      summary: Get Template Details
       tags:
       - Provisioning
       x-accepts:
@@ -5168,7 +5169,7 @@ paths:
           description: Internal Server Error
       security:
       - BearerAuth: []
-      summary: Generate config file
+      summary: Generate Config File
       tags:
       - Provisioning
       x-codegen-request-body-name: params
@@ -5805,7 +5806,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/service.DocE911URIsApiOutput'
+                $ref: '#/components/schemas/service.DocsE911URIsApiOutput'
           description: Successful response with e911 URIs
         "403":
           content:
@@ -5839,7 +5840,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/service.DocE911AddLocationOutput'
+                $ref: '#/components/schemas/service.DocsE911AddLocationOutput'
           description: Successful response with location details
         "403":
           content:
@@ -5876,7 +5877,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/service.DocE911ValidateLocationOutput'
+                $ref: '#/components/schemas/service.DocsE911ValidateLocationOutput'
           description: Successful response with location details
         "403":
           content:
@@ -5913,7 +5914,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/service.DocE911RemoveLocationOutput'
+                $ref: '#/components/schemas/service.DocsE911RemoveLocationOutput'
           description: Successful response with location remove status
         "403":
           content:
@@ -5948,7 +5949,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/service.DocE911ActiveLocationOutput'
+                $ref: '#/components/schemas/service.DocsE911ActiveLocationOutput'
           description: Successful response with location activate status
         "403":
           content:
@@ -5983,7 +5984,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/service.DocE911RemoveURIApiOutput'
+                $ref: '#/components/schemas/service.DocsE911RemoveURIApiOutput'
           description: Successful response
         "403":
           content:
@@ -6019,7 +6020,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/service.DocE911LocationsURIApiOutput'
+                $ref: '#/components/schemas/service.DocsE911LocationsURIApiOutput'
           description: Successful response with e911 Locations URI
         "403":
           content:
@@ -6054,7 +6055,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/service.DocE911ActiveLocationURIApiOutput'
+                $ref: '#/components/schemas/service.DocsE911ActiveLocationURIApiOutput'
           description: Successful response with e911 Active Location URI
         "403":
           content:
@@ -7693,6 +7694,15 @@ components:
         mac_address: mac_address
         provision:
           endpoint_model: endpoint_model
+          line_keys:
+          - count: 5
+            label: label
+            type: type
+            value: value
+          - count: 5
+            label: label
+            type: type
+            value: value
           endpoint_brand: endpoint_brand
           endpoint_family: endpoint_family
           id: id
@@ -7793,6 +7803,15 @@ components:
     models.DeviceOutputFullProvision:
       example:
         endpoint_model: endpoint_model
+        line_keys:
+        - count: 5
+          label: label
+          type: type
+          value: value
+        - count: 5
+          label: label
+          type: type
+          value: value
         endpoint_brand: endpoint_brand
         endpoint_family: endpoint_family
         id: id
@@ -7805,6 +7824,10 @@ components:
           type: string
         id:
           type: string
+        line_keys:
+          items:
+            $ref: '#/components/schemas/models.VOIPDeviceOutputLineKey'
+          type: array
       type: object
     models.DeviceOutputFullSIP:
       example:
@@ -8120,6 +8143,22 @@ components:
           $ref: '#/components/schemas/models.AccountOutputFullCalleridExternal'
         internal:
           $ref: '#/components/schemas/models.AccountOutputFullCalleridInternal'
+      type: object
+    models.VOIPDeviceOutputLineKey:
+      example:
+        count: 5
+        label: label
+        type: type
+        value: value
+      properties:
+        count:
+          type: integer
+        label:
+          type: string
+        type:
+          type: string
+        value:
+          type: string
       type: object
     models.VOIPSharedDoNotDisturb:
       example:
@@ -8927,6 +8966,10 @@ components:
             type: string
           type: array
       type: object
+    service.CallparkOutput:
+      additionalProperties:
+        $ref: '#/components/schemas/service.ParkingSlotData'
+      type: object
     service.CampaignImportOutput:
       example:
         secondary_dca_sharing_status: secondary_dca_sharing_status
@@ -9232,260 +9275,6 @@ components:
           type: boolean
         registrable:
           type: boolean
-      type: object
-    service.DocE911ActiveLocationOutput:
-      example:
-        status_code: 0
-        data:
-          location_status:
-            code: code
-            description: description
-        request_id: request_id
-      properties:
-        data:
-          $ref: '#/components/schemas/service.E911ActiveLocationOutput'
-        request_id:
-          description: Unique id for each request
-          type: string
-        status_code:
-          description: HTTP response status code
-          type: integer
-      type: object
-    service.DocE911ActiveLocationURIApiOutput:
-      example:
-        status_code: 0
-        data:
-          plusFour: plusFour
-          comments: comments
-          address2: address2
-          address1: address1
-          customerOrderID: customerOrderID
-          latitude: 0.8008281904610115
-          postalCode: postalCode
-          updateTime: updateTime
-          community: community
-          type: type
-          callerName: callerName
-          activatedTime: activatedTime
-          locationID: locationID
-          legacyData:
-            streetName: streetName
-            suite: suite
-            predirectional: predirectional
-            houseNumber: houseNumber
-          state: state
-          longitude: 6.027456183070403
-          status:
-            code: code
-            description: description
-        request_id: request_id
-      properties:
-        data:
-          $ref: '#/components/schemas/service.E911LocationURI'
-        request_id:
-          description: Unique id for each request
-          type: string
-        status_code:
-          description: HTTP response status code
-          type: integer
-      type: object
-    service.DocE911AddLocationOutput:
-      example:
-        status_code: 1
-        data:
-          location:
-            comments: comments
-            address_1: address_1
-            activated_time: activated_time
-            address_2: address_2
-            latitude: 0.8008281904610115
-            customer_order_id: customer_order_id
-            community: community
-            type: type
-            location_id: location_id
-            caller_name: caller_name
-            update_time: update_time
-            plus_four: plus_four
-            state: state
-            legacy_data:
-              suite: suite
-              predirectional: predirectional
-              house_number: house_number
-              street_name: street_name
-            postal_code: postal_code
-            longitude: 6.027456183070403
-            status:
-              code: code
-              description: description
-        request_id: request_id
-      properties:
-        data:
-          $ref: '#/components/schemas/service.E911AddLocationOutput'
-        request_id:
-          description: Unique id for each request
-          type: string
-        status_code:
-          description: HTTP response status code
-          type: integer
-      type: object
-    service.DocE911LocationsURIApiOutput:
-      example:
-        status_code: 1
-        data:
-        - plusFour: plusFour
-          comments: comments
-          address2: address2
-          address1: address1
-          customerOrderID: customerOrderID
-          latitude: 0.8008281904610115
-          postalCode: postalCode
-          updateTime: updateTime
-          community: community
-          type: type
-          callerName: callerName
-          activatedTime: activatedTime
-          locationID: locationID
-          legacyData:
-            streetName: streetName
-            suite: suite
-            predirectional: predirectional
-            houseNumber: houseNumber
-          state: state
-          longitude: 6.027456183070403
-          status:
-            code: code
-            description: description
-        - plusFour: plusFour
-          comments: comments
-          address2: address2
-          address1: address1
-          customerOrderID: customerOrderID
-          latitude: 0.8008281904610115
-          postalCode: postalCode
-          updateTime: updateTime
-          community: community
-          type: type
-          callerName: callerName
-          activatedTime: activatedTime
-          locationID: locationID
-          legacyData:
-            streetName: streetName
-            suite: suite
-            predirectional: predirectional
-            houseNumber: houseNumber
-          state: state
-          longitude: 6.027456183070403
-          status:
-            code: code
-            description: description
-        request_id: request_id
-      properties:
-        data:
-          items:
-            $ref: '#/components/schemas/service.E911LocationURI'
-          type: array
-        request_id:
-          description: Unique id for each request
-          type: string
-        status_code:
-          description: HTTP response status code
-          type: integer
-      type: object
-    service.DocE911RemoveLocationOutput:
-      example:
-        status_code: 0
-        data:
-          location_status:
-            code: code
-            description: description
-        request_id: request_id
-      properties:
-        data:
-          $ref: '#/components/schemas/service.E911RemoveLocationOutput'
-        request_id:
-          description: Unique id for each request
-          type: string
-        status_code:
-          description: HTTP response status code
-          type: integer
-      type: object
-    service.DocE911RemoveURIApiOutput:
-      example:
-        status_code: 0
-        data:
-          URIStatus:
-            code: code
-            description: description
-        request_id: request_id
-      properties:
-        data:
-          $ref: '#/components/schemas/service.RemoveURIApiOutput'
-        request_id:
-          description: Unique id for each request
-          type: string
-        status_code:
-          description: HTTP response status code
-          type: integer
-      type: object
-    service.DocE911URIsApiOutput:
-      example:
-        status_code: 0
-        data:
-        - phone_number: phone_number
-          location_id: location_id
-        - phone_number: phone_number
-          location_id: location_id
-        request_id: request_id
-      properties:
-        data:
-          items:
-            $ref: '#/components/schemas/repository.LocationsResponse'
-          type: array
-        request_id:
-          description: Unique id for each request
-          type: string
-        status_code:
-          description: HTTP response status code
-          type: integer
-      type: object
-    service.DocE911ValidateLocationOutput:
-      example:
-        status_code: 0
-        data:
-          location:
-            comments: comments
-            address_1: address_1
-            activated_time: activated_time
-            address_2: address_2
-            latitude: 0.8008281904610115
-            customer_order_id: customer_order_id
-            community: community
-            type: type
-            location_id: location_id
-            caller_name: caller_name
-            update_time: update_time
-            plus_four: plus_four
-            state: state
-            legacy_data:
-              suite: suite
-              predirectional: predirectional
-              house_number: house_number
-              street_name: street_name
-            postal_code: postal_code
-            longitude: 6.027456183070403
-            status:
-              code: code
-              description: description
-        request_id: request_id
-      properties:
-        data:
-          $ref: '#/components/schemas/service.E911ValidateLocationOutput'
-        request_id:
-          description: Unique id for each request
-          type: string
-        status_code:
-          description: HTTP response status code
-          type: integer
       type: object
     service.DocGroupGetAll:
       example:
@@ -10021,24 +9810,7 @@ components:
           description: HTTP response status code
           type: integer
       type: object
-    service.DocsCallQueueMemberGetSingle:
-      example:
-        status_code: 0
-        data:
-          key: ""
-        request_id: request_id
-      properties:
-        data:
-          additionalProperties: true
-          type: object
-        request_id:
-          description: Unique id for each request
-          type: string
-        status_code:
-          description: HTTP response status code
-          type: integer
-      type: object
-    service.DocsCallQueueResponseShort:
+    service.DocsCallQueueRecipientLoginLogoutOutput:
       example:
         status_code: 0
         data:
@@ -10247,6 +10019,38 @@ components:
           $ref: '#/components/schemas/service.CallflowOutputFull'
         request_id:
           description: Unique id for each request
+          type: string
+        status_code:
+          description: HTTP response status code
+          type: integer
+      type: object
+    service.DocsCallparkGet:
+      example:
+        status_code: 6
+        data:
+        - null
+        - null
+        next_start_key: next_start_key
+        start_key: start_key
+        request_id: request_id
+        page_size: 0
+      properties:
+        data:
+          items:
+            $ref: '#/components/schemas/service.CallparkOutput'
+          type: array
+        next_start_key:
+          description: "List Pagination: Used to get the next page of results. Will\
+            \ not exist if this is the last page."
+          type: string
+        page_size:
+          description: "List Pagination: The number of results returned in this page"
+          type: integer
+        request_id:
+          description: Unique id for each request
+          type: string
+        start_key:
+          description: "List Pagination: Code for paged results"
           type: string
         status_code:
           description: HTTP response status code
@@ -10760,6 +10564,15 @@ components:
           mac_address: mac_address
           provision:
             endpoint_model: endpoint_model
+            line_keys:
+            - count: 5
+              label: label
+              type: type
+              value: value
+            - count: 5
+              label: label
+              type: type
+              value: value
             endpoint_brand: endpoint_brand
             endpoint_family: endpoint_family
             id: id
@@ -10826,6 +10639,260 @@ components:
           type: string
         start_key:
           description: "List Pagination: Code for paged results"
+          type: string
+        status_code:
+          description: HTTP response status code
+          type: integer
+      type: object
+    service.DocsE911ActiveLocationOutput:
+      example:
+        status_code: 0
+        data:
+          location_status:
+            code: code
+            description: description
+        request_id: request_id
+      properties:
+        data:
+          $ref: '#/components/schemas/service.E911ActiveLocationOutput'
+        request_id:
+          description: Unique id for each request
+          type: string
+        status_code:
+          description: HTTP response status code
+          type: integer
+      type: object
+    service.DocsE911ActiveLocationURIApiOutput:
+      example:
+        status_code: 0
+        data:
+          plusFour: plusFour
+          comments: comments
+          address2: address2
+          address1: address1
+          customerOrderID: customerOrderID
+          latitude: 0.8008281904610115
+          postalCode: postalCode
+          updateTime: updateTime
+          community: community
+          type: type
+          callerName: callerName
+          activatedTime: activatedTime
+          locationID: locationID
+          legacyData:
+            streetName: streetName
+            suite: suite
+            predirectional: predirectional
+            houseNumber: houseNumber
+          state: state
+          longitude: 6.027456183070403
+          status:
+            code: code
+            description: description
+        request_id: request_id
+      properties:
+        data:
+          $ref: '#/components/schemas/service.E911LocationURI'
+        request_id:
+          description: Unique id for each request
+          type: string
+        status_code:
+          description: HTTP response status code
+          type: integer
+      type: object
+    service.DocsE911AddLocationOutput:
+      example:
+        status_code: 1
+        data:
+          location:
+            comments: comments
+            address_1: address_1
+            activated_time: activated_time
+            address_2: address_2
+            latitude: 0.8008281904610115
+            customer_order_id: customer_order_id
+            community: community
+            type: type
+            location_id: location_id
+            caller_name: caller_name
+            update_time: update_time
+            plus_four: plus_four
+            state: state
+            legacy_data:
+              suite: suite
+              predirectional: predirectional
+              house_number: house_number
+              street_name: street_name
+            postal_code: postal_code
+            longitude: 6.027456183070403
+            status:
+              code: code
+              description: description
+        request_id: request_id
+      properties:
+        data:
+          $ref: '#/components/schemas/service.E911AddLocationOutput'
+        request_id:
+          description: Unique id for each request
+          type: string
+        status_code:
+          description: HTTP response status code
+          type: integer
+      type: object
+    service.DocsE911LocationsURIApiOutput:
+      example:
+        status_code: 1
+        data:
+        - plusFour: plusFour
+          comments: comments
+          address2: address2
+          address1: address1
+          customerOrderID: customerOrderID
+          latitude: 0.8008281904610115
+          postalCode: postalCode
+          updateTime: updateTime
+          community: community
+          type: type
+          callerName: callerName
+          activatedTime: activatedTime
+          locationID: locationID
+          legacyData:
+            streetName: streetName
+            suite: suite
+            predirectional: predirectional
+            houseNumber: houseNumber
+          state: state
+          longitude: 6.027456183070403
+          status:
+            code: code
+            description: description
+        - plusFour: plusFour
+          comments: comments
+          address2: address2
+          address1: address1
+          customerOrderID: customerOrderID
+          latitude: 0.8008281904610115
+          postalCode: postalCode
+          updateTime: updateTime
+          community: community
+          type: type
+          callerName: callerName
+          activatedTime: activatedTime
+          locationID: locationID
+          legacyData:
+            streetName: streetName
+            suite: suite
+            predirectional: predirectional
+            houseNumber: houseNumber
+          state: state
+          longitude: 6.027456183070403
+          status:
+            code: code
+            description: description
+        request_id: request_id
+      properties:
+        data:
+          items:
+            $ref: '#/components/schemas/service.E911LocationURI'
+          type: array
+        request_id:
+          description: Unique id for each request
+          type: string
+        status_code:
+          description: HTTP response status code
+          type: integer
+      type: object
+    service.DocsE911RemoveLocationOutput:
+      example:
+        status_code: 0
+        data:
+          location_status:
+            code: code
+            description: description
+        request_id: request_id
+      properties:
+        data:
+          $ref: '#/components/schemas/service.E911RemoveLocationOutput'
+        request_id:
+          description: Unique id for each request
+          type: string
+        status_code:
+          description: HTTP response status code
+          type: integer
+      type: object
+    service.DocsE911RemoveURIApiOutput:
+      example:
+        status_code: 0
+        data:
+          URIStatus:
+            code: code
+            description: description
+        request_id: request_id
+      properties:
+        data:
+          $ref: '#/components/schemas/service.RemoveURIApiOutput'
+        request_id:
+          description: Unique id for each request
+          type: string
+        status_code:
+          description: HTTP response status code
+          type: integer
+      type: object
+    service.DocsE911URIsApiOutput:
+      example:
+        status_code: 0
+        data:
+        - phone_number: phone_number
+          location_id: location_id
+        - phone_number: phone_number
+          location_id: location_id
+        request_id: request_id
+      properties:
+        data:
+          items:
+            $ref: '#/components/schemas/repository.LocationsResponse'
+          type: array
+        request_id:
+          description: Unique id for each request
+          type: string
+        status_code:
+          description: HTTP response status code
+          type: integer
+      type: object
+    service.DocsE911ValidateLocationOutput:
+      example:
+        status_code: 0
+        data:
+          location:
+            comments: comments
+            address_1: address_1
+            activated_time: activated_time
+            address_2: address_2
+            latitude: 0.8008281904610115
+            customer_order_id: customer_order_id
+            community: community
+            type: type
+            location_id: location_id
+            caller_name: caller_name
+            update_time: update_time
+            plus_four: plus_four
+            state: state
+            legacy_data:
+              suite: suite
+              predirectional: predirectional
+              house_number: house_number
+              street_name: street_name
+            postal_code: postal_code
+            longitude: 6.027456183070403
+            status:
+              code: code
+              description: description
+        request_id: request_id
+      properties:
+        data:
+          $ref: '#/components/schemas/service.E911ValidateLocationOutput'
+        request_id:
+          description: Unique id for each request
           type: string
         status_code:
           description: HTTP response status code
@@ -11098,7 +11165,7 @@ components:
         page_size: 0
       properties:
         data:
-          $ref: '#/components/schemas/service.QueueRecipientOutputFull'
+          $ref: '#/components/schemas/service.QueueRecipientOutput'
         next_start_key:
           description: "List Pagination: Used to get the next page of results. Will\
             \ not exist if this is the last page."
@@ -11265,38 +11332,6 @@ components:
           description: HTTP response status code
           type: integer
       type: object
-    service.DocsParkedcallGet:
-      example:
-        status_code: 6
-        data:
-        - null
-        - null
-        next_start_key: next_start_key
-        start_key: start_key
-        request_id: request_id
-        page_size: 0
-      properties:
-        data:
-          items:
-            $ref: '#/components/schemas/service.ParkedcallOutput'
-          type: array
-        next_start_key:
-          description: "List Pagination: Used to get the next page of results. Will\
-            \ not exist if this is the last page."
-          type: string
-        page_size:
-          description: "List Pagination: The number of results returned in this page"
-          type: integer
-        request_id:
-          description: Unique id for each request
-          type: string
-        start_key:
-          description: "List Pagination: Code for paged results"
-          type: string
-        status_code:
-          description: HTTP response status code
-          type: integer
-      type: object
     service.DocsPhonenumberAssignPayload:
       properties:
         phonenumber:
@@ -11345,6 +11380,23 @@ components:
           type: integer
       type: object
     service.DocsPresenceGet:
+      example:
+        status_code: 0
+        data:
+          key: ""
+        request_id: request_id
+      properties:
+        data:
+          additionalProperties: true
+          type: object
+        request_id:
+          description: Unique id for each request
+          type: string
+        status_code:
+          description: HTTP response status code
+          type: integer
+      type: object
+    service.DocsQueueMembershipOutput:
       example:
         status_code: 0
         data:
@@ -12378,9 +12430,6 @@ components:
           $ref: '#/components/schemas/service.E911LocationInput'
         uri:
           $ref: '#/components/schemas/service.E911URIInput'
-      required:
-      - location
-      - uri
       type: object
     service.E911AddLocationOutput:
       example:
@@ -12447,10 +12496,7 @@ components:
           - ADDRESS
           type: string
       required:
-      - address_1
-      - community
-      - postal_code
-      - state
+      - type
       type: object
     service.E911LocationOutput:
       example:
@@ -12610,15 +12656,12 @@ components:
         uri:
           type: string
       required:
-      - callerName
       - uri
       type: object
     service.E911ValidateLocationInput:
       properties:
         location:
           $ref: '#/components/schemas/service.E911LocationInput'
-      required:
-      - location
       type: object
     service.E911ValidateLocationOutput:
       example:
@@ -12884,10 +12927,6 @@ components:
       required:
       - module
       type: object
-    service.ParkedcallOutput:
-      additionalProperties:
-        $ref: '#/components/schemas/service.ParkingSlotData'
-      type: object
     service.ParkingSlotData:
       properties:
         attended:
@@ -12955,7 +12994,7 @@ components:
         message:
           type: string
       type: object
-    service.QueueRecipientOutputFull:
+    service.QueueRecipientOutput:
       example:
         roles:
           key: roles
@@ -12974,13 +13013,22 @@ components:
         name:
           type: string
         recipient:
-          $ref: '#/components/schemas/service.QueueRecipientOutputFullRecipient'
+          $ref: '#/components/schemas/service.QueueRecipientOutputRecipient'
         roles:
           additionalProperties:
             type: string
           type: object
       type: object
-    service.QueueRecipientOutputFullFeatures:
+    service.QueueRecipientOutputRecipient:
+      example:
+        features:
+          account_upgrade: account_upgrade
+          pro: true
+      properties:
+        features:
+          $ref: '#/components/schemas/service.QueueRecipientOutputRecipientFeatures'
+      type: object
+    service.QueueRecipientOutputRecipientFeatures:
       example:
         account_upgrade: account_upgrade
         pro: true
@@ -12989,15 +13037,6 @@ components:
           type: string
         pro:
           type: boolean
-      type: object
-    service.QueueRecipientOutputFullRecipient:
-      example:
-        features:
-          account_upgrade: account_upgrade
-          pro: true
-      properties:
-        features:
-          $ref: '#/components/schemas/service.QueueRecipientOutputFullFeatures'
       type: object
     service.RemoveURIApiOutput:
       example:
@@ -14286,6 +14325,22 @@ components:
             type: string
           type: array
       type: object
+    service.VOIPDeviceAddEditLineKey:
+      properties:
+        count:
+          type: integer
+        label:
+          type: string
+        type:
+          enum:
+          - line
+          - speed_dial
+          - blf
+          - call_park
+          type: string
+        value:
+          type: string
+      type: object
     service.VOIPDeviceAddEditProvision:
       properties:
         endpoint_brand:
@@ -14296,6 +14351,10 @@ components:
           type: string
         id:
           type: string
+        line_keys:
+          items:
+            $ref: '#/components/schemas/service.VOIPDeviceAddEditLineKey'
+          type: array
       type: object
     service.VOIPGroupAddEdit2:
       properties:

@@ -226,15 +226,10 @@ public class ServiceStoragePlanDatabaseTypes {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("call_recording");
-    openapiFields.add("fax");
-    openapiFields.add("function");
-    openapiFields.add("mailbox_message");
-    openapiFields.add("media");
+    openapiFields = new HashSet<String>(Arrays.asList("call_recording", "fax", "function", "mailbox_message", "media"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

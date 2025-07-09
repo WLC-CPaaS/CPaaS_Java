@@ -122,11 +122,10 @@ public class ServiceVOIPDeviceAddEdit3d {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("audio");
+    openapiFields = new HashSet<String>(Arrays.asList("audio"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

@@ -173,12 +173,10 @@ public class ServiceAdminUserEditData {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("role");
+    openapiFields = new HashSet<String>(Arrays.asList("role"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("role");
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("role"));
   }
 
   /**

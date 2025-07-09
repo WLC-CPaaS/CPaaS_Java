@@ -339,19 +339,10 @@ public class ServiceCallQueueOutputFull {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("agent_wrapup_time");
-    openapiFields.add("features");
-    openapiFields.add("force_away_on_reject");
-    openapiFields.add("id");
-    openapiFields.add("name");
-    openapiFields.add("queue_router");
-    openapiFields.add("queue_type");
-    openapiFields.add("ring_timeout");
-    openapiFields.add("tick_time");
+    openapiFields = new HashSet<String>(Arrays.asList("agent_wrapup_time", "features", "force_away_on_reject", "id", "name", "queue_router", "queue_type", "ring_timeout", "tick_time"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

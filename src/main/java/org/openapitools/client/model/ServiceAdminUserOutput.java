@@ -199,14 +199,10 @@ public class ServiceAdminUserOutput {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("email");
-    openapiFields.add("first_name");
-    openapiFields.add("id");
-    openapiFields.add("last_name");
+    openapiFields = new HashSet<String>(Arrays.asList("email", "first_name", "id", "last_name"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

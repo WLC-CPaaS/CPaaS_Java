@@ -262,16 +262,10 @@ public class ProvisioningDocsDocsModelOutput {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("data");
-    openapiFields.add("next_start_key");
-    openapiFields.add("page_size");
-    openapiFields.add("request_id");
-    openapiFields.add("start_key");
-    openapiFields.add("status_code");
+    openapiFields = new HashSet<String>(Arrays.asList("data", "next_start_key", "page_size", "request_id", "start_key", "status_code"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

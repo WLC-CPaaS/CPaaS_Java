@@ -179,16 +179,10 @@ public class ServiceVOIPAccountLimit2 {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("inbound_trunks");
-    openapiFields.add("outbound_trunks");
-    openapiFields.add("twoway_trunks");
+    openapiFields = new HashSet<String>(Arrays.asList("inbound_trunks", "outbound_trunks", "twoway_trunks"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("inbound_trunks");
-    openapiRequiredFields.add("outbound_trunks");
-    openapiRequiredFields.add("twoway_trunks");
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("inbound_trunks", "outbound_trunks", "twoway_trunks"));
   }
 
   /**

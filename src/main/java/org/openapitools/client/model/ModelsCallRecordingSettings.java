@@ -174,13 +174,10 @@ public class ModelsCallRecordingSettings {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("any");
-    openapiFields.add("inbound");
-    openapiFields.add("outbound");
+    openapiFields = new HashSet<String>(Arrays.asList("any", "inbound", "outbound"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

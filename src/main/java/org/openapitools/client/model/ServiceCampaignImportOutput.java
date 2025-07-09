@@ -288,17 +288,10 @@ public class ServiceCampaignImportOutput {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("campaign_id");
-    openapiFields.add("created_date");
-    openapiFields.add("description");
-    openapiFields.add("message_class");
-    openapiFields.add("mno_status_list");
-    openapiFields.add("secondary_dca_sharing_status");
-    openapiFields.add("status");
+    openapiFields = new HashSet<String>(Arrays.asList("campaign_id", "created_date", "description", "message_class", "mno_status_list", "secondary_dca_sharing_status", "status"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

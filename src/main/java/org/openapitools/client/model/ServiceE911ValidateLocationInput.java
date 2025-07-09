@@ -53,13 +53,13 @@ import org.openapitools.client.JSON;
 public class ServiceE911ValidateLocationInput {
   public static final String SERIALIZED_NAME_LOCATION = "location";
   @SerializedName(SERIALIZED_NAME_LOCATION)
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
   private ServiceE911LocationInput location;
 
   public ServiceE911ValidateLocationInput() {
   }
 
-  public ServiceE911ValidateLocationInput location(@javax.annotation.Nonnull ServiceE911LocationInput location) {
+  public ServiceE911ValidateLocationInput location(@javax.annotation.Nullable ServiceE911LocationInput location) {
     this.location = location;
     return this;
   }
@@ -68,12 +68,12 @@ public class ServiceE911ValidateLocationInput {
    * Get location
    * @return location
    */
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
   public ServiceE911LocationInput getLocation() {
     return location;
   }
 
-  public void setLocation(@javax.annotation.Nonnull ServiceE911LocationInput location) {
+  public void setLocation(@javax.annotation.Nullable ServiceE911LocationInput location) {
     this.location = location;
   }
 
@@ -122,12 +122,10 @@ public class ServiceE911ValidateLocationInput {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("location");
+    openapiFields = new HashSet<String>(Arrays.asList("location"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("location");
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**
@@ -150,16 +148,11 @@ public class ServiceE911ValidateLocationInput {
           throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ServiceE911ValidateLocationInput` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
-
-      // check to make sure all required properties/fields are present in the JSON string
-      for (String requiredField : ServiceE911ValidateLocationInput.openapiRequiredFields) {
-        if (jsonElement.getAsJsonObject().get(requiredField) == null) {
-          throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
-        }
-      }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      // validate the required field `location`
-      ServiceE911LocationInput.validateJsonElement(jsonObj.get("location"));
+      // validate the optional field `location`
+      if (jsonObj.get("location") != null && !jsonObj.get("location").isJsonNull()) {
+        ServiceE911LocationInput.validateJsonElement(jsonObj.get("location"));
+      }
   }
 
   public static class CustomTypeAdapterFactory implements TypeAdapterFactory {

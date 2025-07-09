@@ -147,12 +147,10 @@ public class RepositoryLocationsResponse {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("location_id");
-    openapiFields.add("phone_number");
+    openapiFields = new HashSet<String>(Arrays.asList("location_id", "phone_number"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

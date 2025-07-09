@@ -254,18 +254,10 @@ public class ServiceVOIPAccountAddData {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("caller_id");
-    openapiFields.add("do_not_disturb");
-    openapiFields.add("music_on_hold");
-    openapiFields.add("name");
-    openapiFields.add("realm");
-    openapiFields.add("timezone");
+    openapiFields = new HashSet<String>(Arrays.asList("caller_id", "do_not_disturb", "music_on_hold", "name", "realm", "timezone"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("name");
-    openapiRequiredFields.add("timezone");
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("name", "timezone"));
   }
 
   /**

@@ -358,20 +358,10 @@ public class ServiceVOIPVoicemailAddEditData {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("mailbox");
-    openapiFields.add("media");
-    openapiFields.add("media_extension");
-    openapiFields.add("name");
-    openapiFields.add("owner_id");
-    openapiFields.add("pin");
-    openapiFields.add("require_pin");
-    openapiFields.add("timezone");
+    openapiFields = new HashSet<String>(Arrays.asList("mailbox", "media", "media_extension", "name", "owner_id", "pin", "require_pin", "timezone"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("mailbox");
-    openapiRequiredFields.add("name");
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("mailbox", "name"));
   }
 
   /**

@@ -203,14 +203,10 @@ public class ServiceSystemStatusOutput {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("cpaas_services");
-    openapiFields.add("messaging_services");
-    openapiFields.add("support_services");
-    openapiFields.add("voip_services");
+    openapiFields = new HashSet<String>(Arrays.asList("cpaas_services", "messaging_services", "support_services", "voip_services"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

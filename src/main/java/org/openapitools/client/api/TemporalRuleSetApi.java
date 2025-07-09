@@ -91,7 +91,7 @@ public class TemporalRuleSetApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDTemporalrulesetGetCall(String accountID, String startKey, Integer pageSize, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDTemporalrulesetGetCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -145,7 +145,7 @@ public class TemporalRuleSetApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDTemporalrulesetGetValidateBeforeCall(String accountID, String startKey, Integer pageSize, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDTemporalrulesetGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDTemporalrulesetGet(Async)");
@@ -171,7 +171,7 @@ public class TemporalRuleSetApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsTemporalRuleSetGetAll v1AccountAccountIDTemporalrulesetGet(String accountID, String startKey, Integer pageSize) throws ApiException {
+    public ServiceDocsTemporalRuleSetGetAll v1AccountAccountIDTemporalrulesetGet(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize) throws ApiException {
         ApiResponse<ServiceDocsTemporalRuleSetGetAll> localVarResp = v1AccountAccountIDTemporalrulesetGetWithHttpInfo(accountID, startKey, pageSize);
         return localVarResp.getData();
     }
@@ -192,7 +192,7 @@ public class TemporalRuleSetApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsTemporalRuleSetGetAll> v1AccountAccountIDTemporalrulesetGetWithHttpInfo(String accountID, String startKey, Integer pageSize) throws ApiException {
+    public ApiResponse<ServiceDocsTemporalRuleSetGetAll> v1AccountAccountIDTemporalrulesetGetWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDTemporalrulesetGetValidateBeforeCall(accountID, startKey, pageSize, null);
         Type localVarReturnType = new TypeToken<ServiceDocsTemporalRuleSetGetAll>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -215,7 +215,7 @@ public class TemporalRuleSetApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDTemporalrulesetGetAsync(String accountID, String startKey, Integer pageSize, final ApiCallback<ServiceDocsTemporalRuleSetGetAll> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDTemporalrulesetGetAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback<ServiceDocsTemporalRuleSetGetAll> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDTemporalrulesetGetValidateBeforeCall(accountID, startKey, pageSize, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsTemporalRuleSetGetAll>(){}.getType();
@@ -237,7 +237,7 @@ public class TemporalRuleSetApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDTemporalrulesetPostCall(String accountID, ServiceVOIPTemporalRuleSetAddEditData temporalruleset, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDTemporalrulesetPostCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPTemporalRuleSetAddEditData temporalruleset, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -284,7 +284,7 @@ public class TemporalRuleSetApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDTemporalrulesetPostValidateBeforeCall(String accountID, ServiceVOIPTemporalRuleSetAddEditData temporalruleset, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDTemporalrulesetPostValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPTemporalRuleSetAddEditData temporalruleset, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDTemporalrulesetPost(Async)");
@@ -314,7 +314,7 @@ public class TemporalRuleSetApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsTemporalRuleSetGetSingle v1AccountAccountIDTemporalrulesetPost(String accountID, ServiceVOIPTemporalRuleSetAddEditData temporalruleset) throws ApiException {
+    public ServiceDocsTemporalRuleSetGetSingle v1AccountAccountIDTemporalrulesetPost(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPTemporalRuleSetAddEditData temporalruleset) throws ApiException {
         ApiResponse<ServiceDocsTemporalRuleSetGetSingle> localVarResp = v1AccountAccountIDTemporalrulesetPostWithHttpInfo(accountID, temporalruleset);
         return localVarResp.getData();
     }
@@ -334,7 +334,7 @@ public class TemporalRuleSetApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsTemporalRuleSetGetSingle> v1AccountAccountIDTemporalrulesetPostWithHttpInfo(String accountID, ServiceVOIPTemporalRuleSetAddEditData temporalruleset) throws ApiException {
+    public ApiResponse<ServiceDocsTemporalRuleSetGetSingle> v1AccountAccountIDTemporalrulesetPostWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPTemporalRuleSetAddEditData temporalruleset) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDTemporalrulesetPostValidateBeforeCall(accountID, temporalruleset, null);
         Type localVarReturnType = new TypeToken<ServiceDocsTemporalRuleSetGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -356,7 +356,7 @@ public class TemporalRuleSetApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDTemporalrulesetPostAsync(String accountID, ServiceVOIPTemporalRuleSetAddEditData temporalruleset, final ApiCallback<ServiceDocsTemporalRuleSetGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDTemporalrulesetPostAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPTemporalRuleSetAddEditData temporalruleset, final ApiCallback<ServiceDocsTemporalRuleSetGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDTemporalrulesetPostValidateBeforeCall(accountID, temporalruleset, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsTemporalRuleSetGetSingle>(){}.getType();
@@ -378,7 +378,7 @@ public class TemporalRuleSetApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDTemporalrulesetTemporalRuleSetIDDeleteCall(String accountID, String temporalRuleSetID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDTemporalrulesetTemporalRuleSetIDDeleteCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String temporalRuleSetID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -425,7 +425,7 @@ public class TemporalRuleSetApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDTemporalrulesetTemporalRuleSetIDDeleteValidateBeforeCall(String accountID, String temporalRuleSetID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDTemporalrulesetTemporalRuleSetIDDeleteValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String temporalRuleSetID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDTemporalrulesetTemporalRuleSetIDDelete(Async)");
@@ -455,7 +455,7 @@ public class TemporalRuleSetApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsTemporalRuleSetGetSingle v1AccountAccountIDTemporalrulesetTemporalRuleSetIDDelete(String accountID, String temporalRuleSetID) throws ApiException {
+    public ServiceDocsTemporalRuleSetGetSingle v1AccountAccountIDTemporalrulesetTemporalRuleSetIDDelete(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String temporalRuleSetID) throws ApiException {
         ApiResponse<ServiceDocsTemporalRuleSetGetSingle> localVarResp = v1AccountAccountIDTemporalrulesetTemporalRuleSetIDDeleteWithHttpInfo(accountID, temporalRuleSetID);
         return localVarResp.getData();
     }
@@ -475,7 +475,7 @@ public class TemporalRuleSetApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsTemporalRuleSetGetSingle> v1AccountAccountIDTemporalrulesetTemporalRuleSetIDDeleteWithHttpInfo(String accountID, String temporalRuleSetID) throws ApiException {
+    public ApiResponse<ServiceDocsTemporalRuleSetGetSingle> v1AccountAccountIDTemporalrulesetTemporalRuleSetIDDeleteWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String temporalRuleSetID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDTemporalrulesetTemporalRuleSetIDDeleteValidateBeforeCall(accountID, temporalRuleSetID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsTemporalRuleSetGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -497,7 +497,7 @@ public class TemporalRuleSetApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDTemporalrulesetTemporalRuleSetIDDeleteAsync(String accountID, String temporalRuleSetID, final ApiCallback<ServiceDocsTemporalRuleSetGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDTemporalrulesetTemporalRuleSetIDDeleteAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String temporalRuleSetID, final ApiCallback<ServiceDocsTemporalRuleSetGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDTemporalrulesetTemporalRuleSetIDDeleteValidateBeforeCall(accountID, temporalRuleSetID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsTemporalRuleSetGetSingle>(){}.getType();
@@ -519,7 +519,7 @@ public class TemporalRuleSetApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDTemporalrulesetTemporalRuleSetIDGetCall(String accountID, String temporalRuleSetID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDTemporalrulesetTemporalRuleSetIDGetCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String temporalRuleSetID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -566,7 +566,7 @@ public class TemporalRuleSetApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDTemporalrulesetTemporalRuleSetIDGetValidateBeforeCall(String accountID, String temporalRuleSetID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDTemporalrulesetTemporalRuleSetIDGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String temporalRuleSetID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDTemporalrulesetTemporalRuleSetIDGet(Async)");
@@ -596,7 +596,7 @@ public class TemporalRuleSetApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsTemporalRuleSetGetSingle v1AccountAccountIDTemporalrulesetTemporalRuleSetIDGet(String accountID, String temporalRuleSetID) throws ApiException {
+    public ServiceDocsTemporalRuleSetGetSingle v1AccountAccountIDTemporalrulesetTemporalRuleSetIDGet(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String temporalRuleSetID) throws ApiException {
         ApiResponse<ServiceDocsTemporalRuleSetGetSingle> localVarResp = v1AccountAccountIDTemporalrulesetTemporalRuleSetIDGetWithHttpInfo(accountID, temporalRuleSetID);
         return localVarResp.getData();
     }
@@ -616,7 +616,7 @@ public class TemporalRuleSetApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsTemporalRuleSetGetSingle> v1AccountAccountIDTemporalrulesetTemporalRuleSetIDGetWithHttpInfo(String accountID, String temporalRuleSetID) throws ApiException {
+    public ApiResponse<ServiceDocsTemporalRuleSetGetSingle> v1AccountAccountIDTemporalrulesetTemporalRuleSetIDGetWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String temporalRuleSetID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDTemporalrulesetTemporalRuleSetIDGetValidateBeforeCall(accountID, temporalRuleSetID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsTemporalRuleSetGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -638,7 +638,7 @@ public class TemporalRuleSetApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDTemporalrulesetTemporalRuleSetIDGetAsync(String accountID, String temporalRuleSetID, final ApiCallback<ServiceDocsTemporalRuleSetGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDTemporalrulesetTemporalRuleSetIDGetAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String temporalRuleSetID, final ApiCallback<ServiceDocsTemporalRuleSetGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDTemporalrulesetTemporalRuleSetIDGetValidateBeforeCall(accountID, temporalRuleSetID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsTemporalRuleSetGetSingle>(){}.getType();
@@ -661,7 +661,7 @@ public class TemporalRuleSetApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDTemporalrulesetTemporalRuleSetIDPutCall(String accountID, String temporalRuleSetID, ServiceVOIPTemporalRuleSetAddEditData reqBody, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDTemporalrulesetTemporalRuleSetIDPutCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String temporalRuleSetID, @javax.annotation.Nonnull ServiceVOIPTemporalRuleSetAddEditData reqBody, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -709,7 +709,7 @@ public class TemporalRuleSetApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDTemporalrulesetTemporalRuleSetIDPutValidateBeforeCall(String accountID, String temporalRuleSetID, ServiceVOIPTemporalRuleSetAddEditData reqBody, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDTemporalrulesetTemporalRuleSetIDPutValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String temporalRuleSetID, @javax.annotation.Nonnull ServiceVOIPTemporalRuleSetAddEditData reqBody, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDTemporalrulesetTemporalRuleSetIDPut(Async)");
@@ -745,7 +745,7 @@ public class TemporalRuleSetApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsTemporalRuleSetGetSingle v1AccountAccountIDTemporalrulesetTemporalRuleSetIDPut(String accountID, String temporalRuleSetID, ServiceVOIPTemporalRuleSetAddEditData reqBody) throws ApiException {
+    public ServiceDocsTemporalRuleSetGetSingle v1AccountAccountIDTemporalrulesetTemporalRuleSetIDPut(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String temporalRuleSetID, @javax.annotation.Nonnull ServiceVOIPTemporalRuleSetAddEditData reqBody) throws ApiException {
         ApiResponse<ServiceDocsTemporalRuleSetGetSingle> localVarResp = v1AccountAccountIDTemporalrulesetTemporalRuleSetIDPutWithHttpInfo(accountID, temporalRuleSetID, reqBody);
         return localVarResp.getData();
     }
@@ -766,7 +766,7 @@ public class TemporalRuleSetApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsTemporalRuleSetGetSingle> v1AccountAccountIDTemporalrulesetTemporalRuleSetIDPutWithHttpInfo(String accountID, String temporalRuleSetID, ServiceVOIPTemporalRuleSetAddEditData reqBody) throws ApiException {
+    public ApiResponse<ServiceDocsTemporalRuleSetGetSingle> v1AccountAccountIDTemporalrulesetTemporalRuleSetIDPutWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String temporalRuleSetID, @javax.annotation.Nonnull ServiceVOIPTemporalRuleSetAddEditData reqBody) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDTemporalrulesetTemporalRuleSetIDPutValidateBeforeCall(accountID, temporalRuleSetID, reqBody, null);
         Type localVarReturnType = new TypeToken<ServiceDocsTemporalRuleSetGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -789,7 +789,7 @@ public class TemporalRuleSetApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDTemporalrulesetTemporalRuleSetIDPutAsync(String accountID, String temporalRuleSetID, ServiceVOIPTemporalRuleSetAddEditData reqBody, final ApiCallback<ServiceDocsTemporalRuleSetGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDTemporalrulesetTemporalRuleSetIDPutAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String temporalRuleSetID, @javax.annotation.Nonnull ServiceVOIPTemporalRuleSetAddEditData reqBody, final ApiCallback<ServiceDocsTemporalRuleSetGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDTemporalrulesetTemporalRuleSetIDPutValidateBeforeCall(accountID, temporalRuleSetID, reqBody, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsTemporalRuleSetGetSingle>(){}.getType();

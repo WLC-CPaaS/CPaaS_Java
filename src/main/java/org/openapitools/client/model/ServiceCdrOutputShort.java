@@ -885,40 +885,10 @@ public class ServiceCdrOutputShort {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("authorizing_id");
-    openapiFields.add("billing_seconds");
-    openapiFields.add("bridge_id");
-    openapiFields.add("call_id");
-    openapiFields.add("call_priority");
-    openapiFields.add("call_type");
-    openapiFields.add("callee_id_name");
-    openapiFields.add("callee_id_number");
-    openapiFields.add("caller_id_name");
-    openapiFields.add("caller_id_number");
-    openapiFields.add("calling_from");
-    openapiFields.add("cost");
-    openapiFields.add("dialed_number");
-    openapiFields.add("direction");
-    openapiFields.add("duration_seconds");
-    openapiFields.add("from");
-    openapiFields.add("hangup_cause");
-    openapiFields.add("id");
-    openapiFields.add("interaction_id");
-    openapiFields.add("media_recordings");
-    openapiFields.add("media_server");
-    openapiFields.add("other_leg_call_id");
-    openapiFields.add("owner_id");
-    openapiFields.add("rate");
-    openapiFields.add("rate_name");
-    openapiFields.add("recording_url");
-    openapiFields.add("request");
-    openapiFields.add("timestamp");
-    openapiFields.add("timestamp_datetime");
-    openapiFields.add("to");
+    openapiFields = new HashSet<String>(Arrays.asList("authorizing_id", "billing_seconds", "bridge_id", "call_id", "call_priority", "call_type", "callee_id_name", "callee_id_number", "caller_id_name", "caller_id_number", "calling_from", "cost", "dialed_number", "direction", "duration_seconds", "from", "hangup_cause", "id", "interaction_id", "media_recordings", "media_server", "other_leg_call_id", "owner_id", "rate", "rate_name", "recording_url", "request", "timestamp", "timestamp_datetime", "to"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

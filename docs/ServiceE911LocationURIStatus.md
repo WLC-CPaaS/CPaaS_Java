@@ -1,11 +1,14 @@
-# service_E911LocationURI_status
+
+
+# ServiceE911LocationURIStatus
+
 
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**code** | **String** |  | [optional] 
-**description** | **String** |  | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+|**code** | **String** |  |  [optional] |
+|**description** | **String** |  |  [optional] |
+
 
 

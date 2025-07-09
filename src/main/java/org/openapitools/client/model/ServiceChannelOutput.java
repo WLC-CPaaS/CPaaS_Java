@@ -779,35 +779,10 @@ public class ServiceChannelOutput {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("answered");
-    openapiFields.add("authorizing_id");
-    openapiFields.add("authorizing_type");
-    openapiFields.add("callflow_id");
-    openapiFields.add("channel_authorized");
-    openapiFields.add("custom_application_vars");
-    openapiFields.add("custom_auth_headers");
-    openapiFields.add("custom_channel_vars");
-    openapiFields.add("custom_sip_headers");
-    openapiFields.add("destination");
-    openapiFields.add("direction");
-    openapiFields.add("elapsed_s");
-    openapiFields.add("from_tag");
-    openapiFields.add("interaction_id");
-    openapiFields.add("is_loopback");
-    openapiFields.add("is_onhold");
-    openapiFields.add("other_leg");
-    openapiFields.add("owner_id");
-    openapiFields.add("presence_id");
-    openapiFields.add("request");
-    openapiFields.add("reseller_id");
-    openapiFields.add("timestamp");
-    openapiFields.add("to_tag");
-    openapiFields.add("username");
-    openapiFields.add("uuid");
+    openapiFields = new HashSet<String>(Arrays.asList("answered", "authorizing_id", "authorizing_type", "callflow_id", "channel_authorized", "custom_application_vars", "custom_auth_headers", "custom_channel_vars", "custom_sip_headers", "destination", "direction", "elapsed_s", "from_tag", "interaction_id", "is_loopback", "is_onhold", "other_leg", "owner_id", "presence_id", "request", "reseller_id", "timestamp", "to_tag", "username", "uuid"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

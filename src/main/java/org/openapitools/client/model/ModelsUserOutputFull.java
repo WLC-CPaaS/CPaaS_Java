@@ -438,23 +438,10 @@ public class ModelsUserOutputFull {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("call_forward");
-    openapiFields.add("call_recording");
-    openapiFields.add("caller_id");
-    openapiFields.add("do_not_disturb");
-    openapiFields.add("email");
-    openapiFields.add("enabled");
-    openapiFields.add("first_name");
-    openapiFields.add("id");
-    openapiFields.add("last_name");
-    openapiFields.add("music_on_hold");
-    openapiFields.add("presence_id");
-    openapiFields.add("timezone");
-    openapiFields.add("verified");
+    openapiFields = new HashSet<String>(Arrays.asList("call_forward", "call_recording", "caller_id", "do_not_disturb", "email", "enabled", "first_name", "id", "last_name", "music_on_hold", "presence_id", "timezone", "verified"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

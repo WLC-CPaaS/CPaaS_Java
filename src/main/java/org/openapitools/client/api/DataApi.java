@@ -98,7 +98,7 @@ public class DataApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDCdrCdrIDGetCall(String accountID, String cdrID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDCdrCdrIDGetCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String cdrID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -145,7 +145,7 @@ public class DataApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDCdrCdrIDGetValidateBeforeCall(String accountID, String cdrID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDCdrCdrIDGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String cdrID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDCdrCdrIDGet(Async)");
@@ -175,7 +175,7 @@ public class DataApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsCdrGetSingle v1AccountAccountIDCdrCdrIDGet(String accountID, String cdrID) throws ApiException {
+    public ServiceDocsCdrGetSingle v1AccountAccountIDCdrCdrIDGet(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String cdrID) throws ApiException {
         ApiResponse<ServiceDocsCdrGetSingle> localVarResp = v1AccountAccountIDCdrCdrIDGetWithHttpInfo(accountID, cdrID);
         return localVarResp.getData();
     }
@@ -195,7 +195,7 @@ public class DataApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsCdrGetSingle> v1AccountAccountIDCdrCdrIDGetWithHttpInfo(String accountID, String cdrID) throws ApiException {
+    public ApiResponse<ServiceDocsCdrGetSingle> v1AccountAccountIDCdrCdrIDGetWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String cdrID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDCdrCdrIDGetValidateBeforeCall(accountID, cdrID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsCdrGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -217,7 +217,7 @@ public class DataApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDCdrCdrIDGetAsync(String accountID, String cdrID, final ApiCallback<ServiceDocsCdrGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDCdrCdrIDGetAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String cdrID, final ApiCallback<ServiceDocsCdrGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDCdrCdrIDGetValidateBeforeCall(accountID, cdrID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsCdrGetSingle>(){}.getType();
@@ -242,7 +242,7 @@ public class DataApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDCdrGetCall(String accountID, String pageSize, String startKey, String createdFrom, String createdTo, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDCdrGetCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable String pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String createdFrom, @javax.annotation.Nullable String createdTo, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -304,7 +304,7 @@ public class DataApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDCdrGetValidateBeforeCall(String accountID, String pageSize, String startKey, String createdFrom, String createdTo, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDCdrGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable String pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String createdFrom, @javax.annotation.Nullable String createdTo, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDCdrGet(Async)");
@@ -332,7 +332,7 @@ public class DataApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsCdrGetAll v1AccountAccountIDCdrGet(String accountID, String pageSize, String startKey, String createdFrom, String createdTo) throws ApiException {
+    public ServiceDocsCdrGetAll v1AccountAccountIDCdrGet(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable String pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String createdFrom, @javax.annotation.Nullable String createdTo) throws ApiException {
         ApiResponse<ServiceDocsCdrGetAll> localVarResp = v1AccountAccountIDCdrGetWithHttpInfo(accountID, pageSize, startKey, createdFrom, createdTo);
         return localVarResp.getData();
     }
@@ -355,7 +355,7 @@ public class DataApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsCdrGetAll> v1AccountAccountIDCdrGetWithHttpInfo(String accountID, String pageSize, String startKey, String createdFrom, String createdTo) throws ApiException {
+    public ApiResponse<ServiceDocsCdrGetAll> v1AccountAccountIDCdrGetWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable String pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String createdFrom, @javax.annotation.Nullable String createdTo) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDCdrGetValidateBeforeCall(accountID, pageSize, startKey, createdFrom, createdTo, null);
         Type localVarReturnType = new TypeToken<ServiceDocsCdrGetAll>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -380,7 +380,7 @@ public class DataApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDCdrGetAsync(String accountID, String pageSize, String startKey, String createdFrom, String createdTo, final ApiCallback<ServiceDocsCdrGetAll> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDCdrGetAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable String pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String createdFrom, @javax.annotation.Nullable String createdTo, final ApiCallback<ServiceDocsCdrGetAll> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDCdrGetValidateBeforeCall(accountID, pageSize, startKey, createdFrom, createdTo, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsCdrGetAll>(){}.getType();
@@ -408,7 +408,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1DataCallDailySummaryGetCall(String accountId, String callType, String endDate, Integer pageSize, String startDate, String startKey, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1DataCallDailySummaryGetCall(@javax.annotation.Nullable String accountId, @javax.annotation.Nullable String callType, @javax.annotation.Nullable String endDate, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startDate, @javax.annotation.Nullable String startKey, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -477,7 +477,7 @@ public class DataApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1DataCallDailySummaryGetValidateBeforeCall(String accountId, String callType, String endDate, Integer pageSize, String startDate, String startKey, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1DataCallDailySummaryGetValidateBeforeCall(@javax.annotation.Nullable String accountId, @javax.annotation.Nullable String callType, @javax.annotation.Nullable String endDate, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startDate, @javax.annotation.Nullable String startKey, final ApiCallback _callback) throws ApiException {
         return v1DataCallDailySummaryGetCall(accountId, callType, endDate, pageSize, startDate, startKey, _callback);
 
     }
@@ -503,7 +503,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsCallDailySummary v1DataCallDailySummaryGet(String accountId, String callType, String endDate, Integer pageSize, String startDate, String startKey) throws ApiException {
+    public ServiceDocsCallDailySummary v1DataCallDailySummaryGet(@javax.annotation.Nullable String accountId, @javax.annotation.Nullable String callType, @javax.annotation.Nullable String endDate, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startDate, @javax.annotation.Nullable String startKey) throws ApiException {
         ApiResponse<ServiceDocsCallDailySummary> localVarResp = v1DataCallDailySummaryGetWithHttpInfo(accountId, callType, endDate, pageSize, startDate, startKey);
         return localVarResp.getData();
     }
@@ -529,7 +529,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsCallDailySummary> v1DataCallDailySummaryGetWithHttpInfo(String accountId, String callType, String endDate, Integer pageSize, String startDate, String startKey) throws ApiException {
+    public ApiResponse<ServiceDocsCallDailySummary> v1DataCallDailySummaryGetWithHttpInfo(@javax.annotation.Nullable String accountId, @javax.annotation.Nullable String callType, @javax.annotation.Nullable String endDate, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startDate, @javax.annotation.Nullable String startKey) throws ApiException {
         okhttp3.Call localVarCall = v1DataCallDailySummaryGetValidateBeforeCall(accountId, callType, endDate, pageSize, startDate, startKey, null);
         Type localVarReturnType = new TypeToken<ServiceDocsCallDailySummary>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -557,7 +557,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1DataCallDailySummaryGetAsync(String accountId, String callType, String endDate, Integer pageSize, String startDate, String startKey, final ApiCallback<ServiceDocsCallDailySummary> _callback) throws ApiException {
+    public okhttp3.Call v1DataCallDailySummaryGetAsync(@javax.annotation.Nullable String accountId, @javax.annotation.Nullable String callType, @javax.annotation.Nullable String endDate, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startDate, @javax.annotation.Nullable String startKey, final ApiCallback<ServiceDocsCallDailySummary> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1DataCallDailySummaryGetValidateBeforeCall(accountId, callType, endDate, pageSize, startDate, startKey, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsCallDailySummary>(){}.getType();
@@ -589,7 +589,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1DataCallDetailGetCall(String account, String callType, String calleeName, String calleeNumber, String callerName, String callerNumber, String endDate, Integer pageSize, String startDate, String startKey, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1DataCallDetailGetCall(@javax.annotation.Nullable String account, @javax.annotation.Nullable String callType, @javax.annotation.Nullable String calleeName, @javax.annotation.Nullable String calleeNumber, @javax.annotation.Nullable String callerName, @javax.annotation.Nullable String callerNumber, @javax.annotation.Nullable String endDate, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startDate, @javax.annotation.Nullable String startKey, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -674,7 +674,7 @@ public class DataApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1DataCallDetailGetValidateBeforeCall(String account, String callType, String calleeName, String calleeNumber, String callerName, String callerNumber, String endDate, Integer pageSize, String startDate, String startKey, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1DataCallDetailGetValidateBeforeCall(@javax.annotation.Nullable String account, @javax.annotation.Nullable String callType, @javax.annotation.Nullable String calleeName, @javax.annotation.Nullable String calleeNumber, @javax.annotation.Nullable String callerName, @javax.annotation.Nullable String callerNumber, @javax.annotation.Nullable String endDate, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startDate, @javax.annotation.Nullable String startKey, final ApiCallback _callback) throws ApiException {
         return v1DataCallDetailGetCall(account, callType, calleeName, calleeNumber, callerName, callerNumber, endDate, pageSize, startDate, startKey, _callback);
 
     }
@@ -704,7 +704,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsCallDetail v1DataCallDetailGet(String account, String callType, String calleeName, String calleeNumber, String callerName, String callerNumber, String endDate, Integer pageSize, String startDate, String startKey) throws ApiException {
+    public ServiceDocsCallDetail v1DataCallDetailGet(@javax.annotation.Nullable String account, @javax.annotation.Nullable String callType, @javax.annotation.Nullable String calleeName, @javax.annotation.Nullable String calleeNumber, @javax.annotation.Nullable String callerName, @javax.annotation.Nullable String callerNumber, @javax.annotation.Nullable String endDate, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startDate, @javax.annotation.Nullable String startKey) throws ApiException {
         ApiResponse<ServiceDocsCallDetail> localVarResp = v1DataCallDetailGetWithHttpInfo(account, callType, calleeName, calleeNumber, callerName, callerNumber, endDate, pageSize, startDate, startKey);
         return localVarResp.getData();
     }
@@ -734,7 +734,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsCallDetail> v1DataCallDetailGetWithHttpInfo(String account, String callType, String calleeName, String calleeNumber, String callerName, String callerNumber, String endDate, Integer pageSize, String startDate, String startKey) throws ApiException {
+    public ApiResponse<ServiceDocsCallDetail> v1DataCallDetailGetWithHttpInfo(@javax.annotation.Nullable String account, @javax.annotation.Nullable String callType, @javax.annotation.Nullable String calleeName, @javax.annotation.Nullable String calleeNumber, @javax.annotation.Nullable String callerName, @javax.annotation.Nullable String callerNumber, @javax.annotation.Nullable String endDate, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startDate, @javax.annotation.Nullable String startKey) throws ApiException {
         okhttp3.Call localVarCall = v1DataCallDetailGetValidateBeforeCall(account, callType, calleeName, calleeNumber, callerName, callerNumber, endDate, pageSize, startDate, startKey, null);
         Type localVarReturnType = new TypeToken<ServiceDocsCallDetail>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -766,7 +766,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1DataCallDetailGetAsync(String account, String callType, String calleeName, String calleeNumber, String callerName, String callerNumber, String endDate, Integer pageSize, String startDate, String startKey, final ApiCallback<ServiceDocsCallDetail> _callback) throws ApiException {
+    public okhttp3.Call v1DataCallDetailGetAsync(@javax.annotation.Nullable String account, @javax.annotation.Nullable String callType, @javax.annotation.Nullable String calleeName, @javax.annotation.Nullable String calleeNumber, @javax.annotation.Nullable String callerName, @javax.annotation.Nullable String callerNumber, @javax.annotation.Nullable String endDate, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startDate, @javax.annotation.Nullable String startKey, final ApiCallback<ServiceDocsCallDetail> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1DataCallDetailGetValidateBeforeCall(account, callType, calleeName, calleeNumber, callerName, callerNumber, endDate, pageSize, startDate, startKey, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsCallDetail>(){}.getType();
@@ -796,7 +796,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1DataCallMonthlySummaryGetCall(String account, String callType, Integer endMonth, Integer endYear, Integer pageSize, String startKey, Integer startMonth, Integer startYear, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1DataCallMonthlySummaryGetCall(@javax.annotation.Nullable String account, @javax.annotation.Nullable String callType, @javax.annotation.Nullable Integer endMonth, @javax.annotation.Nullable Integer endYear, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer startMonth, @javax.annotation.Nullable Integer startYear, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -873,7 +873,7 @@ public class DataApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1DataCallMonthlySummaryGetValidateBeforeCall(String account, String callType, Integer endMonth, Integer endYear, Integer pageSize, String startKey, Integer startMonth, Integer startYear, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1DataCallMonthlySummaryGetValidateBeforeCall(@javax.annotation.Nullable String account, @javax.annotation.Nullable String callType, @javax.annotation.Nullable Integer endMonth, @javax.annotation.Nullable Integer endYear, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer startMonth, @javax.annotation.Nullable Integer startYear, final ApiCallback _callback) throws ApiException {
         return v1DataCallMonthlySummaryGetCall(account, callType, endMonth, endYear, pageSize, startKey, startMonth, startYear, _callback);
 
     }
@@ -901,7 +901,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsCallMonthlySummary v1DataCallMonthlySummaryGet(String account, String callType, Integer endMonth, Integer endYear, Integer pageSize, String startKey, Integer startMonth, Integer startYear) throws ApiException {
+    public ServiceDocsCallMonthlySummary v1DataCallMonthlySummaryGet(@javax.annotation.Nullable String account, @javax.annotation.Nullable String callType, @javax.annotation.Nullable Integer endMonth, @javax.annotation.Nullable Integer endYear, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer startMonth, @javax.annotation.Nullable Integer startYear) throws ApiException {
         ApiResponse<ServiceDocsCallMonthlySummary> localVarResp = v1DataCallMonthlySummaryGetWithHttpInfo(account, callType, endMonth, endYear, pageSize, startKey, startMonth, startYear);
         return localVarResp.getData();
     }
@@ -929,7 +929,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsCallMonthlySummary> v1DataCallMonthlySummaryGetWithHttpInfo(String account, String callType, Integer endMonth, Integer endYear, Integer pageSize, String startKey, Integer startMonth, Integer startYear) throws ApiException {
+    public ApiResponse<ServiceDocsCallMonthlySummary> v1DataCallMonthlySummaryGetWithHttpInfo(@javax.annotation.Nullable String account, @javax.annotation.Nullable String callType, @javax.annotation.Nullable Integer endMonth, @javax.annotation.Nullable Integer endYear, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer startMonth, @javax.annotation.Nullable Integer startYear) throws ApiException {
         okhttp3.Call localVarCall = v1DataCallMonthlySummaryGetValidateBeforeCall(account, callType, endMonth, endYear, pageSize, startKey, startMonth, startYear, null);
         Type localVarReturnType = new TypeToken<ServiceDocsCallMonthlySummary>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -959,7 +959,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1DataCallMonthlySummaryGetAsync(String account, String callType, Integer endMonth, Integer endYear, Integer pageSize, String startKey, Integer startMonth, Integer startYear, final ApiCallback<ServiceDocsCallMonthlySummary> _callback) throws ApiException {
+    public okhttp3.Call v1DataCallMonthlySummaryGetAsync(@javax.annotation.Nullable String account, @javax.annotation.Nullable String callType, @javax.annotation.Nullable Integer endMonth, @javax.annotation.Nullable Integer endYear, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer startMonth, @javax.annotation.Nullable Integer startYear, final ApiCallback<ServiceDocsCallMonthlySummary> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1DataCallMonthlySummaryGetValidateBeforeCall(account, callType, endMonth, endYear, pageSize, startKey, startMonth, startYear, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsCallMonthlySummary>(){}.getType();
@@ -987,7 +987,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1DataEndpointListGetCall(String endpointName, String featureName, Integer pageSize, String startKey, String transactionType, String version, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1DataEndpointListGetCall(@javax.annotation.Nullable String endpointName, @javax.annotation.Nullable String featureName, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String transactionType, @javax.annotation.Nullable String version, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -1056,7 +1056,7 @@ public class DataApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1DataEndpointListGetValidateBeforeCall(String endpointName, String featureName, Integer pageSize, String startKey, String transactionType, String version, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1DataEndpointListGetValidateBeforeCall(@javax.annotation.Nullable String endpointName, @javax.annotation.Nullable String featureName, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String transactionType, @javax.annotation.Nullable String version, final ApiCallback _callback) throws ApiException {
         return v1DataEndpointListGetCall(endpointName, featureName, pageSize, startKey, transactionType, version, _callback);
 
     }
@@ -1082,7 +1082,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsEndpointList v1DataEndpointListGet(String endpointName, String featureName, Integer pageSize, String startKey, String transactionType, String version) throws ApiException {
+    public ServiceDocsEndpointList v1DataEndpointListGet(@javax.annotation.Nullable String endpointName, @javax.annotation.Nullable String featureName, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String transactionType, @javax.annotation.Nullable String version) throws ApiException {
         ApiResponse<ServiceDocsEndpointList> localVarResp = v1DataEndpointListGetWithHttpInfo(endpointName, featureName, pageSize, startKey, transactionType, version);
         return localVarResp.getData();
     }
@@ -1108,7 +1108,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsEndpointList> v1DataEndpointListGetWithHttpInfo(String endpointName, String featureName, Integer pageSize, String startKey, String transactionType, String version) throws ApiException {
+    public ApiResponse<ServiceDocsEndpointList> v1DataEndpointListGetWithHttpInfo(@javax.annotation.Nullable String endpointName, @javax.annotation.Nullable String featureName, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String transactionType, @javax.annotation.Nullable String version) throws ApiException {
         okhttp3.Call localVarCall = v1DataEndpointListGetValidateBeforeCall(endpointName, featureName, pageSize, startKey, transactionType, version, null);
         Type localVarReturnType = new TypeToken<ServiceDocsEndpointList>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -1136,7 +1136,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1DataEndpointListGetAsync(String endpointName, String featureName, Integer pageSize, String startKey, String transactionType, String version, final ApiCallback<ServiceDocsEndpointList> _callback) throws ApiException {
+    public okhttp3.Call v1DataEndpointListGetAsync(@javax.annotation.Nullable String endpointName, @javax.annotation.Nullable String featureName, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String transactionType, @javax.annotation.Nullable String version, final ApiCallback<ServiceDocsEndpointList> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1DataEndpointListGetValidateBeforeCall(endpointName, featureName, pageSize, startKey, transactionType, version, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsEndpointList>(){}.getType();
@@ -1164,7 +1164,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1DataEventDailySummaryGetCall(String accountId, String component, String endDate, Integer pageSize, String startDate, String startKey, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1DataEventDailySummaryGetCall(@javax.annotation.Nullable String accountId, @javax.annotation.Nullable String component, @javax.annotation.Nullable String endDate, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startDate, @javax.annotation.Nullable String startKey, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -1233,7 +1233,7 @@ public class DataApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1DataEventDailySummaryGetValidateBeforeCall(String accountId, String component, String endDate, Integer pageSize, String startDate, String startKey, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1DataEventDailySummaryGetValidateBeforeCall(@javax.annotation.Nullable String accountId, @javax.annotation.Nullable String component, @javax.annotation.Nullable String endDate, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startDate, @javax.annotation.Nullable String startKey, final ApiCallback _callback) throws ApiException {
         return v1DataEventDailySummaryGetCall(accountId, component, endDate, pageSize, startDate, startKey, _callback);
 
     }
@@ -1259,7 +1259,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsEventDailySummary v1DataEventDailySummaryGet(String accountId, String component, String endDate, Integer pageSize, String startDate, String startKey) throws ApiException {
+    public ServiceDocsEventDailySummary v1DataEventDailySummaryGet(@javax.annotation.Nullable String accountId, @javax.annotation.Nullable String component, @javax.annotation.Nullable String endDate, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startDate, @javax.annotation.Nullable String startKey) throws ApiException {
         ApiResponse<ServiceDocsEventDailySummary> localVarResp = v1DataEventDailySummaryGetWithHttpInfo(accountId, component, endDate, pageSize, startDate, startKey);
         return localVarResp.getData();
     }
@@ -1285,7 +1285,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsEventDailySummary> v1DataEventDailySummaryGetWithHttpInfo(String accountId, String component, String endDate, Integer pageSize, String startDate, String startKey) throws ApiException {
+    public ApiResponse<ServiceDocsEventDailySummary> v1DataEventDailySummaryGetWithHttpInfo(@javax.annotation.Nullable String accountId, @javax.annotation.Nullable String component, @javax.annotation.Nullable String endDate, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startDate, @javax.annotation.Nullable String startKey) throws ApiException {
         okhttp3.Call localVarCall = v1DataEventDailySummaryGetValidateBeforeCall(accountId, component, endDate, pageSize, startDate, startKey, null);
         Type localVarReturnType = new TypeToken<ServiceDocsEventDailySummary>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -1313,7 +1313,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1DataEventDailySummaryGetAsync(String accountId, String component, String endDate, Integer pageSize, String startDate, String startKey, final ApiCallback<ServiceDocsEventDailySummary> _callback) throws ApiException {
+    public okhttp3.Call v1DataEventDailySummaryGetAsync(@javax.annotation.Nullable String accountId, @javax.annotation.Nullable String component, @javax.annotation.Nullable String endDate, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startDate, @javax.annotation.Nullable String startKey, final ApiCallback<ServiceDocsEventDailySummary> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1DataEventDailySummaryGetValidateBeforeCall(accountId, component, endDate, pageSize, startDate, startKey, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsEventDailySummary>(){}.getType();
@@ -1344,7 +1344,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1DataEventDetailGetCall(String accountId, String component, String endDateTime, String eventName, String execStatus, Integer pageSize, String startDateTime, String startKey, String username, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1DataEventDetailGetCall(@javax.annotation.Nullable String accountId, @javax.annotation.Nullable String component, @javax.annotation.Nullable String endDateTime, @javax.annotation.Nullable String eventName, @javax.annotation.Nullable String execStatus, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startDateTime, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String username, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -1425,7 +1425,7 @@ public class DataApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1DataEventDetailGetValidateBeforeCall(String accountId, String component, String endDateTime, String eventName, String execStatus, Integer pageSize, String startDateTime, String startKey, String username, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1DataEventDetailGetValidateBeforeCall(@javax.annotation.Nullable String accountId, @javax.annotation.Nullable String component, @javax.annotation.Nullable String endDateTime, @javax.annotation.Nullable String eventName, @javax.annotation.Nullable String execStatus, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startDateTime, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String username, final ApiCallback _callback) throws ApiException {
         return v1DataEventDetailGetCall(accountId, component, endDateTime, eventName, execStatus, pageSize, startDateTime, startKey, username, _callback);
 
     }
@@ -1454,7 +1454,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsEventDetail v1DataEventDetailGet(String accountId, String component, String endDateTime, String eventName, String execStatus, Integer pageSize, String startDateTime, String startKey, String username) throws ApiException {
+    public ServiceDocsEventDetail v1DataEventDetailGet(@javax.annotation.Nullable String accountId, @javax.annotation.Nullable String component, @javax.annotation.Nullable String endDateTime, @javax.annotation.Nullable String eventName, @javax.annotation.Nullable String execStatus, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startDateTime, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String username) throws ApiException {
         ApiResponse<ServiceDocsEventDetail> localVarResp = v1DataEventDetailGetWithHttpInfo(accountId, component, endDateTime, eventName, execStatus, pageSize, startDateTime, startKey, username);
         return localVarResp.getData();
     }
@@ -1483,7 +1483,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsEventDetail> v1DataEventDetailGetWithHttpInfo(String accountId, String component, String endDateTime, String eventName, String execStatus, Integer pageSize, String startDateTime, String startKey, String username) throws ApiException {
+    public ApiResponse<ServiceDocsEventDetail> v1DataEventDetailGetWithHttpInfo(@javax.annotation.Nullable String accountId, @javax.annotation.Nullable String component, @javax.annotation.Nullable String endDateTime, @javax.annotation.Nullable String eventName, @javax.annotation.Nullable String execStatus, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startDateTime, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String username) throws ApiException {
         okhttp3.Call localVarCall = v1DataEventDetailGetValidateBeforeCall(accountId, component, endDateTime, eventName, execStatus, pageSize, startDateTime, startKey, username, null);
         Type localVarReturnType = new TypeToken<ServiceDocsEventDetail>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -1514,7 +1514,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1DataEventDetailGetAsync(String accountId, String component, String endDateTime, String eventName, String execStatus, Integer pageSize, String startDateTime, String startKey, String username, final ApiCallback<ServiceDocsEventDetail> _callback) throws ApiException {
+    public okhttp3.Call v1DataEventDetailGetAsync(@javax.annotation.Nullable String accountId, @javax.annotation.Nullable String component, @javax.annotation.Nullable String endDateTime, @javax.annotation.Nullable String eventName, @javax.annotation.Nullable String execStatus, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startDateTime, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String username, final ApiCallback<ServiceDocsEventDetail> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1DataEventDetailGetValidateBeforeCall(accountId, component, endDateTime, eventName, execStatus, pageSize, startDateTime, startKey, username, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsEventDetail>(){}.getType();
@@ -1544,7 +1544,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1DataEventMonthlySummaryGetCall(String accountId, String component, Integer endMonth, Integer endYear, Integer pageSize, String startKey, Integer startMonth, Integer startYear, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1DataEventMonthlySummaryGetCall(@javax.annotation.Nullable String accountId, @javax.annotation.Nullable String component, @javax.annotation.Nullable Integer endMonth, @javax.annotation.Nullable Integer endYear, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer startMonth, @javax.annotation.Nullable Integer startYear, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -1621,7 +1621,7 @@ public class DataApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1DataEventMonthlySummaryGetValidateBeforeCall(String accountId, String component, Integer endMonth, Integer endYear, Integer pageSize, String startKey, Integer startMonth, Integer startYear, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1DataEventMonthlySummaryGetValidateBeforeCall(@javax.annotation.Nullable String accountId, @javax.annotation.Nullable String component, @javax.annotation.Nullable Integer endMonth, @javax.annotation.Nullable Integer endYear, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer startMonth, @javax.annotation.Nullable Integer startYear, final ApiCallback _callback) throws ApiException {
         return v1DataEventMonthlySummaryGetCall(accountId, component, endMonth, endYear, pageSize, startKey, startMonth, startYear, _callback);
 
     }
@@ -1649,7 +1649,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsEventMonthlySummary v1DataEventMonthlySummaryGet(String accountId, String component, Integer endMonth, Integer endYear, Integer pageSize, String startKey, Integer startMonth, Integer startYear) throws ApiException {
+    public ServiceDocsEventMonthlySummary v1DataEventMonthlySummaryGet(@javax.annotation.Nullable String accountId, @javax.annotation.Nullable String component, @javax.annotation.Nullable Integer endMonth, @javax.annotation.Nullable Integer endYear, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer startMonth, @javax.annotation.Nullable Integer startYear) throws ApiException {
         ApiResponse<ServiceDocsEventMonthlySummary> localVarResp = v1DataEventMonthlySummaryGetWithHttpInfo(accountId, component, endMonth, endYear, pageSize, startKey, startMonth, startYear);
         return localVarResp.getData();
     }
@@ -1677,7 +1677,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsEventMonthlySummary> v1DataEventMonthlySummaryGetWithHttpInfo(String accountId, String component, Integer endMonth, Integer endYear, Integer pageSize, String startKey, Integer startMonth, Integer startYear) throws ApiException {
+    public ApiResponse<ServiceDocsEventMonthlySummary> v1DataEventMonthlySummaryGetWithHttpInfo(@javax.annotation.Nullable String accountId, @javax.annotation.Nullable String component, @javax.annotation.Nullable Integer endMonth, @javax.annotation.Nullable Integer endYear, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer startMonth, @javax.annotation.Nullable Integer startYear) throws ApiException {
         okhttp3.Call localVarCall = v1DataEventMonthlySummaryGetValidateBeforeCall(accountId, component, endMonth, endYear, pageSize, startKey, startMonth, startYear, null);
         Type localVarReturnType = new TypeToken<ServiceDocsEventMonthlySummary>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -1707,7 +1707,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1DataEventMonthlySummaryGetAsync(String accountId, String component, Integer endMonth, Integer endYear, Integer pageSize, String startKey, Integer startMonth, Integer startYear, final ApiCallback<ServiceDocsEventMonthlySummary> _callback) throws ApiException {
+    public okhttp3.Call v1DataEventMonthlySummaryGetAsync(@javax.annotation.Nullable String accountId, @javax.annotation.Nullable String component, @javax.annotation.Nullable Integer endMonth, @javax.annotation.Nullable Integer endYear, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer startMonth, @javax.annotation.Nullable Integer startYear, final ApiCallback<ServiceDocsEventMonthlySummary> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1DataEventMonthlySummaryGetValidateBeforeCall(accountId, component, endMonth, endYear, pageSize, startKey, startMonth, startYear, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsEventMonthlySummary>(){}.getType();
@@ -1734,7 +1734,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1DataFeatureDailySummaryGetCall(String endDate, String featureName, Integer pageSize, String startDate, String startKey, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1DataFeatureDailySummaryGetCall(@javax.annotation.Nullable String endDate, @javax.annotation.Nullable String featureName, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startDate, @javax.annotation.Nullable String startKey, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -1799,7 +1799,7 @@ public class DataApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1DataFeatureDailySummaryGetValidateBeforeCall(String endDate, String featureName, Integer pageSize, String startDate, String startKey, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1DataFeatureDailySummaryGetValidateBeforeCall(@javax.annotation.Nullable String endDate, @javax.annotation.Nullable String featureName, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startDate, @javax.annotation.Nullable String startKey, final ApiCallback _callback) throws ApiException {
         return v1DataFeatureDailySummaryGetCall(endDate, featureName, pageSize, startDate, startKey, _callback);
 
     }
@@ -1824,7 +1824,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsFeatureDailySummary v1DataFeatureDailySummaryGet(String endDate, String featureName, Integer pageSize, String startDate, String startKey) throws ApiException {
+    public ServiceDocsFeatureDailySummary v1DataFeatureDailySummaryGet(@javax.annotation.Nullable String endDate, @javax.annotation.Nullable String featureName, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startDate, @javax.annotation.Nullable String startKey) throws ApiException {
         ApiResponse<ServiceDocsFeatureDailySummary> localVarResp = v1DataFeatureDailySummaryGetWithHttpInfo(endDate, featureName, pageSize, startDate, startKey);
         return localVarResp.getData();
     }
@@ -1849,7 +1849,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsFeatureDailySummary> v1DataFeatureDailySummaryGetWithHttpInfo(String endDate, String featureName, Integer pageSize, String startDate, String startKey) throws ApiException {
+    public ApiResponse<ServiceDocsFeatureDailySummary> v1DataFeatureDailySummaryGetWithHttpInfo(@javax.annotation.Nullable String endDate, @javax.annotation.Nullable String featureName, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startDate, @javax.annotation.Nullable String startKey) throws ApiException {
         okhttp3.Call localVarCall = v1DataFeatureDailySummaryGetValidateBeforeCall(endDate, featureName, pageSize, startDate, startKey, null);
         Type localVarReturnType = new TypeToken<ServiceDocsFeatureDailySummary>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -1876,7 +1876,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1DataFeatureDailySummaryGetAsync(String endDate, String featureName, Integer pageSize, String startDate, String startKey, final ApiCallback<ServiceDocsFeatureDailySummary> _callback) throws ApiException {
+    public okhttp3.Call v1DataFeatureDailySummaryGetAsync(@javax.annotation.Nullable String endDate, @javax.annotation.Nullable String featureName, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startDate, @javax.annotation.Nullable String startKey, final ApiCallback<ServiceDocsFeatureDailySummary> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1DataFeatureDailySummaryGetValidateBeforeCall(endDate, featureName, pageSize, startDate, startKey, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsFeatureDailySummary>(){}.getType();
@@ -1905,7 +1905,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1DataFeatureMonthlySummaryGetCall(Integer endMonth, Integer endYear, String featureName, Integer pageSize, String startKey, Integer startMonth, Integer startYear, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1DataFeatureMonthlySummaryGetCall(@javax.annotation.Nullable Integer endMonth, @javax.annotation.Nullable Integer endYear, @javax.annotation.Nullable String featureName, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer startMonth, @javax.annotation.Nullable Integer startYear, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -1978,7 +1978,7 @@ public class DataApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1DataFeatureMonthlySummaryGetValidateBeforeCall(Integer endMonth, Integer endYear, String featureName, Integer pageSize, String startKey, Integer startMonth, Integer startYear, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1DataFeatureMonthlySummaryGetValidateBeforeCall(@javax.annotation.Nullable Integer endMonth, @javax.annotation.Nullable Integer endYear, @javax.annotation.Nullable String featureName, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer startMonth, @javax.annotation.Nullable Integer startYear, final ApiCallback _callback) throws ApiException {
         return v1DataFeatureMonthlySummaryGetCall(endMonth, endYear, featureName, pageSize, startKey, startMonth, startYear, _callback);
 
     }
@@ -2005,7 +2005,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsFeatureMonthlySummary v1DataFeatureMonthlySummaryGet(Integer endMonth, Integer endYear, String featureName, Integer pageSize, String startKey, Integer startMonth, Integer startYear) throws ApiException {
+    public ServiceDocsFeatureMonthlySummary v1DataFeatureMonthlySummaryGet(@javax.annotation.Nullable Integer endMonth, @javax.annotation.Nullable Integer endYear, @javax.annotation.Nullable String featureName, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer startMonth, @javax.annotation.Nullable Integer startYear) throws ApiException {
         ApiResponse<ServiceDocsFeatureMonthlySummary> localVarResp = v1DataFeatureMonthlySummaryGetWithHttpInfo(endMonth, endYear, featureName, pageSize, startKey, startMonth, startYear);
         return localVarResp.getData();
     }
@@ -2032,7 +2032,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsFeatureMonthlySummary> v1DataFeatureMonthlySummaryGetWithHttpInfo(Integer endMonth, Integer endYear, String featureName, Integer pageSize, String startKey, Integer startMonth, Integer startYear) throws ApiException {
+    public ApiResponse<ServiceDocsFeatureMonthlySummary> v1DataFeatureMonthlySummaryGetWithHttpInfo(@javax.annotation.Nullable Integer endMonth, @javax.annotation.Nullable Integer endYear, @javax.annotation.Nullable String featureName, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer startMonth, @javax.annotation.Nullable Integer startYear) throws ApiException {
         okhttp3.Call localVarCall = v1DataFeatureMonthlySummaryGetValidateBeforeCall(endMonth, endYear, featureName, pageSize, startKey, startMonth, startYear, null);
         Type localVarReturnType = new TypeToken<ServiceDocsFeatureMonthlySummary>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -2061,7 +2061,7 @@ public class DataApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1DataFeatureMonthlySummaryGetAsync(Integer endMonth, Integer endYear, String featureName, Integer pageSize, String startKey, Integer startMonth, Integer startYear, final ApiCallback<ServiceDocsFeatureMonthlySummary> _callback) throws ApiException {
+    public okhttp3.Call v1DataFeatureMonthlySummaryGetAsync(@javax.annotation.Nullable Integer endMonth, @javax.annotation.Nullable Integer endYear, @javax.annotation.Nullable String featureName, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer startMonth, @javax.annotation.Nullable Integer startYear, final ApiCallback<ServiceDocsFeatureMonthlySummary> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1DataFeatureMonthlySummaryGetValidateBeforeCall(endMonth, endYear, featureName, pageSize, startKey, startMonth, startYear, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsFeatureMonthlySummary>(){}.getType();

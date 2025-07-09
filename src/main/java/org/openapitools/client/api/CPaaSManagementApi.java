@@ -99,7 +99,7 @@ public class CPaaSManagementApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1MgmtUserGetCall(Integer pageSize, String startKey, String sort, String email, String role, String firstName, String lastName, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1MgmtUserGetCall(@javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String sort, @javax.annotation.Nullable String email, @javax.annotation.Nullable String role, @javax.annotation.Nullable String firstName, @javax.annotation.Nullable String lastName, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -172,7 +172,7 @@ public class CPaaSManagementApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1MgmtUserGetValidateBeforeCall(Integer pageSize, String startKey, String sort, String email, String role, String firstName, String lastName, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1MgmtUserGetValidateBeforeCall(@javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String sort, @javax.annotation.Nullable String email, @javax.annotation.Nullable String role, @javax.annotation.Nullable String firstName, @javax.annotation.Nullable String lastName, final ApiCallback _callback) throws ApiException {
         return v1MgmtUserGetCall(pageSize, startKey, sort, email, role, firstName, lastName, _callback);
 
     }
@@ -199,7 +199,7 @@ public class CPaaSManagementApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsAdminUserGetAll v1MgmtUserGet(Integer pageSize, String startKey, String sort, String email, String role, String firstName, String lastName) throws ApiException {
+    public ServiceDocsAdminUserGetAll v1MgmtUserGet(@javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String sort, @javax.annotation.Nullable String email, @javax.annotation.Nullable String role, @javax.annotation.Nullable String firstName, @javax.annotation.Nullable String lastName) throws ApiException {
         ApiResponse<ServiceDocsAdminUserGetAll> localVarResp = v1MgmtUserGetWithHttpInfo(pageSize, startKey, sort, email, role, firstName, lastName);
         return localVarResp.getData();
     }
@@ -226,7 +226,7 @@ public class CPaaSManagementApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsAdminUserGetAll> v1MgmtUserGetWithHttpInfo(Integer pageSize, String startKey, String sort, String email, String role, String firstName, String lastName) throws ApiException {
+    public ApiResponse<ServiceDocsAdminUserGetAll> v1MgmtUserGetWithHttpInfo(@javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String sort, @javax.annotation.Nullable String email, @javax.annotation.Nullable String role, @javax.annotation.Nullable String firstName, @javax.annotation.Nullable String lastName) throws ApiException {
         okhttp3.Call localVarCall = v1MgmtUserGetValidateBeforeCall(pageSize, startKey, sort, email, role, firstName, lastName, null);
         Type localVarReturnType = new TypeToken<ServiceDocsAdminUserGetAll>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -255,7 +255,7 @@ public class CPaaSManagementApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1MgmtUserGetAsync(Integer pageSize, String startKey, String sort, String email, String role, String firstName, String lastName, final ApiCallback<ServiceDocsAdminUserGetAll> _callback) throws ApiException {
+    public okhttp3.Call v1MgmtUserGetAsync(@javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String sort, @javax.annotation.Nullable String email, @javax.annotation.Nullable String role, @javax.annotation.Nullable String firstName, @javax.annotation.Nullable String lastName, final ApiCallback<ServiceDocsAdminUserGetAll> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1MgmtUserGetValidateBeforeCall(pageSize, startKey, sort, email, role, firstName, lastName, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsAdminUserGetAll>(){}.getType();
@@ -278,7 +278,7 @@ public class CPaaSManagementApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1MgmtUserPostCall(ServiceAdminUserAddData reqBody, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1MgmtUserPostCall(@javax.annotation.Nonnull ServiceAdminUserAddData reqBody, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -323,7 +323,7 @@ public class CPaaSManagementApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1MgmtUserPostValidateBeforeCall(ServiceAdminUserAddData reqBody, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1MgmtUserPostValidateBeforeCall(@javax.annotation.Nonnull ServiceAdminUserAddData reqBody, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'reqBody' is set
         if (reqBody == null) {
             throw new ApiException("Missing the required parameter 'reqBody' when calling v1MgmtUserPost(Async)");
@@ -349,7 +349,7 @@ public class CPaaSManagementApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsAdminUserGetSingle v1MgmtUserPost(ServiceAdminUserAddData reqBody) throws ApiException {
+    public ServiceDocsAdminUserGetSingle v1MgmtUserPost(@javax.annotation.Nonnull ServiceAdminUserAddData reqBody) throws ApiException {
         ApiResponse<ServiceDocsAdminUserGetSingle> localVarResp = v1MgmtUserPostWithHttpInfo(reqBody);
         return localVarResp.getData();
     }
@@ -370,7 +370,7 @@ public class CPaaSManagementApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsAdminUserGetSingle> v1MgmtUserPostWithHttpInfo(ServiceAdminUserAddData reqBody) throws ApiException {
+    public ApiResponse<ServiceDocsAdminUserGetSingle> v1MgmtUserPostWithHttpInfo(@javax.annotation.Nonnull ServiceAdminUserAddData reqBody) throws ApiException {
         okhttp3.Call localVarCall = v1MgmtUserPostValidateBeforeCall(reqBody, null);
         Type localVarReturnType = new TypeToken<ServiceDocsAdminUserGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -393,7 +393,7 @@ public class CPaaSManagementApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1MgmtUserPostAsync(ServiceAdminUserAddData reqBody, final ApiCallback<ServiceDocsAdminUserGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1MgmtUserPostAsync(@javax.annotation.Nonnull ServiceAdminUserAddData reqBody, final ApiCallback<ServiceDocsAdminUserGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1MgmtUserPostValidateBeforeCall(reqBody, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsAdminUserGetSingle>(){}.getType();
@@ -416,7 +416,7 @@ public class CPaaSManagementApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1MgmtUserUserIDDeleteCall(String userID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1MgmtUserUserIDDeleteCall(@javax.annotation.Nonnull String userID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -462,7 +462,7 @@ public class CPaaSManagementApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1MgmtUserUserIDDeleteValidateBeforeCall(String userID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1MgmtUserUserIDDeleteValidateBeforeCall(@javax.annotation.Nonnull String userID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'userID' is set
         if (userID == null) {
             throw new ApiException("Missing the required parameter 'userID' when calling v1MgmtUserUserIDDelete(Async)");
@@ -488,7 +488,7 @@ public class CPaaSManagementApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsAdminUserDelete v1MgmtUserUserIDDelete(String userID) throws ApiException {
+    public ServiceDocsAdminUserDelete v1MgmtUserUserIDDelete(@javax.annotation.Nonnull String userID) throws ApiException {
         ApiResponse<ServiceDocsAdminUserDelete> localVarResp = v1MgmtUserUserIDDeleteWithHttpInfo(userID);
         return localVarResp.getData();
     }
@@ -509,7 +509,7 @@ public class CPaaSManagementApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsAdminUserDelete> v1MgmtUserUserIDDeleteWithHttpInfo(String userID) throws ApiException {
+    public ApiResponse<ServiceDocsAdminUserDelete> v1MgmtUserUserIDDeleteWithHttpInfo(@javax.annotation.Nonnull String userID) throws ApiException {
         okhttp3.Call localVarCall = v1MgmtUserUserIDDeleteValidateBeforeCall(userID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsAdminUserDelete>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -532,7 +532,7 @@ public class CPaaSManagementApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1MgmtUserUserIDDeleteAsync(String userID, final ApiCallback<ServiceDocsAdminUserDelete> _callback) throws ApiException {
+    public okhttp3.Call v1MgmtUserUserIDDeleteAsync(@javax.annotation.Nonnull String userID, final ApiCallback<ServiceDocsAdminUserDelete> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1MgmtUserUserIDDeleteValidateBeforeCall(userID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsAdminUserDelete>(){}.getType();
@@ -555,7 +555,7 @@ public class CPaaSManagementApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1MgmtUserUserIDGetCall(String userID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1MgmtUserUserIDGetCall(@javax.annotation.Nonnull String userID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -601,7 +601,7 @@ public class CPaaSManagementApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1MgmtUserUserIDGetValidateBeforeCall(String userID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1MgmtUserUserIDGetValidateBeforeCall(@javax.annotation.Nonnull String userID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'userID' is set
         if (userID == null) {
             throw new ApiException("Missing the required parameter 'userID' when calling v1MgmtUserUserIDGet(Async)");
@@ -627,7 +627,7 @@ public class CPaaSManagementApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsAdminUserGetSingle v1MgmtUserUserIDGet(String userID) throws ApiException {
+    public ServiceDocsAdminUserGetSingle v1MgmtUserUserIDGet(@javax.annotation.Nonnull String userID) throws ApiException {
         ApiResponse<ServiceDocsAdminUserGetSingle> localVarResp = v1MgmtUserUserIDGetWithHttpInfo(userID);
         return localVarResp.getData();
     }
@@ -648,7 +648,7 @@ public class CPaaSManagementApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsAdminUserGetSingle> v1MgmtUserUserIDGetWithHttpInfo(String userID) throws ApiException {
+    public ApiResponse<ServiceDocsAdminUserGetSingle> v1MgmtUserUserIDGetWithHttpInfo(@javax.annotation.Nonnull String userID) throws ApiException {
         okhttp3.Call localVarCall = v1MgmtUserUserIDGetValidateBeforeCall(userID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsAdminUserGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -671,7 +671,7 @@ public class CPaaSManagementApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1MgmtUserUserIDGetAsync(String userID, final ApiCallback<ServiceDocsAdminUserGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1MgmtUserUserIDGetAsync(@javax.annotation.Nonnull String userID, final ApiCallback<ServiceDocsAdminUserGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1MgmtUserUserIDGetValidateBeforeCall(userID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsAdminUserGetSingle>(){}.getType();
@@ -695,7 +695,7 @@ public class CPaaSManagementApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1MgmtUserUserIDPutCall(String userID, ServiceAdminUserEditData reqBody, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1MgmtUserUserIDPutCall(@javax.annotation.Nonnull String userID, @javax.annotation.Nonnull ServiceAdminUserEditData reqBody, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -741,7 +741,7 @@ public class CPaaSManagementApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1MgmtUserUserIDPutValidateBeforeCall(String userID, ServiceAdminUserEditData reqBody, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1MgmtUserUserIDPutValidateBeforeCall(@javax.annotation.Nonnull String userID, @javax.annotation.Nonnull ServiceAdminUserEditData reqBody, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'userID' is set
         if (userID == null) {
             throw new ApiException("Missing the required parameter 'userID' when calling v1MgmtUserUserIDPut(Async)");
@@ -773,7 +773,7 @@ public class CPaaSManagementApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsAdminUserGetSingle v1MgmtUserUserIDPut(String userID, ServiceAdminUserEditData reqBody) throws ApiException {
+    public ServiceDocsAdminUserGetSingle v1MgmtUserUserIDPut(@javax.annotation.Nonnull String userID, @javax.annotation.Nonnull ServiceAdminUserEditData reqBody) throws ApiException {
         ApiResponse<ServiceDocsAdminUserGetSingle> localVarResp = v1MgmtUserUserIDPutWithHttpInfo(userID, reqBody);
         return localVarResp.getData();
     }
@@ -795,7 +795,7 @@ public class CPaaSManagementApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsAdminUserGetSingle> v1MgmtUserUserIDPutWithHttpInfo(String userID, ServiceAdminUserEditData reqBody) throws ApiException {
+    public ApiResponse<ServiceDocsAdminUserGetSingle> v1MgmtUserUserIDPutWithHttpInfo(@javax.annotation.Nonnull String userID, @javax.annotation.Nonnull ServiceAdminUserEditData reqBody) throws ApiException {
         okhttp3.Call localVarCall = v1MgmtUserUserIDPutValidateBeforeCall(userID, reqBody, null);
         Type localVarReturnType = new TypeToken<ServiceDocsAdminUserGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -819,7 +819,7 @@ public class CPaaSManagementApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1MgmtUserUserIDPutAsync(String userID, ServiceAdminUserEditData reqBody, final ApiCallback<ServiceDocsAdminUserGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1MgmtUserUserIDPutAsync(@javax.annotation.Nonnull String userID, @javax.annotation.Nonnull ServiceAdminUserEditData reqBody, final ApiCallback<ServiceDocsAdminUserGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1MgmtUserUserIDPutValidateBeforeCall(userID, reqBody, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsAdminUserGetSingle>(){}.getType();

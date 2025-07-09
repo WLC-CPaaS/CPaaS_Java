@@ -287,19 +287,10 @@ public class ServiceWebhookAdd {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("callback_method");
-    openapiFields.add("callback_url");
-    openapiFields.add("data");
-    openapiFields.add("title");
-    openapiFields.add("webhook_type");
+    openapiFields = new HashSet<String>(Arrays.asList("callback_method", "callback_url", "data", "title", "webhook_type"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("callback_method");
-    openapiRequiredFields.add("callback_url");
-    openapiRequiredFields.add("title");
-    openapiRequiredFields.add("webhook_type");
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("callback_method", "callback_url", "title", "webhook_type"));
   }
 
   /**

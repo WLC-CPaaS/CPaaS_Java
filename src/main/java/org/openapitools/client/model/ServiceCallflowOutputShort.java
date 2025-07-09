@@ -251,15 +251,10 @@ public class ServiceCallflowOutputShort {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("id");
-    openapiFields.add("modules");
-    openapiFields.add("name");
-    openapiFields.add("numbers");
-    openapiFields.add("patterns");
+    openapiFields = new HashSet<String>(Arrays.asList("id", "modules", "name", "numbers", "patterns"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

@@ -251,16 +251,10 @@ public class ModelEventMonthlySummary {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("account_id");
-    openapiFields.add("component");
-    openapiFields.add("created_at");
-    openapiFields.add("transaction_count");
-    openapiFields.add("transaction_month");
-    openapiFields.add("transaction_year");
+    openapiFields = new HashSet<String>(Arrays.asList("account_id", "component", "created_at", "transaction_count", "transaction_month", "transaction_year"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

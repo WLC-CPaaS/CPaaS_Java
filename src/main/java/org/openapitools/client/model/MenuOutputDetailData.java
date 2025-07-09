@@ -200,14 +200,10 @@ public class MenuOutputDetailData {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("id");
-    openapiFields.add("media");
-    openapiFields.add("name");
-    openapiFields.add("timeout");
+    openapiFields = new HashSet<String>(Arrays.asList("id", "media", "name", "timeout"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

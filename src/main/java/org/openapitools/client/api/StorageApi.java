@@ -88,7 +88,7 @@ public class StorageApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDStorageDeleteCall(String accountID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDStorageDeleteCall(@javax.annotation.Nonnull String accountID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -134,7 +134,7 @@ public class StorageApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDStorageDeleteValidateBeforeCall(String accountID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDStorageDeleteValidateBeforeCall(@javax.annotation.Nonnull String accountID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDStorageDelete(Async)");
@@ -158,7 +158,7 @@ public class StorageApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsStorageGet v1AccountAccountIDStorageDelete(String accountID) throws ApiException {
+    public ServiceDocsStorageGet v1AccountAccountIDStorageDelete(@javax.annotation.Nonnull String accountID) throws ApiException {
         ApiResponse<ServiceDocsStorageGet> localVarResp = v1AccountAccountIDStorageDeleteWithHttpInfo(accountID);
         return localVarResp.getData();
     }
@@ -177,7 +177,7 @@ public class StorageApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsStorageGet> v1AccountAccountIDStorageDeleteWithHttpInfo(String accountID) throws ApiException {
+    public ApiResponse<ServiceDocsStorageGet> v1AccountAccountIDStorageDeleteWithHttpInfo(@javax.annotation.Nonnull String accountID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDStorageDeleteValidateBeforeCall(accountID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsStorageGet>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -198,7 +198,7 @@ public class StorageApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDStorageDeleteAsync(String accountID, final ApiCallback<ServiceDocsStorageGet> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDStorageDeleteAsync(@javax.annotation.Nonnull String accountID, final ApiCallback<ServiceDocsStorageGet> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDStorageDeleteValidateBeforeCall(accountID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsStorageGet>(){}.getType();
@@ -219,7 +219,7 @@ public class StorageApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDStorageGetCall(String accountID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDStorageGetCall(@javax.annotation.Nonnull String accountID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -265,7 +265,7 @@ public class StorageApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDStorageGetValidateBeforeCall(String accountID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDStorageGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDStorageGet(Async)");
@@ -289,7 +289,7 @@ public class StorageApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsStorageGet v1AccountAccountIDStorageGet(String accountID) throws ApiException {
+    public ServiceDocsStorageGet v1AccountAccountIDStorageGet(@javax.annotation.Nonnull String accountID) throws ApiException {
         ApiResponse<ServiceDocsStorageGet> localVarResp = v1AccountAccountIDStorageGetWithHttpInfo(accountID);
         return localVarResp.getData();
     }
@@ -308,7 +308,7 @@ public class StorageApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsStorageGet> v1AccountAccountIDStorageGetWithHttpInfo(String accountID) throws ApiException {
+    public ApiResponse<ServiceDocsStorageGet> v1AccountAccountIDStorageGetWithHttpInfo(@javax.annotation.Nonnull String accountID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDStorageGetValidateBeforeCall(accountID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsStorageGet>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -329,7 +329,7 @@ public class StorageApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDStorageGetAsync(String accountID, final ApiCallback<ServiceDocsStorageGet> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDStorageGetAsync(@javax.annotation.Nonnull String accountID, final ApiCallback<ServiceDocsStorageGet> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDStorageGetValidateBeforeCall(accountID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsStorageGet>(){}.getType();
@@ -351,7 +351,7 @@ public class StorageApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDStoragePostCall(String accountID, ServiceVOIPStorageAddEditData reqBody, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDStoragePostCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPStorageAddEditData reqBody, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -398,7 +398,7 @@ public class StorageApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDStoragePostValidateBeforeCall(String accountID, ServiceVOIPStorageAddEditData reqBody, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDStoragePostValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPStorageAddEditData reqBody, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDStoragePost(Async)");
@@ -428,7 +428,7 @@ public class StorageApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsStorageGet v1AccountAccountIDStoragePost(String accountID, ServiceVOIPStorageAddEditData reqBody) throws ApiException {
+    public ServiceDocsStorageGet v1AccountAccountIDStoragePost(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPStorageAddEditData reqBody) throws ApiException {
         ApiResponse<ServiceDocsStorageGet> localVarResp = v1AccountAccountIDStoragePostWithHttpInfo(accountID, reqBody);
         return localVarResp.getData();
     }
@@ -448,7 +448,7 @@ public class StorageApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsStorageGet> v1AccountAccountIDStoragePostWithHttpInfo(String accountID, ServiceVOIPStorageAddEditData reqBody) throws ApiException {
+    public ApiResponse<ServiceDocsStorageGet> v1AccountAccountIDStoragePostWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPStorageAddEditData reqBody) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDStoragePostValidateBeforeCall(accountID, reqBody, null);
         Type localVarReturnType = new TypeToken<ServiceDocsStorageGet>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -470,7 +470,7 @@ public class StorageApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDStoragePostAsync(String accountID, ServiceVOIPStorageAddEditData reqBody, final ApiCallback<ServiceDocsStorageGet> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDStoragePostAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPStorageAddEditData reqBody, final ApiCallback<ServiceDocsStorageGet> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDStoragePostValidateBeforeCall(accountID, reqBody, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsStorageGet>(){}.getType();
@@ -492,7 +492,7 @@ public class StorageApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDStoragePutCall(String accountID, ServiceVOIPStorageAddEditData reqBody, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDStoragePutCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPStorageAddEditData reqBody, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -539,7 +539,7 @@ public class StorageApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDStoragePutValidateBeforeCall(String accountID, ServiceVOIPStorageAddEditData reqBody, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDStoragePutValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPStorageAddEditData reqBody, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDStoragePut(Async)");
@@ -569,7 +569,7 @@ public class StorageApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsStorageGet v1AccountAccountIDStoragePut(String accountID, ServiceVOIPStorageAddEditData reqBody) throws ApiException {
+    public ServiceDocsStorageGet v1AccountAccountIDStoragePut(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPStorageAddEditData reqBody) throws ApiException {
         ApiResponse<ServiceDocsStorageGet> localVarResp = v1AccountAccountIDStoragePutWithHttpInfo(accountID, reqBody);
         return localVarResp.getData();
     }
@@ -589,7 +589,7 @@ public class StorageApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsStorageGet> v1AccountAccountIDStoragePutWithHttpInfo(String accountID, ServiceVOIPStorageAddEditData reqBody) throws ApiException {
+    public ApiResponse<ServiceDocsStorageGet> v1AccountAccountIDStoragePutWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPStorageAddEditData reqBody) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDStoragePutValidateBeforeCall(accountID, reqBody, null);
         Type localVarReturnType = new TypeToken<ServiceDocsStorageGet>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -611,7 +611,7 @@ public class StorageApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDStoragePutAsync(String accountID, ServiceVOIPStorageAddEditData reqBody, final ApiCallback<ServiceDocsStorageGet> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDStoragePutAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPStorageAddEditData reqBody, final ApiCallback<ServiceDocsStorageGet> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDStoragePutValidateBeforeCall(accountID, reqBody, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsStorageGet>(){}.getType();

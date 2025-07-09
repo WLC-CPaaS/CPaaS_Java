@@ -167,12 +167,10 @@ public class ServiceStoragePlanDatabaseProperties {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("create_options");
-    openapiFields.add("names");
+    openapiFields = new HashSet<String>(Arrays.asList("create_options", "names"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

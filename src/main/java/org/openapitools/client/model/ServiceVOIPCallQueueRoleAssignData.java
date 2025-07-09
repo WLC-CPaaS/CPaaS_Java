@@ -234,16 +234,10 @@ public class ServiceVOIPCallQueueRoleAssignData {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("action");
-    openapiFields.add("recipients");
-    openapiFields.add("set_membership");
+    openapiFields = new HashSet<String>(Arrays.asList("action", "recipients", "set_membership"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("action");
-    openapiRequiredFields.add("recipients");
-    openapiRequiredFields.add("set_membership");
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("action", "recipients", "set_membership"));
   }
 
   /**

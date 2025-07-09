@@ -1,11 +1,14 @@
-# service.E911AddLocationInput
+
+
+# ServiceE911AddLocationInput
+
 
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**location** | [**ServiceE911LocationInput**](ServiceE911LocationInput.md) |  | 
-**uri** | [**ServiceE911URIInput**](ServiceE911URIInput.md) |  | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+|**location** | [**ServiceE911LocationInput**](ServiceE911LocationInput.md) |  |  [optional] |
+|**uri** | [**ServiceE911URIInput**](ServiceE911URIInput.md) |  |  [optional] |
+
 
 

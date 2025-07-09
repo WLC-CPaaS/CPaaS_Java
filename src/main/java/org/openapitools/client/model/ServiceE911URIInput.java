@@ -52,7 +52,7 @@ import org.openapitools.client.JSON;
 public class ServiceE911URIInput {
   public static final String SERIALIZED_NAME_CALLER_NAME = "callerName";
   @SerializedName(SERIALIZED_NAME_CALLER_NAME)
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
   private String callerName;
 
   public static final String SERIALIZED_NAME_URI = "uri";
@@ -63,7 +63,7 @@ public class ServiceE911URIInput {
   public ServiceE911URIInput() {
   }
 
-  public ServiceE911URIInput callerName(@javax.annotation.Nonnull String callerName) {
+  public ServiceE911URIInput callerName(@javax.annotation.Nullable String callerName) {
     this.callerName = callerName;
     return this;
   }
@@ -72,12 +72,12 @@ public class ServiceE911URIInput {
    * Get callerName
    * @return callerName
    */
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
   public String getCallerName() {
     return callerName;
   }
 
-  public void setCallerName(@javax.annotation.Nonnull String callerName) {
+  public void setCallerName(@javax.annotation.Nullable String callerName) {
     this.callerName = callerName;
   }
 
@@ -147,14 +147,10 @@ public class ServiceE911URIInput {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("callerName");
-    openapiFields.add("uri");
+    openapiFields = new HashSet<String>(Arrays.asList("callerName", "uri"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("callerName");
-    openapiRequiredFields.add("uri");
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("uri"));
   }
 
   /**
@@ -185,7 +181,7 @@ public class ServiceE911URIInput {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if (!jsonObj.get("callerName").isJsonPrimitive()) {
+      if ((jsonObj.get("callerName") != null && !jsonObj.get("callerName").isJsonNull()) && !jsonObj.get("callerName").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `callerName` to be a primitive type in the JSON string but got `%s`", jsonObj.get("callerName").toString()));
       }
       if (!jsonObj.get("uri").isJsonPrimitive()) {

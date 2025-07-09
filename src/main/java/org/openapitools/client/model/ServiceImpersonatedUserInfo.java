@@ -251,16 +251,10 @@ public class ServiceImpersonatedUserInfo {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("email");
-    openapiFields.add("first_name");
-    openapiFields.add("full_name");
-    openapiFields.add("has_avatar");
-    openapiFields.add("last_name");
-    openapiFields.add("priv_level");
+    openapiFields = new HashSet<String>(Arrays.asList("email", "first_name", "full_name", "has_avatar", "last_name", "priv_level"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

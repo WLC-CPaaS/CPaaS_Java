@@ -1,14 +1,17 @@
-# response.ProvisionError
+
+
+# ResponseProvisionError
+
 
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**errorCode** | **Integer** |  | [optional] 
-**errors** | **List&lt;Object&gt;** |  | [optional] [default to new ArrayList<>()]
-**message** | **String** |  | [optional] 
-**requestId** | **String** |  | [optional] 
-**statusCode** | **Integer** |  | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+|**errorCode** | **Integer** | Error Code |  [optional] |
+|**errors** | **List&lt;Object&gt;** | Error details |  [optional] |
+|**message** | **String** | Error Message |  [optional] |
+|**requestId** | **String** | Request ID |  [optional] |
+|**statusCode** | **Integer** | HTTP response status code |  [optional] |
+
 
 

@@ -1,11 +1,24 @@
-# service.VOIPVoicemailMessageChange
+
+
+# ServiceVOIPVoicemailMessageChange
+
 
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**folder** | **String** |  | [optional] 
-**sourceId** | **Object** |  | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+|**folder** | [**FolderEnum**](#FolderEnum) |  |  [optional] |
+|**sourceId** | **Object** |  |  [optional] |
+
+
+
+## Enum: FolderEnum
+
+| Name | Value |
+|---- | -----|
+| DELETED | &quot;deleted&quot; |
+| SAVED | &quot;saved&quot; |
+| NEW | &quot;new&quot; |
+
 
 

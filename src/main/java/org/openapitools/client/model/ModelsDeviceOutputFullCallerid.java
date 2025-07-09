@@ -176,13 +176,10 @@ public class ModelsDeviceOutputFullCallerid {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("emergency");
-    openapiFields.add("external");
-    openapiFields.add("internal");
+    openapiFields = new HashSet<String>(Arrays.asList("emergency", "external", "internal"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

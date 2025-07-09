@@ -225,15 +225,10 @@ public class ServiceMediaOutputShort {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("id");
-    openapiFields.add("is_prompt");
-    openapiFields.add("language");
-    openapiFields.add("media_source");
-    openapiFields.add("name");
+    openapiFields = new HashSet<String>(Arrays.asList("id", "is_prompt", "language", "media_source", "name"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

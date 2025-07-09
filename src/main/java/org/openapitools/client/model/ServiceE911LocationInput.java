@@ -52,7 +52,7 @@ import org.openapitools.client.JSON;
 public class ServiceE911LocationInput {
   public static final String SERIALIZED_NAME_ADDRESS1 = "address_1";
   @SerializedName(SERIALIZED_NAME_ADDRESS1)
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
   private String address1;
 
   public static final String SERIALIZED_NAME_ADDRESS2 = "address_2";
@@ -62,7 +62,7 @@ public class ServiceE911LocationInput {
 
   public static final String SERIALIZED_NAME_COMMUNITY = "community";
   @SerializedName(SERIALIZED_NAME_COMMUNITY)
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
   private String community;
 
   public static final String SERIALIZED_NAME_PLUS_FOUR = "plus_four";
@@ -72,12 +72,12 @@ public class ServiceE911LocationInput {
 
   public static final String SERIALIZED_NAME_POSTAL_CODE = "postal_code";
   @SerializedName(SERIALIZED_NAME_POSTAL_CODE)
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
   private String postalCode;
 
   public static final String SERIALIZED_NAME_STATE = "state";
   @SerializedName(SERIALIZED_NAME_STATE)
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
   private String state;
 
   /**
@@ -132,13 +132,13 @@ public class ServiceE911LocationInput {
 
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   private TypeEnum type;
 
   public ServiceE911LocationInput() {
   }
 
-  public ServiceE911LocationInput address1(@javax.annotation.Nonnull String address1) {
+  public ServiceE911LocationInput address1(@javax.annotation.Nullable String address1) {
     this.address1 = address1;
     return this;
   }
@@ -147,12 +147,12 @@ public class ServiceE911LocationInput {
    * Get address1
    * @return address1
    */
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
   public String getAddress1() {
     return address1;
   }
 
-  public void setAddress1(@javax.annotation.Nonnull String address1) {
+  public void setAddress1(@javax.annotation.Nullable String address1) {
     this.address1 = address1;
   }
 
@@ -176,7 +176,7 @@ public class ServiceE911LocationInput {
   }
 
 
-  public ServiceE911LocationInput community(@javax.annotation.Nonnull String community) {
+  public ServiceE911LocationInput community(@javax.annotation.Nullable String community) {
     this.community = community;
     return this;
   }
@@ -185,12 +185,12 @@ public class ServiceE911LocationInput {
    * Get community
    * @return community
    */
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
   public String getCommunity() {
     return community;
   }
 
-  public void setCommunity(@javax.annotation.Nonnull String community) {
+  public void setCommunity(@javax.annotation.Nullable String community) {
     this.community = community;
   }
 
@@ -214,7 +214,7 @@ public class ServiceE911LocationInput {
   }
 
 
-  public ServiceE911LocationInput postalCode(@javax.annotation.Nonnull String postalCode) {
+  public ServiceE911LocationInput postalCode(@javax.annotation.Nullable String postalCode) {
     this.postalCode = postalCode;
     return this;
   }
@@ -223,17 +223,17 @@ public class ServiceE911LocationInput {
    * Get postalCode
    * @return postalCode
    */
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
   public String getPostalCode() {
     return postalCode;
   }
 
-  public void setPostalCode(@javax.annotation.Nonnull String postalCode) {
+  public void setPostalCode(@javax.annotation.Nullable String postalCode) {
     this.postalCode = postalCode;
   }
 
 
-  public ServiceE911LocationInput state(@javax.annotation.Nonnull String state) {
+  public ServiceE911LocationInput state(@javax.annotation.Nullable String state) {
     this.state = state;
     return this;
   }
@@ -242,17 +242,17 @@ public class ServiceE911LocationInput {
    * Get state
    * @return state
    */
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
   public String getState() {
     return state;
   }
 
-  public void setState(@javax.annotation.Nonnull String state) {
+  public void setState(@javax.annotation.Nullable String state) {
     this.state = state;
   }
 
 
-  public ServiceE911LocationInput type(@javax.annotation.Nullable TypeEnum type) {
+  public ServiceE911LocationInput type(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
     return this;
   }
@@ -261,12 +261,12 @@ public class ServiceE911LocationInput {
    * Get type
    * @return type
    */
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public TypeEnum getType() {
     return type;
   }
 
-  public void setType(@javax.annotation.Nullable TypeEnum type) {
+  public void setType(@javax.annotation.Nonnull TypeEnum type) {
     this.type = type;
   }
 
@@ -327,21 +327,10 @@ public class ServiceE911LocationInput {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("address_1");
-    openapiFields.add("address_2");
-    openapiFields.add("community");
-    openapiFields.add("plus_four");
-    openapiFields.add("postal_code");
-    openapiFields.add("state");
-    openapiFields.add("type");
+    openapiFields = new HashSet<String>(Arrays.asList("address_1", "address_2", "community", "plus_four", "postal_code", "state", "type"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("address_1");
-    openapiRequiredFields.add("community");
-    openapiRequiredFields.add("postal_code");
-    openapiRequiredFields.add("state");
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("type"));
   }
 
   /**
@@ -372,31 +361,29 @@ public class ServiceE911LocationInput {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if (!jsonObj.get("address_1").isJsonPrimitive()) {
+      if ((jsonObj.get("address_1") != null && !jsonObj.get("address_1").isJsonNull()) && !jsonObj.get("address_1").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `address_1` to be a primitive type in the JSON string but got `%s`", jsonObj.get("address_1").toString()));
       }
       if ((jsonObj.get("address_2") != null && !jsonObj.get("address_2").isJsonNull()) && !jsonObj.get("address_2").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `address_2` to be a primitive type in the JSON string but got `%s`", jsonObj.get("address_2").toString()));
       }
-      if (!jsonObj.get("community").isJsonPrimitive()) {
+      if ((jsonObj.get("community") != null && !jsonObj.get("community").isJsonNull()) && !jsonObj.get("community").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `community` to be a primitive type in the JSON string but got `%s`", jsonObj.get("community").toString()));
       }
       if ((jsonObj.get("plus_four") != null && !jsonObj.get("plus_four").isJsonNull()) && !jsonObj.get("plus_four").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `plus_four` to be a primitive type in the JSON string but got `%s`", jsonObj.get("plus_four").toString()));
       }
-      if (!jsonObj.get("postal_code").isJsonPrimitive()) {
+      if ((jsonObj.get("postal_code") != null && !jsonObj.get("postal_code").isJsonNull()) && !jsonObj.get("postal_code").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `postal_code` to be a primitive type in the JSON string but got `%s`", jsonObj.get("postal_code").toString()));
       }
-      if (!jsonObj.get("state").isJsonPrimitive()) {
+      if ((jsonObj.get("state") != null && !jsonObj.get("state").isJsonNull()) && !jsonObj.get("state").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `state` to be a primitive type in the JSON string but got `%s`", jsonObj.get("state").toString()));
       }
-      if ((jsonObj.get("type") != null && !jsonObj.get("type").isJsonNull()) && !jsonObj.get("type").isJsonPrimitive()) {
+      if (!jsonObj.get("type").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("type").toString()));
       }
-      // validate the optional field `type`
-      if (jsonObj.get("type") != null && !jsonObj.get("type").isJsonNull()) {
-        TypeEnum.validateJsonElement(jsonObj.get("type"));
-      }
+      // validate the required field `type`
+      TypeEnum.validateJsonElement(jsonObj.get("type"));
   }
 
   public static class CustomTypeAdapterFactory implements TypeAdapterFactory {

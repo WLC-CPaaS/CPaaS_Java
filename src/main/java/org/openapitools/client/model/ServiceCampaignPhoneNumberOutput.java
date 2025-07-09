@@ -157,12 +157,10 @@ public class ServiceCampaignPhoneNumberOutput {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("telephone_numbers");
-    openapiFields.add("total_count");
+    openapiFields = new HashSet<String>(Arrays.asList("telephone_numbers", "total_count"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

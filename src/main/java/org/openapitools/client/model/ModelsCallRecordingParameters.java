@@ -357,18 +357,10 @@ public class ModelsCallRecordingParameters {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("enabled");
-    openapiFields.add("format");
-    openapiFields.add("record_min_sec");
-    openapiFields.add("record_on_answer");
-    openapiFields.add("record_on_bridge");
-    openapiFields.add("record_sample_rate");
-    openapiFields.add("time_limit");
-    openapiFields.add("url");
+    openapiFields = new HashSet<String>(Arrays.asList("enabled", "format", "record_min_sec", "record_on_answer", "record_on_bridge", "record_sample_rate", "time_limit", "url"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

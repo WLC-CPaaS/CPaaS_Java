@@ -467,24 +467,10 @@ public class ModelsDeviceOutputFull {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("call_forward");
-    openapiFields.add("call_recording");
-    openapiFields.add("caller_id");
-    openapiFields.add("device_type");
-    openapiFields.add("do_not_disturb");
-    openapiFields.add("enabled");
-    openapiFields.add("id");
-    openapiFields.add("mac_address");
-    openapiFields.add("media");
-    openapiFields.add("music_on_hold");
-    openapiFields.add("name");
-    openapiFields.add("owner_id");
-    openapiFields.add("provision");
-    openapiFields.add("sip");
+    openapiFields = new HashSet<String>(Arrays.asList("call_forward", "call_recording", "caller_id", "device_type", "do_not_disturb", "enabled", "id", "mac_address", "media", "music_on_hold", "name", "owner_id", "provision", "sip"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

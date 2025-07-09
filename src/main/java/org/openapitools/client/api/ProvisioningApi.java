@@ -27,6 +27,8 @@ import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 
 
+import org.openapitools.client.model.CPAASError;
+import java.io.File;
 import org.openapitools.client.model.ModelsGenerateConfigFileRequest;
 import org.openapitools.client.model.ProvisioningDocsDocsBrandOutputSingle;
 import org.openapitools.client.model.ProvisioningDocsDocsBrandsOutput;
@@ -83,6 +85,147 @@ public class ProvisioningApi {
     }
 
     /**
+     * Build call for v1AccountAccountIDProvisionFilenameGet
+     * @param accountID Account ID, 32 alpha numeric (required)
+     * @param filename Name of config file (required)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call v1AccountAccountIDProvisionFilenameGetCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String filename, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v1/account/{accountID}/provision/{filename}"
+            .replace("{" + "accountID" + "}", localVarApiClient.escapeString(accountID.toString()))
+            .replace("{" + "filename" + "}", localVarApiClient.escapeString(filename.toString()));
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "*/*"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] {  };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call v1AccountAccountIDProvisionFilenameGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String filename, final ApiCallback _callback) throws ApiException {
+        // verify the required parameter 'accountID' is set
+        if (accountID == null) {
+            throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDProvisionFilenameGet(Async)");
+        }
+
+        // verify the required parameter 'filename' is set
+        if (filename == null) {
+            throw new ApiException("Missing the required parameter 'filename' when calling v1AccountAccountIDProvisionFilenameGet(Async)");
+        }
+
+        return v1AccountAccountIDProvisionFilenameGetCall(accountID, filename, _callback);
+
+    }
+
+    /**
+     * Get Config File Details
+     * Retrieve the configuration details (e.g., settings and parameters) for a device.
+     * @param accountID Account ID, 32 alpha numeric (required)
+     * @param filename Name of config file (required)
+     * @return File
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
+     </table>
+     */
+    public File v1AccountAccountIDProvisionFilenameGet(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String filename) throws ApiException {
+        ApiResponse<File> localVarResp = v1AccountAccountIDProvisionFilenameGetWithHttpInfo(accountID, filename);
+        return localVarResp.getData();
+    }
+
+    /**
+     * Get Config File Details
+     * Retrieve the configuration details (e.g., settings and parameters) for a device.
+     * @param accountID Account ID, 32 alpha numeric (required)
+     * @param filename Name of config file (required)
+     * @return ApiResponse&lt;File&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<File> v1AccountAccountIDProvisionFilenameGetWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String filename) throws ApiException {
+        okhttp3.Call localVarCall = v1AccountAccountIDProvisionFilenameGetValidateBeforeCall(accountID, filename, null);
+        Type localVarReturnType = new TypeToken<File>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     * Get Config File Details (asynchronously)
+     * Retrieve the configuration details (e.g., settings and parameters) for a device.
+     * @param accountID Account ID, 32 alpha numeric (required)
+     * @param filename Name of config file (required)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call v1AccountAccountIDProvisionFilenameGetAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String filename, final ApiCallback<File> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = v1AccountAccountIDProvisionFilenameGetValidateBeforeCall(accountID, filename, _callback);
+        Type localVarReturnType = new TypeToken<File>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
      * Build call for v1ApBrandBrandFamilyFamilyGet
      * @param brand brand (required)
      * @param family family (required)
@@ -98,7 +241,7 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1ApBrandBrandFamilyFamilyGetCall(String brand, String family, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1ApBrandBrandFamilyFamilyGetCall(@javax.annotation.Nonnull String brand, @javax.annotation.Nonnull String family, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -145,7 +288,7 @@ public class ProvisioningApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1ApBrandBrandFamilyFamilyGetValidateBeforeCall(String brand, String family, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1ApBrandBrandFamilyFamilyGetValidateBeforeCall(@javax.annotation.Nonnull String brand, @javax.annotation.Nonnull String family, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'brand' is set
         if (brand == null) {
             throw new ApiException("Missing the required parameter 'brand' when calling v1ApBrandBrandFamilyFamilyGet(Async)");
@@ -161,7 +304,7 @@ public class ProvisioningApi {
     }
 
     /**
-     * Get Family
+     * Get Family Details
      * Retrieve a family&#39;s details by the randomly generated ID.
      * @param brand brand (required)
      * @param family family (required)
@@ -176,13 +319,13 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ProvisioningDocsDocsFamilyOutputSingle v1ApBrandBrandFamilyFamilyGet(String brand, String family) throws ApiException {
+    public ProvisioningDocsDocsFamilyOutputSingle v1ApBrandBrandFamilyFamilyGet(@javax.annotation.Nonnull String brand, @javax.annotation.Nonnull String family) throws ApiException {
         ApiResponse<ProvisioningDocsDocsFamilyOutputSingle> localVarResp = v1ApBrandBrandFamilyFamilyGetWithHttpInfo(brand, family);
         return localVarResp.getData();
     }
 
     /**
-     * Get Family
+     * Get Family Details
      * Retrieve a family&#39;s details by the randomly generated ID.
      * @param brand brand (required)
      * @param family family (required)
@@ -197,14 +340,14 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ProvisioningDocsDocsFamilyOutputSingle> v1ApBrandBrandFamilyFamilyGetWithHttpInfo(String brand, String family) throws ApiException {
+    public ApiResponse<ProvisioningDocsDocsFamilyOutputSingle> v1ApBrandBrandFamilyFamilyGetWithHttpInfo(@javax.annotation.Nonnull String brand, @javax.annotation.Nonnull String family) throws ApiException {
         okhttp3.Call localVarCall = v1ApBrandBrandFamilyFamilyGetValidateBeforeCall(brand, family, null);
         Type localVarReturnType = new TypeToken<ProvisioningDocsDocsFamilyOutputSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
     /**
-     * Get Family (asynchronously)
+     * Get Family Details (asynchronously)
      * Retrieve a family&#39;s details by the randomly generated ID.
      * @param brand brand (required)
      * @param family family (required)
@@ -220,7 +363,7 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1ApBrandBrandFamilyFamilyGetAsync(String brand, String family, final ApiCallback<ProvisioningDocsDocsFamilyOutputSingle> _callback) throws ApiException {
+    public okhttp3.Call v1ApBrandBrandFamilyFamilyGetAsync(@javax.annotation.Nonnull String brand, @javax.annotation.Nonnull String family, final ApiCallback<ProvisioningDocsDocsFamilyOutputSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1ApBrandBrandFamilyFamilyGetValidateBeforeCall(brand, family, _callback);
         Type localVarReturnType = new TypeToken<ProvisioningDocsDocsFamilyOutputSingle>(){}.getType();
@@ -247,7 +390,7 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1ApBrandBrandFamilyFamilyModelGetCall(String brand, String family, String modelName, Integer pageSize, String startKey, String status, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1ApBrandBrandFamilyFamilyModelGetCall(@javax.annotation.Nonnull String brand, @javax.annotation.Nonnull String family, @javax.annotation.Nullable String modelName, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String status, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -310,7 +453,7 @@ public class ProvisioningApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1ApBrandBrandFamilyFamilyModelGetValidateBeforeCall(String brand, String family, String modelName, Integer pageSize, String startKey, String status, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1ApBrandBrandFamilyFamilyModelGetValidateBeforeCall(@javax.annotation.Nonnull String brand, @javax.annotation.Nonnull String family, @javax.annotation.Nullable String modelName, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String status, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'brand' is set
         if (brand == null) {
             throw new ApiException("Missing the required parameter 'brand' when calling v1ApBrandBrandFamilyFamilyModelGet(Async)");
@@ -345,7 +488,7 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ProvisioningDocsDocsModelOutput v1ApBrandBrandFamilyFamilyModelGet(String brand, String family, String modelName, Integer pageSize, String startKey, String status) throws ApiException {
+    public ProvisioningDocsDocsModelOutput v1ApBrandBrandFamilyFamilyModelGet(@javax.annotation.Nonnull String brand, @javax.annotation.Nonnull String family, @javax.annotation.Nullable String modelName, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String status) throws ApiException {
         ApiResponse<ProvisioningDocsDocsModelOutput> localVarResp = v1ApBrandBrandFamilyFamilyModelGetWithHttpInfo(brand, family, modelName, pageSize, startKey, status);
         return localVarResp.getData();
     }
@@ -370,7 +513,7 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ProvisioningDocsDocsModelOutput> v1ApBrandBrandFamilyFamilyModelGetWithHttpInfo(String brand, String family, String modelName, Integer pageSize, String startKey, String status) throws ApiException {
+    public ApiResponse<ProvisioningDocsDocsModelOutput> v1ApBrandBrandFamilyFamilyModelGetWithHttpInfo(@javax.annotation.Nonnull String brand, @javax.annotation.Nonnull String family, @javax.annotation.Nullable String modelName, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String status) throws ApiException {
         okhttp3.Call localVarCall = v1ApBrandBrandFamilyFamilyModelGetValidateBeforeCall(brand, family, modelName, pageSize, startKey, status, null);
         Type localVarReturnType = new TypeToken<ProvisioningDocsDocsModelOutput>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -397,7 +540,7 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1ApBrandBrandFamilyFamilyModelGetAsync(String brand, String family, String modelName, Integer pageSize, String startKey, String status, final ApiCallback<ProvisioningDocsDocsModelOutput> _callback) throws ApiException {
+    public okhttp3.Call v1ApBrandBrandFamilyFamilyModelGetAsync(@javax.annotation.Nonnull String brand, @javax.annotation.Nonnull String family, @javax.annotation.Nullable String modelName, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String status, final ApiCallback<ProvisioningDocsDocsModelOutput> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1ApBrandBrandFamilyFamilyModelGetValidateBeforeCall(brand, family, modelName, pageSize, startKey, status, _callback);
         Type localVarReturnType = new TypeToken<ProvisioningDocsDocsModelOutput>(){}.getType();
@@ -421,7 +564,7 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1ApBrandBrandFamilyFamilyModelModelGetCall(String brand, String family, String model, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1ApBrandBrandFamilyFamilyModelModelGetCall(@javax.annotation.Nonnull String brand, @javax.annotation.Nonnull String family, @javax.annotation.Nonnull String model, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -469,7 +612,7 @@ public class ProvisioningApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1ApBrandBrandFamilyFamilyModelModelGetValidateBeforeCall(String brand, String family, String model, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1ApBrandBrandFamilyFamilyModelModelGetValidateBeforeCall(@javax.annotation.Nonnull String brand, @javax.annotation.Nonnull String family, @javax.annotation.Nonnull String model, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'brand' is set
         if (brand == null) {
             throw new ApiException("Missing the required parameter 'brand' when calling v1ApBrandBrandFamilyFamilyModelModelGet(Async)");
@@ -490,7 +633,7 @@ public class ProvisioningApi {
     }
 
     /**
-     * Get Model
+     * Get Model Details
      * Retrieve a model&#39;s details by the randomly generated ID.
      * @param brand brand (required)
      * @param family family (required)
@@ -506,13 +649,13 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ProvisioningDocsDocsModelOutputSingle v1ApBrandBrandFamilyFamilyModelModelGet(String brand, String family, String model) throws ApiException {
+    public ProvisioningDocsDocsModelOutputSingle v1ApBrandBrandFamilyFamilyModelModelGet(@javax.annotation.Nonnull String brand, @javax.annotation.Nonnull String family, @javax.annotation.Nonnull String model) throws ApiException {
         ApiResponse<ProvisioningDocsDocsModelOutputSingle> localVarResp = v1ApBrandBrandFamilyFamilyModelModelGetWithHttpInfo(brand, family, model);
         return localVarResp.getData();
     }
 
     /**
-     * Get Model
+     * Get Model Details
      * Retrieve a model&#39;s details by the randomly generated ID.
      * @param brand brand (required)
      * @param family family (required)
@@ -528,14 +671,14 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ProvisioningDocsDocsModelOutputSingle> v1ApBrandBrandFamilyFamilyModelModelGetWithHttpInfo(String brand, String family, String model) throws ApiException {
+    public ApiResponse<ProvisioningDocsDocsModelOutputSingle> v1ApBrandBrandFamilyFamilyModelModelGetWithHttpInfo(@javax.annotation.Nonnull String brand, @javax.annotation.Nonnull String family, @javax.annotation.Nonnull String model) throws ApiException {
         okhttp3.Call localVarCall = v1ApBrandBrandFamilyFamilyModelModelGetValidateBeforeCall(brand, family, model, null);
         Type localVarReturnType = new TypeToken<ProvisioningDocsDocsModelOutputSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
     /**
-     * Get Model (asynchronously)
+     * Get Model Details (asynchronously)
      * Retrieve a model&#39;s details by the randomly generated ID.
      * @param brand brand (required)
      * @param family family (required)
@@ -552,7 +695,7 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1ApBrandBrandFamilyFamilyModelModelGetAsync(String brand, String family, String model, final ApiCallback<ProvisioningDocsDocsModelOutputSingle> _callback) throws ApiException {
+    public okhttp3.Call v1ApBrandBrandFamilyFamilyModelModelGetAsync(@javax.annotation.Nonnull String brand, @javax.annotation.Nonnull String family, @javax.annotation.Nonnull String model, final ApiCallback<ProvisioningDocsDocsModelOutputSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1ApBrandBrandFamilyFamilyModelModelGetValidateBeforeCall(brand, family, model, _callback);
         Type localVarReturnType = new TypeToken<ProvisioningDocsDocsModelOutputSingle>(){}.getType();
@@ -581,7 +724,7 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1ApBrandBrandFamilyFamilyModelModelTemplateGetCall(String brand, String family, String model, String firmware, Integer pageSize, String startKey, String status, String templateName, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1ApBrandBrandFamilyFamilyModelModelTemplateGetCall(@javax.annotation.Nonnull String brand, @javax.annotation.Nonnull String family, @javax.annotation.Nonnull String model, @javax.annotation.Nullable String firmware, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String status, @javax.annotation.Nullable String templateName, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -649,7 +792,7 @@ public class ProvisioningApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1ApBrandBrandFamilyFamilyModelModelTemplateGetValidateBeforeCall(String brand, String family, String model, String firmware, Integer pageSize, String startKey, String status, String templateName, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1ApBrandBrandFamilyFamilyModelModelTemplateGetValidateBeforeCall(@javax.annotation.Nonnull String brand, @javax.annotation.Nonnull String family, @javax.annotation.Nonnull String model, @javax.annotation.Nullable String firmware, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String status, @javax.annotation.Nullable String templateName, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'brand' is set
         if (brand == null) {
             throw new ApiException("Missing the required parameter 'brand' when calling v1ApBrandBrandFamilyFamilyModelModelTemplateGet(Async)");
@@ -691,7 +834,7 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ProvisioningDocsDocsTemplatesOutput v1ApBrandBrandFamilyFamilyModelModelTemplateGet(String brand, String family, String model, String firmware, Integer pageSize, String startKey, String status, String templateName) throws ApiException {
+    public ProvisioningDocsDocsTemplatesOutput v1ApBrandBrandFamilyFamilyModelModelTemplateGet(@javax.annotation.Nonnull String brand, @javax.annotation.Nonnull String family, @javax.annotation.Nonnull String model, @javax.annotation.Nullable String firmware, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String status, @javax.annotation.Nullable String templateName) throws ApiException {
         ApiResponse<ProvisioningDocsDocsTemplatesOutput> localVarResp = v1ApBrandBrandFamilyFamilyModelModelTemplateGetWithHttpInfo(brand, family, model, firmware, pageSize, startKey, status, templateName);
         return localVarResp.getData();
     }
@@ -718,7 +861,7 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ProvisioningDocsDocsTemplatesOutput> v1ApBrandBrandFamilyFamilyModelModelTemplateGetWithHttpInfo(String brand, String family, String model, String firmware, Integer pageSize, String startKey, String status, String templateName) throws ApiException {
+    public ApiResponse<ProvisioningDocsDocsTemplatesOutput> v1ApBrandBrandFamilyFamilyModelModelTemplateGetWithHttpInfo(@javax.annotation.Nonnull String brand, @javax.annotation.Nonnull String family, @javax.annotation.Nonnull String model, @javax.annotation.Nullable String firmware, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String status, @javax.annotation.Nullable String templateName) throws ApiException {
         okhttp3.Call localVarCall = v1ApBrandBrandFamilyFamilyModelModelTemplateGetValidateBeforeCall(brand, family, model, firmware, pageSize, startKey, status, templateName, null);
         Type localVarReturnType = new TypeToken<ProvisioningDocsDocsTemplatesOutput>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -747,7 +890,7 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1ApBrandBrandFamilyFamilyModelModelTemplateGetAsync(String brand, String family, String model, String firmware, Integer pageSize, String startKey, String status, String templateName, final ApiCallback<ProvisioningDocsDocsTemplatesOutput> _callback) throws ApiException {
+    public okhttp3.Call v1ApBrandBrandFamilyFamilyModelModelTemplateGetAsync(@javax.annotation.Nonnull String brand, @javax.annotation.Nonnull String family, @javax.annotation.Nonnull String model, @javax.annotation.Nullable String firmware, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String status, @javax.annotation.Nullable String templateName, final ApiCallback<ProvisioningDocsDocsTemplatesOutput> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1ApBrandBrandFamilyFamilyModelModelTemplateGetValidateBeforeCall(brand, family, model, firmware, pageSize, startKey, status, templateName, _callback);
         Type localVarReturnType = new TypeToken<ProvisioningDocsDocsTemplatesOutput>(){}.getType();
@@ -772,7 +915,7 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1ApBrandBrandFamilyFamilyModelModelTemplateTemplateGetCall(String brand, String family, String model, String template, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1ApBrandBrandFamilyFamilyModelModelTemplateTemplateGetCall(@javax.annotation.Nonnull String brand, @javax.annotation.Nonnull String family, @javax.annotation.Nonnull String model, @javax.annotation.Nonnull String template, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -821,7 +964,7 @@ public class ProvisioningApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1ApBrandBrandFamilyFamilyModelModelTemplateTemplateGetValidateBeforeCall(String brand, String family, String model, String template, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1ApBrandBrandFamilyFamilyModelModelTemplateTemplateGetValidateBeforeCall(@javax.annotation.Nonnull String brand, @javax.annotation.Nonnull String family, @javax.annotation.Nonnull String model, @javax.annotation.Nonnull String template, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'brand' is set
         if (brand == null) {
             throw new ApiException("Missing the required parameter 'brand' when calling v1ApBrandBrandFamilyFamilyModelModelTemplateTemplateGet(Async)");
@@ -847,7 +990,7 @@ public class ProvisioningApi {
     }
 
     /**
-     * Get Template
+     * Get Template Details
      * Retrieve details about a template for a model by the randomly generated ID.
      * @param brand brand (required)
      * @param family family (required)
@@ -864,13 +1007,13 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ProvisioningDocsDocsTemplateOutputSingle v1ApBrandBrandFamilyFamilyModelModelTemplateTemplateGet(String brand, String family, String model, String template) throws ApiException {
+    public ProvisioningDocsDocsTemplateOutputSingle v1ApBrandBrandFamilyFamilyModelModelTemplateTemplateGet(@javax.annotation.Nonnull String brand, @javax.annotation.Nonnull String family, @javax.annotation.Nonnull String model, @javax.annotation.Nonnull String template) throws ApiException {
         ApiResponse<ProvisioningDocsDocsTemplateOutputSingle> localVarResp = v1ApBrandBrandFamilyFamilyModelModelTemplateTemplateGetWithHttpInfo(brand, family, model, template);
         return localVarResp.getData();
     }
 
     /**
-     * Get Template
+     * Get Template Details
      * Retrieve details about a template for a model by the randomly generated ID.
      * @param brand brand (required)
      * @param family family (required)
@@ -887,14 +1030,14 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ProvisioningDocsDocsTemplateOutputSingle> v1ApBrandBrandFamilyFamilyModelModelTemplateTemplateGetWithHttpInfo(String brand, String family, String model, String template) throws ApiException {
+    public ApiResponse<ProvisioningDocsDocsTemplateOutputSingle> v1ApBrandBrandFamilyFamilyModelModelTemplateTemplateGetWithHttpInfo(@javax.annotation.Nonnull String brand, @javax.annotation.Nonnull String family, @javax.annotation.Nonnull String model, @javax.annotation.Nonnull String template) throws ApiException {
         okhttp3.Call localVarCall = v1ApBrandBrandFamilyFamilyModelModelTemplateTemplateGetValidateBeforeCall(brand, family, model, template, null);
         Type localVarReturnType = new TypeToken<ProvisioningDocsDocsTemplateOutputSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
     /**
-     * Get Template (asynchronously)
+     * Get Template Details (asynchronously)
      * Retrieve details about a template for a model by the randomly generated ID.
      * @param brand brand (required)
      * @param family family (required)
@@ -912,7 +1055,7 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1ApBrandBrandFamilyFamilyModelModelTemplateTemplateGetAsync(String brand, String family, String model, String template, final ApiCallback<ProvisioningDocsDocsTemplateOutputSingle> _callback) throws ApiException {
+    public okhttp3.Call v1ApBrandBrandFamilyFamilyModelModelTemplateTemplateGetAsync(@javax.annotation.Nonnull String brand, @javax.annotation.Nonnull String family, @javax.annotation.Nonnull String model, @javax.annotation.Nonnull String template, final ApiCallback<ProvisioningDocsDocsTemplateOutputSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1ApBrandBrandFamilyFamilyModelModelTemplateTemplateGetValidateBeforeCall(brand, family, model, template, _callback);
         Type localVarReturnType = new TypeToken<ProvisioningDocsDocsTemplateOutputSingle>(){}.getType();
@@ -938,7 +1081,7 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1ApBrandBrandFamilyGetCall(String brand, String familyName, Integer pageSize, String startKey, String status, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1ApBrandBrandFamilyGetCall(@javax.annotation.Nonnull String brand, @javax.annotation.Nullable String familyName, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String status, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -1000,7 +1143,7 @@ public class ProvisioningApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1ApBrandBrandFamilyGetValidateBeforeCall(String brand, String familyName, Integer pageSize, String startKey, String status, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1ApBrandBrandFamilyGetValidateBeforeCall(@javax.annotation.Nonnull String brand, @javax.annotation.Nullable String familyName, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String status, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'brand' is set
         if (brand == null) {
             throw new ApiException("Missing the required parameter 'brand' when calling v1ApBrandBrandFamilyGet(Async)");
@@ -1029,7 +1172,7 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ProvisioningDocsDocsFamilyOutput v1ApBrandBrandFamilyGet(String brand, String familyName, Integer pageSize, String startKey, String status) throws ApiException {
+    public ProvisioningDocsDocsFamilyOutput v1ApBrandBrandFamilyGet(@javax.annotation.Nonnull String brand, @javax.annotation.Nullable String familyName, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String status) throws ApiException {
         ApiResponse<ProvisioningDocsDocsFamilyOutput> localVarResp = v1ApBrandBrandFamilyGetWithHttpInfo(brand, familyName, pageSize, startKey, status);
         return localVarResp.getData();
     }
@@ -1053,7 +1196,7 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ProvisioningDocsDocsFamilyOutput> v1ApBrandBrandFamilyGetWithHttpInfo(String brand, String familyName, Integer pageSize, String startKey, String status) throws ApiException {
+    public ApiResponse<ProvisioningDocsDocsFamilyOutput> v1ApBrandBrandFamilyGetWithHttpInfo(@javax.annotation.Nonnull String brand, @javax.annotation.Nullable String familyName, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String status) throws ApiException {
         okhttp3.Call localVarCall = v1ApBrandBrandFamilyGetValidateBeforeCall(brand, familyName, pageSize, startKey, status, null);
         Type localVarReturnType = new TypeToken<ProvisioningDocsDocsFamilyOutput>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -1079,7 +1222,7 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1ApBrandBrandFamilyGetAsync(String brand, String familyName, Integer pageSize, String startKey, String status, final ApiCallback<ProvisioningDocsDocsFamilyOutput> _callback) throws ApiException {
+    public okhttp3.Call v1ApBrandBrandFamilyGetAsync(@javax.annotation.Nonnull String brand, @javax.annotation.Nullable String familyName, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String status, final ApiCallback<ProvisioningDocsDocsFamilyOutput> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1ApBrandBrandFamilyGetValidateBeforeCall(brand, familyName, pageSize, startKey, status, _callback);
         Type localVarReturnType = new TypeToken<ProvisioningDocsDocsFamilyOutput>(){}.getType();
@@ -1101,7 +1244,7 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1ApBrandBrandGetCall(String brand, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1ApBrandBrandGetCall(@javax.annotation.Nonnull String brand, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -1147,7 +1290,7 @@ public class ProvisioningApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1ApBrandBrandGetValidateBeforeCall(String brand, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1ApBrandBrandGetValidateBeforeCall(@javax.annotation.Nonnull String brand, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'brand' is set
         if (brand == null) {
             throw new ApiException("Missing the required parameter 'brand' when calling v1ApBrandBrandGet(Async)");
@@ -1158,7 +1301,7 @@ public class ProvisioningApi {
     }
 
     /**
-     * Get Brand
+     * Get Brand Details
      * Retrieve a brand&#39;s details by the randomly generated ID.
      * @param brand brand id to retrieve a brand (required)
      * @return ProvisioningDocsDocsBrandOutputSingle
@@ -1172,13 +1315,13 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ProvisioningDocsDocsBrandOutputSingle v1ApBrandBrandGet(String brand) throws ApiException {
+    public ProvisioningDocsDocsBrandOutputSingle v1ApBrandBrandGet(@javax.annotation.Nonnull String brand) throws ApiException {
         ApiResponse<ProvisioningDocsDocsBrandOutputSingle> localVarResp = v1ApBrandBrandGetWithHttpInfo(brand);
         return localVarResp.getData();
     }
 
     /**
-     * Get Brand
+     * Get Brand Details
      * Retrieve a brand&#39;s details by the randomly generated ID.
      * @param brand brand id to retrieve a brand (required)
      * @return ApiResponse&lt;ProvisioningDocsDocsBrandOutputSingle&gt;
@@ -1192,14 +1335,14 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ProvisioningDocsDocsBrandOutputSingle> v1ApBrandBrandGetWithHttpInfo(String brand) throws ApiException {
+    public ApiResponse<ProvisioningDocsDocsBrandOutputSingle> v1ApBrandBrandGetWithHttpInfo(@javax.annotation.Nonnull String brand) throws ApiException {
         okhttp3.Call localVarCall = v1ApBrandBrandGetValidateBeforeCall(brand, null);
         Type localVarReturnType = new TypeToken<ProvisioningDocsDocsBrandOutputSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
     /**
-     * Get Brand (asynchronously)
+     * Get Brand Details (asynchronously)
      * Retrieve a brand&#39;s details by the randomly generated ID.
      * @param brand brand id to retrieve a brand (required)
      * @param _callback The callback to be executed when the API call finishes
@@ -1214,7 +1357,7 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1ApBrandBrandGetAsync(String brand, final ApiCallback<ProvisioningDocsDocsBrandOutputSingle> _callback) throws ApiException {
+    public okhttp3.Call v1ApBrandBrandGetAsync(@javax.annotation.Nonnull String brand, final ApiCallback<ProvisioningDocsDocsBrandOutputSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1ApBrandBrandGetValidateBeforeCall(brand, _callback);
         Type localVarReturnType = new TypeToken<ProvisioningDocsDocsBrandOutputSingle>(){}.getType();
@@ -1239,7 +1382,7 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1ApBrandGetCall(String brandName, Integer pageSize, String startKey, String status, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1ApBrandGetCall(@javax.annotation.Nullable String brandName, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String status, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -1300,13 +1443,13 @@ public class ProvisioningApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1ApBrandGetValidateBeforeCall(String brandName, Integer pageSize, String startKey, String status, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1ApBrandGetValidateBeforeCall(@javax.annotation.Nullable String brandName, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String status, final ApiCallback _callback) throws ApiException {
         return v1ApBrandGetCall(brandName, pageSize, startKey, status, _callback);
 
     }
 
     /**
-     * Get Brand
+     * Get Brand List
      * Retrieve a list of all brands (e.g., Yealink and Polycom) by client.
      * @param brandName  (optional)
      * @param pageSize  (optional)
@@ -1323,13 +1466,13 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ProvisioningDocsDocsBrandsOutput v1ApBrandGet(String brandName, Integer pageSize, String startKey, String status) throws ApiException {
+    public ProvisioningDocsDocsBrandsOutput v1ApBrandGet(@javax.annotation.Nullable String brandName, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String status) throws ApiException {
         ApiResponse<ProvisioningDocsDocsBrandsOutput> localVarResp = v1ApBrandGetWithHttpInfo(brandName, pageSize, startKey, status);
         return localVarResp.getData();
     }
 
     /**
-     * Get Brand
+     * Get Brand List
      * Retrieve a list of all brands (e.g., Yealink and Polycom) by client.
      * @param brandName  (optional)
      * @param pageSize  (optional)
@@ -1346,14 +1489,14 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ProvisioningDocsDocsBrandsOutput> v1ApBrandGetWithHttpInfo(String brandName, Integer pageSize, String startKey, String status) throws ApiException {
+    public ApiResponse<ProvisioningDocsDocsBrandsOutput> v1ApBrandGetWithHttpInfo(@javax.annotation.Nullable String brandName, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String status) throws ApiException {
         okhttp3.Call localVarCall = v1ApBrandGetValidateBeforeCall(brandName, pageSize, startKey, status, null);
         Type localVarReturnType = new TypeToken<ProvisioningDocsDocsBrandsOutput>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
     /**
-     * Get Brand (asynchronously)
+     * Get Brand List (asynchronously)
      * Retrieve a list of all brands (e.g., Yealink and Polycom) by client.
      * @param brandName  (optional)
      * @param pageSize  (optional)
@@ -1371,7 +1514,7 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1ApBrandGetAsync(String brandName, Integer pageSize, String startKey, String status, final ApiCallback<ProvisioningDocsDocsBrandsOutput> _callback) throws ApiException {
+    public okhttp3.Call v1ApBrandGetAsync(@javax.annotation.Nullable String brandName, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable String status, final ApiCallback<ProvisioningDocsDocsBrandsOutput> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1ApBrandGetValidateBeforeCall(brandName, pageSize, startKey, status, _callback);
         Type localVarReturnType = new TypeToken<ProvisioningDocsDocsBrandsOutput>(){}.getType();
@@ -1393,7 +1536,7 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1ApConfigfileGeneratePostCall(ModelsGenerateConfigFileRequest params, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1ApConfigfileGeneratePostCall(@javax.annotation.Nonnull ModelsGenerateConfigFileRequest params, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -1439,7 +1582,7 @@ public class ProvisioningApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1ApConfigfileGeneratePostValidateBeforeCall(ModelsGenerateConfigFileRequest params, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1ApConfigfileGeneratePostValidateBeforeCall(@javax.annotation.Nonnull ModelsGenerateConfigFileRequest params, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'params' is set
         if (params == null) {
             throw new ApiException("Missing the required parameter 'params' when calling v1ApConfigfileGeneratePost(Async)");
@@ -1450,7 +1593,7 @@ public class ProvisioningApi {
     }
 
     /**
-     * Generate config file
+     * Generate Config File
      * Generate a configuration file that includes a list of parameters passed to the specified template_id in the request payload, with populated values returned in the response.
      * @param params body params to generate config file (required)
      * @return ProvisioningDocsDocsConfigFileOutput
@@ -1464,13 +1607,13 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ProvisioningDocsDocsConfigFileOutput v1ApConfigfileGeneratePost(ModelsGenerateConfigFileRequest params) throws ApiException {
+    public ProvisioningDocsDocsConfigFileOutput v1ApConfigfileGeneratePost(@javax.annotation.Nonnull ModelsGenerateConfigFileRequest params) throws ApiException {
         ApiResponse<ProvisioningDocsDocsConfigFileOutput> localVarResp = v1ApConfigfileGeneratePostWithHttpInfo(params);
         return localVarResp.getData();
     }
 
     /**
-     * Generate config file
+     * Generate Config File
      * Generate a configuration file that includes a list of parameters passed to the specified template_id in the request payload, with populated values returned in the response.
      * @param params body params to generate config file (required)
      * @return ApiResponse&lt;ProvisioningDocsDocsConfigFileOutput&gt;
@@ -1484,14 +1627,14 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ProvisioningDocsDocsConfigFileOutput> v1ApConfigfileGeneratePostWithHttpInfo(ModelsGenerateConfigFileRequest params) throws ApiException {
+    public ApiResponse<ProvisioningDocsDocsConfigFileOutput> v1ApConfigfileGeneratePostWithHttpInfo(@javax.annotation.Nonnull ModelsGenerateConfigFileRequest params) throws ApiException {
         okhttp3.Call localVarCall = v1ApConfigfileGeneratePostValidateBeforeCall(params, null);
         Type localVarReturnType = new TypeToken<ProvisioningDocsDocsConfigFileOutput>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
     /**
-     * Generate config file (asynchronously)
+     * Generate Config File (asynchronously)
      * Generate a configuration file that includes a list of parameters passed to the specified template_id in the request payload, with populated values returned in the response.
      * @param params body params to generate config file (required)
      * @param _callback The callback to be executed when the API call finishes
@@ -1506,7 +1649,7 @@ public class ProvisioningApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1ApConfigfileGeneratePostAsync(ModelsGenerateConfigFileRequest params, final ApiCallback<ProvisioningDocsDocsConfigFileOutput> _callback) throws ApiException {
+    public okhttp3.Call v1ApConfigfileGeneratePostAsync(@javax.annotation.Nonnull ModelsGenerateConfigFileRequest params, final ApiCallback<ProvisioningDocsDocsConfigFileOutput> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1ApConfigfileGeneratePostValidateBeforeCall(params, _callback);
         Type localVarReturnType = new TypeToken<ProvisioningDocsDocsConfigFileOutput>(){}.getType();

@@ -171,12 +171,10 @@ public class ServiceVOIPCallQueueRecipientStatusData {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("status");
+    openapiFields = new HashSet<String>(Arrays.asList("status"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("status");
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("status"));
   }
 
   /**

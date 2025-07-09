@@ -197,13 +197,10 @@ public class ServiceVOIPImpersonateUser {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("action");
-    openapiFields.add("data");
+    openapiFields = new HashSet<String>(Arrays.asList("action", "data"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("action");
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("action"));
   }
 
   /**

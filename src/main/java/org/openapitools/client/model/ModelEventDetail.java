@@ -303,18 +303,10 @@ public class ModelEventDetail {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("account_id");
-    openapiFields.add("component");
-    openapiFields.add("created_at");
-    openapiFields.add("event_name");
-    openapiFields.add("exec_status");
-    openapiFields.add("log_date");
-    openapiFields.add("log_time");
-    openapiFields.add("username");
+    openapiFields = new HashSet<String>(Arrays.asList("account_id", "component", "created_at", "event_name", "exec_status", "log_date", "log_time", "username"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

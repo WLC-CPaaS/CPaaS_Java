@@ -245,18 +245,10 @@ public class ServiceCallflowAddEditData {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("featurecode");
-    openapiFields.add("flow");
-    openapiFields.add("name");
-    openapiFields.add("numbers");
-    openapiFields.add("patterns");
+    openapiFields = new HashSet<String>(Arrays.asList("featurecode", "flow", "name", "numbers", "patterns"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("flow");
-    openapiRequiredFields.add("numbers");
-    openapiRequiredFields.add("patterns");
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("flow", "numbers", "patterns"));
   }
 
   /**

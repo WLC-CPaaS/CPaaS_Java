@@ -251,15 +251,10 @@ public class ServiceTemporalRuleSetOutputShort {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("features");
-    openapiFields.add("flags");
-    openapiFields.add("id");
-    openapiFields.add("name");
-    openapiFields.add("rules");
+    openapiFields = new HashSet<String>(Arrays.asList("features", "flags", "id", "name", "rules"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

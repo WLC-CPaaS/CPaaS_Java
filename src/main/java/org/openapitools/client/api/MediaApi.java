@@ -91,7 +91,7 @@ public class MediaApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDMediaMediaIDFileGetCall(String accountID, String mediaID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDMediaMediaIDFileGetCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String mediaID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -150,7 +150,7 @@ public class MediaApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDMediaMediaIDFileGetValidateBeforeCall(String accountID, String mediaID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDMediaMediaIDFileGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String mediaID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDMediaMediaIDFileGet(Async)");
@@ -180,7 +180,7 @@ public class MediaApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public File v1AccountAccountIDMediaMediaIDFileGet(String accountID, String mediaID) throws ApiException {
+    public File v1AccountAccountIDMediaMediaIDFileGet(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String mediaID) throws ApiException {
         ApiResponse<File> localVarResp = v1AccountAccountIDMediaMediaIDFileGetWithHttpInfo(accountID, mediaID);
         return localVarResp.getData();
     }
@@ -200,7 +200,7 @@ public class MediaApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<File> v1AccountAccountIDMediaMediaIDFileGetWithHttpInfo(String accountID, String mediaID) throws ApiException {
+    public ApiResponse<File> v1AccountAccountIDMediaMediaIDFileGetWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String mediaID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDMediaMediaIDFileGetValidateBeforeCall(accountID, mediaID, null);
         Type localVarReturnType = new TypeToken<File>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -222,7 +222,7 @@ public class MediaApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDMediaMediaIDFileGetAsync(String accountID, String mediaID, final ApiCallback<File> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDMediaMediaIDFileGetAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String mediaID, final ApiCallback<File> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDMediaMediaIDFileGetValidateBeforeCall(accountID, mediaID, _callback);
         Type localVarReturnType = new TypeToken<File>(){}.getType();
@@ -245,7 +245,7 @@ public class MediaApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDMediaMediaIDFilePostCall(String accountID, String mediaID, File _file, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDMediaMediaIDFilePostCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String mediaID, @javax.annotation.Nonnull File _file, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -297,7 +297,7 @@ public class MediaApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDMediaMediaIDFilePostValidateBeforeCall(String accountID, String mediaID, File _file, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDMediaMediaIDFilePostValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String mediaID, @javax.annotation.Nonnull File _file, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDMediaMediaIDFilePost(Async)");
@@ -333,7 +333,7 @@ public class MediaApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsMediaGetSingle v1AccountAccountIDMediaMediaIDFilePost(String accountID, String mediaID, File _file) throws ApiException {
+    public ServiceDocsMediaGetSingle v1AccountAccountIDMediaMediaIDFilePost(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String mediaID, @javax.annotation.Nonnull File _file) throws ApiException {
         ApiResponse<ServiceDocsMediaGetSingle> localVarResp = v1AccountAccountIDMediaMediaIDFilePostWithHttpInfo(accountID, mediaID, _file);
         return localVarResp.getData();
     }
@@ -354,7 +354,7 @@ public class MediaApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsMediaGetSingle> v1AccountAccountIDMediaMediaIDFilePostWithHttpInfo(String accountID, String mediaID, File _file) throws ApiException {
+    public ApiResponse<ServiceDocsMediaGetSingle> v1AccountAccountIDMediaMediaIDFilePostWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String mediaID, @javax.annotation.Nonnull File _file) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDMediaMediaIDFilePostValidateBeforeCall(accountID, mediaID, _file, null);
         Type localVarReturnType = new TypeToken<ServiceDocsMediaGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -377,7 +377,7 @@ public class MediaApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDMediaMediaIDFilePostAsync(String accountID, String mediaID, File _file, final ApiCallback<ServiceDocsMediaGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDMediaMediaIDFilePostAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String mediaID, @javax.annotation.Nonnull File _file, final ApiCallback<ServiceDocsMediaGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDMediaMediaIDFilePostValidateBeforeCall(accountID, mediaID, _file, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsMediaGetSingle>(){}.getType();
@@ -400,7 +400,7 @@ public class MediaApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidMediaGetCall(String accountid, String startKey, Integer pageSize, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidMediaGetCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -454,7 +454,7 @@ public class MediaApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountidMediaGetValidateBeforeCall(String accountid, String startKey, Integer pageSize, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountidMediaGetValidateBeforeCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountid' is set
         if (accountid == null) {
             throw new ApiException("Missing the required parameter 'accountid' when calling v1AccountAccountidMediaGet(Async)");
@@ -480,7 +480,7 @@ public class MediaApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsMediaGetAll v1AccountAccountidMediaGet(String accountid, String startKey, Integer pageSize) throws ApiException {
+    public ServiceDocsMediaGetAll v1AccountAccountidMediaGet(@javax.annotation.Nonnull String accountid, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize) throws ApiException {
         ApiResponse<ServiceDocsMediaGetAll> localVarResp = v1AccountAccountidMediaGetWithHttpInfo(accountid, startKey, pageSize);
         return localVarResp.getData();
     }
@@ -501,7 +501,7 @@ public class MediaApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsMediaGetAll> v1AccountAccountidMediaGetWithHttpInfo(String accountid, String startKey, Integer pageSize) throws ApiException {
+    public ApiResponse<ServiceDocsMediaGetAll> v1AccountAccountidMediaGetWithHttpInfo(@javax.annotation.Nonnull String accountid, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidMediaGetValidateBeforeCall(accountid, startKey, pageSize, null);
         Type localVarReturnType = new TypeToken<ServiceDocsMediaGetAll>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -524,7 +524,7 @@ public class MediaApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidMediaGetAsync(String accountid, String startKey, Integer pageSize, final ApiCallback<ServiceDocsMediaGetAll> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidMediaGetAsync(@javax.annotation.Nonnull String accountid, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback<ServiceDocsMediaGetAll> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidMediaGetValidateBeforeCall(accountid, startKey, pageSize, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsMediaGetAll>(){}.getType();
@@ -546,7 +546,7 @@ public class MediaApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidMediaMediaidDeleteCall(String accountid, String mediaid, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidMediaMediaidDeleteCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String mediaid, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -593,7 +593,7 @@ public class MediaApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountidMediaMediaidDeleteValidateBeforeCall(String accountid, String mediaid, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountidMediaMediaidDeleteValidateBeforeCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String mediaid, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountid' is set
         if (accountid == null) {
             throw new ApiException("Missing the required parameter 'accountid' when calling v1AccountAccountidMediaMediaidDelete(Async)");
@@ -623,7 +623,7 @@ public class MediaApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsMediaGetSingle v1AccountAccountidMediaMediaidDelete(String accountid, String mediaid) throws ApiException {
+    public ServiceDocsMediaGetSingle v1AccountAccountidMediaMediaidDelete(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String mediaid) throws ApiException {
         ApiResponse<ServiceDocsMediaGetSingle> localVarResp = v1AccountAccountidMediaMediaidDeleteWithHttpInfo(accountid, mediaid);
         return localVarResp.getData();
     }
@@ -643,7 +643,7 @@ public class MediaApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsMediaGetSingle> v1AccountAccountidMediaMediaidDeleteWithHttpInfo(String accountid, String mediaid) throws ApiException {
+    public ApiResponse<ServiceDocsMediaGetSingle> v1AccountAccountidMediaMediaidDeleteWithHttpInfo(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String mediaid) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidMediaMediaidDeleteValidateBeforeCall(accountid, mediaid, null);
         Type localVarReturnType = new TypeToken<ServiceDocsMediaGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -665,7 +665,7 @@ public class MediaApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidMediaMediaidDeleteAsync(String accountid, String mediaid, final ApiCallback<ServiceDocsMediaGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidMediaMediaidDeleteAsync(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String mediaid, final ApiCallback<ServiceDocsMediaGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidMediaMediaidDeleteValidateBeforeCall(accountid, mediaid, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsMediaGetSingle>(){}.getType();
@@ -687,7 +687,7 @@ public class MediaApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidMediaMediaidGetCall(String accountid, String mediaid, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidMediaMediaidGetCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String mediaid, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -734,7 +734,7 @@ public class MediaApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountidMediaMediaidGetValidateBeforeCall(String accountid, String mediaid, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountidMediaMediaidGetValidateBeforeCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String mediaid, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountid' is set
         if (accountid == null) {
             throw new ApiException("Missing the required parameter 'accountid' when calling v1AccountAccountidMediaMediaidGet(Async)");
@@ -764,7 +764,7 @@ public class MediaApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsMediaGetSingle v1AccountAccountidMediaMediaidGet(String accountid, String mediaid) throws ApiException {
+    public ServiceDocsMediaGetSingle v1AccountAccountidMediaMediaidGet(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String mediaid) throws ApiException {
         ApiResponse<ServiceDocsMediaGetSingle> localVarResp = v1AccountAccountidMediaMediaidGetWithHttpInfo(accountid, mediaid);
         return localVarResp.getData();
     }
@@ -784,7 +784,7 @@ public class MediaApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsMediaGetSingle> v1AccountAccountidMediaMediaidGetWithHttpInfo(String accountid, String mediaid) throws ApiException {
+    public ApiResponse<ServiceDocsMediaGetSingle> v1AccountAccountidMediaMediaidGetWithHttpInfo(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String mediaid) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidMediaMediaidGetValidateBeforeCall(accountid, mediaid, null);
         Type localVarReturnType = new TypeToken<ServiceDocsMediaGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -806,7 +806,7 @@ public class MediaApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidMediaMediaidGetAsync(String accountid, String mediaid, final ApiCallback<ServiceDocsMediaGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidMediaMediaidGetAsync(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String mediaid, final ApiCallback<ServiceDocsMediaGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidMediaMediaidGetValidateBeforeCall(accountid, mediaid, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsMediaGetSingle>(){}.getType();
@@ -828,7 +828,7 @@ public class MediaApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidMediaPostCall(String accountid, ServiceVOIPMediaAddEditData media, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidMediaPostCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceVOIPMediaAddEditData media, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -875,7 +875,7 @@ public class MediaApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountidMediaPostValidateBeforeCall(String accountid, ServiceVOIPMediaAddEditData media, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountidMediaPostValidateBeforeCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceVOIPMediaAddEditData media, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountid' is set
         if (accountid == null) {
             throw new ApiException("Missing the required parameter 'accountid' when calling v1AccountAccountidMediaPost(Async)");
@@ -905,7 +905,7 @@ public class MediaApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsMediaGetSingle v1AccountAccountidMediaPost(String accountid, ServiceVOIPMediaAddEditData media) throws ApiException {
+    public ServiceDocsMediaGetSingle v1AccountAccountidMediaPost(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceVOIPMediaAddEditData media) throws ApiException {
         ApiResponse<ServiceDocsMediaGetSingle> localVarResp = v1AccountAccountidMediaPostWithHttpInfo(accountid, media);
         return localVarResp.getData();
     }
@@ -925,7 +925,7 @@ public class MediaApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsMediaGetSingle> v1AccountAccountidMediaPostWithHttpInfo(String accountid, ServiceVOIPMediaAddEditData media) throws ApiException {
+    public ApiResponse<ServiceDocsMediaGetSingle> v1AccountAccountidMediaPostWithHttpInfo(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceVOIPMediaAddEditData media) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidMediaPostValidateBeforeCall(accountid, media, null);
         Type localVarReturnType = new TypeToken<ServiceDocsMediaGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -947,7 +947,7 @@ public class MediaApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidMediaPostAsync(String accountid, ServiceVOIPMediaAddEditData media, final ApiCallback<ServiceDocsMediaGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidMediaPostAsync(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceVOIPMediaAddEditData media, final ApiCallback<ServiceDocsMediaGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidMediaPostValidateBeforeCall(accountid, media, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsMediaGetSingle>(){}.getType();

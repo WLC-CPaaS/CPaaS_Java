@@ -173,12 +173,10 @@ public class ServiceVOIPCallQueueRecipientLoginLogoutData {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("action");
+    openapiFields = new HashSet<String>(Arrays.asList("action"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("action");
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("action"));
   }
 
   /**

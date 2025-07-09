@@ -96,7 +96,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDVoicemailGetCall(String accountID, String startKey, Integer pageSize, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDVoicemailGetCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -150,7 +150,7 @@ public class VoicemailApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDVoicemailGetValidateBeforeCall(String accountID, String startKey, Integer pageSize, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDVoicemailGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDVoicemailGet(Async)");
@@ -176,7 +176,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsVoicemailGetAll v1AccountAccountIDVoicemailGet(String accountID, String startKey, Integer pageSize) throws ApiException {
+    public ServiceDocsVoicemailGetAll v1AccountAccountIDVoicemailGet(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize) throws ApiException {
         ApiResponse<ServiceDocsVoicemailGetAll> localVarResp = v1AccountAccountIDVoicemailGetWithHttpInfo(accountID, startKey, pageSize);
         return localVarResp.getData();
     }
@@ -197,7 +197,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsVoicemailGetAll> v1AccountAccountIDVoicemailGetWithHttpInfo(String accountID, String startKey, Integer pageSize) throws ApiException {
+    public ApiResponse<ServiceDocsVoicemailGetAll> v1AccountAccountIDVoicemailGetWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDVoicemailGetValidateBeforeCall(accountID, startKey, pageSize, null);
         Type localVarReturnType = new TypeToken<ServiceDocsVoicemailGetAll>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -220,7 +220,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDVoicemailGetAsync(String accountID, String startKey, Integer pageSize, final ApiCallback<ServiceDocsVoicemailGetAll> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDVoicemailGetAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback<ServiceDocsVoicemailGetAll> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDVoicemailGetValidateBeforeCall(accountID, startKey, pageSize, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsVoicemailGetAll>(){}.getType();
@@ -242,7 +242,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDVoicemailPostCall(String accountID, ServiceVOIPVoicemailAddEditData voicemail, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDVoicemailPostCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPVoicemailAddEditData voicemail, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -289,7 +289,7 @@ public class VoicemailApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDVoicemailPostValidateBeforeCall(String accountID, ServiceVOIPVoicemailAddEditData voicemail, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDVoicemailPostValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPVoicemailAddEditData voicemail, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDVoicemailPost(Async)");
@@ -319,7 +319,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsVoicemailGetSingle v1AccountAccountIDVoicemailPost(String accountID, ServiceVOIPVoicemailAddEditData voicemail) throws ApiException {
+    public ServiceDocsVoicemailGetSingle v1AccountAccountIDVoicemailPost(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPVoicemailAddEditData voicemail) throws ApiException {
         ApiResponse<ServiceDocsVoicemailGetSingle> localVarResp = v1AccountAccountIDVoicemailPostWithHttpInfo(accountID, voicemail);
         return localVarResp.getData();
     }
@@ -339,7 +339,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsVoicemailGetSingle> v1AccountAccountIDVoicemailPostWithHttpInfo(String accountID, ServiceVOIPVoicemailAddEditData voicemail) throws ApiException {
+    public ApiResponse<ServiceDocsVoicemailGetSingle> v1AccountAccountIDVoicemailPostWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPVoicemailAddEditData voicemail) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDVoicemailPostValidateBeforeCall(accountID, voicemail, null);
         Type localVarReturnType = new TypeToken<ServiceDocsVoicemailGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -361,7 +361,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDVoicemailPostAsync(String accountID, ServiceVOIPVoicemailAddEditData voicemail, final ApiCallback<ServiceDocsVoicemailGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDVoicemailPostAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPVoicemailAddEditData voicemail, final ApiCallback<ServiceDocsVoicemailGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDVoicemailPostValidateBeforeCall(accountID, voicemail, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsVoicemailGetSingle>(){}.getType();
@@ -383,7 +383,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDDeleteCall(String accountID, String voicemailID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDDeleteCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -430,7 +430,7 @@ public class VoicemailApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDDeleteValidateBeforeCall(String accountID, String voicemailID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDDeleteValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDVoicemailVoicemailIDDelete(Async)");
@@ -460,7 +460,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsVoicemailGetSingle v1AccountAccountIDVoicemailVoicemailIDDelete(String accountID, String voicemailID) throws ApiException {
+    public ServiceDocsVoicemailGetSingle v1AccountAccountIDVoicemailVoicemailIDDelete(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID) throws ApiException {
         ApiResponse<ServiceDocsVoicemailGetSingle> localVarResp = v1AccountAccountIDVoicemailVoicemailIDDeleteWithHttpInfo(accountID, voicemailID);
         return localVarResp.getData();
     }
@@ -480,7 +480,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsVoicemailGetSingle> v1AccountAccountIDVoicemailVoicemailIDDeleteWithHttpInfo(String accountID, String voicemailID) throws ApiException {
+    public ApiResponse<ServiceDocsVoicemailGetSingle> v1AccountAccountIDVoicemailVoicemailIDDeleteWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDVoicemailVoicemailIDDeleteValidateBeforeCall(accountID, voicemailID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsVoicemailGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -502,7 +502,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDDeleteAsync(String accountID, String voicemailID, final ApiCallback<ServiceDocsVoicemailGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDDeleteAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, final ApiCallback<ServiceDocsVoicemailGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDVoicemailVoicemailIDDeleteValidateBeforeCall(accountID, voicemailID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsVoicemailGetSingle>(){}.getType();
@@ -524,7 +524,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDGetCall(String accountID, String voicemailID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDGetCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -571,7 +571,7 @@ public class VoicemailApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDGetValidateBeforeCall(String accountID, String voicemailID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDVoicemailVoicemailIDGet(Async)");
@@ -601,7 +601,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsVoicemailGetSingle v1AccountAccountIDVoicemailVoicemailIDGet(String accountID, String voicemailID) throws ApiException {
+    public ServiceDocsVoicemailGetSingle v1AccountAccountIDVoicemailVoicemailIDGet(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID) throws ApiException {
         ApiResponse<ServiceDocsVoicemailGetSingle> localVarResp = v1AccountAccountIDVoicemailVoicemailIDGetWithHttpInfo(accountID, voicemailID);
         return localVarResp.getData();
     }
@@ -621,7 +621,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsVoicemailGetSingle> v1AccountAccountIDVoicemailVoicemailIDGetWithHttpInfo(String accountID, String voicemailID) throws ApiException {
+    public ApiResponse<ServiceDocsVoicemailGetSingle> v1AccountAccountIDVoicemailVoicemailIDGetWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDVoicemailVoicemailIDGetValidateBeforeCall(accountID, voicemailID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsVoicemailGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -643,7 +643,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDGetAsync(String accountID, String voicemailID, final ApiCallback<ServiceDocsVoicemailGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDGetAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, final ApiCallback<ServiceDocsVoicemailGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDVoicemailVoicemailIDGetValidateBeforeCall(accountID, voicemailID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsVoicemailGetSingle>(){}.getType();
@@ -667,7 +667,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageGetCall(String accountID, String voicemailID, String startKey, Integer pageSize, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageGetCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -722,7 +722,7 @@ public class VoicemailApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageGetValidateBeforeCall(String accountID, String voicemailID, String startKey, Integer pageSize, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDVoicemailVoicemailIDMessageGet(Async)");
@@ -754,7 +754,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsVoicemailMessageGetAll v1AccountAccountIDVoicemailVoicemailIDMessageGet(String accountID, String voicemailID, String startKey, Integer pageSize) throws ApiException {
+    public ServiceDocsVoicemailMessageGetAll v1AccountAccountIDVoicemailVoicemailIDMessageGet(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize) throws ApiException {
         ApiResponse<ServiceDocsVoicemailMessageGetAll> localVarResp = v1AccountAccountIDVoicemailVoicemailIDMessageGetWithHttpInfo(accountID, voicemailID, startKey, pageSize);
         return localVarResp.getData();
     }
@@ -776,7 +776,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsVoicemailMessageGetAll> v1AccountAccountIDVoicemailVoicemailIDMessageGetWithHttpInfo(String accountID, String voicemailID, String startKey, Integer pageSize) throws ApiException {
+    public ApiResponse<ServiceDocsVoicemailMessageGetAll> v1AccountAccountIDVoicemailVoicemailIDMessageGetWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDVoicemailVoicemailIDMessageGetValidateBeforeCall(accountID, voicemailID, startKey, pageSize, null);
         Type localVarReturnType = new TypeToken<ServiceDocsVoicemailMessageGetAll>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -800,7 +800,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageGetAsync(String accountID, String voicemailID, String startKey, Integer pageSize, final ApiCallback<ServiceDocsVoicemailMessageGetAll> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageGetAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback<ServiceDocsVoicemailMessageGetAll> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDVoicemailVoicemailIDMessageGetValidateBeforeCall(accountID, voicemailID, startKey, pageSize, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsVoicemailMessageGetAll>(){}.getType();
@@ -823,7 +823,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDDeleteCall(String accountID, String voicemailID, String messageID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDDeleteCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -871,7 +871,7 @@ public class VoicemailApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDDeleteValidateBeforeCall(String accountID, String voicemailID, String messageID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDDeleteValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDDelete(Async)");
@@ -907,7 +907,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsVoicemailMessageGetSingle v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDDelete(String accountID, String voicemailID, String messageID) throws ApiException {
+    public ServiceDocsVoicemailMessageGetSingle v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDDelete(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID) throws ApiException {
         ApiResponse<ServiceDocsVoicemailMessageGetSingle> localVarResp = v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDDeleteWithHttpInfo(accountID, voicemailID, messageID);
         return localVarResp.getData();
     }
@@ -928,7 +928,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsVoicemailMessageGetSingle> v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDDeleteWithHttpInfo(String accountID, String voicemailID, String messageID) throws ApiException {
+    public ApiResponse<ServiceDocsVoicemailMessageGetSingle> v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDDeleteWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDDeleteValidateBeforeCall(accountID, voicemailID, messageID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsVoicemailMessageGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -951,7 +951,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDDeleteAsync(String accountID, String voicemailID, String messageID, final ApiCallback<ServiceDocsVoicemailMessageGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDDeleteAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, final ApiCallback<ServiceDocsVoicemailMessageGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDDeleteValidateBeforeCall(accountID, voicemailID, messageID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsVoicemailMessageGetSingle>(){}.getType();
@@ -974,7 +974,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDGetCall(String accountID, String voicemailID, String messageID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDGetCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -1022,7 +1022,7 @@ public class VoicemailApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDGetValidateBeforeCall(String accountID, String voicemailID, String messageID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDGet(Async)");
@@ -1058,7 +1058,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsVoicemailMessageGetSingle v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDGet(String accountID, String voicemailID, String messageID) throws ApiException {
+    public ServiceDocsVoicemailMessageGetSingle v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDGet(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID) throws ApiException {
         ApiResponse<ServiceDocsVoicemailMessageGetSingle> localVarResp = v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDGetWithHttpInfo(accountID, voicemailID, messageID);
         return localVarResp.getData();
     }
@@ -1079,7 +1079,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsVoicemailMessageGetSingle> v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDGetWithHttpInfo(String accountID, String voicemailID, String messageID) throws ApiException {
+    public ApiResponse<ServiceDocsVoicemailMessageGetSingle> v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDGetWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDGetValidateBeforeCall(accountID, voicemailID, messageID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsVoicemailMessageGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -1102,7 +1102,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDGetAsync(String accountID, String voicemailID, String messageID, final ApiCallback<ServiceDocsVoicemailMessageGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDGetAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, final ApiCallback<ServiceDocsVoicemailMessageGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDGetValidateBeforeCall(accountID, voicemailID, messageID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsVoicemailMessageGetSingle>(){}.getType();
@@ -1126,7 +1126,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDPutCall(String accountID, String voicemailID, String messageID, ServiceVOIPVoicemailMessageChange reqBody, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDPutCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, @javax.annotation.Nonnull ServiceVOIPVoicemailMessageChange reqBody, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -1175,7 +1175,7 @@ public class VoicemailApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDPutValidateBeforeCall(String accountID, String voicemailID, String messageID, ServiceVOIPVoicemailMessageChange reqBody, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDPutValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, @javax.annotation.Nonnull ServiceVOIPVoicemailMessageChange reqBody, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDPut(Async)");
@@ -1217,7 +1217,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsVoicemailMessageGetSingle v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDPut(String accountID, String voicemailID, String messageID, ServiceVOIPVoicemailMessageChange reqBody) throws ApiException {
+    public ServiceDocsVoicemailMessageGetSingle v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDPut(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, @javax.annotation.Nonnull ServiceVOIPVoicemailMessageChange reqBody) throws ApiException {
         ApiResponse<ServiceDocsVoicemailMessageGetSingle> localVarResp = v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDPutWithHttpInfo(accountID, voicemailID, messageID, reqBody);
         return localVarResp.getData();
     }
@@ -1239,7 +1239,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsVoicemailMessageGetSingle> v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDPutWithHttpInfo(String accountID, String voicemailID, String messageID, ServiceVOIPVoicemailMessageChange reqBody) throws ApiException {
+    public ApiResponse<ServiceDocsVoicemailMessageGetSingle> v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDPutWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, @javax.annotation.Nonnull ServiceVOIPVoicemailMessageChange reqBody) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDPutValidateBeforeCall(accountID, voicemailID, messageID, reqBody, null);
         Type localVarReturnType = new TypeToken<ServiceDocsVoicemailMessageGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -1263,7 +1263,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDPutAsync(String accountID, String voicemailID, String messageID, ServiceVOIPVoicemailMessageChange reqBody, final ApiCallback<ServiceDocsVoicemailMessageGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDPutAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, @javax.annotation.Nonnull ServiceVOIPVoicemailMessageChange reqBody, final ApiCallback<ServiceDocsVoicemailMessageGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDPutValidateBeforeCall(accountID, voicemailID, messageID, reqBody, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsVoicemailMessageGetSingle>(){}.getType();
@@ -1286,7 +1286,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGetCall(String accountID, String voicemailID, String messageID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGetCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -1334,7 +1334,7 @@ public class VoicemailApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGetValidateBeforeCall(String accountID, String voicemailID, String messageID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGet(Async)");
@@ -1370,7 +1370,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public File v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGet(String accountID, String voicemailID, String messageID) throws ApiException {
+    public File v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGet(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID) throws ApiException {
         ApiResponse<File> localVarResp = v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGetWithHttpInfo(accountID, voicemailID, messageID);
         return localVarResp.getData();
     }
@@ -1391,7 +1391,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<File> v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGetWithHttpInfo(String accountID, String voicemailID, String messageID) throws ApiException {
+    public ApiResponse<File> v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGetWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGetValidateBeforeCall(accountID, voicemailID, messageID, null);
         Type localVarReturnType = new TypeToken<File>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -1414,7 +1414,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGetAsync(String accountID, String voicemailID, String messageID, final ApiCallback<File> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGetAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, final ApiCallback<File> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGetValidateBeforeCall(accountID, voicemailID, messageID, _callback);
         Type localVarReturnType = new TypeToken<File>(){}.getType();
@@ -1438,7 +1438,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPostCall(String accountID, String voicemailID, String messageID, File _file, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPostCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, @javax.annotation.Nonnull File _file, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -1491,7 +1491,7 @@ public class VoicemailApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPostValidateBeforeCall(String accountID, String voicemailID, String messageID, File _file, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPostValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, @javax.annotation.Nonnull File _file, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPost(Async)");
@@ -1533,7 +1533,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public Map<String, Object> v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPost(String accountID, String voicemailID, String messageID, File _file) throws ApiException {
+    public Map<String, Object> v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPost(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, @javax.annotation.Nonnull File _file) throws ApiException {
         ApiResponse<Map<String, Object>> localVarResp = v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPostWithHttpInfo(accountID, voicemailID, messageID, _file);
         return localVarResp.getData();
     }
@@ -1555,7 +1555,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<Map<String, Object>> v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPostWithHttpInfo(String accountID, String voicemailID, String messageID, File _file) throws ApiException {
+    public ApiResponse<Map<String, Object>> v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPostWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, @javax.annotation.Nonnull File _file) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPostValidateBeforeCall(accountID, voicemailID, messageID, _file, null);
         Type localVarReturnType = new TypeToken<Map<String, Object>>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -1579,7 +1579,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPostAsync(String accountID, String voicemailID, String messageID, File _file, final ApiCallback<Map<String, Object>> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPostAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, @javax.annotation.Nonnull File _file, final ApiCallback<Map<String, Object>> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPostValidateBeforeCall(accountID, voicemailID, messageID, _file, _callback);
         Type localVarReturnType = new TypeToken<Map<String, Object>>(){}.getType();
@@ -1602,7 +1602,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessagePostCall(String accountID, String voicemailID, ServiceVOIPVoicemailMessageAddData message, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessagePostCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull ServiceVOIPVoicemailMessageAddData message, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -1650,7 +1650,7 @@ public class VoicemailApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessagePostValidateBeforeCall(String accountID, String voicemailID, ServiceVOIPVoicemailMessageAddData message, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessagePostValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull ServiceVOIPVoicemailMessageAddData message, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDVoicemailVoicemailIDMessagePost(Async)");
@@ -1686,7 +1686,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsVoicemailMessageGetSingle v1AccountAccountIDVoicemailVoicemailIDMessagePost(String accountID, String voicemailID, ServiceVOIPVoicemailMessageAddData message) throws ApiException {
+    public ServiceDocsVoicemailMessageGetSingle v1AccountAccountIDVoicemailVoicemailIDMessagePost(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull ServiceVOIPVoicemailMessageAddData message) throws ApiException {
         ApiResponse<ServiceDocsVoicemailMessageGetSingle> localVarResp = v1AccountAccountIDVoicemailVoicemailIDMessagePostWithHttpInfo(accountID, voicemailID, message);
         return localVarResp.getData();
     }
@@ -1707,7 +1707,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsVoicemailMessageGetSingle> v1AccountAccountIDVoicemailVoicemailIDMessagePostWithHttpInfo(String accountID, String voicemailID, ServiceVOIPVoicemailMessageAddData message) throws ApiException {
+    public ApiResponse<ServiceDocsVoicemailMessageGetSingle> v1AccountAccountIDVoicemailVoicemailIDMessagePostWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull ServiceVOIPVoicemailMessageAddData message) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDVoicemailVoicemailIDMessagePostValidateBeforeCall(accountID, voicemailID, message, null);
         Type localVarReturnType = new TypeToken<ServiceDocsVoicemailMessageGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -1730,7 +1730,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessagePostAsync(String accountID, String voicemailID, ServiceVOIPVoicemailMessageAddData message, final ApiCallback<ServiceDocsVoicemailMessageGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessagePostAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull ServiceVOIPVoicemailMessageAddData message, final ApiCallback<ServiceDocsVoicemailMessageGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDVoicemailVoicemailIDMessagePostValidateBeforeCall(accountID, voicemailID, message, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsVoicemailMessageGetSingle>(){}.getType();
@@ -1753,7 +1753,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDPutCall(String accountID, String voicemailID, ServiceVOIPVoicemailAddEditData reqBody, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDPutCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull ServiceVOIPVoicemailAddEditData reqBody, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -1801,7 +1801,7 @@ public class VoicemailApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDPutValidateBeforeCall(String accountID, String voicemailID, ServiceVOIPVoicemailAddEditData reqBody, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDPutValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull ServiceVOIPVoicemailAddEditData reqBody, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDVoicemailVoicemailIDPut(Async)");
@@ -1837,7 +1837,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsVoicemailGetSingle v1AccountAccountIDVoicemailVoicemailIDPut(String accountID, String voicemailID, ServiceVOIPVoicemailAddEditData reqBody) throws ApiException {
+    public ServiceDocsVoicemailGetSingle v1AccountAccountIDVoicemailVoicemailIDPut(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull ServiceVOIPVoicemailAddEditData reqBody) throws ApiException {
         ApiResponse<ServiceDocsVoicemailGetSingle> localVarResp = v1AccountAccountIDVoicemailVoicemailIDPutWithHttpInfo(accountID, voicemailID, reqBody);
         return localVarResp.getData();
     }
@@ -1858,7 +1858,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsVoicemailGetSingle> v1AccountAccountIDVoicemailVoicemailIDPutWithHttpInfo(String accountID, String voicemailID, ServiceVOIPVoicemailAddEditData reqBody) throws ApiException {
+    public ApiResponse<ServiceDocsVoicemailGetSingle> v1AccountAccountIDVoicemailVoicemailIDPutWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull ServiceVOIPVoicemailAddEditData reqBody) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDVoicemailVoicemailIDPutValidateBeforeCall(accountID, voicemailID, reqBody, null);
         Type localVarReturnType = new TypeToken<ServiceDocsVoicemailGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -1881,7 +1881,7 @@ public class VoicemailApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDPutAsync(String accountID, String voicemailID, ServiceVOIPVoicemailAddEditData reqBody, final ApiCallback<ServiceDocsVoicemailGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDPutAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull ServiceVOIPVoicemailAddEditData reqBody, final ApiCallback<ServiceDocsVoicemailGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDVoicemailVoicemailIDPutValidateBeforeCall(accountID, voicemailID, reqBody, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsVoicemailGetSingle>(){}.getType();

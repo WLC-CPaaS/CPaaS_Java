@@ -93,7 +93,7 @@ public class SmsApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1SmsAccountAccountIDCampaignCampaignIDImportGetCall(String accountID, String campaignID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1SmsAccountAccountIDCampaignCampaignIDImportGetCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String campaignID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -140,7 +140,7 @@ public class SmsApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1SmsAccountAccountIDCampaignCampaignIDImportGetValidateBeforeCall(String accountID, String campaignID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1SmsAccountAccountIDCampaignCampaignIDImportGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String campaignID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1SmsAccountAccountIDCampaignCampaignIDImportGet(Async)");
@@ -170,7 +170,7 @@ public class SmsApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsCampaignImportOutput v1SmsAccountAccountIDCampaignCampaignIDImportGet(String accountID, String campaignID) throws ApiException {
+    public ServiceDocsCampaignImportOutput v1SmsAccountAccountIDCampaignCampaignIDImportGet(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String campaignID) throws ApiException {
         ApiResponse<ServiceDocsCampaignImportOutput> localVarResp = v1SmsAccountAccountIDCampaignCampaignIDImportGetWithHttpInfo(accountID, campaignID);
         return localVarResp.getData();
     }
@@ -190,7 +190,7 @@ public class SmsApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsCampaignImportOutput> v1SmsAccountAccountIDCampaignCampaignIDImportGetWithHttpInfo(String accountID, String campaignID) throws ApiException {
+    public ApiResponse<ServiceDocsCampaignImportOutput> v1SmsAccountAccountIDCampaignCampaignIDImportGetWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String campaignID) throws ApiException {
         okhttp3.Call localVarCall = v1SmsAccountAccountIDCampaignCampaignIDImportGetValidateBeforeCall(accountID, campaignID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsCampaignImportOutput>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -212,7 +212,7 @@ public class SmsApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1SmsAccountAccountIDCampaignCampaignIDImportGetAsync(String accountID, String campaignID, final ApiCallback<ServiceDocsCampaignImportOutput> _callback) throws ApiException {
+    public okhttp3.Call v1SmsAccountAccountIDCampaignCampaignIDImportGetAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String campaignID, final ApiCallback<ServiceDocsCampaignImportOutput> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1SmsAccountAccountIDCampaignCampaignIDImportGetValidateBeforeCall(accountID, campaignID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsCampaignImportOutput>(){}.getType();
@@ -234,7 +234,7 @@ public class SmsApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1SmsAccountAccountIDCampaignCampaignIDImportPostCall(String accountID, String campaignID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1SmsAccountAccountIDCampaignCampaignIDImportPostCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String campaignID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -281,7 +281,7 @@ public class SmsApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1SmsAccountAccountIDCampaignCampaignIDImportPostValidateBeforeCall(String accountID, String campaignID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1SmsAccountAccountIDCampaignCampaignIDImportPostValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String campaignID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1SmsAccountAccountIDCampaignCampaignIDImportPost(Async)");
@@ -311,7 +311,7 @@ public class SmsApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsCampaignImportOutput v1SmsAccountAccountIDCampaignCampaignIDImportPost(String accountID, String campaignID) throws ApiException {
+    public ServiceDocsCampaignImportOutput v1SmsAccountAccountIDCampaignCampaignIDImportPost(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String campaignID) throws ApiException {
         ApiResponse<ServiceDocsCampaignImportOutput> localVarResp = v1SmsAccountAccountIDCampaignCampaignIDImportPostWithHttpInfo(accountID, campaignID);
         return localVarResp.getData();
     }
@@ -331,7 +331,7 @@ public class SmsApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsCampaignImportOutput> v1SmsAccountAccountIDCampaignCampaignIDImportPostWithHttpInfo(String accountID, String campaignID) throws ApiException {
+    public ApiResponse<ServiceDocsCampaignImportOutput> v1SmsAccountAccountIDCampaignCampaignIDImportPostWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String campaignID) throws ApiException {
         okhttp3.Call localVarCall = v1SmsAccountAccountIDCampaignCampaignIDImportPostValidateBeforeCall(accountID, campaignID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsCampaignImportOutput>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -353,7 +353,7 @@ public class SmsApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1SmsAccountAccountIDCampaignCampaignIDImportPostAsync(String accountID, String campaignID, final ApiCallback<ServiceDocsCampaignImportOutput> _callback) throws ApiException {
+    public okhttp3.Call v1SmsAccountAccountIDCampaignCampaignIDImportPostAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String campaignID, final ApiCallback<ServiceDocsCampaignImportOutput> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1SmsAccountAccountIDCampaignCampaignIDImportPostValidateBeforeCall(accountID, campaignID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsCampaignImportOutput>(){}.getType();
@@ -377,7 +377,7 @@ public class SmsApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1SmsAccountAccountIDCampaignCampaignIDPhonenumberGetCall(String accountID, String campaignID, BigDecimal pageNum, BigDecimal pageSize, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1SmsAccountAccountIDCampaignCampaignIDPhonenumberGetCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String campaignID, @javax.annotation.Nullable BigDecimal pageNum, @javax.annotation.Nullable BigDecimal pageSize, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -432,7 +432,7 @@ public class SmsApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1SmsAccountAccountIDCampaignCampaignIDPhonenumberGetValidateBeforeCall(String accountID, String campaignID, BigDecimal pageNum, BigDecimal pageSize, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1SmsAccountAccountIDCampaignCampaignIDPhonenumberGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String campaignID, @javax.annotation.Nullable BigDecimal pageNum, @javax.annotation.Nullable BigDecimal pageSize, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1SmsAccountAccountIDCampaignCampaignIDPhonenumberGet(Async)");
@@ -464,7 +464,7 @@ public class SmsApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsCampaignPhoneNumberOutput v1SmsAccountAccountIDCampaignCampaignIDPhonenumberGet(String accountID, String campaignID, BigDecimal pageNum, BigDecimal pageSize) throws ApiException {
+    public ServiceDocsCampaignPhoneNumberOutput v1SmsAccountAccountIDCampaignCampaignIDPhonenumberGet(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String campaignID, @javax.annotation.Nullable BigDecimal pageNum, @javax.annotation.Nullable BigDecimal pageSize) throws ApiException {
         ApiResponse<ServiceDocsCampaignPhoneNumberOutput> localVarResp = v1SmsAccountAccountIDCampaignCampaignIDPhonenumberGetWithHttpInfo(accountID, campaignID, pageNum, pageSize);
         return localVarResp.getData();
     }
@@ -486,7 +486,7 @@ public class SmsApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsCampaignPhoneNumberOutput> v1SmsAccountAccountIDCampaignCampaignIDPhonenumberGetWithHttpInfo(String accountID, String campaignID, BigDecimal pageNum, BigDecimal pageSize) throws ApiException {
+    public ApiResponse<ServiceDocsCampaignPhoneNumberOutput> v1SmsAccountAccountIDCampaignCampaignIDPhonenumberGetWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String campaignID, @javax.annotation.Nullable BigDecimal pageNum, @javax.annotation.Nullable BigDecimal pageSize) throws ApiException {
         okhttp3.Call localVarCall = v1SmsAccountAccountIDCampaignCampaignIDPhonenumberGetValidateBeforeCall(accountID, campaignID, pageNum, pageSize, null);
         Type localVarReturnType = new TypeToken<ServiceDocsCampaignPhoneNumberOutput>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -510,7 +510,7 @@ public class SmsApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1SmsAccountAccountIDCampaignCampaignIDPhonenumberGetAsync(String accountID, String campaignID, BigDecimal pageNum, BigDecimal pageSize, final ApiCallback<ServiceDocsCampaignPhoneNumberOutput> _callback) throws ApiException {
+    public okhttp3.Call v1SmsAccountAccountIDCampaignCampaignIDPhonenumberGetAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String campaignID, @javax.annotation.Nullable BigDecimal pageNum, @javax.annotation.Nullable BigDecimal pageSize, final ApiCallback<ServiceDocsCampaignPhoneNumberOutput> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1SmsAccountAccountIDCampaignCampaignIDPhonenumberGetValidateBeforeCall(accountID, campaignID, pageNum, pageSize, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsCampaignPhoneNumberOutput>(){}.getType();
@@ -533,7 +533,7 @@ public class SmsApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1SmsAccountAccountIDCampaignCampaignIDPhonenumberPutCall(String accountID, String campaignID, ServiceCampaignTagDetagPhonenumbers reqBody, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1SmsAccountAccountIDCampaignCampaignIDPhonenumberPutCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String campaignID, @javax.annotation.Nonnull ServiceCampaignTagDetagPhonenumbers reqBody, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -581,7 +581,7 @@ public class SmsApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1SmsAccountAccountIDCampaignCampaignIDPhonenumberPutValidateBeforeCall(String accountID, String campaignID, ServiceCampaignTagDetagPhonenumbers reqBody, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1SmsAccountAccountIDCampaignCampaignIDPhonenumberPutValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String campaignID, @javax.annotation.Nonnull ServiceCampaignTagDetagPhonenumbers reqBody, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1SmsAccountAccountIDCampaignCampaignIDPhonenumberPut(Async)");
@@ -617,7 +617,7 @@ public class SmsApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsCampaignTagDetagPhonenumbersOutput v1SmsAccountAccountIDCampaignCampaignIDPhonenumberPut(String accountID, String campaignID, ServiceCampaignTagDetagPhonenumbers reqBody) throws ApiException {
+    public ServiceDocsCampaignTagDetagPhonenumbersOutput v1SmsAccountAccountIDCampaignCampaignIDPhonenumberPut(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String campaignID, @javax.annotation.Nonnull ServiceCampaignTagDetagPhonenumbers reqBody) throws ApiException {
         ApiResponse<ServiceDocsCampaignTagDetagPhonenumbersOutput> localVarResp = v1SmsAccountAccountIDCampaignCampaignIDPhonenumberPutWithHttpInfo(accountID, campaignID, reqBody);
         return localVarResp.getData();
     }
@@ -638,7 +638,7 @@ public class SmsApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsCampaignTagDetagPhonenumbersOutput> v1SmsAccountAccountIDCampaignCampaignIDPhonenumberPutWithHttpInfo(String accountID, String campaignID, ServiceCampaignTagDetagPhonenumbers reqBody) throws ApiException {
+    public ApiResponse<ServiceDocsCampaignTagDetagPhonenumbersOutput> v1SmsAccountAccountIDCampaignCampaignIDPhonenumberPutWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String campaignID, @javax.annotation.Nonnull ServiceCampaignTagDetagPhonenumbers reqBody) throws ApiException {
         okhttp3.Call localVarCall = v1SmsAccountAccountIDCampaignCampaignIDPhonenumberPutValidateBeforeCall(accountID, campaignID, reqBody, null);
         Type localVarReturnType = new TypeToken<ServiceDocsCampaignTagDetagPhonenumbersOutput>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -661,7 +661,7 @@ public class SmsApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1SmsAccountAccountIDCampaignCampaignIDPhonenumberPutAsync(String accountID, String campaignID, ServiceCampaignTagDetagPhonenumbers reqBody, final ApiCallback<ServiceDocsCampaignTagDetagPhonenumbersOutput> _callback) throws ApiException {
+    public okhttp3.Call v1SmsAccountAccountIDCampaignCampaignIDPhonenumberPutAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String campaignID, @javax.annotation.Nonnull ServiceCampaignTagDetagPhonenumbers reqBody, final ApiCallback<ServiceDocsCampaignTagDetagPhonenumbersOutput> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1SmsAccountAccountIDCampaignCampaignIDPhonenumberPutValidateBeforeCall(accountID, campaignID, reqBody, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsCampaignTagDetagPhonenumbersOutput>(){}.getType();
@@ -684,7 +684,7 @@ public class SmsApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1SmsAccountAccountIDCampaignImportGetCall(String accountID, BigDecimal pageNum, BigDecimal pageSize, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1SmsAccountAccountIDCampaignImportGetCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable BigDecimal pageNum, @javax.annotation.Nullable BigDecimal pageSize, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -738,7 +738,7 @@ public class SmsApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1SmsAccountAccountIDCampaignImportGetValidateBeforeCall(String accountID, BigDecimal pageNum, BigDecimal pageSize, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1SmsAccountAccountIDCampaignImportGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable BigDecimal pageNum, @javax.annotation.Nullable BigDecimal pageSize, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1SmsAccountAccountIDCampaignImportGet(Async)");
@@ -764,7 +764,7 @@ public class SmsApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsCampaignImportedGetAllOutput v1SmsAccountAccountIDCampaignImportGet(String accountID, BigDecimal pageNum, BigDecimal pageSize) throws ApiException {
+    public ServiceDocsCampaignImportedGetAllOutput v1SmsAccountAccountIDCampaignImportGet(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable BigDecimal pageNum, @javax.annotation.Nullable BigDecimal pageSize) throws ApiException {
         ApiResponse<ServiceDocsCampaignImportedGetAllOutput> localVarResp = v1SmsAccountAccountIDCampaignImportGetWithHttpInfo(accountID, pageNum, pageSize);
         return localVarResp.getData();
     }
@@ -785,7 +785,7 @@ public class SmsApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsCampaignImportedGetAllOutput> v1SmsAccountAccountIDCampaignImportGetWithHttpInfo(String accountID, BigDecimal pageNum, BigDecimal pageSize) throws ApiException {
+    public ApiResponse<ServiceDocsCampaignImportedGetAllOutput> v1SmsAccountAccountIDCampaignImportGetWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable BigDecimal pageNum, @javax.annotation.Nullable BigDecimal pageSize) throws ApiException {
         okhttp3.Call localVarCall = v1SmsAccountAccountIDCampaignImportGetValidateBeforeCall(accountID, pageNum, pageSize, null);
         Type localVarReturnType = new TypeToken<ServiceDocsCampaignImportedGetAllOutput>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -808,7 +808,7 @@ public class SmsApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1SmsAccountAccountIDCampaignImportGetAsync(String accountID, BigDecimal pageNum, BigDecimal pageSize, final ApiCallback<ServiceDocsCampaignImportedGetAllOutput> _callback) throws ApiException {
+    public okhttp3.Call v1SmsAccountAccountIDCampaignImportGetAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable BigDecimal pageNum, @javax.annotation.Nullable BigDecimal pageSize, final ApiCallback<ServiceDocsCampaignImportedGetAllOutput> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1SmsAccountAccountIDCampaignImportGetValidateBeforeCall(accountID, pageNum, pageSize, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsCampaignImportedGetAllOutput>(){}.getType();

@@ -1,12 +1,23 @@
-# service.VOIPCallQueueRoleAssignData
+
+
+# ServiceVOIPCallQueueRoleAssignData
+
 
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**action** | **String** |  | 
-**recipients** | [**List&lt;Map&lt;String, List&lt;String&gt;&gt;&gt;**](Map.md) |  | [default to new ArrayList<>()]
-**setMembership** | **Boolean** |  | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+|**action** | [**ActionEnum**](#ActionEnum) |  |  |
+|**recipients** | **List&lt;Map&lt;String, List&lt;String&gt;&gt;&gt;** |  |  |
+|**setMembership** | **Boolean** |  |  |
+
+
+
+## Enum: ActionEnum
+
+| Name | Value |
+|---- | -----|
+| SET | &quot;set&quot; |
+
 
 

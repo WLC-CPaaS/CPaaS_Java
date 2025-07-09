@@ -91,7 +91,7 @@ public class PresenceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDPresenceExtensionPutCall(String accountID, String extension, ServiceVOIPPresenceSetResetEditData reqBody, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDPresenceExtensionPutCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String extension, @javax.annotation.Nonnull ServiceVOIPPresenceSetResetEditData reqBody, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -139,7 +139,7 @@ public class PresenceApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDPresenceExtensionPutValidateBeforeCall(String accountID, String extension, ServiceVOIPPresenceSetResetEditData reqBody, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDPresenceExtensionPutValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String extension, @javax.annotation.Nonnull ServiceVOIPPresenceSetResetEditData reqBody, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDPresenceExtensionPut(Async)");
@@ -175,7 +175,7 @@ public class PresenceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceAPIResponse v1AccountAccountIDPresenceExtensionPut(String accountID, String extension, ServiceVOIPPresenceSetResetEditData reqBody) throws ApiException {
+    public ServiceAPIResponse v1AccountAccountIDPresenceExtensionPut(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String extension, @javax.annotation.Nonnull ServiceVOIPPresenceSetResetEditData reqBody) throws ApiException {
         ApiResponse<ServiceAPIResponse> localVarResp = v1AccountAccountIDPresenceExtensionPutWithHttpInfo(accountID, extension, reqBody);
         return localVarResp.getData();
     }
@@ -196,7 +196,7 @@ public class PresenceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceAPIResponse> v1AccountAccountIDPresenceExtensionPutWithHttpInfo(String accountID, String extension, ServiceVOIPPresenceSetResetEditData reqBody) throws ApiException {
+    public ApiResponse<ServiceAPIResponse> v1AccountAccountIDPresenceExtensionPutWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String extension, @javax.annotation.Nonnull ServiceVOIPPresenceSetResetEditData reqBody) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDPresenceExtensionPutValidateBeforeCall(accountID, extension, reqBody, null);
         Type localVarReturnType = new TypeToken<ServiceAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -219,7 +219,7 @@ public class PresenceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDPresenceExtensionPutAsync(String accountID, String extension, ServiceVOIPPresenceSetResetEditData reqBody, final ApiCallback<ServiceAPIResponse> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDPresenceExtensionPutAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String extension, @javax.annotation.Nonnull ServiceVOIPPresenceSetResetEditData reqBody, final ApiCallback<ServiceAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDPresenceExtensionPutValidateBeforeCall(accountID, extension, reqBody, _callback);
         Type localVarReturnType = new TypeToken<ServiceAPIResponse>(){}.getType();
@@ -240,7 +240,7 @@ public class PresenceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDPresenceGetCall(String accountID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDPresenceGetCall(@javax.annotation.Nonnull String accountID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -286,7 +286,7 @@ public class PresenceApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDPresenceGetValidateBeforeCall(String accountID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDPresenceGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDPresenceGet(Async)");
@@ -310,7 +310,7 @@ public class PresenceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsPresenceGet v1AccountAccountIDPresenceGet(String accountID) throws ApiException {
+    public ServiceDocsPresenceGet v1AccountAccountIDPresenceGet(@javax.annotation.Nonnull String accountID) throws ApiException {
         ApiResponse<ServiceDocsPresenceGet> localVarResp = v1AccountAccountIDPresenceGetWithHttpInfo(accountID);
         return localVarResp.getData();
     }
@@ -329,7 +329,7 @@ public class PresenceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsPresenceGet> v1AccountAccountIDPresenceGetWithHttpInfo(String accountID) throws ApiException {
+    public ApiResponse<ServiceDocsPresenceGet> v1AccountAccountIDPresenceGetWithHttpInfo(@javax.annotation.Nonnull String accountID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDPresenceGetValidateBeforeCall(accountID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsPresenceGet>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -350,7 +350,7 @@ public class PresenceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDPresenceGetAsync(String accountID, final ApiCallback<ServiceDocsPresenceGet> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDPresenceGetAsync(@javax.annotation.Nonnull String accountID, final ApiCallback<ServiceDocsPresenceGet> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDPresenceGetValidateBeforeCall(accountID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsPresenceGet>(){}.getType();
@@ -373,7 +373,7 @@ public class PresenceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDUserUserIDPresencePutCall(String accountID, String userID, ServiceVOIPPresenceSetResetEditData reqBody, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDUserUserIDPresencePutCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String userID, @javax.annotation.Nonnull ServiceVOIPPresenceSetResetEditData reqBody, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -421,7 +421,7 @@ public class PresenceApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDUserUserIDPresencePutValidateBeforeCall(String accountID, String userID, ServiceVOIPPresenceSetResetEditData reqBody, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDUserUserIDPresencePutValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String userID, @javax.annotation.Nonnull ServiceVOIPPresenceSetResetEditData reqBody, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDUserUserIDPresencePut(Async)");
@@ -457,7 +457,7 @@ public class PresenceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceAPIResponse v1AccountAccountIDUserUserIDPresencePut(String accountID, String userID, ServiceVOIPPresenceSetResetEditData reqBody) throws ApiException {
+    public ServiceAPIResponse v1AccountAccountIDUserUserIDPresencePut(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String userID, @javax.annotation.Nonnull ServiceVOIPPresenceSetResetEditData reqBody) throws ApiException {
         ApiResponse<ServiceAPIResponse> localVarResp = v1AccountAccountIDUserUserIDPresencePutWithHttpInfo(accountID, userID, reqBody);
         return localVarResp.getData();
     }
@@ -478,7 +478,7 @@ public class PresenceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceAPIResponse> v1AccountAccountIDUserUserIDPresencePutWithHttpInfo(String accountID, String userID, ServiceVOIPPresenceSetResetEditData reqBody) throws ApiException {
+    public ApiResponse<ServiceAPIResponse> v1AccountAccountIDUserUserIDPresencePutWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String userID, @javax.annotation.Nonnull ServiceVOIPPresenceSetResetEditData reqBody) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDUserUserIDPresencePutValidateBeforeCall(accountID, userID, reqBody, null);
         Type localVarReturnType = new TypeToken<ServiceAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -501,7 +501,7 @@ public class PresenceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDUserUserIDPresencePutAsync(String accountID, String userID, ServiceVOIPPresenceSetResetEditData reqBody, final ApiCallback<ServiceAPIResponse> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDUserUserIDPresencePutAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String userID, @javax.annotation.Nonnull ServiceVOIPPresenceSetResetEditData reqBody, final ApiCallback<ServiceAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDUserUserIDPresencePutValidateBeforeCall(accountID, userID, reqBody, _callback);
         Type localVarReturnType = new TypeToken<ServiceAPIResponse>(){}.getType();

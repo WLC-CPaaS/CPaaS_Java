@@ -251,16 +251,10 @@ public class ModelEndpointList {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("created_at");
-    openapiFields.add("endpoint_name");
-    openapiFields.add("feature_name");
-    openapiFields.add("id");
-    openapiFields.add("transaction_type");
-    openapiFields.add("version");
+    openapiFields = new HashSet<String>(Arrays.asList("created_at", "endpoint_name", "feature_name", "id", "transaction_type", "version"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

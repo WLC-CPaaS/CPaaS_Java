@@ -93,7 +93,7 @@ public class VoIpUserApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidUserGetCall(String accountid, String startKey, Integer pageSize, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidUserGetCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -147,7 +147,7 @@ public class VoIpUserApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountidUserGetValidateBeforeCall(String accountid, String startKey, Integer pageSize, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountidUserGetValidateBeforeCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountid' is set
         if (accountid == null) {
             throw new ApiException("Missing the required parameter 'accountid' when calling v1AccountAccountidUserGet(Async)");
@@ -173,7 +173,7 @@ public class VoIpUserApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsUserGetAll v1AccountAccountidUserGet(String accountid, String startKey, Integer pageSize) throws ApiException {
+    public ServiceDocsUserGetAll v1AccountAccountidUserGet(@javax.annotation.Nonnull String accountid, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize) throws ApiException {
         ApiResponse<ServiceDocsUserGetAll> localVarResp = v1AccountAccountidUserGetWithHttpInfo(accountid, startKey, pageSize);
         return localVarResp.getData();
     }
@@ -194,7 +194,7 @@ public class VoIpUserApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsUserGetAll> v1AccountAccountidUserGetWithHttpInfo(String accountid, String startKey, Integer pageSize) throws ApiException {
+    public ApiResponse<ServiceDocsUserGetAll> v1AccountAccountidUserGetWithHttpInfo(@javax.annotation.Nonnull String accountid, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidUserGetValidateBeforeCall(accountid, startKey, pageSize, null);
         Type localVarReturnType = new TypeToken<ServiceDocsUserGetAll>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -217,7 +217,7 @@ public class VoIpUserApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidUserGetAsync(String accountid, String startKey, Integer pageSize, final ApiCallback<ServiceDocsUserGetAll> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidUserGetAsync(@javax.annotation.Nonnull String accountid, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback<ServiceDocsUserGetAll> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidUserGetValidateBeforeCall(accountid, startKey, pageSize, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsUserGetAll>(){}.getType();
@@ -239,7 +239,7 @@ public class VoIpUserApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidUserPostCall(String accountid, ServiceVOIPUserAdd2 user, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidUserPostCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceVOIPUserAdd2 user, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -286,7 +286,7 @@ public class VoIpUserApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountidUserPostValidateBeforeCall(String accountid, ServiceVOIPUserAdd2 user, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountidUserPostValidateBeforeCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceVOIPUserAdd2 user, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountid' is set
         if (accountid == null) {
             throw new ApiException("Missing the required parameter 'accountid' when calling v1AccountAccountidUserPost(Async)");
@@ -316,7 +316,7 @@ public class VoIpUserApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsUserGetSingle v1AccountAccountidUserPost(String accountid, ServiceVOIPUserAdd2 user) throws ApiException {
+    public ServiceDocsUserGetSingle v1AccountAccountidUserPost(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceVOIPUserAdd2 user) throws ApiException {
         ApiResponse<ServiceDocsUserGetSingle> localVarResp = v1AccountAccountidUserPostWithHttpInfo(accountid, user);
         return localVarResp.getData();
     }
@@ -336,7 +336,7 @@ public class VoIpUserApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsUserGetSingle> v1AccountAccountidUserPostWithHttpInfo(String accountid, ServiceVOIPUserAdd2 user) throws ApiException {
+    public ApiResponse<ServiceDocsUserGetSingle> v1AccountAccountidUserPostWithHttpInfo(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceVOIPUserAdd2 user) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidUserPostValidateBeforeCall(accountid, user, null);
         Type localVarReturnType = new TypeToken<ServiceDocsUserGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -358,7 +358,7 @@ public class VoIpUserApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidUserPostAsync(String accountid, ServiceVOIPUserAdd2 user, final ApiCallback<ServiceDocsUserGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidUserPostAsync(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceVOIPUserAdd2 user, final ApiCallback<ServiceDocsUserGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidUserPostValidateBeforeCall(accountid, user, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsUserGetSingle>(){}.getType();
@@ -380,7 +380,7 @@ public class VoIpUserApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidUserUseridDeleteCall(String accountid, String userid, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidUserUseridDeleteCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String userid, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -427,7 +427,7 @@ public class VoIpUserApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountidUserUseridDeleteValidateBeforeCall(String accountid, String userid, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountidUserUseridDeleteValidateBeforeCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String userid, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountid' is set
         if (accountid == null) {
             throw new ApiException("Missing the required parameter 'accountid' when calling v1AccountAccountidUserUseridDelete(Async)");
@@ -457,7 +457,7 @@ public class VoIpUserApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsUserGetSingle v1AccountAccountidUserUseridDelete(String accountid, String userid) throws ApiException {
+    public ServiceDocsUserGetSingle v1AccountAccountidUserUseridDelete(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String userid) throws ApiException {
         ApiResponse<ServiceDocsUserGetSingle> localVarResp = v1AccountAccountidUserUseridDeleteWithHttpInfo(accountid, userid);
         return localVarResp.getData();
     }
@@ -477,7 +477,7 @@ public class VoIpUserApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsUserGetSingle> v1AccountAccountidUserUseridDeleteWithHttpInfo(String accountid, String userid) throws ApiException {
+    public ApiResponse<ServiceDocsUserGetSingle> v1AccountAccountidUserUseridDeleteWithHttpInfo(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String userid) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidUserUseridDeleteValidateBeforeCall(accountid, userid, null);
         Type localVarReturnType = new TypeToken<ServiceDocsUserGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -499,7 +499,7 @@ public class VoIpUserApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidUserUseridDeleteAsync(String accountid, String userid, final ApiCallback<ServiceDocsUserGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidUserUseridDeleteAsync(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String userid, final ApiCallback<ServiceDocsUserGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidUserUseridDeleteValidateBeforeCall(accountid, userid, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsUserGetSingle>(){}.getType();
@@ -521,7 +521,7 @@ public class VoIpUserApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidUserUseridGetCall(String accountid, String userid, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidUserUseridGetCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String userid, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -568,7 +568,7 @@ public class VoIpUserApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountidUserUseridGetValidateBeforeCall(String accountid, String userid, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountidUserUseridGetValidateBeforeCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String userid, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountid' is set
         if (accountid == null) {
             throw new ApiException("Missing the required parameter 'accountid' when calling v1AccountAccountidUserUseridGet(Async)");
@@ -598,7 +598,7 @@ public class VoIpUserApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsUserGetSingle v1AccountAccountidUserUseridGet(String accountid, String userid) throws ApiException {
+    public ServiceDocsUserGetSingle v1AccountAccountidUserUseridGet(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String userid) throws ApiException {
         ApiResponse<ServiceDocsUserGetSingle> localVarResp = v1AccountAccountidUserUseridGetWithHttpInfo(accountid, userid);
         return localVarResp.getData();
     }
@@ -618,7 +618,7 @@ public class VoIpUserApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsUserGetSingle> v1AccountAccountidUserUseridGetWithHttpInfo(String accountid, String userid) throws ApiException {
+    public ApiResponse<ServiceDocsUserGetSingle> v1AccountAccountidUserUseridGetWithHttpInfo(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String userid) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidUserUseridGetValidateBeforeCall(accountid, userid, null);
         Type localVarReturnType = new TypeToken<ServiceDocsUserGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -640,7 +640,7 @@ public class VoIpUserApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidUserUseridGetAsync(String accountid, String userid, final ApiCallback<ServiceDocsUserGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidUserUseridGetAsync(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String userid, final ApiCallback<ServiceDocsUserGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidUserUseridGetValidateBeforeCall(accountid, userid, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsUserGetSingle>(){}.getType();
@@ -663,7 +663,7 @@ public class VoIpUserApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidUserUseridPutCall(String accountid, String userid, ServiceVOIPUserAdd2 user, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidUserUseridPutCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String userid, @javax.annotation.Nonnull ServiceVOIPUserAdd2 user, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -711,7 +711,7 @@ public class VoIpUserApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountidUserUseridPutValidateBeforeCall(String accountid, String userid, ServiceVOIPUserAdd2 user, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountidUserUseridPutValidateBeforeCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String userid, @javax.annotation.Nonnull ServiceVOIPUserAdd2 user, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountid' is set
         if (accountid == null) {
             throw new ApiException("Missing the required parameter 'accountid' when calling v1AccountAccountidUserUseridPut(Async)");
@@ -747,7 +747,7 @@ public class VoIpUserApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsUserGetSingle v1AccountAccountidUserUseridPut(String accountid, String userid, ServiceVOIPUserAdd2 user) throws ApiException {
+    public ServiceDocsUserGetSingle v1AccountAccountidUserUseridPut(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String userid, @javax.annotation.Nonnull ServiceVOIPUserAdd2 user) throws ApiException {
         ApiResponse<ServiceDocsUserGetSingle> localVarResp = v1AccountAccountidUserUseridPutWithHttpInfo(accountid, userid, user);
         return localVarResp.getData();
     }
@@ -768,7 +768,7 @@ public class VoIpUserApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsUserGetSingle> v1AccountAccountidUserUseridPutWithHttpInfo(String accountid, String userid, ServiceVOIPUserAdd2 user) throws ApiException {
+    public ApiResponse<ServiceDocsUserGetSingle> v1AccountAccountidUserUseridPutWithHttpInfo(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String userid, @javax.annotation.Nonnull ServiceVOIPUserAdd2 user) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidUserUseridPutValidateBeforeCall(accountid, userid, user, null);
         Type localVarReturnType = new TypeToken<ServiceDocsUserGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -791,7 +791,7 @@ public class VoIpUserApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidUserUseridPutAsync(String accountid, String userid, ServiceVOIPUserAdd2 user, final ApiCallback<ServiceDocsUserGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidUserUseridPutAsync(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String userid, @javax.annotation.Nonnull ServiceVOIPUserAdd2 user, final ApiCallback<ServiceDocsUserGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidUserUseridPutValidateBeforeCall(accountid, userid, user, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsUserGetSingle>(){}.getType();
@@ -814,7 +814,7 @@ public class VoIpUserApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidUserUseridUserauthPostCall(String accountid, String userid, ServiceVOIPImpersonateUser user, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidUserUseridUserauthPostCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String userid, @javax.annotation.Nonnull ServiceVOIPImpersonateUser user, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -862,7 +862,7 @@ public class VoIpUserApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountidUserUseridUserauthPostValidateBeforeCall(String accountid, String userid, ServiceVOIPImpersonateUser user, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountidUserUseridUserauthPostValidateBeforeCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String userid, @javax.annotation.Nonnull ServiceVOIPImpersonateUser user, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountid' is set
         if (accountid == null) {
             throw new ApiException("Missing the required parameter 'accountid' when calling v1AccountAccountidUserUseridUserauthPost(Async)");
@@ -884,7 +884,7 @@ public class VoIpUserApi {
 
     /**
      * Impersonate a User
-     * Impersonate as another user if you have access to admin.
+     * Retrieve a token for making presence calls.
      * @param accountid Account ID, 32 alpha numeric (required)
      * @param userid User ID, 32 alpha numeric (required)
      * @param user Payload for impersonate a user (required)
@@ -898,14 +898,14 @@ public class VoIpUserApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsImpersonateUserGetSingle v1AccountAccountidUserUseridUserauthPost(String accountid, String userid, ServiceVOIPImpersonateUser user) throws ApiException {
+    public ServiceDocsImpersonateUserGetSingle v1AccountAccountidUserUseridUserauthPost(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String userid, @javax.annotation.Nonnull ServiceVOIPImpersonateUser user) throws ApiException {
         ApiResponse<ServiceDocsImpersonateUserGetSingle> localVarResp = v1AccountAccountidUserUseridUserauthPostWithHttpInfo(accountid, userid, user);
         return localVarResp.getData();
     }
 
     /**
      * Impersonate a User
-     * Impersonate as another user if you have access to admin.
+     * Retrieve a token for making presence calls.
      * @param accountid Account ID, 32 alpha numeric (required)
      * @param userid User ID, 32 alpha numeric (required)
      * @param user Payload for impersonate a user (required)
@@ -919,7 +919,7 @@ public class VoIpUserApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsImpersonateUserGetSingle> v1AccountAccountidUserUseridUserauthPostWithHttpInfo(String accountid, String userid, ServiceVOIPImpersonateUser user) throws ApiException {
+    public ApiResponse<ServiceDocsImpersonateUserGetSingle> v1AccountAccountidUserUseridUserauthPostWithHttpInfo(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String userid, @javax.annotation.Nonnull ServiceVOIPImpersonateUser user) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidUserUseridUserauthPostValidateBeforeCall(accountid, userid, user, null);
         Type localVarReturnType = new TypeToken<ServiceDocsImpersonateUserGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -927,7 +927,7 @@ public class VoIpUserApi {
 
     /**
      * Impersonate a User (asynchronously)
-     * Impersonate as another user if you have access to admin.
+     * Retrieve a token for making presence calls.
      * @param accountid Account ID, 32 alpha numeric (required)
      * @param userid User ID, 32 alpha numeric (required)
      * @param user Payload for impersonate a user (required)
@@ -942,7 +942,7 @@ public class VoIpUserApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidUserUseridUserauthPostAsync(String accountid, String userid, ServiceVOIPImpersonateUser user, final ApiCallback<ServiceDocsImpersonateUserGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidUserUseridUserauthPostAsync(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String userid, @javax.annotation.Nonnull ServiceVOIPImpersonateUser user, final ApiCallback<ServiceDocsImpersonateUserGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidUserUseridUserauthPostValidateBeforeCall(accountid, userid, user, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsImpersonateUserGetSingle>(){}.getType();

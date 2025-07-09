@@ -330,19 +330,10 @@ public class ServiceImpersonateUserOutputFull {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("account_id");
-    openapiFields.add("account_name");
-    openapiFields.add("auth_token");
-    openapiFields.add("cluster_id");
-    openapiFields.add("is_master_account");
-    openapiFields.add("is_reseller");
-    openapiFields.add("owner_id");
-    openapiFields.add("reseller_id");
-    openapiFields.add("user_info");
+    openapiFields = new HashSet<String>(Arrays.asList("account_id", "account_name", "auth_token", "cluster_id", "is_master_account", "is_reseller", "owner_id", "reseller_id", "user_info"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

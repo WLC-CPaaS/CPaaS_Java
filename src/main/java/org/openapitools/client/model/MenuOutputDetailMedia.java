@@ -173,13 +173,10 @@ public class MenuOutputDetailMedia {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("greeting");
-    openapiFields.add("invalid_media");
-    openapiFields.add("transfer_media");
+    openapiFields = new HashSet<String>(Arrays.asList("greeting", "invalid_media", "transfer_media"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

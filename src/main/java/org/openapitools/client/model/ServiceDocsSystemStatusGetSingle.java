@@ -200,14 +200,10 @@ public class ServiceDocsSystemStatusGetSingle {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("data");
-    openapiFields.add("request_id");
-    openapiFields.add("status_code");
-    openapiFields.add("system_status");
+    openapiFields = new HashSet<String>(Arrays.asList("data", "request_id", "status_code", "system_status"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

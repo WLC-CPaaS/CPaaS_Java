@@ -97,7 +97,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidChildrenGetCall(String accountid, String startKey, Integer pageSize, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidChildrenGetCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -151,7 +151,7 @@ public class AccountApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountidChildrenGetValidateBeforeCall(String accountid, String startKey, Integer pageSize, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountidChildrenGetValidateBeforeCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountid' is set
         if (accountid == null) {
             throw new ApiException("Missing the required parameter 'accountid' when calling v1AccountAccountidChildrenGet(Async)");
@@ -177,7 +177,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsAccountGetAll v1AccountAccountidChildrenGet(String accountid, String startKey, Integer pageSize) throws ApiException {
+    public ServiceDocsAccountGetAll v1AccountAccountidChildrenGet(@javax.annotation.Nonnull String accountid, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize) throws ApiException {
         ApiResponse<ServiceDocsAccountGetAll> localVarResp = v1AccountAccountidChildrenGetWithHttpInfo(accountid, startKey, pageSize);
         return localVarResp.getData();
     }
@@ -198,7 +198,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsAccountGetAll> v1AccountAccountidChildrenGetWithHttpInfo(String accountid, String startKey, Integer pageSize) throws ApiException {
+    public ApiResponse<ServiceDocsAccountGetAll> v1AccountAccountidChildrenGetWithHttpInfo(@javax.annotation.Nonnull String accountid, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidChildrenGetValidateBeforeCall(accountid, startKey, pageSize, null);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountGetAll>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -221,7 +221,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidChildrenGetAsync(String accountid, String startKey, Integer pageSize, final ApiCallback<ServiceDocsAccountGetAll> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidChildrenGetAsync(@javax.annotation.Nonnull String accountid, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback<ServiceDocsAccountGetAll> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidChildrenGetValidateBeforeCall(accountid, startKey, pageSize, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountGetAll>(){}.getType();
@@ -242,7 +242,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidDeleteCall(String accountid, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidDeleteCall(@javax.annotation.Nonnull String accountid, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -288,7 +288,7 @@ public class AccountApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountidDeleteValidateBeforeCall(String accountid, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountidDeleteValidateBeforeCall(@javax.annotation.Nonnull String accountid, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountid' is set
         if (accountid == null) {
             throw new ApiException("Missing the required parameter 'accountid' when calling v1AccountAccountidDelete(Async)");
@@ -312,7 +312,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsAccountGetSingle v1AccountAccountidDelete(String accountid) throws ApiException {
+    public ServiceDocsAccountGetSingle v1AccountAccountidDelete(@javax.annotation.Nonnull String accountid) throws ApiException {
         ApiResponse<ServiceDocsAccountGetSingle> localVarResp = v1AccountAccountidDeleteWithHttpInfo(accountid);
         return localVarResp.getData();
     }
@@ -331,7 +331,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsAccountGetSingle> v1AccountAccountidDeleteWithHttpInfo(String accountid) throws ApiException {
+    public ApiResponse<ServiceDocsAccountGetSingle> v1AccountAccountidDeleteWithHttpInfo(@javax.annotation.Nonnull String accountid) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidDeleteValidateBeforeCall(accountid, null);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -352,7 +352,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidDeleteAsync(String accountid, final ApiCallback<ServiceDocsAccountGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidDeleteAsync(@javax.annotation.Nonnull String accountid, final ApiCallback<ServiceDocsAccountGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidDeleteValidateBeforeCall(accountid, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountGetSingle>(){}.getType();
@@ -373,7 +373,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidDnsrecordGetCall(String accountid, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidDnsrecordGetCall(@javax.annotation.Nonnull String accountid, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -419,7 +419,7 @@ public class AccountApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountidDnsrecordGetValidateBeforeCall(String accountid, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountidDnsrecordGetValidateBeforeCall(@javax.annotation.Nonnull String accountid, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountid' is set
         if (accountid == null) {
             throw new ApiException("Missing the required parameter 'accountid' when calling v1AccountAccountidDnsrecordGet(Async)");
@@ -443,7 +443,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsAccountGetSingle v1AccountAccountidDnsrecordGet(String accountid) throws ApiException {
+    public ServiceDocsAccountGetSingle v1AccountAccountidDnsrecordGet(@javax.annotation.Nonnull String accountid) throws ApiException {
         ApiResponse<ServiceDocsAccountGetSingle> localVarResp = v1AccountAccountidDnsrecordGetWithHttpInfo(accountid);
         return localVarResp.getData();
     }
@@ -462,7 +462,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsAccountGetSingle> v1AccountAccountidDnsrecordGetWithHttpInfo(String accountid) throws ApiException {
+    public ApiResponse<ServiceDocsAccountGetSingle> v1AccountAccountidDnsrecordGetWithHttpInfo(@javax.annotation.Nonnull String accountid) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidDnsrecordGetValidateBeforeCall(accountid, null);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -483,7 +483,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidDnsrecordGetAsync(String accountid, final ApiCallback<ServiceDocsAccountGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidDnsrecordGetAsync(@javax.annotation.Nonnull String accountid, final ApiCallback<ServiceDocsAccountGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidDnsrecordGetValidateBeforeCall(accountid, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountGetSingle>(){}.getType();
@@ -504,7 +504,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidDnsrecordPostCall(String accountid, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidDnsrecordPostCall(@javax.annotation.Nonnull String accountid, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -550,7 +550,7 @@ public class AccountApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountidDnsrecordPostValidateBeforeCall(String accountid, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountidDnsrecordPostValidateBeforeCall(@javax.annotation.Nonnull String accountid, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountid' is set
         if (accountid == null) {
             throw new ApiException("Missing the required parameter 'accountid' when calling v1AccountAccountidDnsrecordPost(Async)");
@@ -574,7 +574,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsAccountGetSingle v1AccountAccountidDnsrecordPost(String accountid) throws ApiException {
+    public ServiceDocsAccountGetSingle v1AccountAccountidDnsrecordPost(@javax.annotation.Nonnull String accountid) throws ApiException {
         ApiResponse<ServiceDocsAccountGetSingle> localVarResp = v1AccountAccountidDnsrecordPostWithHttpInfo(accountid);
         return localVarResp.getData();
     }
@@ -593,7 +593,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsAccountGetSingle> v1AccountAccountidDnsrecordPostWithHttpInfo(String accountid) throws ApiException {
+    public ApiResponse<ServiceDocsAccountGetSingle> v1AccountAccountidDnsrecordPostWithHttpInfo(@javax.annotation.Nonnull String accountid) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidDnsrecordPostValidateBeforeCall(accountid, null);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -614,7 +614,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidDnsrecordPostAsync(String accountid, final ApiCallback<ServiceDocsAccountGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidDnsrecordPostAsync(@javax.annotation.Nonnull String accountid, final ApiCallback<ServiceDocsAccountGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidDnsrecordPostValidateBeforeCall(accountid, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountGetSingle>(){}.getType();
@@ -636,7 +636,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidDnsrecordPutCall(String accountid, ServiceUpdateRecordTypeForAccount dnsrecord, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidDnsrecordPutCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceUpdateRecordTypeForAccount dnsrecord, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -683,7 +683,7 @@ public class AccountApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountidDnsrecordPutValidateBeforeCall(String accountid, ServiceUpdateRecordTypeForAccount dnsrecord, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountidDnsrecordPutValidateBeforeCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceUpdateRecordTypeForAccount dnsrecord, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountid' is set
         if (accountid == null) {
             throw new ApiException("Missing the required parameter 'accountid' when calling v1AccountAccountidDnsrecordPut(Async)");
@@ -713,7 +713,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsAccountGetSingle v1AccountAccountidDnsrecordPut(String accountid, ServiceUpdateRecordTypeForAccount dnsrecord) throws ApiException {
+    public ServiceDocsAccountGetSingle v1AccountAccountidDnsrecordPut(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceUpdateRecordTypeForAccount dnsrecord) throws ApiException {
         ApiResponse<ServiceDocsAccountGetSingle> localVarResp = v1AccountAccountidDnsrecordPutWithHttpInfo(accountid, dnsrecord);
         return localVarResp.getData();
     }
@@ -733,7 +733,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsAccountGetSingle> v1AccountAccountidDnsrecordPutWithHttpInfo(String accountid, ServiceUpdateRecordTypeForAccount dnsrecord) throws ApiException {
+    public ApiResponse<ServiceDocsAccountGetSingle> v1AccountAccountidDnsrecordPutWithHttpInfo(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceUpdateRecordTypeForAccount dnsrecord) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidDnsrecordPutValidateBeforeCall(accountid, dnsrecord, null);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -755,7 +755,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidDnsrecordPutAsync(String accountid, ServiceUpdateRecordTypeForAccount dnsrecord, final ApiCallback<ServiceDocsAccountGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidDnsrecordPutAsync(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceUpdateRecordTypeForAccount dnsrecord, final ApiCallback<ServiceDocsAccountGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidDnsrecordPutValidateBeforeCall(accountid, dnsrecord, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountGetSingle>(){}.getType();
@@ -776,7 +776,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidGetCall(String accountid, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidGetCall(@javax.annotation.Nonnull String accountid, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -822,7 +822,7 @@ public class AccountApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountidGetValidateBeforeCall(String accountid, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountidGetValidateBeforeCall(@javax.annotation.Nonnull String accountid, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountid' is set
         if (accountid == null) {
             throw new ApiException("Missing the required parameter 'accountid' when calling v1AccountAccountidGet(Async)");
@@ -846,7 +846,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsAccountGetSingle v1AccountAccountidGet(String accountid) throws ApiException {
+    public ServiceDocsAccountGetSingle v1AccountAccountidGet(@javax.annotation.Nonnull String accountid) throws ApiException {
         ApiResponse<ServiceDocsAccountGetSingle> localVarResp = v1AccountAccountidGetWithHttpInfo(accountid);
         return localVarResp.getData();
     }
@@ -865,7 +865,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsAccountGetSingle> v1AccountAccountidGetWithHttpInfo(String accountid) throws ApiException {
+    public ApiResponse<ServiceDocsAccountGetSingle> v1AccountAccountidGetWithHttpInfo(@javax.annotation.Nonnull String accountid) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidGetValidateBeforeCall(accountid, null);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -886,7 +886,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidGetAsync(String accountid, final ApiCallback<ServiceDocsAccountGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidGetAsync(@javax.annotation.Nonnull String accountid, final ApiCallback<ServiceDocsAccountGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidGetValidateBeforeCall(accountid, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountGetSingle>(){}.getType();
@@ -907,7 +907,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidLimitGetCall(String accountid, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidLimitGetCall(@javax.annotation.Nonnull String accountid, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -953,7 +953,7 @@ public class AccountApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountidLimitGetValidateBeforeCall(String accountid, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountidLimitGetValidateBeforeCall(@javax.annotation.Nonnull String accountid, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountid' is set
         if (accountid == null) {
             throw new ApiException("Missing the required parameter 'accountid' when calling v1AccountAccountidLimitGet(Async)");
@@ -977,7 +977,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsAccountLimit v1AccountAccountidLimitGet(String accountid) throws ApiException {
+    public ServiceDocsAccountLimit v1AccountAccountidLimitGet(@javax.annotation.Nonnull String accountid) throws ApiException {
         ApiResponse<ServiceDocsAccountLimit> localVarResp = v1AccountAccountidLimitGetWithHttpInfo(accountid);
         return localVarResp.getData();
     }
@@ -996,7 +996,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsAccountLimit> v1AccountAccountidLimitGetWithHttpInfo(String accountid) throws ApiException {
+    public ApiResponse<ServiceDocsAccountLimit> v1AccountAccountidLimitGetWithHttpInfo(@javax.annotation.Nonnull String accountid) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidLimitGetValidateBeforeCall(accountid, null);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountLimit>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -1017,7 +1017,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidLimitGetAsync(String accountid, final ApiCallback<ServiceDocsAccountLimit> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidLimitGetAsync(@javax.annotation.Nonnull String accountid, final ApiCallback<ServiceDocsAccountLimit> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidLimitGetValidateBeforeCall(accountid, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountLimit>(){}.getType();
@@ -1039,7 +1039,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidLimitPutCall(String accountid, ServiceVOIPAccountLimit2 limit, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidLimitPutCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceVOIPAccountLimit2 limit, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -1086,7 +1086,7 @@ public class AccountApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountidLimitPutValidateBeforeCall(String accountid, ServiceVOIPAccountLimit2 limit, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountidLimitPutValidateBeforeCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceVOIPAccountLimit2 limit, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountid' is set
         if (accountid == null) {
             throw new ApiException("Missing the required parameter 'accountid' when calling v1AccountAccountidLimitPut(Async)");
@@ -1116,7 +1116,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsAccountLimit v1AccountAccountidLimitPut(String accountid, ServiceVOIPAccountLimit2 limit) throws ApiException {
+    public ServiceDocsAccountLimit v1AccountAccountidLimitPut(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceVOIPAccountLimit2 limit) throws ApiException {
         ApiResponse<ServiceDocsAccountLimit> localVarResp = v1AccountAccountidLimitPutWithHttpInfo(accountid, limit);
         return localVarResp.getData();
     }
@@ -1136,7 +1136,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsAccountLimit> v1AccountAccountidLimitPutWithHttpInfo(String accountid, ServiceVOIPAccountLimit2 limit) throws ApiException {
+    public ApiResponse<ServiceDocsAccountLimit> v1AccountAccountidLimitPutWithHttpInfo(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceVOIPAccountLimit2 limit) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidLimitPutValidateBeforeCall(accountid, limit, null);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountLimit>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -1158,7 +1158,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidLimitPutAsync(String accountid, ServiceVOIPAccountLimit2 limit, final ApiCallback<ServiceDocsAccountLimit> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidLimitPutAsync(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceVOIPAccountLimit2 limit, final ApiCallback<ServiceDocsAccountLimit> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidLimitPutValidateBeforeCall(accountid, limit, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountLimit>(){}.getType();
@@ -1180,7 +1180,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidPostCall(String accountid, ServiceVOIPAccountAddData account, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidPostCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceVOIPAccountAddData account, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -1227,7 +1227,7 @@ public class AccountApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountidPostValidateBeforeCall(String accountid, ServiceVOIPAccountAddData account, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountidPostValidateBeforeCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceVOIPAccountAddData account, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountid' is set
         if (accountid == null) {
             throw new ApiException("Missing the required parameter 'accountid' when calling v1AccountAccountidPost(Async)");
@@ -1257,7 +1257,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsAccountGetSingle v1AccountAccountidPost(String accountid, ServiceVOIPAccountAddData account) throws ApiException {
+    public ServiceDocsAccountGetSingle v1AccountAccountidPost(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceVOIPAccountAddData account) throws ApiException {
         ApiResponse<ServiceDocsAccountGetSingle> localVarResp = v1AccountAccountidPostWithHttpInfo(accountid, account);
         return localVarResp.getData();
     }
@@ -1277,7 +1277,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsAccountGetSingle> v1AccountAccountidPostWithHttpInfo(String accountid, ServiceVOIPAccountAddData account) throws ApiException {
+    public ApiResponse<ServiceDocsAccountGetSingle> v1AccountAccountidPostWithHttpInfo(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceVOIPAccountAddData account) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidPostValidateBeforeCall(accountid, account, null);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -1299,7 +1299,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidPostAsync(String accountid, ServiceVOIPAccountAddData account, final ApiCallback<ServiceDocsAccountGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidPostAsync(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceVOIPAccountAddData account, final ApiCallback<ServiceDocsAccountGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidPostValidateBeforeCall(accountid, account, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountGetSingle>(){}.getType();
@@ -1320,7 +1320,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidProvisioningdetailsGetCall(String accountid, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidProvisioningdetailsGetCall(@javax.annotation.Nonnull String accountid, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -1366,7 +1366,7 @@ public class AccountApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountidProvisioningdetailsGetValidateBeforeCall(String accountid, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountidProvisioningdetailsGetValidateBeforeCall(@javax.annotation.Nonnull String accountid, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountid' is set
         if (accountid == null) {
             throw new ApiException("Missing the required parameter 'accountid' when calling v1AccountAccountidProvisioningdetailsGet(Async)");
@@ -1390,7 +1390,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsAccountProvisioning v1AccountAccountidProvisioningdetailsGet(String accountid) throws ApiException {
+    public ServiceDocsAccountProvisioning v1AccountAccountidProvisioningdetailsGet(@javax.annotation.Nonnull String accountid) throws ApiException {
         ApiResponse<ServiceDocsAccountProvisioning> localVarResp = v1AccountAccountidProvisioningdetailsGetWithHttpInfo(accountid);
         return localVarResp.getData();
     }
@@ -1409,7 +1409,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsAccountProvisioning> v1AccountAccountidProvisioningdetailsGetWithHttpInfo(String accountid) throws ApiException {
+    public ApiResponse<ServiceDocsAccountProvisioning> v1AccountAccountidProvisioningdetailsGetWithHttpInfo(@javax.annotation.Nonnull String accountid) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidProvisioningdetailsGetValidateBeforeCall(accountid, null);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountProvisioning>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -1430,7 +1430,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidProvisioningdetailsGetAsync(String accountid, final ApiCallback<ServiceDocsAccountProvisioning> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidProvisioningdetailsGetAsync(@javax.annotation.Nonnull String accountid, final ApiCallback<ServiceDocsAccountProvisioning> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidProvisioningdetailsGetValidateBeforeCall(accountid, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountProvisioning>(){}.getType();
@@ -1451,7 +1451,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidProvisioningdetailsResetpwPutCall(String accountid, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidProvisioningdetailsResetpwPutCall(@javax.annotation.Nonnull String accountid, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -1497,7 +1497,7 @@ public class AccountApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountidProvisioningdetailsResetpwPutValidateBeforeCall(String accountid, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountidProvisioningdetailsResetpwPutValidateBeforeCall(@javax.annotation.Nonnull String accountid, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountid' is set
         if (accountid == null) {
             throw new ApiException("Missing the required parameter 'accountid' when calling v1AccountAccountidProvisioningdetailsResetpwPut(Async)");
@@ -1521,7 +1521,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsAccountProvisioning v1AccountAccountidProvisioningdetailsResetpwPut(String accountid) throws ApiException {
+    public ServiceDocsAccountProvisioning v1AccountAccountidProvisioningdetailsResetpwPut(@javax.annotation.Nonnull String accountid) throws ApiException {
         ApiResponse<ServiceDocsAccountProvisioning> localVarResp = v1AccountAccountidProvisioningdetailsResetpwPutWithHttpInfo(accountid);
         return localVarResp.getData();
     }
@@ -1540,7 +1540,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsAccountProvisioning> v1AccountAccountidProvisioningdetailsResetpwPutWithHttpInfo(String accountid) throws ApiException {
+    public ApiResponse<ServiceDocsAccountProvisioning> v1AccountAccountidProvisioningdetailsResetpwPutWithHttpInfo(@javax.annotation.Nonnull String accountid) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidProvisioningdetailsResetpwPutValidateBeforeCall(accountid, null);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountProvisioning>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -1561,7 +1561,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidProvisioningdetailsResetpwPutAsync(String accountid, final ApiCallback<ServiceDocsAccountProvisioning> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidProvisioningdetailsResetpwPutAsync(@javax.annotation.Nonnull String accountid, final ApiCallback<ServiceDocsAccountProvisioning> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidProvisioningdetailsResetpwPutValidateBeforeCall(accountid, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountProvisioning>(){}.getType();
@@ -1583,7 +1583,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidPutCall(String accountid, ServiceVOIPAccountEditData account, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidPutCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceVOIPAccountEditData account, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -1630,7 +1630,7 @@ public class AccountApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountidPutValidateBeforeCall(String accountid, ServiceVOIPAccountEditData account, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountidPutValidateBeforeCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceVOIPAccountEditData account, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountid' is set
         if (accountid == null) {
             throw new ApiException("Missing the required parameter 'accountid' when calling v1AccountAccountidPut(Async)");
@@ -1660,7 +1660,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsAccountGetSingle v1AccountAccountidPut(String accountid, ServiceVOIPAccountEditData account) throws ApiException {
+    public ServiceDocsAccountGetSingle v1AccountAccountidPut(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceVOIPAccountEditData account) throws ApiException {
         ApiResponse<ServiceDocsAccountGetSingle> localVarResp = v1AccountAccountidPutWithHttpInfo(accountid, account);
         return localVarResp.getData();
     }
@@ -1680,7 +1680,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsAccountGetSingle> v1AccountAccountidPutWithHttpInfo(String accountid, ServiceVOIPAccountEditData account) throws ApiException {
+    public ApiResponse<ServiceDocsAccountGetSingle> v1AccountAccountidPutWithHttpInfo(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceVOIPAccountEditData account) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidPutValidateBeforeCall(accountid, account, null);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -1702,7 +1702,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidPutAsync(String accountid, ServiceVOIPAccountEditData account, final ApiCallback<ServiceDocsAccountGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidPutAsync(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceVOIPAccountEditData account, final ApiCallback<ServiceDocsAccountGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidPutValidateBeforeCall(accountid, account, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountGetSingle>(){}.getType();
@@ -1845,7 +1845,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountGetCall(String startKey, Integer pageSize, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountGetCall(@javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -1898,7 +1898,7 @@ public class AccountApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountGetValidateBeforeCall(String startKey, Integer pageSize, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountGetValidateBeforeCall(@javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback _callback) throws ApiException {
         return v1AccountGetCall(startKey, pageSize, _callback);
 
     }
@@ -1918,7 +1918,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsAccountGetAll v1AccountGet(String startKey, Integer pageSize) throws ApiException {
+    public ServiceDocsAccountGetAll v1AccountGet(@javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize) throws ApiException {
         ApiResponse<ServiceDocsAccountGetAll> localVarResp = v1AccountGetWithHttpInfo(startKey, pageSize);
         return localVarResp.getData();
     }
@@ -1938,7 +1938,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsAccountGetAll> v1AccountGetWithHttpInfo(String startKey, Integer pageSize) throws ApiException {
+    public ApiResponse<ServiceDocsAccountGetAll> v1AccountGetWithHttpInfo(@javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize) throws ApiException {
         okhttp3.Call localVarCall = v1AccountGetValidateBeforeCall(startKey, pageSize, null);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountGetAll>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -1960,7 +1960,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountGetAsync(String startKey, Integer pageSize, final ApiCallback<ServiceDocsAccountGetAll> _callback) throws ApiException {
+    public okhttp3.Call v1AccountGetAsync(@javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback<ServiceDocsAccountGetAll> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountGetValidateBeforeCall(startKey, pageSize, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountGetAll>(){}.getType();
@@ -1981,7 +1981,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountPostCall(ServiceVOIPAccountAddData account, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountPostCall(@javax.annotation.Nonnull ServiceVOIPAccountAddData account, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -2027,7 +2027,7 @@ public class AccountApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountPostValidateBeforeCall(ServiceVOIPAccountAddData account, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountPostValidateBeforeCall(@javax.annotation.Nonnull ServiceVOIPAccountAddData account, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'account' is set
         if (account == null) {
             throw new ApiException("Missing the required parameter 'account' when calling v1AccountPost(Async)");
@@ -2051,7 +2051,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsAccountGetSingle v1AccountPost(ServiceVOIPAccountAddData account) throws ApiException {
+    public ServiceDocsAccountGetSingle v1AccountPost(@javax.annotation.Nonnull ServiceVOIPAccountAddData account) throws ApiException {
         ApiResponse<ServiceDocsAccountGetSingle> localVarResp = v1AccountPostWithHttpInfo(account);
         return localVarResp.getData();
     }
@@ -2070,7 +2070,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsAccountGetSingle> v1AccountPostWithHttpInfo(ServiceVOIPAccountAddData account) throws ApiException {
+    public ApiResponse<ServiceDocsAccountGetSingle> v1AccountPostWithHttpInfo(@javax.annotation.Nonnull ServiceVOIPAccountAddData account) throws ApiException {
         okhttp3.Call localVarCall = v1AccountPostValidateBeforeCall(account, null);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -2091,7 +2091,7 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountPostAsync(ServiceVOIPAccountAddData account, final ApiCallback<ServiceDocsAccountGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountPostAsync(@javax.annotation.Nonnull ServiceVOIPAccountAddData account, final ApiCallback<ServiceDocsAccountGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountPostValidateBeforeCall(account, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountGetSingle>(){}.getType();

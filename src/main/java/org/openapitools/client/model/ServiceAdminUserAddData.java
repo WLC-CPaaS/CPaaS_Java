@@ -199,14 +199,10 @@ public class ServiceAdminUserAddData {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("email");
-    openapiFields.add("role");
+    openapiFields = new HashSet<String>(Arrays.asList("email", "role"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("email");
-    openapiRequiredFields.add("role");
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("email", "role"));
   }
 
   /**

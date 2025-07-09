@@ -176,14 +176,10 @@ public class MenuInputData {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("media");
-    openapiFields.add("name");
-    openapiFields.add("timeout");
+    openapiFields = new HashSet<String>(Arrays.asList("media", "name", "timeout"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("name");
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("name"));
   }
 
   /**

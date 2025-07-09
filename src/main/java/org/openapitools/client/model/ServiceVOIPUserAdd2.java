@@ -412,25 +412,10 @@ public class ServiceVOIPUserAdd2 {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("call_forward");
-    openapiFields.add("call_recording");
-    openapiFields.add("caller_id");
-    openapiFields.add("do_not_disturb");
-    openapiFields.add("email");
-    openapiFields.add("enabled");
-    openapiFields.add("first_name");
-    openapiFields.add("last_name");
-    openapiFields.add("music_on_hold");
-    openapiFields.add("presence_id");
-    openapiFields.add("timezone");
-    openapiFields.add("verified");
+    openapiFields = new HashSet<String>(Arrays.asList("call_forward", "call_recording", "caller_id", "do_not_disturb", "email", "enabled", "first_name", "last_name", "music_on_hold", "presence_id", "timezone", "verified"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("email");
-    openapiRequiredFields.add("first_name");
-    openapiRequiredFields.add("last_name");
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("email", "first_name", "last_name"));
   }
 
   /**

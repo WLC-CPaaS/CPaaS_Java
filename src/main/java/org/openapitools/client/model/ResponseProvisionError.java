@@ -235,15 +235,10 @@ public class ResponseProvisionError {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("error_code");
-    openapiFields.add("errors");
-    openapiFields.add("message");
-    openapiFields.add("request_id");
-    openapiFields.add("status_code");
+    openapiFields = new HashSet<String>(Arrays.asList("error_code", "errors", "message", "request_id", "status_code"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

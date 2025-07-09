@@ -348,19 +348,10 @@ public class ServiceDeviceOutputShort {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("device_type");
-    openapiFields.add("do_not_disturb");
-    openapiFields.add("enabled");
-    openapiFields.add("features");
-    openapiFields.add("flags");
-    openapiFields.add("id");
-    openapiFields.add("name");
-    openapiFields.add("owner_id");
-    openapiFields.add("username");
+    openapiFields = new HashSet<String>(Arrays.asList("device_type", "do_not_disturb", "enabled", "features", "flags", "id", "name", "owner_id", "username"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

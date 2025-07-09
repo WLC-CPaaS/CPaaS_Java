@@ -94,7 +94,7 @@ public class PhoneNumberApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidPhonenumberGetCall(String accountid, String startKey, Integer pageSize, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidPhonenumberGetCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -148,7 +148,7 @@ public class PhoneNumberApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountidPhonenumberGetValidateBeforeCall(String accountid, String startKey, Integer pageSize, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountidPhonenumberGetValidateBeforeCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountid' is set
         if (accountid == null) {
             throw new ApiException("Missing the required parameter 'accountid' when calling v1AccountAccountidPhonenumberGet(Async)");
@@ -174,7 +174,7 @@ public class PhoneNumberApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsAccountPhonenumberGetAll v1AccountAccountidPhonenumberGet(String accountid, String startKey, Integer pageSize) throws ApiException {
+    public ServiceDocsAccountPhonenumberGetAll v1AccountAccountidPhonenumberGet(@javax.annotation.Nonnull String accountid, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize) throws ApiException {
         ApiResponse<ServiceDocsAccountPhonenumberGetAll> localVarResp = v1AccountAccountidPhonenumberGetWithHttpInfo(accountid, startKey, pageSize);
         return localVarResp.getData();
     }
@@ -195,7 +195,7 @@ public class PhoneNumberApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsAccountPhonenumberGetAll> v1AccountAccountidPhonenumberGetWithHttpInfo(String accountid, String startKey, Integer pageSize) throws ApiException {
+    public ApiResponse<ServiceDocsAccountPhonenumberGetAll> v1AccountAccountidPhonenumberGetWithHttpInfo(@javax.annotation.Nonnull String accountid, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidPhonenumberGetValidateBeforeCall(accountid, startKey, pageSize, null);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountPhonenumberGetAll>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -218,7 +218,7 @@ public class PhoneNumberApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidPhonenumberGetAsync(String accountid, String startKey, Integer pageSize, final ApiCallback<ServiceDocsAccountPhonenumberGetAll> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidPhonenumberGetAsync(@javax.annotation.Nonnull String accountid, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback<ServiceDocsAccountPhonenumberGetAll> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidPhonenumberGetValidateBeforeCall(accountid, startKey, pageSize, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountPhonenumberGetAll>(){}.getType();
@@ -239,7 +239,7 @@ public class PhoneNumberApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountPhonenumberAssignPostCall(ServiceDocsPhonenumberAssignPayload payload, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountPhonenumberAssignPostCall(@javax.annotation.Nonnull ServiceDocsPhonenumberAssignPayload payload, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -285,7 +285,7 @@ public class PhoneNumberApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountPhonenumberAssignPostValidateBeforeCall(ServiceDocsPhonenumberAssignPayload payload, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountPhonenumberAssignPostValidateBeforeCall(@javax.annotation.Nonnull ServiceDocsPhonenumberAssignPayload payload, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'payload' is set
         if (payload == null) {
             throw new ApiException("Missing the required parameter 'payload' when calling v1AccountPhonenumberAssignPost(Async)");
@@ -309,7 +309,7 @@ public class PhoneNumberApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceAPIResponseStatusCodeOnly v1AccountPhonenumberAssignPost(ServiceDocsPhonenumberAssignPayload payload) throws ApiException {
+    public ServiceAPIResponseStatusCodeOnly v1AccountPhonenumberAssignPost(@javax.annotation.Nonnull ServiceDocsPhonenumberAssignPayload payload) throws ApiException {
         ApiResponse<ServiceAPIResponseStatusCodeOnly> localVarResp = v1AccountPhonenumberAssignPostWithHttpInfo(payload);
         return localVarResp.getData();
     }
@@ -328,7 +328,7 @@ public class PhoneNumberApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceAPIResponseStatusCodeOnly> v1AccountPhonenumberAssignPostWithHttpInfo(ServiceDocsPhonenumberAssignPayload payload) throws ApiException {
+    public ApiResponse<ServiceAPIResponseStatusCodeOnly> v1AccountPhonenumberAssignPostWithHttpInfo(@javax.annotation.Nonnull ServiceDocsPhonenumberAssignPayload payload) throws ApiException {
         okhttp3.Call localVarCall = v1AccountPhonenumberAssignPostValidateBeforeCall(payload, null);
         Type localVarReturnType = new TypeToken<ServiceAPIResponseStatusCodeOnly>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -349,7 +349,7 @@ public class PhoneNumberApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountPhonenumberAssignPostAsync(ServiceDocsPhonenumberAssignPayload payload, final ApiCallback<ServiceAPIResponseStatusCodeOnly> _callback) throws ApiException {
+    public okhttp3.Call v1AccountPhonenumberAssignPostAsync(@javax.annotation.Nonnull ServiceDocsPhonenumberAssignPayload payload, final ApiCallback<ServiceAPIResponseStatusCodeOnly> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountPhonenumberAssignPostValidateBeforeCall(payload, _callback);
         Type localVarReturnType = new TypeToken<ServiceAPIResponseStatusCodeOnly>(){}.getType();
@@ -370,7 +370,7 @@ public class PhoneNumberApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountPhonenumberDisconnectPostCall(ServiceDocsPhonenumberUnassignPayload payload, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountPhonenumberDisconnectPostCall(@javax.annotation.Nonnull ServiceDocsPhonenumberUnassignPayload payload, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -416,7 +416,7 @@ public class PhoneNumberApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountPhonenumberDisconnectPostValidateBeforeCall(ServiceDocsPhonenumberUnassignPayload payload, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountPhonenumberDisconnectPostValidateBeforeCall(@javax.annotation.Nonnull ServiceDocsPhonenumberUnassignPayload payload, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'payload' is set
         if (payload == null) {
             throw new ApiException("Missing the required parameter 'payload' when calling v1AccountPhonenumberDisconnectPost(Async)");
@@ -440,7 +440,7 @@ public class PhoneNumberApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceAPIResponseStatusCodeOnly v1AccountPhonenumberDisconnectPost(ServiceDocsPhonenumberUnassignPayload payload) throws ApiException {
+    public ServiceAPIResponseStatusCodeOnly v1AccountPhonenumberDisconnectPost(@javax.annotation.Nonnull ServiceDocsPhonenumberUnassignPayload payload) throws ApiException {
         ApiResponse<ServiceAPIResponseStatusCodeOnly> localVarResp = v1AccountPhonenumberDisconnectPostWithHttpInfo(payload);
         return localVarResp.getData();
     }
@@ -459,7 +459,7 @@ public class PhoneNumberApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceAPIResponseStatusCodeOnly> v1AccountPhonenumberDisconnectPostWithHttpInfo(ServiceDocsPhonenumberUnassignPayload payload) throws ApiException {
+    public ApiResponse<ServiceAPIResponseStatusCodeOnly> v1AccountPhonenumberDisconnectPostWithHttpInfo(@javax.annotation.Nonnull ServiceDocsPhonenumberUnassignPayload payload) throws ApiException {
         okhttp3.Call localVarCall = v1AccountPhonenumberDisconnectPostValidateBeforeCall(payload, null);
         Type localVarReturnType = new TypeToken<ServiceAPIResponseStatusCodeOnly>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -480,7 +480,7 @@ public class PhoneNumberApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountPhonenumberDisconnectPostAsync(ServiceDocsPhonenumberUnassignPayload payload, final ApiCallback<ServiceAPIResponseStatusCodeOnly> _callback) throws ApiException {
+    public okhttp3.Call v1AccountPhonenumberDisconnectPostAsync(@javax.annotation.Nonnull ServiceDocsPhonenumberUnassignPayload payload, final ApiCallback<ServiceAPIResponseStatusCodeOnly> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountPhonenumberDisconnectPostValidateBeforeCall(payload, _callback);
         Type localVarReturnType = new TypeToken<ServiceAPIResponseStatusCodeOnly>(){}.getType();
@@ -502,7 +502,7 @@ public class PhoneNumberApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountPhonenumberGetCall(String startKey, Integer pageSize, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountPhonenumberGetCall(@javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -555,7 +555,7 @@ public class PhoneNumberApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountPhonenumberGetValidateBeforeCall(String startKey, Integer pageSize, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountPhonenumberGetValidateBeforeCall(@javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback _callback) throws ApiException {
         return v1AccountPhonenumberGetCall(startKey, pageSize, _callback);
 
     }
@@ -575,7 +575,7 @@ public class PhoneNumberApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsAccountPhonenumberGetAll v1AccountPhonenumberGet(String startKey, Integer pageSize) throws ApiException {
+    public ServiceDocsAccountPhonenumberGetAll v1AccountPhonenumberGet(@javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize) throws ApiException {
         ApiResponse<ServiceDocsAccountPhonenumberGetAll> localVarResp = v1AccountPhonenumberGetWithHttpInfo(startKey, pageSize);
         return localVarResp.getData();
     }
@@ -595,7 +595,7 @@ public class PhoneNumberApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsAccountPhonenumberGetAll> v1AccountPhonenumberGetWithHttpInfo(String startKey, Integer pageSize) throws ApiException {
+    public ApiResponse<ServiceDocsAccountPhonenumberGetAll> v1AccountPhonenumberGetWithHttpInfo(@javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize) throws ApiException {
         okhttp3.Call localVarCall = v1AccountPhonenumberGetValidateBeforeCall(startKey, pageSize, null);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountPhonenumberGetAll>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -617,7 +617,7 @@ public class PhoneNumberApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountPhonenumberGetAsync(String startKey, Integer pageSize, final ApiCallback<ServiceDocsAccountPhonenumberGetAll> _callback) throws ApiException {
+    public okhttp3.Call v1AccountPhonenumberGetAsync(@javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback<ServiceDocsAccountPhonenumberGetAll> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountPhonenumberGetValidateBeforeCall(startKey, pageSize, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsAccountPhonenumberGetAll>(){}.getType();
@@ -638,7 +638,7 @@ public class PhoneNumberApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountPhonenumberPostCall(List<String> phonenumber, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountPhonenumberPostCall(@javax.annotation.Nonnull List<String> phonenumber, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -684,7 +684,7 @@ public class PhoneNumberApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountPhonenumberPostValidateBeforeCall(List<String> phonenumber, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountPhonenumberPostValidateBeforeCall(@javax.annotation.Nonnull List<String> phonenumber, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'phonenumber' is set
         if (phonenumber == null) {
             throw new ApiException("Missing the required parameter 'phonenumber' when calling v1AccountPhonenumberPost(Async)");
@@ -708,7 +708,7 @@ public class PhoneNumberApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsOrderPhonenumber v1AccountPhonenumberPost(List<String> phonenumber) throws ApiException {
+    public ServiceDocsOrderPhonenumber v1AccountPhonenumberPost(@javax.annotation.Nonnull List<String> phonenumber) throws ApiException {
         ApiResponse<ServiceDocsOrderPhonenumber> localVarResp = v1AccountPhonenumberPostWithHttpInfo(phonenumber);
         return localVarResp.getData();
     }
@@ -727,7 +727,7 @@ public class PhoneNumberApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsOrderPhonenumber> v1AccountPhonenumberPostWithHttpInfo(List<String> phonenumber) throws ApiException {
+    public ApiResponse<ServiceDocsOrderPhonenumber> v1AccountPhonenumberPostWithHttpInfo(@javax.annotation.Nonnull List<String> phonenumber) throws ApiException {
         okhttp3.Call localVarCall = v1AccountPhonenumberPostValidateBeforeCall(phonenumber, null);
         Type localVarReturnType = new TypeToken<ServiceDocsOrderPhonenumber>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -748,7 +748,7 @@ public class PhoneNumberApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountPhonenumberPostAsync(List<String> phonenumber, final ApiCallback<ServiceDocsOrderPhonenumber> _callback) throws ApiException {
+    public okhttp3.Call v1AccountPhonenumberPostAsync(@javax.annotation.Nonnull List<String> phonenumber, final ApiCallback<ServiceDocsOrderPhonenumber> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountPhonenumberPostValidateBeforeCall(phonenumber, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsOrderPhonenumber>(){}.getType();
@@ -769,7 +769,7 @@ public class PhoneNumberApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountPhonenumberUnassignPostCall(ServiceDocsPhonenumberUnassignPayload payload, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountPhonenumberUnassignPostCall(@javax.annotation.Nonnull ServiceDocsPhonenumberUnassignPayload payload, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -815,7 +815,7 @@ public class PhoneNumberApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountPhonenumberUnassignPostValidateBeforeCall(ServiceDocsPhonenumberUnassignPayload payload, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountPhonenumberUnassignPostValidateBeforeCall(@javax.annotation.Nonnull ServiceDocsPhonenumberUnassignPayload payload, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'payload' is set
         if (payload == null) {
             throw new ApiException("Missing the required parameter 'payload' when calling v1AccountPhonenumberUnassignPost(Async)");
@@ -839,7 +839,7 @@ public class PhoneNumberApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceAPIResponseStatusCodeOnly v1AccountPhonenumberUnassignPost(ServiceDocsPhonenumberUnassignPayload payload) throws ApiException {
+    public ServiceAPIResponseStatusCodeOnly v1AccountPhonenumberUnassignPost(@javax.annotation.Nonnull ServiceDocsPhonenumberUnassignPayload payload) throws ApiException {
         ApiResponse<ServiceAPIResponseStatusCodeOnly> localVarResp = v1AccountPhonenumberUnassignPostWithHttpInfo(payload);
         return localVarResp.getData();
     }
@@ -858,7 +858,7 @@ public class PhoneNumberApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceAPIResponseStatusCodeOnly> v1AccountPhonenumberUnassignPostWithHttpInfo(ServiceDocsPhonenumberUnassignPayload payload) throws ApiException {
+    public ApiResponse<ServiceAPIResponseStatusCodeOnly> v1AccountPhonenumberUnassignPostWithHttpInfo(@javax.annotation.Nonnull ServiceDocsPhonenumberUnassignPayload payload) throws ApiException {
         okhttp3.Call localVarCall = v1AccountPhonenumberUnassignPostValidateBeforeCall(payload, null);
         Type localVarReturnType = new TypeToken<ServiceAPIResponseStatusCodeOnly>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -879,7 +879,7 @@ public class PhoneNumberApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountPhonenumberUnassignPostAsync(ServiceDocsPhonenumberUnassignPayload payload, final ApiCallback<ServiceAPIResponseStatusCodeOnly> _callback) throws ApiException {
+    public okhttp3.Call v1AccountPhonenumberUnassignPostAsync(@javax.annotation.Nonnull ServiceDocsPhonenumberUnassignPayload payload, final ApiCallback<ServiceAPIResponseStatusCodeOnly> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountPhonenumberUnassignPostValidateBeforeCall(payload, _callback);
         Type localVarReturnType = new TypeToken<ServiceAPIResponseStatusCodeOnly>(){}.getType();
@@ -901,7 +901,7 @@ public class PhoneNumberApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1PhonenumberSearchGetCall(String areaCode, Integer quantity, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1PhonenumberSearchGetCall(@javax.annotation.Nonnull String areaCode, @javax.annotation.Nullable Integer quantity, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -954,7 +954,7 @@ public class PhoneNumberApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1PhonenumberSearchGetValidateBeforeCall(String areaCode, Integer quantity, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1PhonenumberSearchGetValidateBeforeCall(@javax.annotation.Nonnull String areaCode, @javax.annotation.Nullable Integer quantity, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'areaCode' is set
         if (areaCode == null) {
             throw new ApiException("Missing the required parameter 'areaCode' when calling v1PhonenumberSearchGet(Async)");
@@ -979,7 +979,7 @@ public class PhoneNumberApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsPhonenumberSearchGetAll v1PhonenumberSearchGet(String areaCode, Integer quantity) throws ApiException {
+    public ServiceDocsPhonenumberSearchGetAll v1PhonenumberSearchGet(@javax.annotation.Nonnull String areaCode, @javax.annotation.Nullable Integer quantity) throws ApiException {
         ApiResponse<ServiceDocsPhonenumberSearchGetAll> localVarResp = v1PhonenumberSearchGetWithHttpInfo(areaCode, quantity);
         return localVarResp.getData();
     }
@@ -999,7 +999,7 @@ public class PhoneNumberApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsPhonenumberSearchGetAll> v1PhonenumberSearchGetWithHttpInfo(String areaCode, Integer quantity) throws ApiException {
+    public ApiResponse<ServiceDocsPhonenumberSearchGetAll> v1PhonenumberSearchGetWithHttpInfo(@javax.annotation.Nonnull String areaCode, @javax.annotation.Nullable Integer quantity) throws ApiException {
         okhttp3.Call localVarCall = v1PhonenumberSearchGetValidateBeforeCall(areaCode, quantity, null);
         Type localVarReturnType = new TypeToken<ServiceDocsPhonenumberSearchGetAll>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -1021,7 +1021,7 @@ public class PhoneNumberApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1PhonenumberSearchGetAsync(String areaCode, Integer quantity, final ApiCallback<ServiceDocsPhonenumberSearchGetAll> _callback) throws ApiException {
+    public okhttp3.Call v1PhonenumberSearchGetAsync(@javax.annotation.Nonnull String areaCode, @javax.annotation.Nullable Integer quantity, final ApiCallback<ServiceDocsPhonenumberSearchGetAll> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1PhonenumberSearchGetValidateBeforeCall(areaCode, quantity, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsPhonenumberSearchGetAll>(){}.getType();

@@ -781,36 +781,10 @@ public class ServiceCallRecordingOutput {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("call_id");
-    openapiFields.add("callee_id_name");
-    openapiFields.add("callee_id_number");
-    openapiFields.add("caller_id_name");
-    openapiFields.add("caller_id_number");
-    openapiFields.add("cdr_id");
-    openapiFields.add("content_type");
-    openapiFields.add("custom_channel_vars");
-    openapiFields.add("description");
-    openapiFields.add("direction");
-    openapiFields.add("duration");
-    openapiFields.add("duration_ms");
-    openapiFields.add("endpoint_id");
-    openapiFields.add("from");
-    openapiFields.add("id");
-    openapiFields.add("interaction_id");
-    openapiFields.add("media_source");
-    openapiFields.add("media_type");
-    openapiFields.add("name");
-    openapiFields.add("origin");
-    openapiFields.add("owner_id");
-    openapiFields.add("request");
-    openapiFields.add("source_type");
-    openapiFields.add("start");
-    openapiFields.add("to");
-    openapiFields.add("url");
+    openapiFields = new HashSet<String>(Arrays.asList("call_id", "callee_id_name", "callee_id_number", "caller_id_name", "caller_id_number", "cdr_id", "content_type", "custom_channel_vars", "description", "direction", "duration", "duration_ms", "endpoint_id", "from", "id", "interaction_id", "media_source", "media_type", "name", "origin", "owner_id", "request", "source_type", "start", "to", "url"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

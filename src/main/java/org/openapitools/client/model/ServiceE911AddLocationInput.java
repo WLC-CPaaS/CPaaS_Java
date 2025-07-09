@@ -54,18 +54,18 @@ import org.openapitools.client.JSON;
 public class ServiceE911AddLocationInput {
   public static final String SERIALIZED_NAME_LOCATION = "location";
   @SerializedName(SERIALIZED_NAME_LOCATION)
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
   private ServiceE911LocationInput location;
 
   public static final String SERIALIZED_NAME_URI = "uri";
   @SerializedName(SERIALIZED_NAME_URI)
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
   private ServiceE911URIInput uri;
 
   public ServiceE911AddLocationInput() {
   }
 
-  public ServiceE911AddLocationInput location(@javax.annotation.Nonnull ServiceE911LocationInput location) {
+  public ServiceE911AddLocationInput location(@javax.annotation.Nullable ServiceE911LocationInput location) {
     this.location = location;
     return this;
   }
@@ -74,17 +74,17 @@ public class ServiceE911AddLocationInput {
    * Get location
    * @return location
    */
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
   public ServiceE911LocationInput getLocation() {
     return location;
   }
 
-  public void setLocation(@javax.annotation.Nonnull ServiceE911LocationInput location) {
+  public void setLocation(@javax.annotation.Nullable ServiceE911LocationInput location) {
     this.location = location;
   }
 
 
-  public ServiceE911AddLocationInput uri(@javax.annotation.Nonnull ServiceE911URIInput uri) {
+  public ServiceE911AddLocationInput uri(@javax.annotation.Nullable ServiceE911URIInput uri) {
     this.uri = uri;
     return this;
   }
@@ -93,12 +93,12 @@ public class ServiceE911AddLocationInput {
    * Get uri
    * @return uri
    */
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
   public ServiceE911URIInput getUri() {
     return uri;
   }
 
-  public void setUri(@javax.annotation.Nonnull ServiceE911URIInput uri) {
+  public void setUri(@javax.annotation.Nullable ServiceE911URIInput uri) {
     this.uri = uri;
   }
 
@@ -149,14 +149,10 @@ public class ServiceE911AddLocationInput {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("location");
-    openapiFields.add("uri");
+    openapiFields = new HashSet<String>(Arrays.asList("location", "uri"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("location");
-    openapiRequiredFields.add("uri");
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**
@@ -179,18 +175,15 @@ public class ServiceE911AddLocationInput {
           throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ServiceE911AddLocationInput` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
-
-      // check to make sure all required properties/fields are present in the JSON string
-      for (String requiredField : ServiceE911AddLocationInput.openapiRequiredFields) {
-        if (jsonElement.getAsJsonObject().get(requiredField) == null) {
-          throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
-        }
-      }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      // validate the required field `location`
-      ServiceE911LocationInput.validateJsonElement(jsonObj.get("location"));
-      // validate the required field `uri`
-      ServiceE911URIInput.validateJsonElement(jsonObj.get("uri"));
+      // validate the optional field `location`
+      if (jsonObj.get("location") != null && !jsonObj.get("location").isJsonNull()) {
+        ServiceE911LocationInput.validateJsonElement(jsonObj.get("location"));
+      }
+      // validate the optional field `uri`
+      if (jsonObj.get("uri") != null && !jsonObj.get("uri").isJsonNull()) {
+        ServiceE911URIInput.validateJsonElement(jsonObj.get("uri"));
+      }
   }
 
   public static class CustomTypeAdapterFactory implements TypeAdapterFactory {

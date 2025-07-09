@@ -147,12 +147,10 @@ public class ServiceSystemStatusSupportService {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("e911_server");
-    openapiFields.add("phone_number_server");
+    openapiFields = new HashSet<String>(Arrays.asList("e911_server", "phone_number_server"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

@@ -121,12 +121,10 @@ public class ServiceVOIPQueueMembershipAddData {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("recipient_id");
+    openapiFields = new HashSet<String>(Arrays.asList("recipient_id"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("recipient_id");
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("recipient_id"));
   }
 
   /**

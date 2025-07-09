@@ -365,20 +365,10 @@ public class ServiceVoicemailMessageOutput {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("call_id");
-    openapiFields.add("caller_id_name");
-    openapiFields.add("caller_id_number");
-    openapiFields.add("folder");
-    openapiFields.add("from");
-    openapiFields.add("length");
-    openapiFields.add("media_id");
-    openapiFields.add("succeeded");
-    openapiFields.add("timestamp");
-    openapiFields.add("to");
+    openapiFields = new HashSet<String>(Arrays.asList("call_id", "caller_id_name", "caller_id_number", "folder", "from", "length", "media_id", "succeeded", "timestamp", "to"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

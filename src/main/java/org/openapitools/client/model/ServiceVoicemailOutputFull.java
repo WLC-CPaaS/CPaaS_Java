@@ -356,20 +356,10 @@ public class ServiceVoicemailOutputFull {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("id");
-    openapiFields.add("mailbox");
-    openapiFields.add("media");
-    openapiFields.add("media_extension");
-    openapiFields.add("messages");
-    openapiFields.add("name");
-    openapiFields.add("owner_id");
-    openapiFields.add("pin");
-    openapiFields.add("require_pin");
-    openapiFields.add("timezone");
+    openapiFields = new HashSet<String>(Arrays.asList("id", "mailbox", "media", "media_extension", "messages", "name", "owner_id", "pin", "require_pin", "timezone"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

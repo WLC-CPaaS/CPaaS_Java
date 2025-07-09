@@ -92,7 +92,7 @@ public class DeviceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidDeviceDeviceidDeleteCall(String accountid, String deviceid, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidDeviceDeviceidDeleteCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String deviceid, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -139,7 +139,7 @@ public class DeviceApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountidDeviceDeviceidDeleteValidateBeforeCall(String accountid, String deviceid, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountidDeviceDeviceidDeleteValidateBeforeCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String deviceid, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountid' is set
         if (accountid == null) {
             throw new ApiException("Missing the required parameter 'accountid' when calling v1AccountAccountidDeviceDeviceidDelete(Async)");
@@ -169,7 +169,7 @@ public class DeviceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsDeviceGetSingle v1AccountAccountidDeviceDeviceidDelete(String accountid, String deviceid) throws ApiException {
+    public ServiceDocsDeviceGetSingle v1AccountAccountidDeviceDeviceidDelete(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String deviceid) throws ApiException {
         ApiResponse<ServiceDocsDeviceGetSingle> localVarResp = v1AccountAccountidDeviceDeviceidDeleteWithHttpInfo(accountid, deviceid);
         return localVarResp.getData();
     }
@@ -189,7 +189,7 @@ public class DeviceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsDeviceGetSingle> v1AccountAccountidDeviceDeviceidDeleteWithHttpInfo(String accountid, String deviceid) throws ApiException {
+    public ApiResponse<ServiceDocsDeviceGetSingle> v1AccountAccountidDeviceDeviceidDeleteWithHttpInfo(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String deviceid) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidDeviceDeviceidDeleteValidateBeforeCall(accountid, deviceid, null);
         Type localVarReturnType = new TypeToken<ServiceDocsDeviceGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -211,7 +211,7 @@ public class DeviceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidDeviceDeviceidDeleteAsync(String accountid, String deviceid, final ApiCallback<ServiceDocsDeviceGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidDeviceDeviceidDeleteAsync(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String deviceid, final ApiCallback<ServiceDocsDeviceGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidDeviceDeviceidDeleteValidateBeforeCall(accountid, deviceid, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsDeviceGetSingle>(){}.getType();
@@ -233,7 +233,7 @@ public class DeviceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidDeviceDeviceidGetCall(String accountid, String deviceid, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidDeviceDeviceidGetCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String deviceid, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -280,7 +280,7 @@ public class DeviceApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountidDeviceDeviceidGetValidateBeforeCall(String accountid, String deviceid, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountidDeviceDeviceidGetValidateBeforeCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String deviceid, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountid' is set
         if (accountid == null) {
             throw new ApiException("Missing the required parameter 'accountid' when calling v1AccountAccountidDeviceDeviceidGet(Async)");
@@ -310,7 +310,7 @@ public class DeviceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsDeviceGetSingle v1AccountAccountidDeviceDeviceidGet(String accountid, String deviceid) throws ApiException {
+    public ServiceDocsDeviceGetSingle v1AccountAccountidDeviceDeviceidGet(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String deviceid) throws ApiException {
         ApiResponse<ServiceDocsDeviceGetSingle> localVarResp = v1AccountAccountidDeviceDeviceidGetWithHttpInfo(accountid, deviceid);
         return localVarResp.getData();
     }
@@ -330,7 +330,7 @@ public class DeviceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsDeviceGetSingle> v1AccountAccountidDeviceDeviceidGetWithHttpInfo(String accountid, String deviceid) throws ApiException {
+    public ApiResponse<ServiceDocsDeviceGetSingle> v1AccountAccountidDeviceDeviceidGetWithHttpInfo(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String deviceid) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidDeviceDeviceidGetValidateBeforeCall(accountid, deviceid, null);
         Type localVarReturnType = new TypeToken<ServiceDocsDeviceGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -352,7 +352,7 @@ public class DeviceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidDeviceDeviceidGetAsync(String accountid, String deviceid, final ApiCallback<ServiceDocsDeviceGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidDeviceDeviceidGetAsync(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String deviceid, final ApiCallback<ServiceDocsDeviceGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidDeviceDeviceidGetValidateBeforeCall(accountid, deviceid, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsDeviceGetSingle>(){}.getType();
@@ -375,7 +375,7 @@ public class DeviceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidDeviceDeviceidPutCall(String accountid, String deviceid, ServiceVOIPDeviceAddEdit2 device, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidDeviceDeviceidPutCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String deviceid, @javax.annotation.Nonnull ServiceVOIPDeviceAddEdit2 device, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -423,7 +423,7 @@ public class DeviceApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountidDeviceDeviceidPutValidateBeforeCall(String accountid, String deviceid, ServiceVOIPDeviceAddEdit2 device, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountidDeviceDeviceidPutValidateBeforeCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String deviceid, @javax.annotation.Nonnull ServiceVOIPDeviceAddEdit2 device, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountid' is set
         if (accountid == null) {
             throw new ApiException("Missing the required parameter 'accountid' when calling v1AccountAccountidDeviceDeviceidPut(Async)");
@@ -459,7 +459,7 @@ public class DeviceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsDeviceGetSingle v1AccountAccountidDeviceDeviceidPut(String accountid, String deviceid, ServiceVOIPDeviceAddEdit2 device) throws ApiException {
+    public ServiceDocsDeviceGetSingle v1AccountAccountidDeviceDeviceidPut(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String deviceid, @javax.annotation.Nonnull ServiceVOIPDeviceAddEdit2 device) throws ApiException {
         ApiResponse<ServiceDocsDeviceGetSingle> localVarResp = v1AccountAccountidDeviceDeviceidPutWithHttpInfo(accountid, deviceid, device);
         return localVarResp.getData();
     }
@@ -480,7 +480,7 @@ public class DeviceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsDeviceGetSingle> v1AccountAccountidDeviceDeviceidPutWithHttpInfo(String accountid, String deviceid, ServiceVOIPDeviceAddEdit2 device) throws ApiException {
+    public ApiResponse<ServiceDocsDeviceGetSingle> v1AccountAccountidDeviceDeviceidPutWithHttpInfo(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String deviceid, @javax.annotation.Nonnull ServiceVOIPDeviceAddEdit2 device) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidDeviceDeviceidPutValidateBeforeCall(accountid, deviceid, device, null);
         Type localVarReturnType = new TypeToken<ServiceDocsDeviceGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -503,7 +503,7 @@ public class DeviceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidDeviceDeviceidPutAsync(String accountid, String deviceid, ServiceVOIPDeviceAddEdit2 device, final ApiCallback<ServiceDocsDeviceGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidDeviceDeviceidPutAsync(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String deviceid, @javax.annotation.Nonnull ServiceVOIPDeviceAddEdit2 device, final ApiCallback<ServiceDocsDeviceGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidDeviceDeviceidPutValidateBeforeCall(accountid, deviceid, device, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsDeviceGetSingle>(){}.getType();
@@ -525,7 +525,7 @@ public class DeviceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidDeviceDeviceidRebootPostCall(String accountid, String deviceid, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidDeviceDeviceidRebootPostCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String deviceid, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -572,7 +572,7 @@ public class DeviceApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountidDeviceDeviceidRebootPostValidateBeforeCall(String accountid, String deviceid, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountidDeviceDeviceidRebootPostValidateBeforeCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String deviceid, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountid' is set
         if (accountid == null) {
             throw new ApiException("Missing the required parameter 'accountid' when calling v1AccountAccountidDeviceDeviceidRebootPost(Async)");
@@ -602,7 +602,7 @@ public class DeviceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsDeviceReboot v1AccountAccountidDeviceDeviceidRebootPost(String accountid, String deviceid) throws ApiException {
+    public ServiceDocsDeviceReboot v1AccountAccountidDeviceDeviceidRebootPost(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String deviceid) throws ApiException {
         ApiResponse<ServiceDocsDeviceReboot> localVarResp = v1AccountAccountidDeviceDeviceidRebootPostWithHttpInfo(accountid, deviceid);
         return localVarResp.getData();
     }
@@ -622,7 +622,7 @@ public class DeviceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsDeviceReboot> v1AccountAccountidDeviceDeviceidRebootPostWithHttpInfo(String accountid, String deviceid) throws ApiException {
+    public ApiResponse<ServiceDocsDeviceReboot> v1AccountAccountidDeviceDeviceidRebootPostWithHttpInfo(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String deviceid) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidDeviceDeviceidRebootPostValidateBeforeCall(accountid, deviceid, null);
         Type localVarReturnType = new TypeToken<ServiceDocsDeviceReboot>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -644,7 +644,7 @@ public class DeviceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidDeviceDeviceidRebootPostAsync(String accountid, String deviceid, final ApiCallback<ServiceDocsDeviceReboot> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidDeviceDeviceidRebootPostAsync(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull String deviceid, final ApiCallback<ServiceDocsDeviceReboot> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidDeviceDeviceidRebootPostValidateBeforeCall(accountid, deviceid, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsDeviceReboot>(){}.getType();
@@ -667,7 +667,7 @@ public class DeviceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidDeviceGetCall(String accountid, String startKey, Integer pageSize, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidDeviceGetCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -721,7 +721,7 @@ public class DeviceApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountidDeviceGetValidateBeforeCall(String accountid, String startKey, Integer pageSize, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountidDeviceGetValidateBeforeCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountid' is set
         if (accountid == null) {
             throw new ApiException("Missing the required parameter 'accountid' when calling v1AccountAccountidDeviceGet(Async)");
@@ -747,7 +747,7 @@ public class DeviceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsDeviceGetAll v1AccountAccountidDeviceGet(String accountid, String startKey, Integer pageSize) throws ApiException {
+    public ServiceDocsDeviceGetAll v1AccountAccountidDeviceGet(@javax.annotation.Nonnull String accountid, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize) throws ApiException {
         ApiResponse<ServiceDocsDeviceGetAll> localVarResp = v1AccountAccountidDeviceGetWithHttpInfo(accountid, startKey, pageSize);
         return localVarResp.getData();
     }
@@ -768,7 +768,7 @@ public class DeviceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsDeviceGetAll> v1AccountAccountidDeviceGetWithHttpInfo(String accountid, String startKey, Integer pageSize) throws ApiException {
+    public ApiResponse<ServiceDocsDeviceGetAll> v1AccountAccountidDeviceGetWithHttpInfo(@javax.annotation.Nonnull String accountid, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidDeviceGetValidateBeforeCall(accountid, startKey, pageSize, null);
         Type localVarReturnType = new TypeToken<ServiceDocsDeviceGetAll>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -791,7 +791,7 @@ public class DeviceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidDeviceGetAsync(String accountid, String startKey, Integer pageSize, final ApiCallback<ServiceDocsDeviceGetAll> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidDeviceGetAsync(@javax.annotation.Nonnull String accountid, @javax.annotation.Nullable String startKey, @javax.annotation.Nullable Integer pageSize, final ApiCallback<ServiceDocsDeviceGetAll> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidDeviceGetValidateBeforeCall(accountid, startKey, pageSize, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsDeviceGetAll>(){}.getType();
@@ -813,7 +813,7 @@ public class DeviceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidDevicePostCall(String accountid, ServiceVOIPDeviceAddEdit2 device, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidDevicePostCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceVOIPDeviceAddEdit2 device, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -860,7 +860,7 @@ public class DeviceApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountidDevicePostValidateBeforeCall(String accountid, ServiceVOIPDeviceAddEdit2 device, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountidDevicePostValidateBeforeCall(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceVOIPDeviceAddEdit2 device, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountid' is set
         if (accountid == null) {
             throw new ApiException("Missing the required parameter 'accountid' when calling v1AccountAccountidDevicePost(Async)");
@@ -890,7 +890,7 @@ public class DeviceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsDeviceGetSingle v1AccountAccountidDevicePost(String accountid, ServiceVOIPDeviceAddEdit2 device) throws ApiException {
+    public ServiceDocsDeviceGetSingle v1AccountAccountidDevicePost(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceVOIPDeviceAddEdit2 device) throws ApiException {
         ApiResponse<ServiceDocsDeviceGetSingle> localVarResp = v1AccountAccountidDevicePostWithHttpInfo(accountid, device);
         return localVarResp.getData();
     }
@@ -910,7 +910,7 @@ public class DeviceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsDeviceGetSingle> v1AccountAccountidDevicePostWithHttpInfo(String accountid, ServiceVOIPDeviceAddEdit2 device) throws ApiException {
+    public ApiResponse<ServiceDocsDeviceGetSingle> v1AccountAccountidDevicePostWithHttpInfo(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceVOIPDeviceAddEdit2 device) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidDevicePostValidateBeforeCall(accountid, device, null);
         Type localVarReturnType = new TypeToken<ServiceDocsDeviceGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -932,7 +932,7 @@ public class DeviceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidDevicePostAsync(String accountid, ServiceVOIPDeviceAddEdit2 device, final ApiCallback<ServiceDocsDeviceGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidDevicePostAsync(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceVOIPDeviceAddEdit2 device, final ApiCallback<ServiceDocsDeviceGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidDevicePostValidateBeforeCall(accountid, device, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsDeviceGetSingle>(){}.getType();
@@ -953,7 +953,7 @@ public class DeviceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidDeviceStatusGetCall(String accountid, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidDeviceStatusGetCall(@javax.annotation.Nonnull String accountid, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -999,7 +999,7 @@ public class DeviceApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountidDeviceStatusGetValidateBeforeCall(String accountid, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountidDeviceStatusGetValidateBeforeCall(@javax.annotation.Nonnull String accountid, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountid' is set
         if (accountid == null) {
             throw new ApiException("Missing the required parameter 'accountid' when calling v1AccountAccountidDeviceStatusGet(Async)");
@@ -1023,7 +1023,7 @@ public class DeviceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsDeviceStatus v1AccountAccountidDeviceStatusGet(String accountid) throws ApiException {
+    public ServiceDocsDeviceStatus v1AccountAccountidDeviceStatusGet(@javax.annotation.Nonnull String accountid) throws ApiException {
         ApiResponse<ServiceDocsDeviceStatus> localVarResp = v1AccountAccountidDeviceStatusGetWithHttpInfo(accountid);
         return localVarResp.getData();
     }
@@ -1042,7 +1042,7 @@ public class DeviceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsDeviceStatus> v1AccountAccountidDeviceStatusGetWithHttpInfo(String accountid) throws ApiException {
+    public ApiResponse<ServiceDocsDeviceStatus> v1AccountAccountidDeviceStatusGetWithHttpInfo(@javax.annotation.Nonnull String accountid) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidDeviceStatusGetValidateBeforeCall(accountid, null);
         Type localVarReturnType = new TypeToken<ServiceDocsDeviceStatus>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -1063,7 +1063,7 @@ public class DeviceApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidDeviceStatusGetAsync(String accountid, final ApiCallback<ServiceDocsDeviceStatus> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidDeviceStatusGetAsync(@javax.annotation.Nonnull String accountid, final ApiCallback<ServiceDocsDeviceStatus> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidDeviceStatusGetValidateBeforeCall(accountid, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsDeviceStatus>(){}.getType();

@@ -95,7 +95,7 @@ public class WebhookApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1WebhookAccountAccountIDGetCall(String accountID, Integer pageSize, Integer currentPage, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1WebhookAccountAccountIDGetCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable Integer currentPage, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -149,7 +149,7 @@ public class WebhookApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1WebhookAccountAccountIDGetValidateBeforeCall(String accountID, Integer pageSize, Integer currentPage, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1WebhookAccountAccountIDGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable Integer currentPage, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1WebhookAccountAccountIDGet(Async)");
@@ -177,7 +177,7 @@ public class WebhookApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsWebhookGetAll v1WebhookAccountAccountIDGet(String accountID, Integer pageSize, Integer currentPage) throws ApiException {
+    public ServiceDocsWebhookGetAll v1WebhookAccountAccountIDGet(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable Integer currentPage) throws ApiException {
         ApiResponse<ServiceDocsWebhookGetAll> localVarResp = v1WebhookAccountAccountIDGetWithHttpInfo(accountID, pageSize, currentPage);
         return localVarResp.getData();
     }
@@ -200,7 +200,7 @@ public class WebhookApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsWebhookGetAll> v1WebhookAccountAccountIDGetWithHttpInfo(String accountID, Integer pageSize, Integer currentPage) throws ApiException {
+    public ApiResponse<ServiceDocsWebhookGetAll> v1WebhookAccountAccountIDGetWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable Integer currentPage) throws ApiException {
         okhttp3.Call localVarCall = v1WebhookAccountAccountIDGetValidateBeforeCall(accountID, pageSize, currentPage, null);
         Type localVarReturnType = new TypeToken<ServiceDocsWebhookGetAll>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -225,7 +225,7 @@ public class WebhookApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1WebhookAccountAccountIDGetAsync(String accountID, Integer pageSize, Integer currentPage, final ApiCallback<ServiceDocsWebhookGetAll> _callback) throws ApiException {
+    public okhttp3.Call v1WebhookAccountAccountIDGetAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nullable Integer pageSize, @javax.annotation.Nullable Integer currentPage, final ApiCallback<ServiceDocsWebhookGetAll> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1WebhookAccountAccountIDGetValidateBeforeCall(accountID, pageSize, currentPage, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsWebhookGetAll>(){}.getType();
@@ -248,7 +248,7 @@ public class WebhookApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1WebhookAccountAccountIDPostCall(String accountID, ServiceWebhookAdd body, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1WebhookAccountAccountIDPostCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceWebhookAdd body, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -294,7 +294,7 @@ public class WebhookApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1WebhookAccountAccountIDPostValidateBeforeCall(String accountID, ServiceWebhookAdd body, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1WebhookAccountAccountIDPostValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceWebhookAdd body, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1WebhookAccountAccountIDPost(Async)");
@@ -325,7 +325,7 @@ public class WebhookApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsWebhookGetSingle v1WebhookAccountAccountIDPost(String accountID, ServiceWebhookAdd body) throws ApiException {
+    public ServiceDocsWebhookGetSingle v1WebhookAccountAccountIDPost(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceWebhookAdd body) throws ApiException {
         ApiResponse<ServiceDocsWebhookGetSingle> localVarResp = v1WebhookAccountAccountIDPostWithHttpInfo(accountID, body);
         return localVarResp.getData();
     }
@@ -346,7 +346,7 @@ public class WebhookApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsWebhookGetSingle> v1WebhookAccountAccountIDPostWithHttpInfo(String accountID, ServiceWebhookAdd body) throws ApiException {
+    public ApiResponse<ServiceDocsWebhookGetSingle> v1WebhookAccountAccountIDPostWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceWebhookAdd body) throws ApiException {
         okhttp3.Call localVarCall = v1WebhookAccountAccountIDPostValidateBeforeCall(accountID, body, null);
         Type localVarReturnType = new TypeToken<ServiceDocsWebhookGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -369,7 +369,7 @@ public class WebhookApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1WebhookAccountAccountIDPostAsync(String accountID, ServiceWebhookAdd body, final ApiCallback<ServiceDocsWebhookGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1WebhookAccountAccountIDPostAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceWebhookAdd body, final ApiCallback<ServiceDocsWebhookGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1WebhookAccountAccountIDPostValidateBeforeCall(accountID, body, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsWebhookGetSingle>(){}.getType();
@@ -393,7 +393,7 @@ public class WebhookApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1WebhookAccountAccountIDWebhookIDDeleteCall(String accountID, Integer webhookID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1WebhookAccountAccountIDWebhookIDDeleteCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull Integer webhookID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -440,7 +440,7 @@ public class WebhookApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1WebhookAccountAccountIDWebhookIDDeleteValidateBeforeCall(String accountID, Integer webhookID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1WebhookAccountAccountIDWebhookIDDeleteValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull Integer webhookID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1WebhookAccountAccountIDWebhookIDDelete(Async)");
@@ -472,7 +472,7 @@ public class WebhookApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsWebhookDelete v1WebhookAccountAccountIDWebhookIDDelete(String accountID, Integer webhookID) throws ApiException {
+    public ServiceDocsWebhookDelete v1WebhookAccountAccountIDWebhookIDDelete(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull Integer webhookID) throws ApiException {
         ApiResponse<ServiceDocsWebhookDelete> localVarResp = v1WebhookAccountAccountIDWebhookIDDeleteWithHttpInfo(accountID, webhookID);
         return localVarResp.getData();
     }
@@ -494,7 +494,7 @@ public class WebhookApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsWebhookDelete> v1WebhookAccountAccountIDWebhookIDDeleteWithHttpInfo(String accountID, Integer webhookID) throws ApiException {
+    public ApiResponse<ServiceDocsWebhookDelete> v1WebhookAccountAccountIDWebhookIDDeleteWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull Integer webhookID) throws ApiException {
         okhttp3.Call localVarCall = v1WebhookAccountAccountIDWebhookIDDeleteValidateBeforeCall(accountID, webhookID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsWebhookDelete>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -518,7 +518,7 @@ public class WebhookApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1WebhookAccountAccountIDWebhookIDDeleteAsync(String accountID, Integer webhookID, final ApiCallback<ServiceDocsWebhookDelete> _callback) throws ApiException {
+    public okhttp3.Call v1WebhookAccountAccountIDWebhookIDDeleteAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull Integer webhookID, final ApiCallback<ServiceDocsWebhookDelete> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1WebhookAccountAccountIDWebhookIDDeleteValidateBeforeCall(accountID, webhookID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsWebhookDelete>(){}.getType();
@@ -542,7 +542,7 @@ public class WebhookApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1WebhookAccountAccountIDWebhookIDGetCall(String accountID, Integer webhookID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1WebhookAccountAccountIDWebhookIDGetCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull Integer webhookID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -589,7 +589,7 @@ public class WebhookApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1WebhookAccountAccountIDWebhookIDGetValidateBeforeCall(String accountID, Integer webhookID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1WebhookAccountAccountIDWebhookIDGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull Integer webhookID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1WebhookAccountAccountIDWebhookIDGet(Async)");
@@ -621,7 +621,7 @@ public class WebhookApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsWebhookGetSingle v1WebhookAccountAccountIDWebhookIDGet(String accountID, Integer webhookID) throws ApiException {
+    public ServiceDocsWebhookGetSingle v1WebhookAccountAccountIDWebhookIDGet(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull Integer webhookID) throws ApiException {
         ApiResponse<ServiceDocsWebhookGetSingle> localVarResp = v1WebhookAccountAccountIDWebhookIDGetWithHttpInfo(accountID, webhookID);
         return localVarResp.getData();
     }
@@ -643,7 +643,7 @@ public class WebhookApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsWebhookGetSingle> v1WebhookAccountAccountIDWebhookIDGetWithHttpInfo(String accountID, Integer webhookID) throws ApiException {
+    public ApiResponse<ServiceDocsWebhookGetSingle> v1WebhookAccountAccountIDWebhookIDGetWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull Integer webhookID) throws ApiException {
         okhttp3.Call localVarCall = v1WebhookAccountAccountIDWebhookIDGetValidateBeforeCall(accountID, webhookID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsWebhookGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -667,7 +667,7 @@ public class WebhookApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1WebhookAccountAccountIDWebhookIDGetAsync(String accountID, Integer webhookID, final ApiCallback<ServiceDocsWebhookGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1WebhookAccountAccountIDWebhookIDGetAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull Integer webhookID, final ApiCallback<ServiceDocsWebhookGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1WebhookAccountAccountIDWebhookIDGetValidateBeforeCall(accountID, webhookID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsWebhookGetSingle>(){}.getType();
@@ -692,7 +692,7 @@ public class WebhookApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1WebhookAccountAccountIDWebhookIDPutCall(String accountID, String webhookID, ServiceWebhookEdit body, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1WebhookAccountAccountIDWebhookIDPutCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String webhookID, @javax.annotation.Nonnull ServiceWebhookEdit body, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -739,7 +739,7 @@ public class WebhookApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1WebhookAccountAccountIDWebhookIDPutValidateBeforeCall(String accountID, String webhookID, ServiceWebhookEdit body, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1WebhookAccountAccountIDWebhookIDPutValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String webhookID, @javax.annotation.Nonnull ServiceWebhookEdit body, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1WebhookAccountAccountIDWebhookIDPut(Async)");
@@ -777,7 +777,7 @@ public class WebhookApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsWebhookGetSingle v1WebhookAccountAccountIDWebhookIDPut(String accountID, String webhookID, ServiceWebhookEdit body) throws ApiException {
+    public ServiceDocsWebhookGetSingle v1WebhookAccountAccountIDWebhookIDPut(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String webhookID, @javax.annotation.Nonnull ServiceWebhookEdit body) throws ApiException {
         ApiResponse<ServiceDocsWebhookGetSingle> localVarResp = v1WebhookAccountAccountIDWebhookIDPutWithHttpInfo(accountID, webhookID, body);
         return localVarResp.getData();
     }
@@ -800,7 +800,7 @@ public class WebhookApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsWebhookGetSingle> v1WebhookAccountAccountIDWebhookIDPutWithHttpInfo(String accountID, String webhookID, ServiceWebhookEdit body) throws ApiException {
+    public ApiResponse<ServiceDocsWebhookGetSingle> v1WebhookAccountAccountIDWebhookIDPutWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String webhookID, @javax.annotation.Nonnull ServiceWebhookEdit body) throws ApiException {
         okhttp3.Call localVarCall = v1WebhookAccountAccountIDWebhookIDPutValidateBeforeCall(accountID, webhookID, body, null);
         Type localVarReturnType = new TypeToken<ServiceDocsWebhookGetSingle>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -825,7 +825,7 @@ public class WebhookApi {
         <tr><td> 500 </td><td> Internal Server Error </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1WebhookAccountAccountIDWebhookIDPutAsync(String accountID, String webhookID, ServiceWebhookEdit body, final ApiCallback<ServiceDocsWebhookGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1WebhookAccountAccountIDWebhookIDPutAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String webhookID, @javax.annotation.Nonnull ServiceWebhookEdit body, final ApiCallback<ServiceDocsWebhookGetSingle> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1WebhookAccountAccountIDWebhookIDPutValidateBeforeCall(accountID, webhookID, body, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsWebhookGetSingle>(){}.getType();

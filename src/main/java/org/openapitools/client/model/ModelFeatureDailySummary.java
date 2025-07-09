@@ -199,14 +199,10 @@ public class ModelFeatureDailySummary {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("created_at");
-    openapiFields.add("feature_count");
-    openapiFields.add("feature_name");
-    openapiFields.add("log_date");
+    openapiFields = new HashSet<String>(Arrays.asList("created_at", "feature_count", "feature_name", "log_date"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

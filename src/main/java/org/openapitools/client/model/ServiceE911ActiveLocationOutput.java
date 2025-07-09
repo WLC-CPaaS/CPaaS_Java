@@ -122,11 +122,10 @@ public class ServiceE911ActiveLocationOutput {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("location_status");
+    openapiFields = new HashSet<String>(Arrays.asList("location_status"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

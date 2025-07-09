@@ -280,16 +280,10 @@ public class ServiceGroupOutputShort {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("endpoints");
-    openapiFields.add("features");
-    openapiFields.add("flags");
-    openapiFields.add("group_endpoints");
-    openapiFields.add("id");
-    openapiFields.add("name");
+    openapiFields = new HashSet<String>(Arrays.asList("endpoints", "features", "flags", "group_endpoints", "id", "name"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

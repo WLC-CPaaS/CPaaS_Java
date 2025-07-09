@@ -199,14 +199,10 @@ public class ServiceE911LocationURILegacyData {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("houseNumber");
-    openapiFields.add("predirectional");
-    openapiFields.add("streetName");
-    openapiFields.add("suite");
+    openapiFields = new HashSet<String>(Arrays.asList("houseNumber", "predirectional", "streetName", "suite"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

@@ -365,20 +365,10 @@ public class ModelAccountWebhook {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("account_id");
-    openapiFields.add("callback_method");
-    openapiFields.add("callback_url");
-    openapiFields.add("created_at");
-    openapiFields.add("data");
-    openapiFields.add("id");
-    openapiFields.add("is_active");
-    openapiFields.add("title");
-    openapiFields.add("updated_at");
-    openapiFields.add("webhook_type");
+    openapiFields = new HashSet<String>(Arrays.asList("account_id", "callback_method", "callback_url", "created_at", "data", "id", "is_active", "title", "updated_at", "webhook_type"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

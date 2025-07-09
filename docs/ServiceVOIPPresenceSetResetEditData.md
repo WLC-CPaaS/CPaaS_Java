@@ -1,11 +1,33 @@
-# service.VOIPPresenceSetResetEditData
+
+
+# ServiceVOIPPresenceSetResetEditData
+
 
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**action** | **String** |  | 
-**state** | **String** |  | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+|**action** | [**ActionEnum**](#ActionEnum) |  |  |
+|**state** | [**StateEnum**](#StateEnum) |  |  [optional] |
+
+
+
+## Enum: ActionEnum
+
+| Name | Value |
+|---- | -----|
+| SET | &quot;set&quot; |
+| RESET | &quot;reset&quot; |
+
+
+
+## Enum: StateEnum
+
+| Name | Value |
+|---- | -----|
+| EARLY | &quot;early&quot; |
+| CONFIRMED | &quot;confirmed&quot; |
+| TERMINATED | &quot;terminated&quot; |
+
 
 

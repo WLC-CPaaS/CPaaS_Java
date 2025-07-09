@@ -147,12 +147,10 @@ public class ServiceAPIKey {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("client_id");
-    openapiFields.add("client_secret");
+    openapiFields = new HashSet<String>(Arrays.asList("client_id", "client_secret"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

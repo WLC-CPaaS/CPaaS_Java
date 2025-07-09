@@ -425,22 +425,10 @@ public class ServiceTemporalRuleOutputFull {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("cycle");
-    openapiFields.add("days");
-    openapiFields.add("enabled");
-    openapiFields.add("id");
-    openapiFields.add("interval");
-    openapiFields.add("month");
-    openapiFields.add("name");
-    openapiFields.add("ordinal");
-    openapiFields.add("start_date");
-    openapiFields.add("time_window_start");
-    openapiFields.add("time_window_stop");
-    openapiFields.add("wdays");
+    openapiFields = new HashSet<String>(Arrays.asList("cycle", "days", "enabled", "id", "interval", "month", "name", "ordinal", "start_date", "time_window_start", "time_window_stop", "wdays"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

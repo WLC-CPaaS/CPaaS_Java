@@ -29,7 +29,7 @@ import java.io.IOException;
 
 import org.openapitools.client.model.CPAASError;
 import org.openapitools.client.model.ServiceAPIResponse;
-import org.openapitools.client.model.ServiceDocsCallQueueMemberGetSingle;
+import org.openapitools.client.model.ServiceDocsQueueMembershipOutput;
 import org.openapitools.client.model.ServiceVOIPCallQueueEnableMembershipData;
 import org.openapitools.client.model.ServiceVOIPQueueMembershipAddData;
 
@@ -91,7 +91,7 @@ public class CallQueueMembershipApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDQueuemembershipPostCall(String accountID, ServiceVOIPQueueMembershipAddData reqBody, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDQueuemembershipPostCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPQueueMembershipAddData reqBody, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -138,7 +138,7 @@ public class CallQueueMembershipApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDQueuemembershipPostValidateBeforeCall(String accountID, ServiceVOIPQueueMembershipAddData reqBody, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDQueuemembershipPostValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPQueueMembershipAddData reqBody, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDQueuemembershipPost(Async)");
@@ -158,7 +158,7 @@ public class CallQueueMembershipApi {
      * Allow users to create queue memberships for recipients.
      * @param accountID Account ID, 32 alpha numeric (required)
      * @param reqBody payload fields (required)
-     * @return ServiceDocsCallQueueMemberGetSingle
+     * @return ServiceDocsQueueMembershipOutput
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table border="1">
@@ -168,8 +168,8 @@ public class CallQueueMembershipApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsCallQueueMemberGetSingle v1AccountAccountIDQueuemembershipPost(String accountID, ServiceVOIPQueueMembershipAddData reqBody) throws ApiException {
-        ApiResponse<ServiceDocsCallQueueMemberGetSingle> localVarResp = v1AccountAccountIDQueuemembershipPostWithHttpInfo(accountID, reqBody);
+    public ServiceDocsQueueMembershipOutput v1AccountAccountIDQueuemembershipPost(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPQueueMembershipAddData reqBody) throws ApiException {
+        ApiResponse<ServiceDocsQueueMembershipOutput> localVarResp = v1AccountAccountIDQueuemembershipPostWithHttpInfo(accountID, reqBody);
         return localVarResp.getData();
     }
 
@@ -178,7 +178,7 @@ public class CallQueueMembershipApi {
      * Allow users to create queue memberships for recipients.
      * @param accountID Account ID, 32 alpha numeric (required)
      * @param reqBody payload fields (required)
-     * @return ApiResponse&lt;ServiceDocsCallQueueMemberGetSingle&gt;
+     * @return ApiResponse&lt;ServiceDocsQueueMembershipOutput&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table border="1">
@@ -188,9 +188,9 @@ public class CallQueueMembershipApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsCallQueueMemberGetSingle> v1AccountAccountIDQueuemembershipPostWithHttpInfo(String accountID, ServiceVOIPQueueMembershipAddData reqBody) throws ApiException {
+    public ApiResponse<ServiceDocsQueueMembershipOutput> v1AccountAccountIDQueuemembershipPostWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPQueueMembershipAddData reqBody) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDQueuemembershipPostValidateBeforeCall(accountID, reqBody, null);
-        Type localVarReturnType = new TypeToken<ServiceDocsCallQueueMemberGetSingle>(){}.getType();
+        Type localVarReturnType = new TypeToken<ServiceDocsQueueMembershipOutput>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -210,10 +210,10 @@ public class CallQueueMembershipApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDQueuemembershipPostAsync(String accountID, ServiceVOIPQueueMembershipAddData reqBody, final ApiCallback<ServiceDocsCallQueueMemberGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDQueuemembershipPostAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPQueueMembershipAddData reqBody, final ApiCallback<ServiceDocsQueueMembershipOutput> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDQueuemembershipPostValidateBeforeCall(accountID, reqBody, _callback);
-        Type localVarReturnType = new TypeToken<ServiceDocsCallQueueMemberGetSingle>(){}.getType();
+        Type localVarReturnType = new TypeToken<ServiceDocsQueueMembershipOutput>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -232,7 +232,7 @@ public class CallQueueMembershipApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDQueuemembershipRecipientIDDisablePostCall(String accountID, String recipientID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDQueuemembershipRecipientIDDisablePostCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String recipientID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -279,7 +279,7 @@ public class CallQueueMembershipApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDQueuemembershipRecipientIDDisablePostValidateBeforeCall(String accountID, String recipientID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDQueuemembershipRecipientIDDisablePostValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String recipientID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDQueuemembershipRecipientIDDisablePost(Async)");
@@ -309,7 +309,7 @@ public class CallQueueMembershipApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceAPIResponse v1AccountAccountIDQueuemembershipRecipientIDDisablePost(String accountID, String recipientID) throws ApiException {
+    public ServiceAPIResponse v1AccountAccountIDQueuemembershipRecipientIDDisablePost(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String recipientID) throws ApiException {
         ApiResponse<ServiceAPIResponse> localVarResp = v1AccountAccountIDQueuemembershipRecipientIDDisablePostWithHttpInfo(accountID, recipientID);
         return localVarResp.getData();
     }
@@ -329,7 +329,7 @@ public class CallQueueMembershipApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceAPIResponse> v1AccountAccountIDQueuemembershipRecipientIDDisablePostWithHttpInfo(String accountID, String recipientID) throws ApiException {
+    public ApiResponse<ServiceAPIResponse> v1AccountAccountIDQueuemembershipRecipientIDDisablePostWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String recipientID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDQueuemembershipRecipientIDDisablePostValidateBeforeCall(accountID, recipientID, null);
         Type localVarReturnType = new TypeToken<ServiceAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -351,7 +351,7 @@ public class CallQueueMembershipApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDQueuemembershipRecipientIDDisablePostAsync(String accountID, String recipientID, final ApiCallback<ServiceAPIResponse> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDQueuemembershipRecipientIDDisablePostAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String recipientID, final ApiCallback<ServiceAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDQueuemembershipRecipientIDDisablePostValidateBeforeCall(accountID, recipientID, _callback);
         Type localVarReturnType = new TypeToken<ServiceAPIResponse>(){}.getType();
@@ -374,7 +374,7 @@ public class CallQueueMembershipApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDQueuemembershipRecipientIDEnablePostCall(String accountID, String recipientID, ServiceVOIPCallQueueEnableMembershipData reqBody, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDQueuemembershipRecipientIDEnablePostCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String recipientID, @javax.annotation.Nonnull ServiceVOIPCallQueueEnableMembershipData reqBody, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -422,7 +422,7 @@ public class CallQueueMembershipApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDQueuemembershipRecipientIDEnablePostValidateBeforeCall(String accountID, String recipientID, ServiceVOIPCallQueueEnableMembershipData reqBody, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDQueuemembershipRecipientIDEnablePostValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String recipientID, @javax.annotation.Nonnull ServiceVOIPCallQueueEnableMembershipData reqBody, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDQueuemembershipRecipientIDEnablePost(Async)");
@@ -458,7 +458,7 @@ public class CallQueueMembershipApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceAPIResponse v1AccountAccountIDQueuemembershipRecipientIDEnablePost(String accountID, String recipientID, ServiceVOIPCallQueueEnableMembershipData reqBody) throws ApiException {
+    public ServiceAPIResponse v1AccountAccountIDQueuemembershipRecipientIDEnablePost(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String recipientID, @javax.annotation.Nonnull ServiceVOIPCallQueueEnableMembershipData reqBody) throws ApiException {
         ApiResponse<ServiceAPIResponse> localVarResp = v1AccountAccountIDQueuemembershipRecipientIDEnablePostWithHttpInfo(accountID, recipientID, reqBody);
         return localVarResp.getData();
     }
@@ -479,7 +479,7 @@ public class CallQueueMembershipApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceAPIResponse> v1AccountAccountIDQueuemembershipRecipientIDEnablePostWithHttpInfo(String accountID, String recipientID, ServiceVOIPCallQueueEnableMembershipData reqBody) throws ApiException {
+    public ApiResponse<ServiceAPIResponse> v1AccountAccountIDQueuemembershipRecipientIDEnablePostWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String recipientID, @javax.annotation.Nonnull ServiceVOIPCallQueueEnableMembershipData reqBody) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDQueuemembershipRecipientIDEnablePostValidateBeforeCall(accountID, recipientID, reqBody, null);
         Type localVarReturnType = new TypeToken<ServiceAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -502,7 +502,7 @@ public class CallQueueMembershipApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDQueuemembershipRecipientIDEnablePostAsync(String accountID, String recipientID, ServiceVOIPCallQueueEnableMembershipData reqBody, final ApiCallback<ServiceAPIResponse> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDQueuemembershipRecipientIDEnablePostAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String recipientID, @javax.annotation.Nonnull ServiceVOIPCallQueueEnableMembershipData reqBody, final ApiCallback<ServiceAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDQueuemembershipRecipientIDEnablePostValidateBeforeCall(accountID, recipientID, reqBody, _callback);
         Type localVarReturnType = new TypeToken<ServiceAPIResponse>(){}.getType();

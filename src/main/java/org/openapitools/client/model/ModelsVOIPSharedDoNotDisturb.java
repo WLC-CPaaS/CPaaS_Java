@@ -121,11 +121,10 @@ public class ModelsVOIPSharedDoNotDisturb {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("enabled");
+    openapiFields = new HashSet<String>(Arrays.asList("enabled"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

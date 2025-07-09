@@ -1,13 +1,16 @@
+
+
 # MenuOutputListData
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**features** | **List&lt;String&gt;** |  | [optional] [default to new ArrayList<>()]
-**flags** | **List&lt;String&gt;** |  | [optional] [default to new ArrayList<>()]
-**id** | **String** |  | [optional] 
-**name** | **String** |  | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+## Properties
+
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+|**features** | **List&lt;String&gt;** | Features used in this menu |  [optional] |
+|**flags** | **List&lt;String&gt;** | Flags set by external applications |  [optional] |
+|**id** | **String** | ID of the menu |  [optional] |
+|**name** | **String** | A friendly name for the menu |  [optional] |
+
 
 

@@ -200,14 +200,10 @@ public class ServiceCallQueueStatusOutput {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("active_recipient_count");
-    openapiFields.add("available_recipient_count");
-    openapiFields.add("node");
-    openapiFields.add("stats");
+    openapiFields = new HashSet<String>(Arrays.asList("active_recipient_count", "available_recipient_count", "node", "stats"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

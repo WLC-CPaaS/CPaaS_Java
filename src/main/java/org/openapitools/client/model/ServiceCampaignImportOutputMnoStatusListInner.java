@@ -173,13 +173,10 @@ public class ServiceCampaignImportOutputMnoStatusListInner {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>();
-    openapiFields.add("mno_id");
-    openapiFields.add("mno_name");
-    openapiFields.add("status");
+    openapiFields = new HashSet<String>(Arrays.asList("mno_id", "mno_name", "status"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields = new HashSet<String>(0);
   }
 
   /**

@@ -89,7 +89,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDDeviceDeviceIDMetaflowDeleteCall(String accountID, String deviceID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDDeviceDeviceIDMetaflowDeleteCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String deviceID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -136,7 +136,7 @@ public class MetaflowApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDDeviceDeviceIDMetaflowDeleteValidateBeforeCall(String accountID, String deviceID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDDeviceDeviceIDMetaflowDeleteValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String deviceID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDDeviceDeviceIDMetaflowDelete(Async)");
@@ -166,7 +166,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsMetaflowGet v1AccountAccountIDDeviceDeviceIDMetaflowDelete(String accountID, String deviceID) throws ApiException {
+    public ServiceDocsMetaflowGet v1AccountAccountIDDeviceDeviceIDMetaflowDelete(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String deviceID) throws ApiException {
         ApiResponse<ServiceDocsMetaflowGet> localVarResp = v1AccountAccountIDDeviceDeviceIDMetaflowDeleteWithHttpInfo(accountID, deviceID);
         return localVarResp.getData();
     }
@@ -186,7 +186,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsMetaflowGet> v1AccountAccountIDDeviceDeviceIDMetaflowDeleteWithHttpInfo(String accountID, String deviceID) throws ApiException {
+    public ApiResponse<ServiceDocsMetaflowGet> v1AccountAccountIDDeviceDeviceIDMetaflowDeleteWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String deviceID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDDeviceDeviceIDMetaflowDeleteValidateBeforeCall(accountID, deviceID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsMetaflowGet>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -208,7 +208,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDDeviceDeviceIDMetaflowDeleteAsync(String accountID, String deviceID, final ApiCallback<ServiceDocsMetaflowGet> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDDeviceDeviceIDMetaflowDeleteAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String deviceID, final ApiCallback<ServiceDocsMetaflowGet> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDDeviceDeviceIDMetaflowDeleteValidateBeforeCall(accountID, deviceID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsMetaflowGet>(){}.getType();
@@ -230,7 +230,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDDeviceDeviceIDMetaflowGetCall(String accountID, String deviceID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDDeviceDeviceIDMetaflowGetCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String deviceID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -277,7 +277,7 @@ public class MetaflowApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDDeviceDeviceIDMetaflowGetValidateBeforeCall(String accountID, String deviceID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDDeviceDeviceIDMetaflowGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String deviceID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDDeviceDeviceIDMetaflowGet(Async)");
@@ -307,7 +307,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsMetaflowGet v1AccountAccountIDDeviceDeviceIDMetaflowGet(String accountID, String deviceID) throws ApiException {
+    public ServiceDocsMetaflowGet v1AccountAccountIDDeviceDeviceIDMetaflowGet(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String deviceID) throws ApiException {
         ApiResponse<ServiceDocsMetaflowGet> localVarResp = v1AccountAccountIDDeviceDeviceIDMetaflowGetWithHttpInfo(accountID, deviceID);
         return localVarResp.getData();
     }
@@ -327,7 +327,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsMetaflowGet> v1AccountAccountIDDeviceDeviceIDMetaflowGetWithHttpInfo(String accountID, String deviceID) throws ApiException {
+    public ApiResponse<ServiceDocsMetaflowGet> v1AccountAccountIDDeviceDeviceIDMetaflowGetWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String deviceID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDDeviceDeviceIDMetaflowGetValidateBeforeCall(accountID, deviceID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsMetaflowGet>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -349,7 +349,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDDeviceDeviceIDMetaflowGetAsync(String accountID, String deviceID, final ApiCallback<ServiceDocsMetaflowGet> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDDeviceDeviceIDMetaflowGetAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String deviceID, final ApiCallback<ServiceDocsMetaflowGet> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDDeviceDeviceIDMetaflowGetValidateBeforeCall(accountID, deviceID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsMetaflowGet>(){}.getType();
@@ -372,7 +372,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDDeviceDeviceIDMetaflowPostCall(String accountID, String deviceID, ServiceVOIPMetaflowAddData reqBody, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDDeviceDeviceIDMetaflowPostCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String deviceID, @javax.annotation.Nonnull ServiceVOIPMetaflowAddData reqBody, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -420,7 +420,7 @@ public class MetaflowApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDDeviceDeviceIDMetaflowPostValidateBeforeCall(String accountID, String deviceID, ServiceVOIPMetaflowAddData reqBody, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDDeviceDeviceIDMetaflowPostValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String deviceID, @javax.annotation.Nonnull ServiceVOIPMetaflowAddData reqBody, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDDeviceDeviceIDMetaflowPost(Async)");
@@ -456,7 +456,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsMetaflowGet v1AccountAccountIDDeviceDeviceIDMetaflowPost(String accountID, String deviceID, ServiceVOIPMetaflowAddData reqBody) throws ApiException {
+    public ServiceDocsMetaflowGet v1AccountAccountIDDeviceDeviceIDMetaflowPost(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String deviceID, @javax.annotation.Nonnull ServiceVOIPMetaflowAddData reqBody) throws ApiException {
         ApiResponse<ServiceDocsMetaflowGet> localVarResp = v1AccountAccountIDDeviceDeviceIDMetaflowPostWithHttpInfo(accountID, deviceID, reqBody);
         return localVarResp.getData();
     }
@@ -477,7 +477,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsMetaflowGet> v1AccountAccountIDDeviceDeviceIDMetaflowPostWithHttpInfo(String accountID, String deviceID, ServiceVOIPMetaflowAddData reqBody) throws ApiException {
+    public ApiResponse<ServiceDocsMetaflowGet> v1AccountAccountIDDeviceDeviceIDMetaflowPostWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String deviceID, @javax.annotation.Nonnull ServiceVOIPMetaflowAddData reqBody) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDDeviceDeviceIDMetaflowPostValidateBeforeCall(accountID, deviceID, reqBody, null);
         Type localVarReturnType = new TypeToken<ServiceDocsMetaflowGet>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -500,7 +500,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDDeviceDeviceIDMetaflowPostAsync(String accountID, String deviceID, ServiceVOIPMetaflowAddData reqBody, final ApiCallback<ServiceDocsMetaflowGet> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDDeviceDeviceIDMetaflowPostAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String deviceID, @javax.annotation.Nonnull ServiceVOIPMetaflowAddData reqBody, final ApiCallback<ServiceDocsMetaflowGet> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDDeviceDeviceIDMetaflowPostValidateBeforeCall(accountID, deviceID, reqBody, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsMetaflowGet>(){}.getType();
@@ -521,7 +521,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDMetaflowDeleteCall(String accountID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDMetaflowDeleteCall(@javax.annotation.Nonnull String accountID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -567,7 +567,7 @@ public class MetaflowApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDMetaflowDeleteValidateBeforeCall(String accountID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDMetaflowDeleteValidateBeforeCall(@javax.annotation.Nonnull String accountID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDMetaflowDelete(Async)");
@@ -591,7 +591,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsMetaflowGet v1AccountAccountIDMetaflowDelete(String accountID) throws ApiException {
+    public ServiceDocsMetaflowGet v1AccountAccountIDMetaflowDelete(@javax.annotation.Nonnull String accountID) throws ApiException {
         ApiResponse<ServiceDocsMetaflowGet> localVarResp = v1AccountAccountIDMetaflowDeleteWithHttpInfo(accountID);
         return localVarResp.getData();
     }
@@ -610,7 +610,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsMetaflowGet> v1AccountAccountIDMetaflowDeleteWithHttpInfo(String accountID) throws ApiException {
+    public ApiResponse<ServiceDocsMetaflowGet> v1AccountAccountIDMetaflowDeleteWithHttpInfo(@javax.annotation.Nonnull String accountID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDMetaflowDeleteValidateBeforeCall(accountID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsMetaflowGet>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -631,7 +631,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDMetaflowDeleteAsync(String accountID, final ApiCallback<ServiceDocsMetaflowGet> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDMetaflowDeleteAsync(@javax.annotation.Nonnull String accountID, final ApiCallback<ServiceDocsMetaflowGet> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDMetaflowDeleteValidateBeforeCall(accountID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsMetaflowGet>(){}.getType();
@@ -652,7 +652,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDMetaflowGetCall(String accountID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDMetaflowGetCall(@javax.annotation.Nonnull String accountID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -698,7 +698,7 @@ public class MetaflowApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDMetaflowGetValidateBeforeCall(String accountID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDMetaflowGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDMetaflowGet(Async)");
@@ -722,7 +722,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsMetaflowGet v1AccountAccountIDMetaflowGet(String accountID) throws ApiException {
+    public ServiceDocsMetaflowGet v1AccountAccountIDMetaflowGet(@javax.annotation.Nonnull String accountID) throws ApiException {
         ApiResponse<ServiceDocsMetaflowGet> localVarResp = v1AccountAccountIDMetaflowGetWithHttpInfo(accountID);
         return localVarResp.getData();
     }
@@ -741,7 +741,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsMetaflowGet> v1AccountAccountIDMetaflowGetWithHttpInfo(String accountID) throws ApiException {
+    public ApiResponse<ServiceDocsMetaflowGet> v1AccountAccountIDMetaflowGetWithHttpInfo(@javax.annotation.Nonnull String accountID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDMetaflowGetValidateBeforeCall(accountID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsMetaflowGet>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -762,7 +762,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDMetaflowGetAsync(String accountID, final ApiCallback<ServiceDocsMetaflowGet> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDMetaflowGetAsync(@javax.annotation.Nonnull String accountID, final ApiCallback<ServiceDocsMetaflowGet> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDMetaflowGetValidateBeforeCall(accountID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsMetaflowGet>(){}.getType();
@@ -784,7 +784,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDMetaflowPostCall(String accountID, ServiceVOIPMetaflowAddData metaflow, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDMetaflowPostCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPMetaflowAddData metaflow, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -831,7 +831,7 @@ public class MetaflowApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDMetaflowPostValidateBeforeCall(String accountID, ServiceVOIPMetaflowAddData metaflow, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDMetaflowPostValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPMetaflowAddData metaflow, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDMetaflowPost(Async)");
@@ -861,7 +861,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsMetaflowGet v1AccountAccountIDMetaflowPost(String accountID, ServiceVOIPMetaflowAddData metaflow) throws ApiException {
+    public ServiceDocsMetaflowGet v1AccountAccountIDMetaflowPost(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPMetaflowAddData metaflow) throws ApiException {
         ApiResponse<ServiceDocsMetaflowGet> localVarResp = v1AccountAccountIDMetaflowPostWithHttpInfo(accountID, metaflow);
         return localVarResp.getData();
     }
@@ -881,7 +881,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsMetaflowGet> v1AccountAccountIDMetaflowPostWithHttpInfo(String accountID, ServiceVOIPMetaflowAddData metaflow) throws ApiException {
+    public ApiResponse<ServiceDocsMetaflowGet> v1AccountAccountIDMetaflowPostWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPMetaflowAddData metaflow) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDMetaflowPostValidateBeforeCall(accountID, metaflow, null);
         Type localVarReturnType = new TypeToken<ServiceDocsMetaflowGet>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -903,7 +903,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDMetaflowPostAsync(String accountID, ServiceVOIPMetaflowAddData metaflow, final ApiCallback<ServiceDocsMetaflowGet> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDMetaflowPostAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull ServiceVOIPMetaflowAddData metaflow, final ApiCallback<ServiceDocsMetaflowGet> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDMetaflowPostValidateBeforeCall(accountID, metaflow, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsMetaflowGet>(){}.getType();
@@ -925,7 +925,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDUserUserIDMetaflowDeleteCall(String accountID, String userID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDUserUserIDMetaflowDeleteCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String userID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -972,7 +972,7 @@ public class MetaflowApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDUserUserIDMetaflowDeleteValidateBeforeCall(String accountID, String userID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDUserUserIDMetaflowDeleteValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String userID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDUserUserIDMetaflowDelete(Async)");
@@ -1002,7 +1002,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsMetaflowGet v1AccountAccountIDUserUserIDMetaflowDelete(String accountID, String userID) throws ApiException {
+    public ServiceDocsMetaflowGet v1AccountAccountIDUserUserIDMetaflowDelete(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String userID) throws ApiException {
         ApiResponse<ServiceDocsMetaflowGet> localVarResp = v1AccountAccountIDUserUserIDMetaflowDeleteWithHttpInfo(accountID, userID);
         return localVarResp.getData();
     }
@@ -1022,7 +1022,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsMetaflowGet> v1AccountAccountIDUserUserIDMetaflowDeleteWithHttpInfo(String accountID, String userID) throws ApiException {
+    public ApiResponse<ServiceDocsMetaflowGet> v1AccountAccountIDUserUserIDMetaflowDeleteWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String userID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDUserUserIDMetaflowDeleteValidateBeforeCall(accountID, userID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsMetaflowGet>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -1044,7 +1044,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDUserUserIDMetaflowDeleteAsync(String accountID, String userID, final ApiCallback<ServiceDocsMetaflowGet> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDUserUserIDMetaflowDeleteAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String userID, final ApiCallback<ServiceDocsMetaflowGet> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDUserUserIDMetaflowDeleteValidateBeforeCall(accountID, userID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsMetaflowGet>(){}.getType();
@@ -1066,7 +1066,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDUserUserIDMetaflowGetCall(String accountID, String userID, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDUserUserIDMetaflowGetCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String userID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -1113,7 +1113,7 @@ public class MetaflowApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDUserUserIDMetaflowGetValidateBeforeCall(String accountID, String userID, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDUserUserIDMetaflowGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String userID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDUserUserIDMetaflowGet(Async)");
@@ -1143,7 +1143,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsMetaflowGet v1AccountAccountIDUserUserIDMetaflowGet(String accountID, String userID) throws ApiException {
+    public ServiceDocsMetaflowGet v1AccountAccountIDUserUserIDMetaflowGet(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String userID) throws ApiException {
         ApiResponse<ServiceDocsMetaflowGet> localVarResp = v1AccountAccountIDUserUserIDMetaflowGetWithHttpInfo(accountID, userID);
         return localVarResp.getData();
     }
@@ -1163,7 +1163,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsMetaflowGet> v1AccountAccountIDUserUserIDMetaflowGetWithHttpInfo(String accountID, String userID) throws ApiException {
+    public ApiResponse<ServiceDocsMetaflowGet> v1AccountAccountIDUserUserIDMetaflowGetWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String userID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDUserUserIDMetaflowGetValidateBeforeCall(accountID, userID, null);
         Type localVarReturnType = new TypeToken<ServiceDocsMetaflowGet>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -1185,7 +1185,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDUserUserIDMetaflowGetAsync(String accountID, String userID, final ApiCallback<ServiceDocsMetaflowGet> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDUserUserIDMetaflowGetAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String userID, final ApiCallback<ServiceDocsMetaflowGet> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDUserUserIDMetaflowGetValidateBeforeCall(accountID, userID, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsMetaflowGet>(){}.getType();
@@ -1208,7 +1208,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDUserUserIDMetaflowPostCall(String accountID, String userID, ServiceVOIPMetaflowAddData reqBody, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDUserUserIDMetaflowPostCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String userID, @javax.annotation.Nonnull ServiceVOIPMetaflowAddData reqBody, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
         String[] localBasePaths = new String[] {  };
@@ -1256,7 +1256,7 @@ public class MetaflowApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call v1AccountAccountIDUserUserIDMetaflowPostValidateBeforeCall(String accountID, String userID, ServiceVOIPMetaflowAddData reqBody, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call v1AccountAccountIDUserUserIDMetaflowPostValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String userID, @javax.annotation.Nonnull ServiceVOIPMetaflowAddData reqBody, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
         if (accountID == null) {
             throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDUserUserIDMetaflowPost(Async)");
@@ -1292,7 +1292,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsMetaflowGet v1AccountAccountIDUserUserIDMetaflowPost(String accountID, String userID, ServiceVOIPMetaflowAddData reqBody) throws ApiException {
+    public ServiceDocsMetaflowGet v1AccountAccountIDUserUserIDMetaflowPost(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String userID, @javax.annotation.Nonnull ServiceVOIPMetaflowAddData reqBody) throws ApiException {
         ApiResponse<ServiceDocsMetaflowGet> localVarResp = v1AccountAccountIDUserUserIDMetaflowPostWithHttpInfo(accountID, userID, reqBody);
         return localVarResp.getData();
     }
@@ -1313,7 +1313,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsMetaflowGet> v1AccountAccountIDUserUserIDMetaflowPostWithHttpInfo(String accountID, String userID, ServiceVOIPMetaflowAddData reqBody) throws ApiException {
+    public ApiResponse<ServiceDocsMetaflowGet> v1AccountAccountIDUserUserIDMetaflowPostWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String userID, @javax.annotation.Nonnull ServiceVOIPMetaflowAddData reqBody) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDUserUserIDMetaflowPostValidateBeforeCall(accountID, userID, reqBody, null);
         Type localVarReturnType = new TypeToken<ServiceDocsMetaflowGet>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
@@ -1336,7 +1336,7 @@ public class MetaflowApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountIDUserUserIDMetaflowPostAsync(String accountID, String userID, ServiceVOIPMetaflowAddData reqBody, final ApiCallback<ServiceDocsMetaflowGet> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountIDUserUserIDMetaflowPostAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String userID, @javax.annotation.Nonnull ServiceVOIPMetaflowAddData reqBody, final ApiCallback<ServiceDocsMetaflowGet> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDUserUserIDMetaflowPostValidateBeforeCall(accountID, userID, reqBody, _callback);
         Type localVarReturnType = new TypeToken<ServiceDocsMetaflowGet>(){}.getType();
