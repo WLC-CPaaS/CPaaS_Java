@@ -334,6 +334,7 @@ Class | Method | HTTP request | Description
  - [ModelsDeviceOutputFullSIP](docs/ModelsDeviceOutputFullSIP.md)
  - [ModelsFamily](docs/ModelsFamily.md)
  - [ModelsGenerateConfigFileRequest](docs/ModelsGenerateConfigFileRequest.md)
+ - [ModelsLineKeyProcessedTempData](docs/ModelsLineKeyProcessedTempData.md)
  - [ModelsModel](docs/ModelsModel.md)
  - [ModelsMusicOnHold](docs/ModelsMusicOnHold.md)
  - [ModelsTemplate](docs/ModelsTemplate.md)

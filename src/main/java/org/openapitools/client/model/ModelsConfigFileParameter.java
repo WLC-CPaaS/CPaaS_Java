@@ -20,7 +20,10 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import org.openapitools.client.model.ModelsLineKeyProcessedTempData;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -69,6 +72,11 @@ public class ModelsConfigFileParameter {
   @SerializedName(SERIALIZED_NAME_HTTPS_USERNAME)
   @javax.annotation.Nullable
   private String httpsUsername;
+
+  public static final String SERIALIZED_NAME_LINE_KEYS = "line_keys";
+  @SerializedName(SERIALIZED_NAME_LINE_KEYS)
+  @javax.annotation.Nullable
+  private List<ModelsLineKeyProcessedTempData> lineKeys = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_MAC_ADDRESS = "mac_address";
   @SerializedName(SERIALIZED_NAME_MAC_ADDRESS)
@@ -176,6 +184,33 @@ public class ModelsConfigFileParameter {
 
   public void setHttpsUsername(@javax.annotation.Nullable String httpsUsername) {
     this.httpsUsername = httpsUsername;
+  }
+
+
+  public ModelsConfigFileParameter lineKeys(@javax.annotation.Nullable List<ModelsLineKeyProcessedTempData> lineKeys) {
+    this.lineKeys = lineKeys;
+    return this;
+  }
+
+  public ModelsConfigFileParameter addLineKeysItem(ModelsLineKeyProcessedTempData lineKeysItem) {
+    if (this.lineKeys == null) {
+      this.lineKeys = new ArrayList<>();
+    }
+    this.lineKeys.add(lineKeysItem);
+    return this;
+  }
+
+  /**
+   * Get lineKeys
+   * @return lineKeys
+   */
+  @javax.annotation.Nullable
+  public List<ModelsLineKeyProcessedTempData> getLineKeys() {
+    return lineKeys;
+  }
+
+  public void setLineKeys(@javax.annotation.Nullable List<ModelsLineKeyProcessedTempData> lineKeys) {
+    this.lineKeys = lineKeys;
   }
 
 
@@ -307,6 +342,7 @@ public class ModelsConfigFileParameter {
         Objects.equals(this.httpsHost, modelsConfigFileParameter.httpsHost) &&
         Objects.equals(this.httpsPassword, modelsConfigFileParameter.httpsPassword) &&
         Objects.equals(this.httpsUsername, modelsConfigFileParameter.httpsUsername) &&
+        Objects.equals(this.lineKeys, modelsConfigFileParameter.lineKeys) &&
         Objects.equals(this.macAddress, modelsConfigFileParameter.macAddress) &&
         Objects.equals(this.realm, modelsConfigFileParameter.realm) &&
         Objects.equals(this.sipPassword, modelsConfigFileParameter.sipPassword) &&
@@ -317,7 +353,7 @@ public class ModelsConfigFileParameter {
 
   @Override
   public int hashCode() {
-    return Objects.hash(extension, httpsHost, httpsPassword, httpsUsername, macAddress, realm, sipPassword, sipUsername, timezone, voicemailBoxNumber);
+    return Objects.hash(extension, httpsHost, httpsPassword, httpsUsername, lineKeys, macAddress, realm, sipPassword, sipUsername, timezone, voicemailBoxNumber);
   }
 
   @Override
@@ -328,6 +364,7 @@ public class ModelsConfigFileParameter {
     sb.append("    httpsHost: ").append(toIndentedString(httpsHost)).append("\n");
     sb.append("    httpsPassword: ").append(toIndentedString(httpsPassword)).append("\n");
     sb.append("    httpsUsername: ").append(toIndentedString(httpsUsername)).append("\n");
+    sb.append("    lineKeys: ").append(toIndentedString(lineKeys)).append("\n");
     sb.append("    macAddress: ").append(toIndentedString(macAddress)).append("\n");
     sb.append("    realm: ").append(toIndentedString(realm)).append("\n");
     sb.append("    sipPassword: ").append(toIndentedString(sipPassword)).append("\n");
@@ -355,7 +392,7 @@ public class ModelsConfigFileParameter {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>(Arrays.asList("extension", "https_host", "https_password", "https_username", "mac_address", "realm", "sip_password", "sip_username", "timezone", "voicemail_box_number"));
+    openapiFields = new HashSet<String>(Arrays.asList("extension", "https_host", "https_password", "https_username", "line_keys", "mac_address", "realm", "sip_password", "sip_username", "timezone", "voicemail_box_number"));
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>(0);
@@ -393,6 +430,20 @@ public class ModelsConfigFileParameter {
       }
       if ((jsonObj.get("https_username") != null && !jsonObj.get("https_username").isJsonNull()) && !jsonObj.get("https_username").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `https_username` to be a primitive type in the JSON string but got `%s`", jsonObj.get("https_username").toString()));
+      }
+      if (jsonObj.get("line_keys") != null && !jsonObj.get("line_keys").isJsonNull()) {
+        JsonArray jsonArraylineKeys = jsonObj.getAsJsonArray("line_keys");
+        if (jsonArraylineKeys != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("line_keys").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `line_keys` to be an array in the JSON string but got `%s`", jsonObj.get("line_keys").toString()));
+          }
+
+          // validate the optional field `line_keys` (array)
+          for (int i = 0; i < jsonArraylineKeys.size(); i++) {
+            ModelsLineKeyProcessedTempData.validateJsonElement(jsonArraylineKeys.get(i));
+          };
+        }
       }
       if ((jsonObj.get("mac_address") != null && !jsonObj.get("mac_address").isJsonNull()) && !jsonObj.get("mac_address").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `mac_address` to be a primitive type in the JSON string but got `%s`", jsonObj.get("mac_address").toString()));

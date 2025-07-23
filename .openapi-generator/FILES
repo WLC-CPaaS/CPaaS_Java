@@ -60,6 +60,7 @@ docs/ModelsDeviceOutputFullProvision.md
 docs/ModelsDeviceOutputFullSIP.md
 docs/ModelsFamily.md
 docs/ModelsGenerateConfigFileRequest.md
+docs/ModelsLineKeyProcessedTempData.md
 docs/ModelsModel.md
 docs/ModelsMusicOnHold.md
 docs/ModelsTemplate.md
@@ -386,6 +387,7 @@ src/main/java/org/openapitools/client/model/ModelsDeviceOutputFullProvision.java
 src/main/java/org/openapitools/client/model/ModelsDeviceOutputFullSIP.java
 src/main/java/org/openapitools/client/model/ModelsFamily.java
 src/main/java/org/openapitools/client/model/ModelsGenerateConfigFileRequest.java
+src/main/java/org/openapitools/client/model/ModelsLineKeyProcessedTempData.java
 src/main/java/org/openapitools/client/model/ModelsModel.java
 src/main/java/org/openapitools/client/model/ModelsMusicOnHold.java
 src/main/java/org/openapitools/client/model/ModelsTemplate.java
@@ -608,19 +610,4 @@ src/main/java/org/openapitools/client/model/ServiceVoicemailOutputShort.java
 src/main/java/org/openapitools/client/model/ServiceWebhookAdd.java
 src/main/java/org/openapitools/client/model/ServiceWebhookDeleteOutput.java
 src/main/java/org/openapitools/client/model/ServiceWebhookEdit.java
-src/test/java/org/openapitools/client/model/ModelsVOIPDeviceOutputLineKeyTest.java
-src/test/java/org/openapitools/client/model/ServiceDocsCallQueueRecipientLoginLogoutOutputTest.java
-src/test/java/org/openapitools/client/model/ServiceDocsCallparkGetTest.java
-src/test/java/org/openapitools/client/model/ServiceDocsE911ActiveLocationOutputTest.java
-src/test/java/org/openapitools/client/model/ServiceDocsE911ActiveLocationURIApiOutputTest.java
-src/test/java/org/openapitools/client/model/ServiceDocsE911AddLocationOutputTest.java
-src/test/java/org/openapitools/client/model/ServiceDocsE911LocationsURIApiOutputTest.java
-src/test/java/org/openapitools/client/model/ServiceDocsE911RemoveLocationOutputTest.java
-src/test/java/org/openapitools/client/model/ServiceDocsE911RemoveURIApiOutputTest.java
-src/test/java/org/openapitools/client/model/ServiceDocsE911URIsApiOutputTest.java
-src/test/java/org/openapitools/client/model/ServiceDocsE911ValidateLocationOutputTest.java
-src/test/java/org/openapitools/client/model/ServiceDocsQueueMembershipOutputTest.java
-src/test/java/org/openapitools/client/model/ServiceQueueRecipientOutputRecipientFeaturesTest.java
-src/test/java/org/openapitools/client/model/ServiceQueueRecipientOutputRecipientTest.java
-src/test/java/org/openapitools/client/model/ServiceQueueRecipientOutputTest.java
-src/test/java/org/openapitools/client/model/ServiceVOIPDeviceAddEditLineKeyTest.java
+src/test/java/org/openapitools/client/model/ModelsLineKeyProcessedTempDataTest.java
