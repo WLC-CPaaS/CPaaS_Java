@@ -215,7 +215,6 @@ docs/ServiceFeatureCode.md
 docs/ServiceGroupOutputFull.md
 docs/ServiceGroupOutputShort.md
 docs/ServiceImpersonateUserOutputFull.md
-docs/ServiceImpersonatedUserInfo.md
 docs/ServiceMediaOutputFull.md
 docs/ServiceMediaOutputShort.md
 docs/ServiceMetaflowOutput.md
@@ -240,7 +239,6 @@ docs/ServiceSystemStatusCPAASService.md
 docs/ServiceSystemStatusMessagingService.md
 docs/ServiceSystemStatusOutput.md
 docs/ServiceSystemStatusSupportService.md
-docs/ServiceSystemStatusVOIPService.md
 docs/ServiceTTS.md
 docs/ServiceTemporalRuleOutputFull.md
 docs/ServiceTemporalRuleOutputShort.md
@@ -539,7 +537,6 @@ src/main/java/org/openapitools/client/model/ServiceFeatureCode.java
 src/main/java/org/openapitools/client/model/ServiceGroupOutputFull.java
 src/main/java/org/openapitools/client/model/ServiceGroupOutputShort.java
 src/main/java/org/openapitools/client/model/ServiceImpersonateUserOutputFull.java
-src/main/java/org/openapitools/client/model/ServiceImpersonatedUserInfo.java
 src/main/java/org/openapitools/client/model/ServiceMediaOutputFull.java
 src/main/java/org/openapitools/client/model/ServiceMediaOutputShort.java
 src/main/java/org/openapitools/client/model/ServiceMetaflowOutput.java
@@ -564,7 +561,6 @@ src/main/java/org/openapitools/client/model/ServiceSystemStatusCPAASService.java
 src/main/java/org/openapitools/client/model/ServiceSystemStatusMessagingService.java
 src/main/java/org/openapitools/client/model/ServiceSystemStatusOutput.java
 src/main/java/org/openapitools/client/model/ServiceSystemStatusSupportService.java
-src/main/java/org/openapitools/client/model/ServiceSystemStatusVOIPService.java
 src/main/java/org/openapitools/client/model/ServiceTTS.java
 src/main/java/org/openapitools/client/model/ServiceTemporalRuleOutputFull.java
 src/main/java/org/openapitools/client/model/ServiceTemporalRuleOutputShort.java
@@ -610,4 +606,3 @@ src/main/java/org/openapitools/client/model/ServiceVoicemailOutputShort.java
 src/main/java/org/openapitools/client/model/ServiceWebhookAdd.java
 src/main/java/org/openapitools/client/model/ServiceWebhookDeleteOutput.java
 src/main/java/org/openapitools/client/model/ServiceWebhookEdit.java
-src/test/java/org/openapitools/client/model/ModelsLineKeyProcessedTempDataTest.java

@@ -21,7 +21,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.openapitools.client.model.ServiceImpersonatedUserInfo;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -51,91 +50,13 @@ import org.openapitools.client.JSON;
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0-SNAPSHOT")
 public class ServiceImpersonateUserOutputFull {
-  public static final String SERIALIZED_NAME_ACCOUNT_ID = "account_id";
-  @SerializedName(SERIALIZED_NAME_ACCOUNT_ID)
-  @javax.annotation.Nullable
-  private String accountId;
-
-  public static final String SERIALIZED_NAME_ACCOUNT_NAME = "account_name";
-  @SerializedName(SERIALIZED_NAME_ACCOUNT_NAME)
-  @javax.annotation.Nullable
-  private String accountName;
-
   public static final String SERIALIZED_NAME_AUTH_TOKEN = "auth_token";
   @SerializedName(SERIALIZED_NAME_AUTH_TOKEN)
   @javax.annotation.Nullable
   private String authToken;
 
-  public static final String SERIALIZED_NAME_CLUSTER_ID = "cluster_id";
-  @SerializedName(SERIALIZED_NAME_CLUSTER_ID)
-  @javax.annotation.Nullable
-  private String clusterId;
-
-  public static final String SERIALIZED_NAME_IS_MASTER_ACCOUNT = "is_master_account";
-  @SerializedName(SERIALIZED_NAME_IS_MASTER_ACCOUNT)
-  @javax.annotation.Nullable
-  private Boolean isMasterAccount;
-
-  public static final String SERIALIZED_NAME_IS_RESELLER = "is_reseller";
-  @SerializedName(SERIALIZED_NAME_IS_RESELLER)
-  @javax.annotation.Nullable
-  private Boolean isReseller;
-
-  public static final String SERIALIZED_NAME_OWNER_ID = "owner_id";
-  @SerializedName(SERIALIZED_NAME_OWNER_ID)
-  @javax.annotation.Nullable
-  private String ownerId;
-
-  public static final String SERIALIZED_NAME_RESELLER_ID = "reseller_id";
-  @SerializedName(SERIALIZED_NAME_RESELLER_ID)
-  @javax.annotation.Nullable
-  private String resellerId;
-
-  public static final String SERIALIZED_NAME_USER_INFO = "user_info";
-  @SerializedName(SERIALIZED_NAME_USER_INFO)
-  @javax.annotation.Nullable
-  private ServiceImpersonatedUserInfo userInfo;
-
   public ServiceImpersonateUserOutputFull() {
   }
-
-  public ServiceImpersonateUserOutputFull accountId(@javax.annotation.Nullable String accountId) {
-    this.accountId = accountId;
-    return this;
-  }
-
-  /**
-   * Get accountId
-   * @return accountId
-   */
-  @javax.annotation.Nullable
-  public String getAccountId() {
-    return accountId;
-  }
-
-  public void setAccountId(@javax.annotation.Nullable String accountId) {
-    this.accountId = accountId;
-  }
-
-
-  public ServiceImpersonateUserOutputFull accountName(@javax.annotation.Nullable String accountName) {
-    this.accountName = accountName;
-    return this;
-  }
-
-  /**
-   * Get accountName
-   * @return accountName
-   */
-  @javax.annotation.Nullable
-  public String getAccountName() {
-    return accountName;
-  }
-
-  public void setAccountName(@javax.annotation.Nullable String accountName) {
-    this.accountName = accountName;
-  }
-
 
   public ServiceImpersonateUserOutputFull authToken(@javax.annotation.Nullable String authToken) {
     this.authToken = authToken;
@@ -156,120 +77,6 @@ public class ServiceImpersonateUserOutputFull {
   }
 
 
-  public ServiceImpersonateUserOutputFull clusterId(@javax.annotation.Nullable String clusterId) {
-    this.clusterId = clusterId;
-    return this;
-  }
-
-  /**
-   * Get clusterId
-   * @return clusterId
-   */
-  @javax.annotation.Nullable
-  public String getClusterId() {
-    return clusterId;
-  }
-
-  public void setClusterId(@javax.annotation.Nullable String clusterId) {
-    this.clusterId = clusterId;
-  }
-
-
-  public ServiceImpersonateUserOutputFull isMasterAccount(@javax.annotation.Nullable Boolean isMasterAccount) {
-    this.isMasterAccount = isMasterAccount;
-    return this;
-  }
-
-  /**
-   * Get isMasterAccount
-   * @return isMasterAccount
-   */
-  @javax.annotation.Nullable
-  public Boolean getIsMasterAccount() {
-    return isMasterAccount;
-  }
-
-  public void setIsMasterAccount(@javax.annotation.Nullable Boolean isMasterAccount) {
-    this.isMasterAccount = isMasterAccount;
-  }
-
-
-  public ServiceImpersonateUserOutputFull isReseller(@javax.annotation.Nullable Boolean isReseller) {
-    this.isReseller = isReseller;
-    return this;
-  }
-
-  /**
-   * Get isReseller
-   * @return isReseller
-   */
-  @javax.annotation.Nullable
-  public Boolean getIsReseller() {
-    return isReseller;
-  }
-
-  public void setIsReseller(@javax.annotation.Nullable Boolean isReseller) {
-    this.isReseller = isReseller;
-  }
-
-
-  public ServiceImpersonateUserOutputFull ownerId(@javax.annotation.Nullable String ownerId) {
-    this.ownerId = ownerId;
-    return this;
-  }
-
-  /**
-   * Get ownerId
-   * @return ownerId
-   */
-  @javax.annotation.Nullable
-  public String getOwnerId() {
-    return ownerId;
-  }
-
-  public void setOwnerId(@javax.annotation.Nullable String ownerId) {
-    this.ownerId = ownerId;
-  }
-
-
-  public ServiceImpersonateUserOutputFull resellerId(@javax.annotation.Nullable String resellerId) {
-    this.resellerId = resellerId;
-    return this;
-  }
-
-  /**
-   * Get resellerId
-   * @return resellerId
-   */
-  @javax.annotation.Nullable
-  public String getResellerId() {
-    return resellerId;
-  }
-
-  public void setResellerId(@javax.annotation.Nullable String resellerId) {
-    this.resellerId = resellerId;
-  }
-
-
-  public ServiceImpersonateUserOutputFull userInfo(@javax.annotation.Nullable ServiceImpersonatedUserInfo userInfo) {
-    this.userInfo = userInfo;
-    return this;
-  }
-
-  /**
-   * Get userInfo
-   * @return userInfo
-   */
-  @javax.annotation.Nullable
-  public ServiceImpersonatedUserInfo getUserInfo() {
-    return userInfo;
-  }
-
-  public void setUserInfo(@javax.annotation.Nullable ServiceImpersonatedUserInfo userInfo) {
-    this.userInfo = userInfo;
-  }
-
-
 
   @Override
   public boolean equals(Object o) {
@@ -280,35 +87,19 @@ public class ServiceImpersonateUserOutputFull {
       return false;
     }
     ServiceImpersonateUserOutputFull serviceImpersonateUserOutputFull = (ServiceImpersonateUserOutputFull) o;
-    return Objects.equals(this.accountId, serviceImpersonateUserOutputFull.accountId) &&
-        Objects.equals(this.accountName, serviceImpersonateUserOutputFull.accountName) &&
-        Objects.equals(this.authToken, serviceImpersonateUserOutputFull.authToken) &&
-        Objects.equals(this.clusterId, serviceImpersonateUserOutputFull.clusterId) &&
-        Objects.equals(this.isMasterAccount, serviceImpersonateUserOutputFull.isMasterAccount) &&
-        Objects.equals(this.isReseller, serviceImpersonateUserOutputFull.isReseller) &&
-        Objects.equals(this.ownerId, serviceImpersonateUserOutputFull.ownerId) &&
-        Objects.equals(this.resellerId, serviceImpersonateUserOutputFull.resellerId) &&
-        Objects.equals(this.userInfo, serviceImpersonateUserOutputFull.userInfo);
+    return Objects.equals(this.authToken, serviceImpersonateUserOutputFull.authToken);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(accountId, accountName, authToken, clusterId, isMasterAccount, isReseller, ownerId, resellerId, userInfo);
+    return Objects.hash(authToken);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class ServiceImpersonateUserOutputFull {\n");
-    sb.append("    accountId: ").append(toIndentedString(accountId)).append("\n");
-    sb.append("    accountName: ").append(toIndentedString(accountName)).append("\n");
     sb.append("    authToken: ").append(toIndentedString(authToken)).append("\n");
-    sb.append("    clusterId: ").append(toIndentedString(clusterId)).append("\n");
-    sb.append("    isMasterAccount: ").append(toIndentedString(isMasterAccount)).append("\n");
-    sb.append("    isReseller: ").append(toIndentedString(isReseller)).append("\n");
-    sb.append("    ownerId: ").append(toIndentedString(ownerId)).append("\n");
-    sb.append("    resellerId: ").append(toIndentedString(resellerId)).append("\n");
-    sb.append("    userInfo: ").append(toIndentedString(userInfo)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -330,7 +121,7 @@ public class ServiceImpersonateUserOutputFull {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>(Arrays.asList("account_id", "account_name", "auth_token", "cluster_id", "is_master_account", "is_reseller", "owner_id", "reseller_id", "user_info"));
+    openapiFields = new HashSet<String>(Arrays.asList("auth_token"));
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>(0);
@@ -357,27 +148,8 @@ public class ServiceImpersonateUserOutputFull {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("account_id") != null && !jsonObj.get("account_id").isJsonNull()) && !jsonObj.get("account_id").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `account_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("account_id").toString()));
-      }
-      if ((jsonObj.get("account_name") != null && !jsonObj.get("account_name").isJsonNull()) && !jsonObj.get("account_name").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `account_name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("account_name").toString()));
-      }
       if ((jsonObj.get("auth_token") != null && !jsonObj.get("auth_token").isJsonNull()) && !jsonObj.get("auth_token").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `auth_token` to be a primitive type in the JSON string but got `%s`", jsonObj.get("auth_token").toString()));
-      }
-      if ((jsonObj.get("cluster_id") != null && !jsonObj.get("cluster_id").isJsonNull()) && !jsonObj.get("cluster_id").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `cluster_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("cluster_id").toString()));
-      }
-      if ((jsonObj.get("owner_id") != null && !jsonObj.get("owner_id").isJsonNull()) && !jsonObj.get("owner_id").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `owner_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("owner_id").toString()));
-      }
-      if ((jsonObj.get("reseller_id") != null && !jsonObj.get("reseller_id").isJsonNull()) && !jsonObj.get("reseller_id").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `reseller_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("reseller_id").toString()));
-      }
-      // validate the optional field `user_info`
-      if (jsonObj.get("user_info") != null && !jsonObj.get("user_info").isJsonNull()) {
-        ServiceImpersonatedUserInfo.validateJsonElement(jsonObj.get("user_info"));
       }
   }
 

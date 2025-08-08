@@ -55,11 +55,6 @@ public class ModelsLineKeyProcessedTempData {
   @javax.annotation.Nullable
   private String label;
 
-  public static final String SERIALIZED_NAME_LINE = "line";
-  @SerializedName(SERIALIZED_NAME_LINE)
-  @javax.annotation.Nullable
-  private Integer line;
-
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
   @javax.annotation.Nullable
@@ -89,25 +84,6 @@ public class ModelsLineKeyProcessedTempData {
 
   public void setLabel(@javax.annotation.Nullable String label) {
     this.label = label;
-  }
-
-
-  public ModelsLineKeyProcessedTempData line(@javax.annotation.Nullable Integer line) {
-    this.line = line;
-    return this;
-  }
-
-  /**
-   * Get line
-   * @return line
-   */
-  @javax.annotation.Nullable
-  public Integer getLine() {
-    return line;
-  }
-
-  public void setLine(@javax.annotation.Nullable Integer line) {
-    this.line = line;
   }
 
 
@@ -160,14 +136,13 @@ public class ModelsLineKeyProcessedTempData {
     }
     ModelsLineKeyProcessedTempData modelsLineKeyProcessedTempData = (ModelsLineKeyProcessedTempData) o;
     return Objects.equals(this.label, modelsLineKeyProcessedTempData.label) &&
-        Objects.equals(this.line, modelsLineKeyProcessedTempData.line) &&
         Objects.equals(this.type, modelsLineKeyProcessedTempData.type) &&
         Objects.equals(this.value, modelsLineKeyProcessedTempData.value);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(label, line, type, value);
+    return Objects.hash(label, type, value);
   }
 
   @Override
@@ -175,7 +150,6 @@ public class ModelsLineKeyProcessedTempData {
     StringBuilder sb = new StringBuilder();
     sb.append("class ModelsLineKeyProcessedTempData {\n");
     sb.append("    label: ").append(toIndentedString(label)).append("\n");
-    sb.append("    line: ").append(toIndentedString(line)).append("\n");
     sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("    value: ").append(toIndentedString(value)).append("\n");
     sb.append("}");
@@ -199,7 +173,7 @@ public class ModelsLineKeyProcessedTempData {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>(Arrays.asList("label", "line", "type", "value"));
+    openapiFields = new HashSet<String>(Arrays.asList("label", "type", "value"));
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>(0);

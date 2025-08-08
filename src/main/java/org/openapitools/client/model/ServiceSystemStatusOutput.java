@@ -24,7 +24,6 @@ import java.util.Arrays;
 import org.openapitools.client.model.ServiceSystemStatusCPAASService;
 import org.openapitools.client.model.ServiceSystemStatusMessagingService;
 import org.openapitools.client.model.ServiceSystemStatusSupportService;
-import org.openapitools.client.model.ServiceSystemStatusVOIPService;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -68,11 +67,6 @@ public class ServiceSystemStatusOutput {
   @SerializedName(SERIALIZED_NAME_SUPPORT_SERVICES)
   @javax.annotation.Nullable
   private ServiceSystemStatusSupportService supportServices;
-
-  public static final String SERIALIZED_NAME_VOIP_SERVICES = "voip_services";
-  @SerializedName(SERIALIZED_NAME_VOIP_SERVICES)
-  @javax.annotation.Nullable
-  private ServiceSystemStatusVOIPService voipServices;
 
   public ServiceSystemStatusOutput() {
   }
@@ -134,25 +128,6 @@ public class ServiceSystemStatusOutput {
   }
 
 
-  public ServiceSystemStatusOutput voipServices(@javax.annotation.Nullable ServiceSystemStatusVOIPService voipServices) {
-    this.voipServices = voipServices;
-    return this;
-  }
-
-  /**
-   * Get voipServices
-   * @return voipServices
-   */
-  @javax.annotation.Nullable
-  public ServiceSystemStatusVOIPService getVoipServices() {
-    return voipServices;
-  }
-
-  public void setVoipServices(@javax.annotation.Nullable ServiceSystemStatusVOIPService voipServices) {
-    this.voipServices = voipServices;
-  }
-
-
 
   @Override
   public boolean equals(Object o) {
@@ -165,13 +140,12 @@ public class ServiceSystemStatusOutput {
     ServiceSystemStatusOutput serviceSystemStatusOutput = (ServiceSystemStatusOutput) o;
     return Objects.equals(this.cpaasServices, serviceSystemStatusOutput.cpaasServices) &&
         Objects.equals(this.messagingServices, serviceSystemStatusOutput.messagingServices) &&
-        Objects.equals(this.supportServices, serviceSystemStatusOutput.supportServices) &&
-        Objects.equals(this.voipServices, serviceSystemStatusOutput.voipServices);
+        Objects.equals(this.supportServices, serviceSystemStatusOutput.supportServices);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(cpaasServices, messagingServices, supportServices, voipServices);
+    return Objects.hash(cpaasServices, messagingServices, supportServices);
   }
 
   @Override
@@ -181,7 +155,6 @@ public class ServiceSystemStatusOutput {
     sb.append("    cpaasServices: ").append(toIndentedString(cpaasServices)).append("\n");
     sb.append("    messagingServices: ").append(toIndentedString(messagingServices)).append("\n");
     sb.append("    supportServices: ").append(toIndentedString(supportServices)).append("\n");
-    sb.append("    voipServices: ").append(toIndentedString(voipServices)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -203,7 +176,7 @@ public class ServiceSystemStatusOutput {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>(Arrays.asList("cpaas_services", "messaging_services", "support_services", "voip_services"));
+    openapiFields = new HashSet<String>(Arrays.asList("cpaas_services", "messaging_services", "support_services"));
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>(0);
@@ -241,10 +214,6 @@ public class ServiceSystemStatusOutput {
       // validate the optional field `support_services`
       if (jsonObj.get("support_services") != null && !jsonObj.get("support_services").isJsonNull()) {
         ServiceSystemStatusSupportService.validateJsonElement(jsonObj.get("support_services"));
-      }
-      // validate the optional field `voip_services`
-      if (jsonObj.get("voip_services") != null && !jsonObj.get("voip_services").isJsonNull()) {
-        ServiceSystemStatusVOIPService.validateJsonElement(jsonObj.get("voip_services"));
       }
   }
 
