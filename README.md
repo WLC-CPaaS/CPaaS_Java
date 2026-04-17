@@ -2,7 +2,7 @@
 
 White Label Communications CPaas API Documentation
 - API version: 1.1
-  - Generator version: 7.11.0-SNAPSHOT
+  - Generator version: 7.21.0
 
 A CPaaS platform API
 
@@ -93,11 +93,11 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://api.beta.cpaaslabs.net");
     
-    // Configure API key authorization: BearerAuth
-    ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
-    BearerAuth.setApiKey("YOUR API KEY");
+    // Configure API key authorization: bearerauth
+    ApiKeyAuth bearerauth = (ApiKeyAuth) defaultClient.getAuthentication("bearerauth");
+    bearerauth.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //BearerAuth.setApiKeyPrefix("Token");
+    //bearerauth.setApiKeyPrefix("Token");
 
     AccountApi apiInstance = new AccountApi(defaultClient);
     String accountid = "accountid_example"; // String | Account ID, 32 alpha numeric
@@ -280,10 +280,12 @@ Class | Method | HTTP request | Description
 *VoicemailApi* | [**v1AccountAccountIDVoicemailVoicemailIDGet**](docs/VoicemailApi.md#v1AccountAccountIDVoicemailVoicemailIDGet) | **GET** /v1/account/{accountID}/voicemail/{voicemailID} | Get Voicemail Box Details
 *VoicemailApi* | [**v1AccountAccountIDVoicemailVoicemailIDMessageGet**](docs/VoicemailApi.md#v1AccountAccountIDVoicemailVoicemailIDMessageGet) | **GET** /v1/account/{accountID}/voicemail/{voicemailID}/message | Get Voicemail Message List
 *VoicemailApi* | [**v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDDelete**](docs/VoicemailApi.md#v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDDelete) | **DELETE** /v1/account/{accountID}/voicemail/{voicemailID}/message/{messageID} | Delete Voicemail Message
+*VoicemailApi* | [**v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFileGet**](docs/VoicemailApi.md#v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFileGet) | **GET** /v1/account/{accountID}/voicemail/{voicemailID}/message/{messageID}/file | Get Voicemail Message File
+*VoicemailApi* | [**v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFilePost**](docs/VoicemailApi.md#v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFilePost) | **POST** /v1/account/{accountID}/voicemail/{voicemailID}/message/{messageID}/file | Add Voicemail Message File
 *VoicemailApi* | [**v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDGet**](docs/VoicemailApi.md#v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDGet) | **GET** /v1/account/{accountID}/voicemail/{voicemailID}/message/{messageID} | Get Voicemail Message Details
 *VoicemailApi* | [**v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDPut**](docs/VoicemailApi.md#v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDPut) | **PUT** /v1/account/{accountID}/voicemail/{voicemailID}/message/{messageID} | Update Voicemail Message
-*VoicemailApi* | [**v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGet**](docs/VoicemailApi.md#v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGet) | **GET** /v1/account/{accountID}/voicemail/{voicemailID}/message/{messageID}/raw | Get Voicemail Message File
-*VoicemailApi* | [**v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPost**](docs/VoicemailApi.md#v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPost) | **POST** /v1/account/{accountID}/voicemail/{voicemailID}/message/{messageID}/raw | Add Voicemail Message File
+*VoicemailApi* | [**v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGet**](docs/VoicemailApi.md#v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGet) | **GET** /v1/account/{accountID}/voicemail/{voicemailID}/message/{messageID}/raw | Get Voicemail Message File (Deprecated)
+*VoicemailApi* | [**v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPost**](docs/VoicemailApi.md#v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPost) | **POST** /v1/account/{accountID}/voicemail/{voicemailID}/message/{messageID}/raw | Add Voicemail Message File (Deprecated)
 *VoicemailApi* | [**v1AccountAccountIDVoicemailVoicemailIDMessagePost**](docs/VoicemailApi.md#v1AccountAccountIDVoicemailVoicemailIDMessagePost) | **POST** /v1/account/{accountID}/voicemail/{voicemailID}/message | Create Voicemail Message
 *VoicemailApi* | [**v1AccountAccountIDVoicemailVoicemailIDPut**](docs/VoicemailApi.md#v1AccountAccountIDVoicemailVoicemailIDPut) | **PUT** /v1/account/{accountID}/voicemail/{voicemailID} | Update Voicemail Box
 *WebhookApi* | [**v1WebhookAccountAccountIDGet**](docs/WebhookApi.md#v1WebhookAccountAccountIDGet) | **GET** /v1/webhook/account/{accountID} | Get Webhook List
@@ -337,6 +339,7 @@ Class | Method | HTTP request | Description
  - [ModelsLineKeyProcessedTempData](docs/ModelsLineKeyProcessedTempData.md)
  - [ModelsModel](docs/ModelsModel.md)
  - [ModelsMusicOnHold](docs/ModelsMusicOnHold.md)
+ - [ModelsParkingSlotData](docs/ModelsParkingSlotData.md)
  - [ModelsTemplate](docs/ModelsTemplate.md)
  - [ModelsUserOutputFull](docs/ModelsUserOutputFull.md)
  - [ModelsUserOutputFullCallerid](docs/ModelsUserOutputFullCallerid.md)
@@ -490,7 +493,6 @@ Class | Method | HTTP request | Description
  - [ServiceMediaOutputShort](docs/ServiceMediaOutputShort.md)
  - [ServiceMetaflowOutput](docs/ServiceMetaflowOutput.md)
  - [ServiceMetaflowPattern](docs/ServiceMetaflowPattern.md)
- - [ServiceParkingSlotData](docs/ServiceParkingSlotData.md)
  - [ServicePhoneNumberResult](docs/ServicePhoneNumberResult.md)
  - [ServicePhoneNumberSearchOutput](docs/ServicePhoneNumberSearchOutput.md)
  - [ServicePhonenumberOutput](docs/ServicePhonenumberOutput.md)
@@ -555,6 +557,17 @@ Class | Method | HTTP request | Description
  - [ServiceWebhookAdd](docs/ServiceWebhookAdd.md)
  - [ServiceWebhookDeleteOutput](docs/ServiceWebhookDeleteOutput.md)
  - [ServiceWebhookEdit](docs/ServiceWebhookEdit.md)
+ - [TypesAliasTarget](docs/TypesAliasTarget.md)
+ - [TypesCidrRoutingConfig](docs/TypesCidrRoutingConfig.md)
+ - [TypesCoordinates](docs/TypesCoordinates.md)
+ - [TypesGeoLocation](docs/TypesGeoLocation.md)
+ - [TypesGeoProximityLocation](docs/TypesGeoProximityLocation.md)
+ - [TypesRRType](docs/TypesRRType.md)
+ - [TypesResourceRecord](docs/TypesResourceRecord.md)
+ - [TypesResourceRecordSet](docs/TypesResourceRecordSet.md)
+ - [TypesResourceRecordSetFailover](docs/TypesResourceRecordSetFailover.md)
+ - [TypesResourceRecordSetRegion](docs/TypesResourceRecordSetRegion.md)
+ - [V1AccountAccountidDnsrecordGet200Response](docs/V1AccountAccountidDnsrecordGet200Response.md)
 
 
 <a id="documentation-for-authorization"></a>
@@ -562,8 +575,8 @@ Class | Method | HTTP request | Description
 
 
 Authentication schemes defined for the API:
-<a id="BearerAuth"></a>
-### BearerAuth
+<a id="bearerauth"></a>
+### bearerauth
 
 - **Type**: API key
 - **API key parameter name**: Authorization

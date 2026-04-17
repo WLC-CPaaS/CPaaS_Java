@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * ModelsGenerateConfigFileRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.21.0")
 public class ModelsGenerateConfigFileRequest {
   public static final String SERIALIZED_NAME_PARAMETERS = "parameters";
   @SerializedName(SERIALIZED_NAME_PARAMETERS)
@@ -162,10 +162,7 @@ public class ModelsGenerateConfigFileRequest {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
 
@@ -189,7 +186,7 @@ public class ModelsGenerateConfigFileRequest {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ModelsGenerateConfigFileRequest.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in ModelsGenerateConfigFileRequest is not found in the empty JSON string", ModelsGenerateConfigFileRequest.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in ModelsGenerateConfigFileRequest is not found in the empty JSON string", ModelsGenerateConfigFileRequest.openapiRequiredFields.toString()));
         }
       }
 
@@ -197,24 +194,24 @@ public class ModelsGenerateConfigFileRequest {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ModelsGenerateConfigFileRequest.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ModelsGenerateConfigFileRequest` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ModelsGenerateConfigFileRequest` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
       // check to make sure all required properties/fields are present in the JSON string
       for (String requiredField : ModelsGenerateConfigFileRequest.openapiRequiredFields) {
         if (jsonElement.getAsJsonObject().get(requiredField) == null) {
-          throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // validate the required field `parameters`
       ModelsConfigFileParameter.validateJsonElement(jsonObj.get("parameters"));
       if (!jsonObj.get("template_file_id").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `template_file_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("template_file_id").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `template_file_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("template_file_id").toString()));
       }
       if (!jsonObj.get("template_id").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `template_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("template_id").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `template_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("template_id").toString()));
       }
   }
 

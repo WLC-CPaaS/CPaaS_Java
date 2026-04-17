@@ -50,7 +50,7 @@ import org.openapitools.client.JSON;
 /**
  * ServiceVOIPCallQueueAddEditData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.21.0")
 public class ServiceVOIPCallQueueAddEditData {
   public static final String SERIALIZED_NAME_AGENT_WRAPUP_TIME = "agent_wrapup_time";
   @SerializedName(SERIALIZED_NAME_AGENT_WRAPUP_TIME)
@@ -301,10 +301,7 @@ public class ServiceVOIPCallQueueAddEditData {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
 
@@ -328,7 +325,7 @@ public class ServiceVOIPCallQueueAddEditData {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ServiceVOIPCallQueueAddEditData.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in ServiceVOIPCallQueueAddEditData is not found in the empty JSON string", ServiceVOIPCallQueueAddEditData.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in ServiceVOIPCallQueueAddEditData is not found in the empty JSON string", ServiceVOIPCallQueueAddEditData.openapiRequiredFields.toString()));
         }
       }
 
@@ -336,25 +333,25 @@ public class ServiceVOIPCallQueueAddEditData {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ServiceVOIPCallQueueAddEditData.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ServiceVOIPCallQueueAddEditData` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ServiceVOIPCallQueueAddEditData` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
       // check to make sure all required properties/fields are present in the JSON string
       for (String requiredField : ServiceVOIPCallQueueAddEditData.openapiRequiredFields) {
         if (jsonElement.getAsJsonObject().get(requiredField) == null) {
-          throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if (!jsonObj.get("name").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
       }
       if ((jsonObj.get("queue_router") != null && !jsonObj.get("queue_router").isJsonNull()) && !jsonObj.get("queue_router").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `queue_router` to be a primitive type in the JSON string but got `%s`", jsonObj.get("queue_router").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `queue_router` to be a primitive type in the JSON string but got `%s`", jsonObj.get("queue_router").toString()));
       }
       if ((jsonObj.get("queue_type") != null && !jsonObj.get("queue_type").isJsonNull()) && !jsonObj.get("queue_type").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `queue_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("queue_type").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `queue_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("queue_type").toString()));
       }
   }
 

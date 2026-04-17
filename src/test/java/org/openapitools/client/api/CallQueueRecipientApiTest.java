@@ -16,7 +16,7 @@ package org.openapitools.client.api;
 import org.openapitools.client.ApiException;
 import org.openapitools.client.model.CPAASError;
 import org.openapitools.client.model.ServiceAPIResponse;
-import org.openapitools.client.model.ServiceDocsCallQueueResponseShort;
+import org.openapitools.client.model.ServiceDocsCallQueueRecipientLoginLogoutOutput;
 import org.openapitools.client.model.ServiceDocsGetQueueRecipients;
 import org.openapitools.client.model.ServiceVOIPCallQueueRecipientLoginLogoutData;
 import org.openapitools.client.model.ServiceVOIPCallQueueRecipientStatusData;
@@ -48,7 +48,7 @@ public class CallQueueRecipientApiTest {
         String accountID = null;
         String recipientID = null;
         ServiceVOIPCallQueueRecipientLoginLogoutData reqBody = null;
-        ServiceDocsCallQueueResponseShort response = api.v1AccountAccountIDLoginrecipientRecipientIDPost(accountID, recipientID, reqBody);
+        ServiceDocsCallQueueRecipientLoginLogoutOutput response = api.v1AccountAccountIDLoginrecipientRecipientIDPost(accountID, recipientID, reqBody);
         // TODO: test validations
     }
 

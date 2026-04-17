@@ -23,7 +23,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
-import org.openapitools.client.model.ServiceParkingSlotData;
+import org.openapitools.client.model.ModelsParkingSlotData;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 

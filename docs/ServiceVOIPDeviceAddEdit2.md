@@ -9,7 +9,7 @@
 |------------ | ------------- | ------------- | -------------|
 |**callForward** | [**ModelsCallForward**](ModelsCallForward.md) |  |  [optional] |
 |**callerId** | [**ServiceVOIPDeviceAddEdit3c**](ServiceVOIPDeviceAddEdit3c.md) |  |  [optional] |
-|**deviceType** | [**DeviceTypeEnum**](#DeviceTypeEnum) |  |  [optional] |
+|**deviceType** | [**DeviceTypeEnum**](#DeviceTypeEnum) |  |  |
 |**doNotDisturb** | [**ModelsVOIPSharedDoNotDisturb**](ModelsVOIPSharedDoNotDisturb.md) |  |  [optional] |
 |**enabled** | **Boolean** | cannot use required, else it has to be true and false is not allowed |  [optional] |
 |**macAddress** | **String** | dont use mac, it enforces :, which voip does not like |  [optional] |

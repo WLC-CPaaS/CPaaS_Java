@@ -15,14 +15,14 @@ package org.openapitools.client.api;
 
 import org.openapitools.client.ApiException;
 import org.openapitools.client.model.CPAASError;
-import org.openapitools.client.model.ServiceDocE911ActiveLocationOutput;
-import org.openapitools.client.model.ServiceDocE911ActiveLocationURIApiOutput;
-import org.openapitools.client.model.ServiceDocE911AddLocationOutput;
-import org.openapitools.client.model.ServiceDocE911LocationsURIApiOutput;
-import org.openapitools.client.model.ServiceDocE911RemoveLocationOutput;
-import org.openapitools.client.model.ServiceDocE911RemoveURIApiOutput;
-import org.openapitools.client.model.ServiceDocE911URIsApiOutput;
-import org.openapitools.client.model.ServiceDocE911ValidateLocationOutput;
+import org.openapitools.client.model.ServiceDocsE911ActiveLocationOutput;
+import org.openapitools.client.model.ServiceDocsE911ActiveLocationURIApiOutput;
+import org.openapitools.client.model.ServiceDocsE911AddLocationOutput;
+import org.openapitools.client.model.ServiceDocsE911LocationsURIApiOutput;
+import org.openapitools.client.model.ServiceDocsE911RemoveLocationOutput;
+import org.openapitools.client.model.ServiceDocsE911RemoveURIApiOutput;
+import org.openapitools.client.model.ServiceDocsE911URIsApiOutput;
+import org.openapitools.client.model.ServiceDocsE911ValidateLocationOutput;
 import org.openapitools.client.model.ServiceE911AddLocationInput;
 import org.openapitools.client.model.ServiceE911ValidateLocationInput;
 import org.junit.jupiter.api.Disabled;
@@ -50,7 +50,7 @@ public class E911ApiTest {
      */
     @Test
     public void v1E911GetTest() throws ApiException {
-        ServiceDocE911URIsApiOutput response = api.v1E911Get();
+        ServiceDocsE911URIsApiOutput response = api.v1E911Get();
         // TODO: test validations
     }
 
@@ -64,7 +64,7 @@ public class E911ApiTest {
     @Test
     public void v1E911LocationLocationIDActivatePutTest() throws ApiException {
         String locationID = null;
-        ServiceDocE911ActiveLocationOutput response = api.v1E911LocationLocationIDActivatePut(locationID);
+        ServiceDocsE911ActiveLocationOutput response = api.v1E911LocationLocationIDActivatePut(locationID);
         // TODO: test validations
     }
 
@@ -78,7 +78,7 @@ public class E911ApiTest {
     @Test
     public void v1E911LocationLocationIDDeleteTest() throws ApiException {
         String locationID = null;
-        ServiceDocE911RemoveLocationOutput response = api.v1E911LocationLocationIDDelete(locationID);
+        ServiceDocsE911RemoveLocationOutput response = api.v1E911LocationLocationIDDelete(locationID);
         // TODO: test validations
     }
 
@@ -92,7 +92,7 @@ public class E911ApiTest {
     @Test
     public void v1E911LocationValidatePutTest() throws ApiException {
         ServiceE911ValidateLocationInput reqBody = null;
-        ServiceDocE911ValidateLocationOutput response = api.v1E911LocationValidatePut(reqBody);
+        ServiceDocsE911ValidateLocationOutput response = api.v1E911LocationValidatePut(reqBody);
         // TODO: test validations
     }
 
@@ -106,7 +106,7 @@ public class E911ApiTest {
     @Test
     public void v1E911PhoneNumberDeleteTest() throws ApiException {
         String phoneNumber = null;
-        ServiceDocE911RemoveURIApiOutput response = api.v1E911PhoneNumberDelete(phoneNumber);
+        ServiceDocsE911RemoveURIApiOutput response = api.v1E911PhoneNumberDelete(phoneNumber);
         // TODO: test validations
     }
 
@@ -120,7 +120,7 @@ public class E911ApiTest {
     @Test
     public void v1E911PhoneNumberLocationActiveGetTest() throws ApiException {
         String phoneNumber = null;
-        ServiceDocE911ActiveLocationURIApiOutput response = api.v1E911PhoneNumberLocationActiveGet(phoneNumber);
+        ServiceDocsE911ActiveLocationURIApiOutput response = api.v1E911PhoneNumberLocationActiveGet(phoneNumber);
         // TODO: test validations
     }
 
@@ -134,7 +134,7 @@ public class E911ApiTest {
     @Test
     public void v1E911PhoneNumberLocationGetTest() throws ApiException {
         String phoneNumber = null;
-        ServiceDocE911LocationsURIApiOutput response = api.v1E911PhoneNumberLocationGet(phoneNumber);
+        ServiceDocsE911LocationsURIApiOutput response = api.v1E911PhoneNumberLocationGet(phoneNumber);
         // TODO: test validations
     }
 
@@ -148,7 +148,7 @@ public class E911ApiTest {
     @Test
     public void v1E911PostTest() throws ApiException {
         ServiceE911AddLocationInput reqBody = null;
-        ServiceDocE911AddLocationOutput response = api.v1E911Post(reqBody);
+        ServiceDocsE911AddLocationOutput response = api.v1E911Post(reqBody);
         // TODO: test validations
     }
 

@@ -15,6 +15,7 @@ package org.openapitools.client.api;
 
 import org.openapitools.client.ApiException;
 import org.openapitools.client.model.CPAASError;
+import org.openapitools.client.model.ServiceAPIResponse;
 import org.openapitools.client.model.ServiceDocsAccountAPIKey;
 import org.openapitools.client.model.ServiceDocsAccountGetAll;
 import org.openapitools.client.model.ServiceDocsAccountGetSingle;
@@ -24,6 +25,7 @@ import org.openapitools.client.model.ServiceUpdateRecordTypeForAccount;
 import org.openapitools.client.model.ServiceVOIPAccountAddData;
 import org.openapitools.client.model.ServiceVOIPAccountEditData;
 import org.openapitools.client.model.ServiceVOIPAccountLimit2;
+import org.openapitools.client.model.V1AccountAccountidDnsrecordGet200Response;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -80,7 +82,7 @@ public class AccountApiTest {
     @Test
     public void v1AccountAccountidDnsrecordGetTest() throws ApiException {
         String accountid = null;
-        ServiceDocsAccountGetSingle response = api.v1AccountAccountidDnsrecordGet(accountid);
+        V1AccountAccountidDnsrecordGet200Response response = api.v1AccountAccountidDnsrecordGet(accountid);
         // TODO: test validations
     }
 
@@ -94,7 +96,7 @@ public class AccountApiTest {
     @Test
     public void v1AccountAccountidDnsrecordPostTest() throws ApiException {
         String accountid = null;
-        ServiceDocsAccountGetSingle response = api.v1AccountAccountidDnsrecordPost(accountid);
+        V1AccountAccountidDnsrecordGet200Response response = api.v1AccountAccountidDnsrecordPost(accountid);
         // TODO: test validations
     }
 
@@ -109,7 +111,7 @@ public class AccountApiTest {
     public void v1AccountAccountidDnsrecordPutTest() throws ApiException {
         String accountid = null;
         ServiceUpdateRecordTypeForAccount dnsrecord = null;
-        ServiceDocsAccountGetSingle response = api.v1AccountAccountidDnsrecordPut(accountid, dnsrecord);
+        ServiceAPIResponse response = api.v1AccountAccountidDnsrecordPut(accountid, dnsrecord);
         // TODO: test validations
     }
 

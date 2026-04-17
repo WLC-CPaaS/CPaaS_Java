@@ -9,6 +9,7 @@
 |------------ | ------------- | ------------- | -------------|
 |**inviteFormat** | **String** |  |  [optional] |
 |**password** | **String** |  |  [optional] |
+|**route** | **String** |  |  [optional] |
 |**username** | **String** |  |  [optional] |
 
 

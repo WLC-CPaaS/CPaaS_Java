@@ -134,6 +134,39 @@ public class VoicemailApiTest {
     }
 
     /**
+     * Get Voicemail Message File
+     *
+     * Get the original audio content of a specific voicemail message identified by its unique ID within an account&#39;s voicemail box. URL Param \&quot;voicemailID\&quot; is a unique 32-character alphanumeric identifier assigned by the system, which refers to a specific voicemail box. URL Param \&quot;messageID\&quot; is a unique 32-character alphanumeric identifier assigned by the system, which refers to a specific message within a voicemail box.
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFileGetTest() throws ApiException {
+        String accountID = null;
+        String voicemailID = null;
+        String messageID = null;
+        File response = api.v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFileGet(accountID, voicemailID, messageID);
+        // TODO: test validations
+    }
+
+    /**
+     * Add Voicemail Message File
+     *
+     * Associate an audio recording file with the voicemail to fully complete the message.
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFilePostTest() throws ApiException {
+        String accountID = null;
+        String voicemailID = null;
+        String messageID = null;
+        File _file = null;
+        Map<String, Object> response = api.v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFilePost(accountID, voicemailID, messageID, _file);
+        // TODO: test validations
+    }
+
+    /**
      * Get Voicemail Message Details
      *
      * Retrieve the container details of an individual voicemail message. This includes a reference to the audio file, but not the message itself.
@@ -167,7 +200,7 @@ public class VoicemailApiTest {
     }
 
     /**
-     * Get Voicemail Message File
+     * Get Voicemail Message File (Deprecated)
      *
      * Get the original audio content of a specific voicemail message identified by its unique ID within an account&#39;s voicemail box. URL Param \&quot;voicemailID\&quot; is a unique 32-character alphanumeric identifier assigned by the system, which refers to a specific voicemail box. URL Param \&quot;messageID\&quot; is a unique 32-character alphanumeric identifier assigned by the system, which refers to a specific message within a voicemail box.
      *
@@ -183,7 +216,7 @@ public class VoicemailApiTest {
     }
 
     /**
-     * Add Voicemail Message File
+     * Add Voicemail Message File (Deprecated)
      *
      * Associate an audio recording file with the voicemail to fully complete the message.
      *

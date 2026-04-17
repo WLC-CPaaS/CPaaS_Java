@@ -14,6 +14,8 @@
 package org.openapitools.client.api;
 
 import org.openapitools.client.ApiException;
+import org.openapitools.client.model.CPAASError;
+import java.io.File;
 import org.openapitools.client.model.ModelsGenerateConfigFileRequest;
 import org.openapitools.client.model.ProvisioningDocsDocsBrandOutputSingle;
 import org.openapitools.client.model.ProvisioningDocsDocsBrandsOutput;
@@ -42,7 +44,22 @@ public class ProvisioningApiTest {
     private final ProvisioningApi api = new ProvisioningApi();
 
     /**
-     * Get Family
+     * Get Config File Details
+     *
+     * Retrieve the configuration details (e.g., settings and parameters) for a device.
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void v1AccountAccountIDProvisionFilenameGetTest() throws ApiException {
+        String accountID = null;
+        String filename = null;
+        File response = api.v1AccountAccountIDProvisionFilenameGet(accountID, filename);
+        // TODO: test validations
+    }
+
+    /**
+     * Get Family Details
      *
      * Retrieve a family&#39;s details by the randomly generated ID.
      *
@@ -76,7 +93,7 @@ public class ProvisioningApiTest {
     }
 
     /**
-     * Get Model
+     * Get Model Details
      *
      * Retrieve a model&#39;s details by the randomly generated ID.
      *
@@ -113,7 +130,7 @@ public class ProvisioningApiTest {
     }
 
     /**
-     * Get Template
+     * Get Template Details
      *
      * Retrieve details about a template for a model by the randomly generated ID.
      *
@@ -148,7 +165,7 @@ public class ProvisioningApiTest {
     }
 
     /**
-     * Get Brand
+     * Get Brand Details
      *
      * Retrieve a brand&#39;s details by the randomly generated ID.
      *
@@ -162,7 +179,7 @@ public class ProvisioningApiTest {
     }
 
     /**
-     * Get Brand
+     * Get Brand List
      *
      * Retrieve a list of all brands (e.g., Yealink and Polycom) by client.
      *
@@ -179,7 +196,7 @@ public class ProvisioningApiTest {
     }
 
     /**
-     * Generate config file
+     * Generate Config File
      *
      * Generate a configuration file that includes a list of parameters passed to the specified template_id in the request payload, with populated values returned in the response.
      *

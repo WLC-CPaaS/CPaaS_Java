@@ -44,11 +44,11 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://api.beta.cpaaslabs.net");
     
-    // Configure API key authorization: BearerAuth
-    ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
-    BearerAuth.setApiKey("YOUR API KEY");
+    // Configure API key authorization: bearerauth
+    ApiKeyAuth bearerauth = (ApiKeyAuth) defaultClient.getAuthentication("bearerauth");
+    bearerauth.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //BearerAuth.setApiKeyPrefix("Token");
+    //bearerauth.setApiKeyPrefix("Token");
 
     AccountApi apiInstance = new AccountApi(defaultClient);
     String accountid = "accountid_example"; // String | Account ID, 32 alpha numeric
@@ -82,7 +82,7 @@ public class Example {
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[bearerauth](../README.md#bearerauth)
 
 ### HTTP request headers
 
@@ -118,11 +118,11 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://api.beta.cpaaslabs.net");
     
-    // Configure API key authorization: BearerAuth
-    ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
-    BearerAuth.setApiKey("YOUR API KEY");
+    // Configure API key authorization: bearerauth
+    ApiKeyAuth bearerauth = (ApiKeyAuth) defaultClient.getAuthentication("bearerauth");
+    bearerauth.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //BearerAuth.setApiKeyPrefix("Token");
+    //bearerauth.setApiKeyPrefix("Token");
 
     AccountApi apiInstance = new AccountApi(defaultClient);
     String accountid = "accountid_example"; // String | Account ID, 32 alpha numeric
@@ -152,7 +152,7 @@ public class Example {
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[bearerauth](../README.md#bearerauth)
 
 ### HTTP request headers
 
@@ -167,7 +167,7 @@ public class Example {
 
 <a id="v1AccountAccountidDnsrecordGet"></a>
 # **v1AccountAccountidDnsrecordGet**
-> ServiceDocsAccountGetSingle v1AccountAccountidDnsrecordGet(accountid)
+> V1AccountAccountidDnsrecordGet200Response v1AccountAccountidDnsrecordGet(accountid)
 
 Get Account DNS Record
 
@@ -188,16 +188,16 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://api.beta.cpaaslabs.net");
     
-    // Configure API key authorization: BearerAuth
-    ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
-    BearerAuth.setApiKey("YOUR API KEY");
+    // Configure API key authorization: bearerauth
+    ApiKeyAuth bearerauth = (ApiKeyAuth) defaultClient.getAuthentication("bearerauth");
+    bearerauth.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //BearerAuth.setApiKeyPrefix("Token");
+    //bearerauth.setApiKeyPrefix("Token");
 
     AccountApi apiInstance = new AccountApi(defaultClient);
     String accountid = "accountid_example"; // String | Account ID, 32 alpha numeric
     try {
-      ServiceDocsAccountGetSingle result = apiInstance.v1AccountAccountidDnsrecordGet(accountid);
+      V1AccountAccountidDnsrecordGet200Response result = apiInstance.v1AccountAccountidDnsrecordGet(accountid);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AccountApi#v1AccountAccountidDnsrecordGet");
@@ -218,11 +218,11 @@ public class Example {
 
 ### Return type
 
-[**ServiceDocsAccountGetSingle**](ServiceDocsAccountGetSingle.md)
+[**V1AccountAccountidDnsrecordGet200Response**](V1AccountAccountidDnsrecordGet200Response.md)
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[bearerauth](../README.md#bearerauth)
 
 ### HTTP request headers
 
@@ -237,7 +237,7 @@ public class Example {
 
 <a id="v1AccountAccountidDnsrecordPost"></a>
 # **v1AccountAccountidDnsrecordPost**
-> ServiceDocsAccountGetSingle v1AccountAccountidDnsrecordPost(accountid)
+> V1AccountAccountidDnsrecordGet200Response v1AccountAccountidDnsrecordPost(accountid)
 
 Create Account DNS Record
 
@@ -258,16 +258,16 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://api.beta.cpaaslabs.net");
     
-    // Configure API key authorization: BearerAuth
-    ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
-    BearerAuth.setApiKey("YOUR API KEY");
+    // Configure API key authorization: bearerauth
+    ApiKeyAuth bearerauth = (ApiKeyAuth) defaultClient.getAuthentication("bearerauth");
+    bearerauth.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //BearerAuth.setApiKeyPrefix("Token");
+    //bearerauth.setApiKeyPrefix("Token");
 
     AccountApi apiInstance = new AccountApi(defaultClient);
     String accountid = "accountid_example"; // String | Account ID, 32 alpha numeric
     try {
-      ServiceDocsAccountGetSingle result = apiInstance.v1AccountAccountidDnsrecordPost(accountid);
+      V1AccountAccountidDnsrecordGet200Response result = apiInstance.v1AccountAccountidDnsrecordPost(accountid);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AccountApi#v1AccountAccountidDnsrecordPost");
@@ -288,11 +288,11 @@ public class Example {
 
 ### Return type
 
-[**ServiceDocsAccountGetSingle**](ServiceDocsAccountGetSingle.md)
+[**V1AccountAccountidDnsrecordGet200Response**](V1AccountAccountidDnsrecordGet200Response.md)
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[bearerauth](../README.md#bearerauth)
 
 ### HTTP request headers
 
@@ -307,7 +307,7 @@ public class Example {
 
 <a id="v1AccountAccountidDnsrecordPut"></a>
 # **v1AccountAccountidDnsrecordPut**
-> ServiceDocsAccountGetSingle v1AccountAccountidDnsrecordPut(accountid, dnsrecord)
+> ServiceAPIResponse v1AccountAccountidDnsrecordPut(accountid, dnsrecord)
 
 Convert Account DNS Record
 
@@ -328,17 +328,17 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://api.beta.cpaaslabs.net");
     
-    // Configure API key authorization: BearerAuth
-    ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
-    BearerAuth.setApiKey("YOUR API KEY");
+    // Configure API key authorization: bearerauth
+    ApiKeyAuth bearerauth = (ApiKeyAuth) defaultClient.getAuthentication("bearerauth");
+    bearerauth.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //BearerAuth.setApiKeyPrefix("Token");
+    //bearerauth.setApiKeyPrefix("Token");
 
     AccountApi apiInstance = new AccountApi(defaultClient);
     String accountid = "accountid_example"; // String | Account ID, 32 alpha numeric
     ServiceUpdateRecordTypeForAccount dnsrecord = new ServiceUpdateRecordTypeForAccount(); // ServiceUpdateRecordTypeForAccount | record type fields with value SRV, CNAME
     try {
-      ServiceDocsAccountGetSingle result = apiInstance.v1AccountAccountidDnsrecordPut(accountid, dnsrecord);
+      ServiceAPIResponse result = apiInstance.v1AccountAccountidDnsrecordPut(accountid, dnsrecord);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AccountApi#v1AccountAccountidDnsrecordPut");
@@ -360,11 +360,11 @@ public class Example {
 
 ### Return type
 
-[**ServiceDocsAccountGetSingle**](ServiceDocsAccountGetSingle.md)
+[**ServiceAPIResponse**](ServiceAPIResponse.md)
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[bearerauth](../README.md#bearerauth)
 
 ### HTTP request headers
 
@@ -400,11 +400,11 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://api.beta.cpaaslabs.net");
     
-    // Configure API key authorization: BearerAuth
-    ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
-    BearerAuth.setApiKey("YOUR API KEY");
+    // Configure API key authorization: bearerauth
+    ApiKeyAuth bearerauth = (ApiKeyAuth) defaultClient.getAuthentication("bearerauth");
+    bearerauth.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //BearerAuth.setApiKeyPrefix("Token");
+    //bearerauth.setApiKeyPrefix("Token");
 
     AccountApi apiInstance = new AccountApi(defaultClient);
     String accountid = "accountid_example"; // String | Account ID, 32 alpha numeric
@@ -434,7 +434,7 @@ public class Example {
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[bearerauth](../README.md#bearerauth)
 
 ### HTTP request headers
 
@@ -470,11 +470,11 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://api.beta.cpaaslabs.net");
     
-    // Configure API key authorization: BearerAuth
-    ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
-    BearerAuth.setApiKey("YOUR API KEY");
+    // Configure API key authorization: bearerauth
+    ApiKeyAuth bearerauth = (ApiKeyAuth) defaultClient.getAuthentication("bearerauth");
+    bearerauth.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //BearerAuth.setApiKeyPrefix("Token");
+    //bearerauth.setApiKeyPrefix("Token");
 
     AccountApi apiInstance = new AccountApi(defaultClient);
     String accountid = "accountid_example"; // String | Account ID, 32 alpha numeric
@@ -504,7 +504,7 @@ public class Example {
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[bearerauth](../README.md#bearerauth)
 
 ### HTTP request headers
 
@@ -540,11 +540,11 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://api.beta.cpaaslabs.net");
     
-    // Configure API key authorization: BearerAuth
-    ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
-    BearerAuth.setApiKey("YOUR API KEY");
+    // Configure API key authorization: bearerauth
+    ApiKeyAuth bearerauth = (ApiKeyAuth) defaultClient.getAuthentication("bearerauth");
+    bearerauth.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //BearerAuth.setApiKeyPrefix("Token");
+    //bearerauth.setApiKeyPrefix("Token");
 
     AccountApi apiInstance = new AccountApi(defaultClient);
     String accountid = "accountid_example"; // String | Account ID, 32 alpha numeric
@@ -576,7 +576,7 @@ public class Example {
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[bearerauth](../README.md#bearerauth)
 
 ### HTTP request headers
 
@@ -612,11 +612,11 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://api.beta.cpaaslabs.net");
     
-    // Configure API key authorization: BearerAuth
-    ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
-    BearerAuth.setApiKey("YOUR API KEY");
+    // Configure API key authorization: bearerauth
+    ApiKeyAuth bearerauth = (ApiKeyAuth) defaultClient.getAuthentication("bearerauth");
+    bearerauth.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //BearerAuth.setApiKeyPrefix("Token");
+    //bearerauth.setApiKeyPrefix("Token");
 
     AccountApi apiInstance = new AccountApi(defaultClient);
     String accountid = "accountid_example"; // String | Account ID, 32 alpha numeric
@@ -648,7 +648,7 @@ public class Example {
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[bearerauth](../README.md#bearerauth)
 
 ### HTTP request headers
 
@@ -684,11 +684,11 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://api.beta.cpaaslabs.net");
     
-    // Configure API key authorization: BearerAuth
-    ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
-    BearerAuth.setApiKey("YOUR API KEY");
+    // Configure API key authorization: bearerauth
+    ApiKeyAuth bearerauth = (ApiKeyAuth) defaultClient.getAuthentication("bearerauth");
+    bearerauth.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //BearerAuth.setApiKeyPrefix("Token");
+    //bearerauth.setApiKeyPrefix("Token");
 
     AccountApi apiInstance = new AccountApi(defaultClient);
     String accountid = "accountid_example"; // String | Account ID, 32 alpha numeric
@@ -718,7 +718,7 @@ public class Example {
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[bearerauth](../README.md#bearerauth)
 
 ### HTTP request headers
 
@@ -754,11 +754,11 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://api.beta.cpaaslabs.net");
     
-    // Configure API key authorization: BearerAuth
-    ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
-    BearerAuth.setApiKey("YOUR API KEY");
+    // Configure API key authorization: bearerauth
+    ApiKeyAuth bearerauth = (ApiKeyAuth) defaultClient.getAuthentication("bearerauth");
+    bearerauth.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //BearerAuth.setApiKeyPrefix("Token");
+    //bearerauth.setApiKeyPrefix("Token");
 
     AccountApi apiInstance = new AccountApi(defaultClient);
     String accountid = "accountid_example"; // String | Account ID, 32 alpha numeric
@@ -788,7 +788,7 @@ public class Example {
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[bearerauth](../README.md#bearerauth)
 
 ### HTTP request headers
 
@@ -824,11 +824,11 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://api.beta.cpaaslabs.net");
     
-    // Configure API key authorization: BearerAuth
-    ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
-    BearerAuth.setApiKey("YOUR API KEY");
+    // Configure API key authorization: bearerauth
+    ApiKeyAuth bearerauth = (ApiKeyAuth) defaultClient.getAuthentication("bearerauth");
+    bearerauth.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //BearerAuth.setApiKeyPrefix("Token");
+    //bearerauth.setApiKeyPrefix("Token");
 
     AccountApi apiInstance = new AccountApi(defaultClient);
     String accountid = "accountid_example"; // String | Account ID, 32 alpha numeric
@@ -860,7 +860,7 @@ public class Example {
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[bearerauth](../README.md#bearerauth)
 
 ### HTTP request headers
 
@@ -896,11 +896,11 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://api.beta.cpaaslabs.net");
     
-    // Configure API key authorization: BearerAuth
-    ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
-    BearerAuth.setApiKey("YOUR API KEY");
+    // Configure API key authorization: bearerauth
+    ApiKeyAuth bearerauth = (ApiKeyAuth) defaultClient.getAuthentication("bearerauth");
+    bearerauth.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //BearerAuth.setApiKeyPrefix("Token");
+    //bearerauth.setApiKeyPrefix("Token");
 
     AccountApi apiInstance = new AccountApi(defaultClient);
     try {
@@ -926,7 +926,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[bearerauth](../README.md#bearerauth)
 
 ### HTTP request headers
 
@@ -962,11 +962,11 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://api.beta.cpaaslabs.net");
     
-    // Configure API key authorization: BearerAuth
-    ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
-    BearerAuth.setApiKey("YOUR API KEY");
+    // Configure API key authorization: bearerauth
+    ApiKeyAuth bearerauth = (ApiKeyAuth) defaultClient.getAuthentication("bearerauth");
+    bearerauth.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //BearerAuth.setApiKeyPrefix("Token");
+    //bearerauth.setApiKeyPrefix("Token");
 
     AccountApi apiInstance = new AccountApi(defaultClient);
     String startKey = "startKey_example"; // String | start_key for pagination that was returned as next_start_key from your previous call
@@ -998,7 +998,7 @@ public class Example {
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[bearerauth](../README.md#bearerauth)
 
 ### HTTP request headers
 
@@ -1034,11 +1034,11 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://api.beta.cpaaslabs.net");
     
-    // Configure API key authorization: BearerAuth
-    ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
-    BearerAuth.setApiKey("YOUR API KEY");
+    // Configure API key authorization: bearerauth
+    ApiKeyAuth bearerauth = (ApiKeyAuth) defaultClient.getAuthentication("bearerauth");
+    bearerauth.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //BearerAuth.setApiKeyPrefix("Token");
+    //bearerauth.setApiKeyPrefix("Token");
 
     AccountApi apiInstance = new AccountApi(defaultClient);
     ServiceVOIPAccountAddData account = new ServiceVOIPAccountAddData(); // ServiceVOIPAccountAddData | account fields
@@ -1068,7 +1068,7 @@ public class Example {
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[bearerauth](../README.md#bearerauth)
 
 ### HTTP request headers
 

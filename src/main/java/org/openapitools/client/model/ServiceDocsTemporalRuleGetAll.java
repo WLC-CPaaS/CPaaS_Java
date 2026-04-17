@@ -51,7 +51,7 @@ import org.openapitools.client.JSON;
 /**
  * ServiceDocsTemporalRuleGetAll
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.21.0")
 public class ServiceDocsTemporalRuleGetAll {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
@@ -250,10 +250,7 @@ public class ServiceDocsTemporalRuleGetAll {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
 
@@ -277,7 +274,7 @@ public class ServiceDocsTemporalRuleGetAll {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ServiceDocsTemporalRuleGetAll.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in ServiceDocsTemporalRuleGetAll is not found in the empty JSON string", ServiceDocsTemporalRuleGetAll.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in ServiceDocsTemporalRuleGetAll is not found in the empty JSON string", ServiceDocsTemporalRuleGetAll.openapiRequiredFields.toString()));
         }
       }
 
@@ -285,7 +282,7 @@ public class ServiceDocsTemporalRuleGetAll {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ServiceDocsTemporalRuleGetAll.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ServiceDocsTemporalRuleGetAll` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ServiceDocsTemporalRuleGetAll` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -294,7 +291,7 @@ public class ServiceDocsTemporalRuleGetAll {
         if (jsonArraydata != null) {
           // ensure the json data is an array
           if (!jsonObj.get("data").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `data` to be an array in the JSON string but got `%s`", jsonObj.get("data").toString()));
+            throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `data` to be an array in the JSON string but got `%s`", jsonObj.get("data").toString()));
           }
 
           // validate the optional field `data` (array)
@@ -304,13 +301,13 @@ public class ServiceDocsTemporalRuleGetAll {
         }
       }
       if ((jsonObj.get("next_start_key") != null && !jsonObj.get("next_start_key").isJsonNull()) && !jsonObj.get("next_start_key").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `next_start_key` to be a primitive type in the JSON string but got `%s`", jsonObj.get("next_start_key").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `next_start_key` to be a primitive type in the JSON string but got `%s`", jsonObj.get("next_start_key").toString()));
       }
       if ((jsonObj.get("request_id") != null && !jsonObj.get("request_id").isJsonNull()) && !jsonObj.get("request_id").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `request_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("request_id").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `request_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("request_id").toString()));
       }
       if ((jsonObj.get("start_key") != null && !jsonObj.get("start_key").isJsonNull()) && !jsonObj.get("start_key").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `start_key` to be a primitive type in the JSON string but got `%s`", jsonObj.get("start_key").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `start_key` to be a primitive type in the JSON string but got `%s`", jsonObj.get("start_key").toString()));
       }
   }
 

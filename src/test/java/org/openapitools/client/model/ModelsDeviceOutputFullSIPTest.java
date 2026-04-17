@@ -54,6 +54,14 @@ public class ModelsDeviceOutputFullSIPTest {
     }
 
     /**
+     * Test the property 'route'
+     */
+    @Test
+    public void routeTest() {
+        // TODO: test route
+    }
+
+    /**
      * Test the property 'username'
      */
     @Test

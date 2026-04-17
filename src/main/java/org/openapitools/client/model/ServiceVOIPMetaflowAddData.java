@@ -51,7 +51,7 @@ import org.openapitools.client.JSON;
 /**
  * ServiceVOIPMetaflowAddData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.21.0")
 public class ServiceVOIPMetaflowAddData {
   /**
    * Gets or Sets bindingDigit
@@ -252,10 +252,7 @@ public class ServiceVOIPMetaflowAddData {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
 
@@ -279,7 +276,7 @@ public class ServiceVOIPMetaflowAddData {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ServiceVOIPMetaflowAddData.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in ServiceVOIPMetaflowAddData is not found in the empty JSON string", ServiceVOIPMetaflowAddData.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in ServiceVOIPMetaflowAddData is not found in the empty JSON string", ServiceVOIPMetaflowAddData.openapiRequiredFields.toString()));
         }
       }
 
@@ -287,12 +284,12 @@ public class ServiceVOIPMetaflowAddData {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ServiceVOIPMetaflowAddData.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ServiceVOIPMetaflowAddData` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ServiceVOIPMetaflowAddData` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("binding_digit") != null && !jsonObj.get("binding_digit").isJsonNull()) && !jsonObj.get("binding_digit").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `binding_digit` to be a primitive type in the JSON string but got `%s`", jsonObj.get("binding_digit").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `binding_digit` to be a primitive type in the JSON string but got `%s`", jsonObj.get("binding_digit").toString()));
       }
       // validate the optional field `binding_digit`
       if (jsonObj.get("binding_digit") != null && !jsonObj.get("binding_digit").isJsonNull()) {

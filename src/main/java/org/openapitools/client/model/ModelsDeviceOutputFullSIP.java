@@ -48,7 +48,7 @@ import org.openapitools.client.JSON;
 /**
  * ModelsDeviceOutputFullSIP
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.21.0")
 public class ModelsDeviceOutputFullSIP {
   public static final String SERIALIZED_NAME_INVITE_FORMAT = "invite_format";
   @SerializedName(SERIALIZED_NAME_INVITE_FORMAT)
@@ -59,6 +59,11 @@ public class ModelsDeviceOutputFullSIP {
   @SerializedName(SERIALIZED_NAME_PASSWORD)
   @javax.annotation.Nullable
   private String password;
+
+  public static final String SERIALIZED_NAME_ROUTE = "route";
+  @SerializedName(SERIALIZED_NAME_ROUTE)
+  @javax.annotation.Nullable
+  private String route;
 
   public static final String SERIALIZED_NAME_USERNAME = "username";
   @SerializedName(SERIALIZED_NAME_USERNAME)
@@ -106,6 +111,25 @@ public class ModelsDeviceOutputFullSIP {
   }
 
 
+  public ModelsDeviceOutputFullSIP route(@javax.annotation.Nullable String route) {
+    this.route = route;
+    return this;
+  }
+
+  /**
+   * Get route
+   * @return route
+   */
+  @javax.annotation.Nullable
+  public String getRoute() {
+    return route;
+  }
+
+  public void setRoute(@javax.annotation.Nullable String route) {
+    this.route = route;
+  }
+
+
   public ModelsDeviceOutputFullSIP username(@javax.annotation.Nullable String username) {
     this.username = username;
     return this;
@@ -137,12 +161,13 @@ public class ModelsDeviceOutputFullSIP {
     ModelsDeviceOutputFullSIP modelsDeviceOutputFullSIP = (ModelsDeviceOutputFullSIP) o;
     return Objects.equals(this.inviteFormat, modelsDeviceOutputFullSIP.inviteFormat) &&
         Objects.equals(this.password, modelsDeviceOutputFullSIP.password) &&
+        Objects.equals(this.route, modelsDeviceOutputFullSIP.route) &&
         Objects.equals(this.username, modelsDeviceOutputFullSIP.username);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(inviteFormat, password, username);
+    return Objects.hash(inviteFormat, password, route, username);
   }
 
   @Override
@@ -151,6 +176,7 @@ public class ModelsDeviceOutputFullSIP {
     sb.append("class ModelsDeviceOutputFullSIP {\n");
     sb.append("    inviteFormat: ").append(toIndentedString(inviteFormat)).append("\n");
     sb.append("    password: ").append(toIndentedString(password)).append("\n");
+    sb.append("    route: ").append(toIndentedString(route)).append("\n");
     sb.append("    username: ").append(toIndentedString(username)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -161,10 +187,7 @@ public class ModelsDeviceOutputFullSIP {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
 
@@ -173,7 +196,7 @@ public class ModelsDeviceOutputFullSIP {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>(Arrays.asList("invite_format", "password", "username"));
+    openapiFields = new HashSet<String>(Arrays.asList("invite_format", "password", "route", "username"));
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>(0);
@@ -188,7 +211,7 @@ public class ModelsDeviceOutputFullSIP {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ModelsDeviceOutputFullSIP.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in ModelsDeviceOutputFullSIP is not found in the empty JSON string", ModelsDeviceOutputFullSIP.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in ModelsDeviceOutputFullSIP is not found in the empty JSON string", ModelsDeviceOutputFullSIP.openapiRequiredFields.toString()));
         }
       }
 
@@ -196,18 +219,21 @@ public class ModelsDeviceOutputFullSIP {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ModelsDeviceOutputFullSIP.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ModelsDeviceOutputFullSIP` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ModelsDeviceOutputFullSIP` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("invite_format") != null && !jsonObj.get("invite_format").isJsonNull()) && !jsonObj.get("invite_format").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `invite_format` to be a primitive type in the JSON string but got `%s`", jsonObj.get("invite_format").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `invite_format` to be a primitive type in the JSON string but got `%s`", jsonObj.get("invite_format").toString()));
       }
       if ((jsonObj.get("password") != null && !jsonObj.get("password").isJsonNull()) && !jsonObj.get("password").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `password` to be a primitive type in the JSON string but got `%s`", jsonObj.get("password").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `password` to be a primitive type in the JSON string but got `%s`", jsonObj.get("password").toString()));
+      }
+      if ((jsonObj.get("route") != null && !jsonObj.get("route").isJsonNull()) && !jsonObj.get("route").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `route` to be a primitive type in the JSON string but got `%s`", jsonObj.get("route").toString()));
       }
       if ((jsonObj.get("username") != null && !jsonObj.get("username").isJsonNull()) && !jsonObj.get("username").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `username` to be a primitive type in the JSON string but got `%s`", jsonObj.get("username").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `username` to be a primitive type in the JSON string but got `%s`", jsonObj.get("username").toString()));
       }
   }
 

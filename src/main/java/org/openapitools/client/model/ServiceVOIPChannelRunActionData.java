@@ -48,7 +48,7 @@ import org.openapitools.client.JSON;
 /**
  * ServiceVOIPChannelRunActionData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.21.0")
 public class ServiceVOIPChannelRunActionData {
   public static final String SERIALIZED_NAME_ACTION = "action";
   @SerializedName(SERIALIZED_NAME_ACTION)
@@ -187,10 +187,7 @@ public class ServiceVOIPChannelRunActionData {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
 
@@ -214,7 +211,7 @@ public class ServiceVOIPChannelRunActionData {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ServiceVOIPChannelRunActionData.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in ServiceVOIPChannelRunActionData is not found in the empty JSON string", ServiceVOIPChannelRunActionData.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in ServiceVOIPChannelRunActionData is not found in the empty JSON string", ServiceVOIPChannelRunActionData.openapiRequiredFields.toString()));
         }
       }
 
@@ -222,28 +219,28 @@ public class ServiceVOIPChannelRunActionData {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ServiceVOIPChannelRunActionData.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ServiceVOIPChannelRunActionData` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ServiceVOIPChannelRunActionData` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
       // check to make sure all required properties/fields are present in the JSON string
       for (String requiredField : ServiceVOIPChannelRunActionData.openapiRequiredFields) {
         if (jsonElement.getAsJsonObject().get(requiredField) == null) {
-          throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if (!jsonObj.get("action").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `action` to be a primitive type in the JSON string but got `%s`", jsonObj.get("action").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `action` to be a primitive type in the JSON string but got `%s`", jsonObj.get("action").toString()));
       }
       if ((jsonObj.get("moh") != null && !jsonObj.get("moh").isJsonNull()) && !jsonObj.get("moh").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `moh` to be a primitive type in the JSON string but got `%s`", jsonObj.get("moh").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `moh` to be a primitive type in the JSON string but got `%s`", jsonObj.get("moh").toString()));
       }
       if ((jsonObj.get("takeback_dtmf") != null && !jsonObj.get("takeback_dtmf").isJsonNull()) && !jsonObj.get("takeback_dtmf").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `takeback_dtmf` to be a primitive type in the JSON string but got `%s`", jsonObj.get("takeback_dtmf").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `takeback_dtmf` to be a primitive type in the JSON string but got `%s`", jsonObj.get("takeback_dtmf").toString()));
       }
       if ((jsonObj.get("target") != null && !jsonObj.get("target").isJsonNull()) && !jsonObj.get("target").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `target` to be a primitive type in the JSON string but got `%s`", jsonObj.get("target").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `target` to be a primitive type in the JSON string but got `%s`", jsonObj.get("target").toString()));
       }
   }
 

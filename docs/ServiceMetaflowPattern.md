@@ -20,6 +20,7 @@
 | TRANSFER | &quot;transfer&quot; |
 | HOLD | &quot;hold&quot; |
 | RECORD_CALL | &quot;record_call&quot; |
+| PLAY | &quot;play&quot; |
 
 
 

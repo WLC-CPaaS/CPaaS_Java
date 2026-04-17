@@ -55,7 +55,7 @@ import org.openapitools.client.JSON;
 /**
  * ServiceVOIPDeviceAddEdit2
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.21.0")
 public class ServiceVOIPDeviceAddEdit2 {
   public static final String SERIALIZED_NAME_CALL_FORWARD = "call_forward";
   @SerializedName(SERIALIZED_NAME_CALL_FORWARD)
@@ -123,7 +123,7 @@ public class ServiceVOIPDeviceAddEdit2 {
 
   public static final String SERIALIZED_NAME_DEVICE_TYPE = "device_type";
   @SerializedName(SERIALIZED_NAME_DEVICE_TYPE)
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   private DeviceTypeEnum deviceType;
 
   public static final String SERIALIZED_NAME_DO_NOT_DISTURB = "do_not_disturb";
@@ -212,7 +212,7 @@ public class ServiceVOIPDeviceAddEdit2 {
   }
 
 
-  public ServiceVOIPDeviceAddEdit2 deviceType(@javax.annotation.Nullable DeviceTypeEnum deviceType) {
+  public ServiceVOIPDeviceAddEdit2 deviceType(@javax.annotation.Nonnull DeviceTypeEnum deviceType) {
     this.deviceType = deviceType;
     return this;
   }
@@ -221,12 +221,12 @@ public class ServiceVOIPDeviceAddEdit2 {
    * Get deviceType
    * @return deviceType
    */
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public DeviceTypeEnum getDeviceType() {
     return deviceType;
   }
 
-  public void setDeviceType(@javax.annotation.Nullable DeviceTypeEnum deviceType) {
+  public void setDeviceType(@javax.annotation.Nonnull DeviceTypeEnum deviceType) {
     this.deviceType = deviceType;
   }
 
@@ -456,10 +456,7 @@ public class ServiceVOIPDeviceAddEdit2 {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
 
@@ -471,7 +468,7 @@ public class ServiceVOIPDeviceAddEdit2 {
     openapiFields = new HashSet<String>(Arrays.asList("call_forward", "caller_id", "device_type", "do_not_disturb", "enabled", "mac_address", "media", "music_on_hold", "name", "owner_id", "provision", "sip"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>(Arrays.asList("name", "sip"));
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("device_type", "name", "sip"));
   }
 
   /**
@@ -483,7 +480,7 @@ public class ServiceVOIPDeviceAddEdit2 {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ServiceVOIPDeviceAddEdit2.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in ServiceVOIPDeviceAddEdit2 is not found in the empty JSON string", ServiceVOIPDeviceAddEdit2.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in ServiceVOIPDeviceAddEdit2 is not found in the empty JSON string", ServiceVOIPDeviceAddEdit2.openapiRequiredFields.toString()));
         }
       }
 
@@ -491,14 +488,14 @@ public class ServiceVOIPDeviceAddEdit2 {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ServiceVOIPDeviceAddEdit2.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ServiceVOIPDeviceAddEdit2` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ServiceVOIPDeviceAddEdit2` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
       // check to make sure all required properties/fields are present in the JSON string
       for (String requiredField : ServiceVOIPDeviceAddEdit2.openapiRequiredFields) {
         if (jsonElement.getAsJsonObject().get(requiredField) == null) {
-          throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -510,19 +507,17 @@ public class ServiceVOIPDeviceAddEdit2 {
       if (jsonObj.get("caller_id") != null && !jsonObj.get("caller_id").isJsonNull()) {
         ServiceVOIPDeviceAddEdit3c.validateJsonElement(jsonObj.get("caller_id"));
       }
-      if ((jsonObj.get("device_type") != null && !jsonObj.get("device_type").isJsonNull()) && !jsonObj.get("device_type").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `device_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("device_type").toString()));
+      if (!jsonObj.get("device_type").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `device_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("device_type").toString()));
       }
-      // validate the optional field `device_type`
-      if (jsonObj.get("device_type") != null && !jsonObj.get("device_type").isJsonNull()) {
-        DeviceTypeEnum.validateJsonElement(jsonObj.get("device_type"));
-      }
+      // validate the required field `device_type`
+      DeviceTypeEnum.validateJsonElement(jsonObj.get("device_type"));
       // validate the optional field `do_not_disturb`
       if (jsonObj.get("do_not_disturb") != null && !jsonObj.get("do_not_disturb").isJsonNull()) {
         ModelsVOIPSharedDoNotDisturb.validateJsonElement(jsonObj.get("do_not_disturb"));
       }
       if ((jsonObj.get("mac_address") != null && !jsonObj.get("mac_address").isJsonNull()) && !jsonObj.get("mac_address").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `mac_address` to be a primitive type in the JSON string but got `%s`", jsonObj.get("mac_address").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `mac_address` to be a primitive type in the JSON string but got `%s`", jsonObj.get("mac_address").toString()));
       }
       // validate the optional field `media`
       if (jsonObj.get("media") != null && !jsonObj.get("media").isJsonNull()) {
@@ -533,10 +528,10 @@ public class ServiceVOIPDeviceAddEdit2 {
         ModelsMusicOnHold.validateJsonElement(jsonObj.get("music_on_hold"));
       }
       if (!jsonObj.get("name").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
       }
       if ((jsonObj.get("owner_id") != null && !jsonObj.get("owner_id").isJsonNull()) && !jsonObj.get("owner_id").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `owner_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("owner_id").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `owner_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("owner_id").toString()));
       }
       // validate the optional field `provision`
       if (jsonObj.get("provision") != null && !jsonObj.get("provision").isJsonNull()) {

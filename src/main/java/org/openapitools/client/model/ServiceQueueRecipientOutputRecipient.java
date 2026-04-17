@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * ServiceQueueRecipientOutputRecipient
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.21.0")
 public class ServiceQueueRecipientOutputRecipient {
   public static final String SERIALIZED_NAME_FEATURES = "features";
   @SerializedName(SERIALIZED_NAME_FEATURES)
@@ -110,10 +110,7 @@ public class ServiceQueueRecipientOutputRecipient {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
 
@@ -137,7 +134,7 @@ public class ServiceQueueRecipientOutputRecipient {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ServiceQueueRecipientOutputRecipient.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in ServiceQueueRecipientOutputRecipient is not found in the empty JSON string", ServiceQueueRecipientOutputRecipient.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in ServiceQueueRecipientOutputRecipient is not found in the empty JSON string", ServiceQueueRecipientOutputRecipient.openapiRequiredFields.toString()));
         }
       }
 
@@ -145,7 +142,7 @@ public class ServiceQueueRecipientOutputRecipient {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ServiceQueueRecipientOutputRecipient.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ServiceQueueRecipientOutputRecipient` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ServiceQueueRecipientOutputRecipient` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();

@@ -28,6 +28,7 @@ import java.io.IOException;
 
 
 import org.openapitools.client.model.CPAASError;
+import org.openapitools.client.model.ServiceAPIResponse;
 import org.openapitools.client.model.ServiceDocsAccountAPIKey;
 import org.openapitools.client.model.ServiceDocsAccountGetAll;
 import org.openapitools.client.model.ServiceDocsAccountGetSingle;
@@ -37,6 +38,7 @@ import org.openapitools.client.model.ServiceUpdateRecordTypeForAccount;
 import org.openapitools.client.model.ServiceVOIPAccountAddData;
 import org.openapitools.client.model.ServiceVOIPAccountEditData;
 import org.openapitools.client.model.ServiceVOIPAccountLimit2;
+import org.openapitools.client.model.V1AccountAccountidDnsrecordGet200Response;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -146,7 +148,7 @@ public class AccountApi {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
 
-        String[] localVarAuthNames = new String[] { "BearerAuth" };
+        String[] localVarAuthNames = new String[] { "bearerauth" };
         return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
@@ -283,7 +285,7 @@ public class AccountApi {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
 
-        String[] localVarAuthNames = new String[] { "BearerAuth" };
+        String[] localVarAuthNames = new String[] { "bearerauth" };
         return localVarApiClient.buildCall(basePath, localVarPath, "DELETE", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
@@ -414,7 +416,7 @@ public class AccountApi {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
 
-        String[] localVarAuthNames = new String[] { "BearerAuth" };
+        String[] localVarAuthNames = new String[] { "bearerauth" };
         return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
@@ -433,7 +435,7 @@ public class AccountApi {
      * Get Account DNS Record
      * Get the DNS record of an account from the Route 53 entry.
      * @param accountid Account ID, 32 alpha numeric (required)
-     * @return ServiceDocsAccountGetSingle
+     * @return V1AccountAccountidDnsrecordGet200Response
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table border="1">
@@ -443,8 +445,8 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsAccountGetSingle v1AccountAccountidDnsrecordGet(@javax.annotation.Nonnull String accountid) throws ApiException {
-        ApiResponse<ServiceDocsAccountGetSingle> localVarResp = v1AccountAccountidDnsrecordGetWithHttpInfo(accountid);
+    public V1AccountAccountidDnsrecordGet200Response v1AccountAccountidDnsrecordGet(@javax.annotation.Nonnull String accountid) throws ApiException {
+        ApiResponse<V1AccountAccountidDnsrecordGet200Response> localVarResp = v1AccountAccountidDnsrecordGetWithHttpInfo(accountid);
         return localVarResp.getData();
     }
 
@@ -452,7 +454,7 @@ public class AccountApi {
      * Get Account DNS Record
      * Get the DNS record of an account from the Route 53 entry.
      * @param accountid Account ID, 32 alpha numeric (required)
-     * @return ApiResponse&lt;ServiceDocsAccountGetSingle&gt;
+     * @return ApiResponse&lt;V1AccountAccountidDnsrecordGet200Response&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table border="1">
@@ -462,9 +464,9 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsAccountGetSingle> v1AccountAccountidDnsrecordGetWithHttpInfo(@javax.annotation.Nonnull String accountid) throws ApiException {
+    public ApiResponse<V1AccountAccountidDnsrecordGet200Response> v1AccountAccountidDnsrecordGetWithHttpInfo(@javax.annotation.Nonnull String accountid) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidDnsrecordGetValidateBeforeCall(accountid, null);
-        Type localVarReturnType = new TypeToken<ServiceDocsAccountGetSingle>(){}.getType();
+        Type localVarReturnType = new TypeToken<V1AccountAccountidDnsrecordGet200Response>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -483,10 +485,10 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidDnsrecordGetAsync(@javax.annotation.Nonnull String accountid, final ApiCallback<ServiceDocsAccountGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidDnsrecordGetAsync(@javax.annotation.Nonnull String accountid, final ApiCallback<V1AccountAccountidDnsrecordGet200Response> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidDnsrecordGetValidateBeforeCall(accountid, _callback);
-        Type localVarReturnType = new TypeToken<ServiceDocsAccountGetSingle>(){}.getType();
+        Type localVarReturnType = new TypeToken<V1AccountAccountidDnsrecordGet200Response>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -545,7 +547,7 @@ public class AccountApi {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
 
-        String[] localVarAuthNames = new String[] { "BearerAuth" };
+        String[] localVarAuthNames = new String[] { "bearerauth" };
         return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
@@ -564,7 +566,7 @@ public class AccountApi {
      * Create Account DNS Record
      * Create the DNS record of an account with the help realm in the Route 53 entry.
      * @param accountid Account ID, 32 alpha numeric (required)
-     * @return ServiceDocsAccountGetSingle
+     * @return V1AccountAccountidDnsrecordGet200Response
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table border="1">
@@ -574,8 +576,8 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsAccountGetSingle v1AccountAccountidDnsrecordPost(@javax.annotation.Nonnull String accountid) throws ApiException {
-        ApiResponse<ServiceDocsAccountGetSingle> localVarResp = v1AccountAccountidDnsrecordPostWithHttpInfo(accountid);
+    public V1AccountAccountidDnsrecordGet200Response v1AccountAccountidDnsrecordPost(@javax.annotation.Nonnull String accountid) throws ApiException {
+        ApiResponse<V1AccountAccountidDnsrecordGet200Response> localVarResp = v1AccountAccountidDnsrecordPostWithHttpInfo(accountid);
         return localVarResp.getData();
     }
 
@@ -583,7 +585,7 @@ public class AccountApi {
      * Create Account DNS Record
      * Create the DNS record of an account with the help realm in the Route 53 entry.
      * @param accountid Account ID, 32 alpha numeric (required)
-     * @return ApiResponse&lt;ServiceDocsAccountGetSingle&gt;
+     * @return ApiResponse&lt;V1AccountAccountidDnsrecordGet200Response&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table border="1">
@@ -593,9 +595,9 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsAccountGetSingle> v1AccountAccountidDnsrecordPostWithHttpInfo(@javax.annotation.Nonnull String accountid) throws ApiException {
+    public ApiResponse<V1AccountAccountidDnsrecordGet200Response> v1AccountAccountidDnsrecordPostWithHttpInfo(@javax.annotation.Nonnull String accountid) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidDnsrecordPostValidateBeforeCall(accountid, null);
-        Type localVarReturnType = new TypeToken<ServiceDocsAccountGetSingle>(){}.getType();
+        Type localVarReturnType = new TypeToken<V1AccountAccountidDnsrecordGet200Response>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -614,10 +616,10 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidDnsrecordPostAsync(@javax.annotation.Nonnull String accountid, final ApiCallback<ServiceDocsAccountGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidDnsrecordPostAsync(@javax.annotation.Nonnull String accountid, final ApiCallback<V1AccountAccountidDnsrecordGet200Response> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidDnsrecordPostValidateBeforeCall(accountid, _callback);
-        Type localVarReturnType = new TypeToken<ServiceDocsAccountGetSingle>(){}.getType();
+        Type localVarReturnType = new TypeToken<V1AccountAccountidDnsrecordGet200Response>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -678,7 +680,7 @@ public class AccountApi {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
 
-        String[] localVarAuthNames = new String[] { "BearerAuth" };
+        String[] localVarAuthNames = new String[] { "bearerauth" };
         return localVarApiClient.buildCall(basePath, localVarPath, "PUT", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
@@ -703,7 +705,7 @@ public class AccountApi {
      * Toggle the realm DNS record between srv and cname.
      * @param accountid Account ID, 32 alpha numeric (required)
      * @param dnsrecord record type fields with value SRV, CNAME (required)
-     * @return ServiceDocsAccountGetSingle
+     * @return ServiceAPIResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table border="1">
@@ -713,8 +715,8 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ServiceDocsAccountGetSingle v1AccountAccountidDnsrecordPut(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceUpdateRecordTypeForAccount dnsrecord) throws ApiException {
-        ApiResponse<ServiceDocsAccountGetSingle> localVarResp = v1AccountAccountidDnsrecordPutWithHttpInfo(accountid, dnsrecord);
+    public ServiceAPIResponse v1AccountAccountidDnsrecordPut(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceUpdateRecordTypeForAccount dnsrecord) throws ApiException {
+        ApiResponse<ServiceAPIResponse> localVarResp = v1AccountAccountidDnsrecordPutWithHttpInfo(accountid, dnsrecord);
         return localVarResp.getData();
     }
 
@@ -723,7 +725,7 @@ public class AccountApi {
      * Toggle the realm DNS record between srv and cname.
      * @param accountid Account ID, 32 alpha numeric (required)
      * @param dnsrecord record type fields with value SRV, CNAME (required)
-     * @return ApiResponse&lt;ServiceDocsAccountGetSingle&gt;
+     * @return ApiResponse&lt;ServiceAPIResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table border="1">
@@ -733,9 +735,9 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ServiceDocsAccountGetSingle> v1AccountAccountidDnsrecordPutWithHttpInfo(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceUpdateRecordTypeForAccount dnsrecord) throws ApiException {
+    public ApiResponse<ServiceAPIResponse> v1AccountAccountidDnsrecordPutWithHttpInfo(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceUpdateRecordTypeForAccount dnsrecord) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountidDnsrecordPutValidateBeforeCall(accountid, dnsrecord, null);
-        Type localVarReturnType = new TypeToken<ServiceDocsAccountGetSingle>(){}.getType();
+        Type localVarReturnType = new TypeToken<ServiceAPIResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -755,10 +757,10 @@ public class AccountApi {
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call v1AccountAccountidDnsrecordPutAsync(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceUpdateRecordTypeForAccount dnsrecord, final ApiCallback<ServiceDocsAccountGetSingle> _callback) throws ApiException {
+    public okhttp3.Call v1AccountAccountidDnsrecordPutAsync(@javax.annotation.Nonnull String accountid, @javax.annotation.Nonnull ServiceUpdateRecordTypeForAccount dnsrecord, final ApiCallback<ServiceAPIResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountidDnsrecordPutValidateBeforeCall(accountid, dnsrecord, _callback);
-        Type localVarReturnType = new TypeToken<ServiceDocsAccountGetSingle>(){}.getType();
+        Type localVarReturnType = new TypeToken<ServiceAPIResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }
@@ -817,7 +819,7 @@ public class AccountApi {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
 
-        String[] localVarAuthNames = new String[] { "BearerAuth" };
+        String[] localVarAuthNames = new String[] { "bearerauth" };
         return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
@@ -948,7 +950,7 @@ public class AccountApi {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
 
-        String[] localVarAuthNames = new String[] { "BearerAuth" };
+        String[] localVarAuthNames = new String[] { "bearerauth" };
         return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
@@ -1081,7 +1083,7 @@ public class AccountApi {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
 
-        String[] localVarAuthNames = new String[] { "BearerAuth" };
+        String[] localVarAuthNames = new String[] { "bearerauth" };
         return localVarApiClient.buildCall(basePath, localVarPath, "PUT", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
@@ -1222,7 +1224,7 @@ public class AccountApi {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
 
-        String[] localVarAuthNames = new String[] { "BearerAuth" };
+        String[] localVarAuthNames = new String[] { "bearerauth" };
         return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
@@ -1361,7 +1363,7 @@ public class AccountApi {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
 
-        String[] localVarAuthNames = new String[] { "BearerAuth" };
+        String[] localVarAuthNames = new String[] { "bearerauth" };
         return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
@@ -1492,7 +1494,7 @@ public class AccountApi {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
 
-        String[] localVarAuthNames = new String[] { "BearerAuth" };
+        String[] localVarAuthNames = new String[] { "bearerauth" };
         return localVarApiClient.buildCall(basePath, localVarPath, "PUT", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
@@ -1625,7 +1627,7 @@ public class AccountApi {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
 
-        String[] localVarAuthNames = new String[] { "BearerAuth" };
+        String[] localVarAuthNames = new String[] { "bearerauth" };
         return localVarApiClient.buildCall(basePath, localVarPath, "PUT", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
@@ -1762,7 +1764,7 @@ public class AccountApi {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
 
-        String[] localVarAuthNames = new String[] { "BearerAuth" };
+        String[] localVarAuthNames = new String[] { "bearerauth" };
         return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
@@ -1893,7 +1895,7 @@ public class AccountApi {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
 
-        String[] localVarAuthNames = new String[] { "BearerAuth" };
+        String[] localVarAuthNames = new String[] { "bearerauth" };
         return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
@@ -2022,7 +2024,7 @@ public class AccountApi {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
 
-        String[] localVarAuthNames = new String[] { "BearerAuth" };
+        String[] localVarAuthNames = new String[] { "bearerauth" };
         return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 

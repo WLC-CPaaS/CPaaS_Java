@@ -50,7 +50,7 @@ import org.openapitools.client.JSON;
 /**
  * ServiceCampaignPhoneNumberOutput
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.21.0")
 public class ServiceCampaignPhoneNumberOutput {
   public static final String SERIALIZED_NAME_TELEPHONE_NUMBERS = "telephone_numbers";
   @SerializedName(SERIALIZED_NAME_TELEPHONE_NUMBERS)
@@ -145,10 +145,7 @@ public class ServiceCampaignPhoneNumberOutput {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
 
@@ -172,7 +169,7 @@ public class ServiceCampaignPhoneNumberOutput {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ServiceCampaignPhoneNumberOutput.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in ServiceCampaignPhoneNumberOutput is not found in the empty JSON string", ServiceCampaignPhoneNumberOutput.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in ServiceCampaignPhoneNumberOutput is not found in the empty JSON string", ServiceCampaignPhoneNumberOutput.openapiRequiredFields.toString()));
         }
       }
 
@@ -180,13 +177,13 @@ public class ServiceCampaignPhoneNumberOutput {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ServiceCampaignPhoneNumberOutput.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ServiceCampaignPhoneNumberOutput` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ServiceCampaignPhoneNumberOutput` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // ensure the optional json data is an array if present
       if (jsonObj.get("telephone_numbers") != null && !jsonObj.get("telephone_numbers").isJsonNull() && !jsonObj.get("telephone_numbers").isJsonArray()) {
-        throw new IllegalArgumentException(String.format("Expected the field `telephone_numbers` to be an array in the JSON string but got `%s`", jsonObj.get("telephone_numbers").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `telephone_numbers` to be an array in the JSON string but got `%s`", jsonObj.get("telephone_numbers").toString()));
       }
   }
 

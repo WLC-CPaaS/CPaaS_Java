@@ -50,7 +50,7 @@ import org.openapitools.client.JSON;
 /**
  * ServiceVOIPTemporalRuleSetAddEditData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.21.0")
 public class ServiceVOIPTemporalRuleSetAddEditData {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -145,10 +145,7 @@ public class ServiceVOIPTemporalRuleSetAddEditData {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
 
@@ -172,7 +169,7 @@ public class ServiceVOIPTemporalRuleSetAddEditData {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ServiceVOIPTemporalRuleSetAddEditData.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in ServiceVOIPTemporalRuleSetAddEditData is not found in the empty JSON string", ServiceVOIPTemporalRuleSetAddEditData.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in ServiceVOIPTemporalRuleSetAddEditData is not found in the empty JSON string", ServiceVOIPTemporalRuleSetAddEditData.openapiRequiredFields.toString()));
         }
       }
 
@@ -180,23 +177,23 @@ public class ServiceVOIPTemporalRuleSetAddEditData {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ServiceVOIPTemporalRuleSetAddEditData.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ServiceVOIPTemporalRuleSetAddEditData` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ServiceVOIPTemporalRuleSetAddEditData` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
       // check to make sure all required properties/fields are present in the JSON string
       for (String requiredField : ServiceVOIPTemporalRuleSetAddEditData.openapiRequiredFields) {
         if (jsonElement.getAsJsonObject().get(requiredField) == null) {
-          throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if (!jsonObj.get("name").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
       }
       // ensure the optional json data is an array if present
       if (jsonObj.get("temporal_rules") != null && !jsonObj.get("temporal_rules").isJsonNull() && !jsonObj.get("temporal_rules").isJsonArray()) {
-        throw new IllegalArgumentException(String.format("Expected the field `temporal_rules` to be an array in the JSON string but got `%s`", jsonObj.get("temporal_rules").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `temporal_rules` to be an array in the JSON string but got `%s`", jsonObj.get("temporal_rules").toString()));
       }
   }
 

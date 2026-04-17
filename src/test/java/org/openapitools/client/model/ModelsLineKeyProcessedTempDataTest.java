@@ -46,14 +46,6 @@ public class ModelsLineKeyProcessedTempDataTest {
     }
 
     /**
-     * Test the property 'line'
-     */
-    @Test
-    public void lineTest() {
-        // TODO: test line
-    }
-
-    /**
      * Test the property 'type'
      */
     @Test

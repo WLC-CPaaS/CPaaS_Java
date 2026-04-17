@@ -56,7 +56,7 @@ import org.openapitools.client.JSON;
 /**
  * ModelsDeviceOutputFull
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.21.0")
 public class ModelsDeviceOutputFull {
   public static final String SERIALIZED_NAME_CALL_FORWARD = "call_forward";
   @SerializedName(SERIALIZED_NAME_CALL_FORWARD)
@@ -455,10 +455,7 @@ public class ModelsDeviceOutputFull {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
 
@@ -482,7 +479,7 @@ public class ModelsDeviceOutputFull {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ModelsDeviceOutputFull.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in ModelsDeviceOutputFull is not found in the empty JSON string", ModelsDeviceOutputFull.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in ModelsDeviceOutputFull is not found in the empty JSON string", ModelsDeviceOutputFull.openapiRequiredFields.toString()));
         }
       }
 
@@ -490,7 +487,7 @@ public class ModelsDeviceOutputFull {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ModelsDeviceOutputFull.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ModelsDeviceOutputFull` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ModelsDeviceOutputFull` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -507,17 +504,17 @@ public class ModelsDeviceOutputFull {
         ModelsDeviceOutputFullCallerid.validateJsonElement(jsonObj.get("caller_id"));
       }
       if ((jsonObj.get("device_type") != null && !jsonObj.get("device_type").isJsonNull()) && !jsonObj.get("device_type").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `device_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("device_type").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `device_type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("device_type").toString()));
       }
       // validate the optional field `do_not_disturb`
       if (jsonObj.get("do_not_disturb") != null && !jsonObj.get("do_not_disturb").isJsonNull()) {
         ModelsVOIPSharedDoNotDisturb.validateJsonElement(jsonObj.get("do_not_disturb"));
       }
       if ((jsonObj.get("id") != null && !jsonObj.get("id").isJsonNull()) && !jsonObj.get("id").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("id").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("id").toString()));
       }
       if ((jsonObj.get("mac_address") != null && !jsonObj.get("mac_address").isJsonNull()) && !jsonObj.get("mac_address").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `mac_address` to be a primitive type in the JSON string but got `%s`", jsonObj.get("mac_address").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `mac_address` to be a primitive type in the JSON string but got `%s`", jsonObj.get("mac_address").toString()));
       }
       // validate the optional field `media`
       if (jsonObj.get("media") != null && !jsonObj.get("media").isJsonNull()) {
@@ -528,10 +525,10 @@ public class ModelsDeviceOutputFull {
         ModelsMusicOnHold.validateJsonElement(jsonObj.get("music_on_hold"));
       }
       if ((jsonObj.get("name") != null && !jsonObj.get("name").isJsonNull()) && !jsonObj.get("name").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
       }
       if ((jsonObj.get("owner_id") != null && !jsonObj.get("owner_id").isJsonNull()) && !jsonObj.get("owner_id").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `owner_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("owner_id").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `owner_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("owner_id").toString()));
       }
       // validate the optional field `provision`
       if (jsonObj.get("provision") != null && !jsonObj.get("provision").isJsonNull()) {

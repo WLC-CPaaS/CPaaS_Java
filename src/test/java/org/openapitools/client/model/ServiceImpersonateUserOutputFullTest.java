@@ -20,7 +20,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
-import org.openapitools.client.model.ServiceImpersonatedUserInfo;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -39,75 +38,11 @@ public class ServiceImpersonateUserOutputFullTest {
     }
 
     /**
-     * Test the property 'accountId'
-     */
-    @Test
-    public void accountIdTest() {
-        // TODO: test accountId
-    }
-
-    /**
-     * Test the property 'accountName'
-     */
-    @Test
-    public void accountNameTest() {
-        // TODO: test accountName
-    }
-
-    /**
      * Test the property 'authToken'
      */
     @Test
     public void authTokenTest() {
         // TODO: test authToken
-    }
-
-    /**
-     * Test the property 'clusterId'
-     */
-    @Test
-    public void clusterIdTest() {
-        // TODO: test clusterId
-    }
-
-    /**
-     * Test the property 'isMasterAccount'
-     */
-    @Test
-    public void isMasterAccountTest() {
-        // TODO: test isMasterAccount
-    }
-
-    /**
-     * Test the property 'isReseller'
-     */
-    @Test
-    public void isResellerTest() {
-        // TODO: test isReseller
-    }
-
-    /**
-     * Test the property 'ownerId'
-     */
-    @Test
-    public void ownerIdTest() {
-        // TODO: test ownerId
-    }
-
-    /**
-     * Test the property 'resellerId'
-     */
-    @Test
-    public void resellerIdTest() {
-        // TODO: test resellerId
-    }
-
-    /**
-     * Test the property 'userInfo'
-     */
-    @Test
-    public void userInfoTest() {
-        // TODO: test userInfo
     }
 
 }

@@ -48,7 +48,7 @@ import org.openapitools.client.JSON;
 /**
  * ServiceDocsPhonenumberAssignPayload
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.21.0")
 public class ServiceDocsPhonenumberAssignPayload {
   public static final String SERIALIZED_NAME_PHONENUMBER = "phonenumber";
   @SerializedName(SERIALIZED_NAME_PHONENUMBER)
@@ -135,10 +135,7 @@ public class ServiceDocsPhonenumberAssignPayload {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
 
@@ -162,7 +159,7 @@ public class ServiceDocsPhonenumberAssignPayload {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ServiceDocsPhonenumberAssignPayload.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in ServiceDocsPhonenumberAssignPayload is not found in the empty JSON string", ServiceDocsPhonenumberAssignPayload.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in ServiceDocsPhonenumberAssignPayload is not found in the empty JSON string", ServiceDocsPhonenumberAssignPayload.openapiRequiredFields.toString()));
         }
       }
 
@@ -170,15 +167,15 @@ public class ServiceDocsPhonenumberAssignPayload {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ServiceDocsPhonenumberAssignPayload.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ServiceDocsPhonenumberAssignPayload` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ServiceDocsPhonenumberAssignPayload` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("phonenumber") != null && !jsonObj.get("phonenumber").isJsonNull()) && !jsonObj.get("phonenumber").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `phonenumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("phonenumber").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `phonenumber` to be a primitive type in the JSON string but got `%s`", jsonObj.get("phonenumber").toString()));
       }
       if ((jsonObj.get("to_account") != null && !jsonObj.get("to_account").isJsonNull()) && !jsonObj.get("to_account").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `to_account` to be a primitive type in the JSON string but got `%s`", jsonObj.get("to_account").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `to_account` to be a primitive type in the JSON string but got `%s`", jsonObj.get("to_account").toString()));
       }
   }
 

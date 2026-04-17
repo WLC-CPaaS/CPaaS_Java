@@ -52,7 +52,7 @@ import org.openapitools.client.JSON;
 /**
  * ServiceStoragePlanDatabaseProperties
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.21.0")
 public class ServiceStoragePlanDatabaseProperties {
   public static final String SERIALIZED_NAME_CREATE_OPTIONS = "create_options";
   @SerializedName(SERIALIZED_NAME_CREATE_OPTIONS)
@@ -155,10 +155,7 @@ public class ServiceStoragePlanDatabaseProperties {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
 
@@ -182,7 +179,7 @@ public class ServiceStoragePlanDatabaseProperties {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ServiceStoragePlanDatabaseProperties.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in ServiceStoragePlanDatabaseProperties is not found in the empty JSON string", ServiceStoragePlanDatabaseProperties.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in ServiceStoragePlanDatabaseProperties is not found in the empty JSON string", ServiceStoragePlanDatabaseProperties.openapiRequiredFields.toString()));
         }
       }
 
@@ -190,13 +187,13 @@ public class ServiceStoragePlanDatabaseProperties {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ServiceStoragePlanDatabaseProperties.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ServiceStoragePlanDatabaseProperties` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ServiceStoragePlanDatabaseProperties` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // ensure the optional json data is an array if present
       if (jsonObj.get("names") != null && !jsonObj.get("names").isJsonNull() && !jsonObj.get("names").isJsonArray()) {
-        throw new IllegalArgumentException(String.format("Expected the field `names` to be an array in the JSON string but got `%s`", jsonObj.get("names").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `names` to be an array in the JSON string but got `%s`", jsonObj.get("names").toString()));
       }
   }
 

@@ -51,7 +51,7 @@ import org.openapitools.client.JSON;
 /**
  * ModelsConfigFileParameter
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.21.0")
 public class ModelsConfigFileParameter {
   public static final String SERIALIZED_NAME_EXTENSION = "extension";
   @SerializedName(SERIALIZED_NAME_EXTENSION)
@@ -380,10 +380,7 @@ public class ModelsConfigFileParameter {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
 
@@ -407,7 +404,7 @@ public class ModelsConfigFileParameter {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ModelsConfigFileParameter.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in ModelsConfigFileParameter is not found in the empty JSON string", ModelsConfigFileParameter.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in ModelsConfigFileParameter is not found in the empty JSON string", ModelsConfigFileParameter.openapiRequiredFields.toString()));
         }
       }
 
@@ -415,28 +412,28 @@ public class ModelsConfigFileParameter {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ModelsConfigFileParameter.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ModelsConfigFileParameter` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ModelsConfigFileParameter` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("extension") != null && !jsonObj.get("extension").isJsonNull()) && !jsonObj.get("extension").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `extension` to be a primitive type in the JSON string but got `%s`", jsonObj.get("extension").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `extension` to be a primitive type in the JSON string but got `%s`", jsonObj.get("extension").toString()));
       }
       if ((jsonObj.get("https_host") != null && !jsonObj.get("https_host").isJsonNull()) && !jsonObj.get("https_host").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `https_host` to be a primitive type in the JSON string but got `%s`", jsonObj.get("https_host").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `https_host` to be a primitive type in the JSON string but got `%s`", jsonObj.get("https_host").toString()));
       }
       if ((jsonObj.get("https_password") != null && !jsonObj.get("https_password").isJsonNull()) && !jsonObj.get("https_password").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `https_password` to be a primitive type in the JSON string but got `%s`", jsonObj.get("https_password").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `https_password` to be a primitive type in the JSON string but got `%s`", jsonObj.get("https_password").toString()));
       }
       if ((jsonObj.get("https_username") != null && !jsonObj.get("https_username").isJsonNull()) && !jsonObj.get("https_username").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `https_username` to be a primitive type in the JSON string but got `%s`", jsonObj.get("https_username").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `https_username` to be a primitive type in the JSON string but got `%s`", jsonObj.get("https_username").toString()));
       }
       if (jsonObj.get("line_keys") != null && !jsonObj.get("line_keys").isJsonNull()) {
         JsonArray jsonArraylineKeys = jsonObj.getAsJsonArray("line_keys");
         if (jsonArraylineKeys != null) {
           // ensure the json data is an array
           if (!jsonObj.get("line_keys").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `line_keys` to be an array in the JSON string but got `%s`", jsonObj.get("line_keys").toString()));
+            throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `line_keys` to be an array in the JSON string but got `%s`", jsonObj.get("line_keys").toString()));
           }
 
           // validate the optional field `line_keys` (array)
@@ -446,22 +443,22 @@ public class ModelsConfigFileParameter {
         }
       }
       if ((jsonObj.get("mac_address") != null && !jsonObj.get("mac_address").isJsonNull()) && !jsonObj.get("mac_address").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `mac_address` to be a primitive type in the JSON string but got `%s`", jsonObj.get("mac_address").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `mac_address` to be a primitive type in the JSON string but got `%s`", jsonObj.get("mac_address").toString()));
       }
       if ((jsonObj.get("realm") != null && !jsonObj.get("realm").isJsonNull()) && !jsonObj.get("realm").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `realm` to be a primitive type in the JSON string but got `%s`", jsonObj.get("realm").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `realm` to be a primitive type in the JSON string but got `%s`", jsonObj.get("realm").toString()));
       }
       if ((jsonObj.get("sip_password") != null && !jsonObj.get("sip_password").isJsonNull()) && !jsonObj.get("sip_password").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `sip_password` to be a primitive type in the JSON string but got `%s`", jsonObj.get("sip_password").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `sip_password` to be a primitive type in the JSON string but got `%s`", jsonObj.get("sip_password").toString()));
       }
       if ((jsonObj.get("sip_username") != null && !jsonObj.get("sip_username").isJsonNull()) && !jsonObj.get("sip_username").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `sip_username` to be a primitive type in the JSON string but got `%s`", jsonObj.get("sip_username").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `sip_username` to be a primitive type in the JSON string but got `%s`", jsonObj.get("sip_username").toString()));
       }
       if ((jsonObj.get("timezone") != null && !jsonObj.get("timezone").isJsonNull()) && !jsonObj.get("timezone").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `timezone` to be a primitive type in the JSON string but got `%s`", jsonObj.get("timezone").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `timezone` to be a primitive type in the JSON string but got `%s`", jsonObj.get("timezone").toString()));
       }
       if ((jsonObj.get("voicemail_box_number") != null && !jsonObj.get("voicemail_box_number").isJsonNull()) && !jsonObj.get("voicemail_box_number").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `voicemail_box_number` to be a primitive type in the JSON string but got `%s`", jsonObj.get("voicemail_box_number").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `voicemail_box_number` to be a primitive type in the JSON string but got `%s`", jsonObj.get("voicemail_box_number").toString()));
       }
   }
 

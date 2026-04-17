@@ -49,7 +49,7 @@ import org.openapitools.client.JSON;
 /**
  * ServiceStoragePlanDatabaseDocument
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.21.0")
 public class ServiceStoragePlanDatabaseDocument {
   public static final String SERIALIZED_NAME_ATTACHMENTS = "attachments";
   @SerializedName(SERIALIZED_NAME_ATTACHMENTS)
@@ -136,10 +136,7 @@ public class ServiceStoragePlanDatabaseDocument {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
 
@@ -163,7 +160,7 @@ public class ServiceStoragePlanDatabaseDocument {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ServiceStoragePlanDatabaseDocument.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in ServiceStoragePlanDatabaseDocument is not found in the empty JSON string", ServiceStoragePlanDatabaseDocument.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in ServiceStoragePlanDatabaseDocument is not found in the empty JSON string", ServiceStoragePlanDatabaseDocument.openapiRequiredFields.toString()));
         }
       }
 
@@ -171,7 +168,7 @@ public class ServiceStoragePlanDatabaseDocument {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ServiceStoragePlanDatabaseDocument.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ServiceStoragePlanDatabaseDocument` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ServiceStoragePlanDatabaseDocument` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -180,7 +177,7 @@ public class ServiceStoragePlanDatabaseDocument {
         ServiceStoragePlanDatabaseAttachment.validateJsonElement(jsonObj.get("attachments"));
       }
       if ((jsonObj.get("connection") != null && !jsonObj.get("connection").isJsonNull()) && !jsonObj.get("connection").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `connection` to be a primitive type in the JSON string but got `%s`", jsonObj.get("connection").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `connection` to be a primitive type in the JSON string but got `%s`", jsonObj.get("connection").toString()));
       }
   }
 

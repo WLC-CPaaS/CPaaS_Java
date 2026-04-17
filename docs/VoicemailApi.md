@@ -10,10 +10,12 @@ All URIs are relative to *http://api.beta.cpaaslabs.net*
 | [**v1AccountAccountIDVoicemailVoicemailIDGet**](VoicemailApi.md#v1AccountAccountIDVoicemailVoicemailIDGet) | **GET** /v1/account/{accountID}/voicemail/{voicemailID} | Get Voicemail Box Details |
 | [**v1AccountAccountIDVoicemailVoicemailIDMessageGet**](VoicemailApi.md#v1AccountAccountIDVoicemailVoicemailIDMessageGet) | **GET** /v1/account/{accountID}/voicemail/{voicemailID}/message | Get Voicemail Message List |
 | [**v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDDelete**](VoicemailApi.md#v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDDelete) | **DELETE** /v1/account/{accountID}/voicemail/{voicemailID}/message/{messageID} | Delete Voicemail Message |
+| [**v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFileGet**](VoicemailApi.md#v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFileGet) | **GET** /v1/account/{accountID}/voicemail/{voicemailID}/message/{messageID}/file | Get Voicemail Message File |
+| [**v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFilePost**](VoicemailApi.md#v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFilePost) | **POST** /v1/account/{accountID}/voicemail/{voicemailID}/message/{messageID}/file | Add Voicemail Message File |
 | [**v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDGet**](VoicemailApi.md#v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDGet) | **GET** /v1/account/{accountID}/voicemail/{voicemailID}/message/{messageID} | Get Voicemail Message Details |
 | [**v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDPut**](VoicemailApi.md#v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDPut) | **PUT** /v1/account/{accountID}/voicemail/{voicemailID}/message/{messageID} | Update Voicemail Message |
-| [**v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGet**](VoicemailApi.md#v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGet) | **GET** /v1/account/{accountID}/voicemail/{voicemailID}/message/{messageID}/raw | Get Voicemail Message File |
-| [**v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPost**](VoicemailApi.md#v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPost) | **POST** /v1/account/{accountID}/voicemail/{voicemailID}/message/{messageID}/raw | Add Voicemail Message File |
+| [**v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGet**](VoicemailApi.md#v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGet) | **GET** /v1/account/{accountID}/voicemail/{voicemailID}/message/{messageID}/raw | Get Voicemail Message File (Deprecated) |
+| [**v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPost**](VoicemailApi.md#v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPost) | **POST** /v1/account/{accountID}/voicemail/{voicemailID}/message/{messageID}/raw | Add Voicemail Message File (Deprecated) |
 | [**v1AccountAccountIDVoicemailVoicemailIDMessagePost**](VoicemailApi.md#v1AccountAccountIDVoicemailVoicemailIDMessagePost) | **POST** /v1/account/{accountID}/voicemail/{voicemailID}/message | Create Voicemail Message |
 | [**v1AccountAccountIDVoicemailVoicemailIDPut**](VoicemailApi.md#v1AccountAccountIDVoicemailVoicemailIDPut) | **PUT** /v1/account/{accountID}/voicemail/{voicemailID} | Update Voicemail Box |
 
@@ -41,11 +43,11 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://api.beta.cpaaslabs.net");
     
-    // Configure API key authorization: BearerAuth
-    ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
-    BearerAuth.setApiKey("YOUR API KEY");
+    // Configure API key authorization: bearerauth
+    ApiKeyAuth bearerauth = (ApiKeyAuth) defaultClient.getAuthentication("bearerauth");
+    bearerauth.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //BearerAuth.setApiKeyPrefix("Token");
+    //bearerauth.setApiKeyPrefix("Token");
 
     VoicemailApi apiInstance = new VoicemailApi(defaultClient);
     String accountID = "accountID_example"; // String | Account ID, 32 alpha numeric
@@ -79,7 +81,7 @@ public class Example {
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[bearerauth](../README.md#bearerauth)
 
 ### HTTP request headers
 
@@ -115,11 +117,11 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://api.beta.cpaaslabs.net");
     
-    // Configure API key authorization: BearerAuth
-    ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
-    BearerAuth.setApiKey("YOUR API KEY");
+    // Configure API key authorization: bearerauth
+    ApiKeyAuth bearerauth = (ApiKeyAuth) defaultClient.getAuthentication("bearerauth");
+    bearerauth.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //BearerAuth.setApiKeyPrefix("Token");
+    //bearerauth.setApiKeyPrefix("Token");
 
     VoicemailApi apiInstance = new VoicemailApi(defaultClient);
     String accountID = "accountID_example"; // String | account ID, 32 alphanumeric
@@ -151,7 +153,7 @@ public class Example {
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[bearerauth](../README.md#bearerauth)
 
 ### HTTP request headers
 
@@ -187,11 +189,11 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://api.beta.cpaaslabs.net");
     
-    // Configure API key authorization: BearerAuth
-    ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
-    BearerAuth.setApiKey("YOUR API KEY");
+    // Configure API key authorization: bearerauth
+    ApiKeyAuth bearerauth = (ApiKeyAuth) defaultClient.getAuthentication("bearerauth");
+    bearerauth.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //BearerAuth.setApiKeyPrefix("Token");
+    //bearerauth.setApiKeyPrefix("Token");
 
     VoicemailApi apiInstance = new VoicemailApi(defaultClient);
     String accountID = "accountID_example"; // String | Account ID, 32 alpha numeric
@@ -223,7 +225,7 @@ public class Example {
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[bearerauth](../README.md#bearerauth)
 
 ### HTTP request headers
 
@@ -259,11 +261,11 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://api.beta.cpaaslabs.net");
     
-    // Configure API key authorization: BearerAuth
-    ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
-    BearerAuth.setApiKey("YOUR API KEY");
+    // Configure API key authorization: bearerauth
+    ApiKeyAuth bearerauth = (ApiKeyAuth) defaultClient.getAuthentication("bearerauth");
+    bearerauth.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //BearerAuth.setApiKeyPrefix("Token");
+    //bearerauth.setApiKeyPrefix("Token");
 
     VoicemailApi apiInstance = new VoicemailApi(defaultClient);
     String accountID = "accountID_example"; // String | Account ID, 32 alpha numeric
@@ -295,7 +297,7 @@ public class Example {
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[bearerauth](../README.md#bearerauth)
 
 ### HTTP request headers
 
@@ -331,11 +333,11 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://api.beta.cpaaslabs.net");
     
-    // Configure API key authorization: BearerAuth
-    ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
-    BearerAuth.setApiKey("YOUR API KEY");
+    // Configure API key authorization: bearerauth
+    ApiKeyAuth bearerauth = (ApiKeyAuth) defaultClient.getAuthentication("bearerauth");
+    bearerauth.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //BearerAuth.setApiKeyPrefix("Token");
+    //bearerauth.setApiKeyPrefix("Token");
 
     VoicemailApi apiInstance = new VoicemailApi(defaultClient);
     String accountID = "accountID_example"; // String | Account ID, 32 alpha numeric
@@ -371,7 +373,7 @@ public class Example {
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[bearerauth](../README.md#bearerauth)
 
 ### HTTP request headers
 
@@ -407,11 +409,11 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://api.beta.cpaaslabs.net");
     
-    // Configure API key authorization: BearerAuth
-    ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
-    BearerAuth.setApiKey("YOUR API KEY");
+    // Configure API key authorization: bearerauth
+    ApiKeyAuth bearerauth = (ApiKeyAuth) defaultClient.getAuthentication("bearerauth");
+    bearerauth.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //BearerAuth.setApiKeyPrefix("Token");
+    //bearerauth.setApiKeyPrefix("Token");
 
     VoicemailApi apiInstance = new VoicemailApi(defaultClient);
     String accountID = "accountID_example"; // String | Account ID, 32 alpha numeric
@@ -445,11 +447,161 @@ public class Example {
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[bearerauth](../README.md#bearerauth)
 
 ### HTTP request headers
 
  - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | OK |  -  |
+| **400** | Bad Request |  -  |
+
+<a id="v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFileGet"></a>
+# **v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFileGet**
+> File v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFileGet(accountID, voicemailID, messageID)
+
+Get Voicemail Message File
+
+Get the original audio content of a specific voicemail message identified by its unique ID within an account&#39;s voicemail box. URL Param \&quot;voicemailID\&quot; is a unique 32-character alphanumeric identifier assigned by the system, which refers to a specific voicemail box. URL Param \&quot;messageID\&quot; is a unique 32-character alphanumeric identifier assigned by the system, which refers to a specific message within a voicemail box.
+
+### Example
+```java
+// Import classes:
+import org.openapitools.client.ApiClient;
+import org.openapitools.client.ApiException;
+import org.openapitools.client.Configuration;
+import org.openapitools.client.auth.*;
+import org.openapitools.client.models.*;
+import org.openapitools.client.api.VoicemailApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("http://api.beta.cpaaslabs.net");
+    
+    // Configure API key authorization: bearerauth
+    ApiKeyAuth bearerauth = (ApiKeyAuth) defaultClient.getAuthentication("bearerauth");
+    bearerauth.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //bearerauth.setApiKeyPrefix("Token");
+
+    VoicemailApi apiInstance = new VoicemailApi(defaultClient);
+    String accountID = "accountID_example"; // String | Account ID, unique 32-character alphanumeric identifier
+    String voicemailID = "voicemailID_example"; // String | Voicemail Box ID, unique 32-character alphanumeric identifier
+    String messageID = "messageID_example"; // String | Message ID, unique 32-character alphanumeric identifier
+    try {
+      File result = apiInstance.v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFileGet(accountID, voicemailID, messageID);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling VoicemailApi#v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFileGet");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **accountID** | **String**| Account ID, unique 32-character alphanumeric identifier | |
+| **voicemailID** | **String**| Voicemail Box ID, unique 32-character alphanumeric identifier | |
+| **messageID** | **String**| Message ID, unique 32-character alphanumeric identifier | |
+
+### Return type
+
+[**File**](File.md)
+
+### Authorization
+
+[bearerauth](../README.md#bearerauth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/octet-stream
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | OK |  -  |
+| **400** | Bad Request |  -  |
+
+<a id="v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFilePost"></a>
+# **v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFilePost**
+> Map&lt;String, Object&gt; v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFilePost(accountID, voicemailID, messageID, _file)
+
+Add Voicemail Message File
+
+Associate an audio recording file with the voicemail to fully complete the message.
+
+### Example
+```java
+// Import classes:
+import org.openapitools.client.ApiClient;
+import org.openapitools.client.ApiException;
+import org.openapitools.client.Configuration;
+import org.openapitools.client.auth.*;
+import org.openapitools.client.models.*;
+import org.openapitools.client.api.VoicemailApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("http://api.beta.cpaaslabs.net");
+    
+    // Configure API key authorization: bearerauth
+    ApiKeyAuth bearerauth = (ApiKeyAuth) defaultClient.getAuthentication("bearerauth");
+    bearerauth.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //bearerauth.setApiKeyPrefix("Token");
+
+    VoicemailApi apiInstance = new VoicemailApi(defaultClient);
+    String accountID = "accountID_example"; // String | Account ID, 32 alphanumeric characters
+    String voicemailID = "voicemailID_example"; // String | Voicemail ID, 32 alphanumeric characters
+    String messageID = "messageID_example"; // String | Message ID, 32 alphanumeric characters
+    File _file = new File("/path/to/file"); // File | Audio file to upload
+    try {
+      Map<String, Object> result = apiInstance.v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFilePost(accountID, voicemailID, messageID, _file);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling VoicemailApi#v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFilePost");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **accountID** | **String**| Account ID, 32 alphanumeric characters | |
+| **voicemailID** | **String**| Voicemail ID, 32 alphanumeric characters | |
+| **messageID** | **String**| Message ID, 32 alphanumeric characters | |
+| **_file** | **File**| Audio file to upload | |
+
+### Return type
+
+**Map&lt;String, Object&gt;**
+
+### Authorization
+
+[bearerauth](../README.md#bearerauth)
+
+### HTTP request headers
+
+ - **Content-Type**: multipart/form-data
  - **Accept**: application/json
 
 ### HTTP response details
@@ -481,11 +633,11 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://api.beta.cpaaslabs.net");
     
-    // Configure API key authorization: BearerAuth
-    ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
-    BearerAuth.setApiKey("YOUR API KEY");
+    // Configure API key authorization: bearerauth
+    ApiKeyAuth bearerauth = (ApiKeyAuth) defaultClient.getAuthentication("bearerauth");
+    bearerauth.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //BearerAuth.setApiKeyPrefix("Token");
+    //bearerauth.setApiKeyPrefix("Token");
 
     VoicemailApi apiInstance = new VoicemailApi(defaultClient);
     String accountID = "accountID_example"; // String | Account ID, 32 alpha numeric
@@ -519,7 +671,7 @@ public class Example {
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[bearerauth](../README.md#bearerauth)
 
 ### HTTP request headers
 
@@ -555,11 +707,11 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://api.beta.cpaaslabs.net");
     
-    // Configure API key authorization: BearerAuth
-    ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
-    BearerAuth.setApiKey("YOUR API KEY");
+    // Configure API key authorization: bearerauth
+    ApiKeyAuth bearerauth = (ApiKeyAuth) defaultClient.getAuthentication("bearerauth");
+    bearerauth.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //BearerAuth.setApiKeyPrefix("Token");
+    //bearerauth.setApiKeyPrefix("Token");
 
     VoicemailApi apiInstance = new VoicemailApi(defaultClient);
     String accountID = "accountID_example"; // String | Account ID, 32 alpha numeric
@@ -595,7 +747,7 @@ public class Example {
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[bearerauth](../README.md#bearerauth)
 
 ### HTTP request headers
 
@@ -612,7 +764,7 @@ public class Example {
 # **v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGet**
 > File v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGet(accountID, voicemailID, messageID)
 
-Get Voicemail Message File
+Get Voicemail Message File (Deprecated)
 
 Get the original audio content of a specific voicemail message identified by its unique ID within an account&#39;s voicemail box. URL Param \&quot;voicemailID\&quot; is a unique 32-character alphanumeric identifier assigned by the system, which refers to a specific voicemail box. URL Param \&quot;messageID\&quot; is a unique 32-character alphanumeric identifier assigned by the system, which refers to a specific message within a voicemail box.
 
@@ -622,7 +774,6 @@ Get the original audio content of a specific voicemail message identified by its
 import org.openapitools.client.ApiClient;
 import org.openapitools.client.ApiException;
 import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
 import org.openapitools.client.models.*;
 import org.openapitools.client.api.VoicemailApi;
 
@@ -630,12 +781,6 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://api.beta.cpaaslabs.net");
-    
-    // Configure API key authorization: BearerAuth
-    ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
-    BearerAuth.setApiKey("YOUR API KEY");
-    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //BearerAuth.setApiKeyPrefix("Token");
 
     VoicemailApi apiInstance = new VoicemailApi(defaultClient);
     String accountID = "accountID_example"; // String | Account ID, unique 32-character alphanumeric identifier
@@ -669,7 +814,7 @@ public class Example {
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -686,7 +831,7 @@ public class Example {
 # **v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPost**
 > Map&lt;String, Object&gt; v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPost(accountID, voicemailID, messageID, _file)
 
-Add Voicemail Message File
+Add Voicemail Message File (Deprecated)
 
 Associate an audio recording file with the voicemail to fully complete the message.
 
@@ -696,7 +841,6 @@ Associate an audio recording file with the voicemail to fully complete the messa
 import org.openapitools.client.ApiClient;
 import org.openapitools.client.ApiException;
 import org.openapitools.client.Configuration;
-import org.openapitools.client.auth.*;
 import org.openapitools.client.models.*;
 import org.openapitools.client.api.VoicemailApi;
 
@@ -704,12 +848,6 @@ public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://api.beta.cpaaslabs.net");
-    
-    // Configure API key authorization: BearerAuth
-    ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
-    BearerAuth.setApiKey("YOUR API KEY");
-    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //BearerAuth.setApiKeyPrefix("Token");
 
     VoicemailApi apiInstance = new VoicemailApi(defaultClient);
     String accountID = "accountID_example"; // String | Account ID, 32 alphanumeric characters
@@ -745,7 +883,7 @@ public class Example {
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+No authorization required
 
 ### HTTP request headers
 
@@ -781,11 +919,11 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://api.beta.cpaaslabs.net");
     
-    // Configure API key authorization: BearerAuth
-    ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
-    BearerAuth.setApiKey("YOUR API KEY");
+    // Configure API key authorization: bearerauth
+    ApiKeyAuth bearerauth = (ApiKeyAuth) defaultClient.getAuthentication("bearerauth");
+    bearerauth.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //BearerAuth.setApiKeyPrefix("Token");
+    //bearerauth.setApiKeyPrefix("Token");
 
     VoicemailApi apiInstance = new VoicemailApi(defaultClient);
     String accountID = "accountID_example"; // String | account ID, 32 alphanumeric
@@ -819,7 +957,7 @@ public class Example {
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[bearerauth](../README.md#bearerauth)
 
 ### HTTP request headers
 
@@ -855,11 +993,11 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://api.beta.cpaaslabs.net");
     
-    // Configure API key authorization: BearerAuth
-    ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
-    BearerAuth.setApiKey("YOUR API KEY");
+    // Configure API key authorization: bearerauth
+    ApiKeyAuth bearerauth = (ApiKeyAuth) defaultClient.getAuthentication("bearerauth");
+    bearerauth.setApiKey("YOUR API KEY");
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //BearerAuth.setApiKeyPrefix("Token");
+    //bearerauth.setApiKeyPrefix("Token");
 
     VoicemailApi apiInstance = new VoicemailApi(defaultClient);
     String accountID = "accountID_example"; // String | Account ID, 32 alpha numeric
@@ -893,7 +1031,7 @@ public class Example {
 
 ### Authorization
 
-[BearerAuth](../README.md#BearerAuth)
+[bearerauth](../README.md#bearerauth)
 
 ### HTTP request headers
 

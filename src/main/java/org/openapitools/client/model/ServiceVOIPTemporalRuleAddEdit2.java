@@ -50,7 +50,7 @@ import org.openapitools.client.JSON;
 /**
  * ServiceVOIPTemporalRuleAddEdit2
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.21.0")
 public class ServiceVOIPTemporalRuleAddEdit2 {
   /**
    * Gets or Sets cycle
@@ -434,8 +434,6 @@ public class ServiceVOIPTemporalRuleAddEdit2 {
 
   /**
    * Get timeWindowStart
-   * minimum: 0
-   * maximum: 86400
    * @return timeWindowStart
    */
   @javax.annotation.Nullable
@@ -474,8 +472,6 @@ public class ServiceVOIPTemporalRuleAddEdit2 {
 
   /**
    * Get timeWindowStop
-   * minimum: 0
-   * maximum: 86400
    * @return timeWindowStop
    */
   @javax.annotation.Nullable
@@ -592,10 +588,7 @@ public class ServiceVOIPTemporalRuleAddEdit2 {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
 
@@ -619,7 +612,7 @@ public class ServiceVOIPTemporalRuleAddEdit2 {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ServiceVOIPTemporalRuleAddEdit2.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in ServiceVOIPTemporalRuleAddEdit2 is not found in the empty JSON string", ServiceVOIPTemporalRuleAddEdit2.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in ServiceVOIPTemporalRuleAddEdit2 is not found in the empty JSON string", ServiceVOIPTemporalRuleAddEdit2.openapiRequiredFields.toString()));
         }
       }
 
@@ -627,48 +620,48 @@ public class ServiceVOIPTemporalRuleAddEdit2 {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ServiceVOIPTemporalRuleAddEdit2.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ServiceVOIPTemporalRuleAddEdit2` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ServiceVOIPTemporalRuleAddEdit2` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
       // check to make sure all required properties/fields are present in the JSON string
       for (String requiredField : ServiceVOIPTemporalRuleAddEdit2.openapiRequiredFields) {
         if (jsonElement.getAsJsonObject().get(requiredField) == null) {
-          throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if (!jsonObj.get("cycle").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `cycle` to be a primitive type in the JSON string but got `%s`", jsonObj.get("cycle").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `cycle` to be a primitive type in the JSON string but got `%s`", jsonObj.get("cycle").toString()));
       }
       // validate the required field `cycle`
       CycleEnum.validateJsonElement(jsonObj.get("cycle"));
       // ensure the optional json data is an array if present
       if (jsonObj.get("days") != null && !jsonObj.get("days").isJsonNull() && !jsonObj.get("days").isJsonArray()) {
-        throw new IllegalArgumentException(String.format("Expected the field `days` to be an array in the JSON string but got `%s`", jsonObj.get("days").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `days` to be an array in the JSON string but got `%s`", jsonObj.get("days").toString()));
       }
       if (!jsonObj.get("name").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
       }
       if ((jsonObj.get("ordinal") != null && !jsonObj.get("ordinal").isJsonNull()) && !jsonObj.get("ordinal").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `ordinal` to be a primitive type in the JSON string but got `%s`", jsonObj.get("ordinal").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `ordinal` to be a primitive type in the JSON string but got `%s`", jsonObj.get("ordinal").toString()));
       }
       // validate the optional field `ordinal`
       if (jsonObj.get("ordinal") != null && !jsonObj.get("ordinal").isJsonNull()) {
         OrdinalEnum.validateJsonElement(jsonObj.get("ordinal"));
       }
       if ((jsonObj.get("start_date_req") != null && !jsonObj.get("start_date_req").isJsonNull()) && !jsonObj.get("start_date_req").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `start_date_req` to be a primitive type in the JSON string but got `%s`", jsonObj.get("start_date_req").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `start_date_req` to be a primitive type in the JSON string but got `%s`", jsonObj.get("start_date_req").toString()));
       }
       if ((jsonObj.get("time_window_start_req") != null && !jsonObj.get("time_window_start_req").isJsonNull()) && !jsonObj.get("time_window_start_req").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `time_window_start_req` to be a primitive type in the JSON string but got `%s`", jsonObj.get("time_window_start_req").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `time_window_start_req` to be a primitive type in the JSON string but got `%s`", jsonObj.get("time_window_start_req").toString()));
       }
       if ((jsonObj.get("time_window_stop_req") != null && !jsonObj.get("time_window_stop_req").isJsonNull()) && !jsonObj.get("time_window_stop_req").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `time_window_stop_req` to be a primitive type in the JSON string but got `%s`", jsonObj.get("time_window_stop_req").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `time_window_stop_req` to be a primitive type in the JSON string but got `%s`", jsonObj.get("time_window_stop_req").toString()));
       }
       // ensure the optional json data is an array if present
       if (jsonObj.get("wdays") != null && !jsonObj.get("wdays").isJsonNull() && !jsonObj.get("wdays").isJsonArray()) {
-        throw new IllegalArgumentException(String.format("Expected the field `wdays` to be an array in the JSON string but got `%s`", jsonObj.get("wdays").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `wdays` to be an array in the JSON string but got `%s`", jsonObj.get("wdays").toString()));
       }
   }
 

@@ -48,7 +48,7 @@ import org.openapitools.client.JSON;
 /**
  * ServiceSystemStatusMessagingService
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.21.0")
 public class ServiceSystemStatusMessagingService {
   public static final String SERIALIZED_NAME_MESSAGING_SERVER = "messaging_server";
   @SerializedName(SERIALIZED_NAME_MESSAGING_SERVER)
@@ -109,10 +109,7 @@ public class ServiceSystemStatusMessagingService {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
 
@@ -136,7 +133,7 @@ public class ServiceSystemStatusMessagingService {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ServiceSystemStatusMessagingService.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in ServiceSystemStatusMessagingService is not found in the empty JSON string", ServiceSystemStatusMessagingService.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in ServiceSystemStatusMessagingService is not found in the empty JSON string", ServiceSystemStatusMessagingService.openapiRequiredFields.toString()));
         }
       }
 
@@ -144,12 +141,12 @@ public class ServiceSystemStatusMessagingService {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ServiceSystemStatusMessagingService.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ServiceSystemStatusMessagingService` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ServiceSystemStatusMessagingService` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("messaging_server") != null && !jsonObj.get("messaging_server").isJsonNull()) && !jsonObj.get("messaging_server").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `messaging_server` to be a primitive type in the JSON string but got `%s`", jsonObj.get("messaging_server").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `messaging_server` to be a primitive type in the JSON string but got `%s`", jsonObj.get("messaging_server").toString()));
       }
   }
 

@@ -23,7 +23,6 @@ import java.util.Arrays;
 import org.openapitools.client.model.ServiceSystemStatusCPAASService;
 import org.openapitools.client.model.ServiceSystemStatusMessagingService;
 import org.openapitools.client.model.ServiceSystemStatusSupportService;
-import org.openapitools.client.model.ServiceSystemStatusVOIPService;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -63,14 +62,6 @@ public class ServiceSystemStatusOutputTest {
     @Test
     public void supportServicesTest() {
         // TODO: test supportServices
-    }
-
-    /**
-     * Test the property 'voipServices'
-     */
-    @Test
-    public void voipServicesTest() {
-        // TODO: test voipServices
     }
 
 }

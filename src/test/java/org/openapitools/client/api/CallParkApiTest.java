@@ -15,7 +15,7 @@ package org.openapitools.client.api;
 
 import org.openapitools.client.ApiException;
 import org.openapitools.client.model.CPAASError;
-import org.openapitools.client.model.ServiceDocsParkedcallGet;
+import org.openapitools.client.model.ServiceDocsCallparkGet;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -42,7 +42,7 @@ public class CallParkApiTest {
     @Test
     public void v1AccountAccountIDParkedcallGetTest() throws ApiException {
         String accountID = null;
-        ServiceDocsParkedcallGet response = api.v1AccountAccountIDParkedcallGet(accountID);
+        ServiceDocsCallparkGet response = api.v1AccountAccountIDParkedcallGet(accountID);
         // TODO: test validations
     }
 

@@ -24,7 +24,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
-import org.openapitools.client.model.ServiceParkingSlotData;
+import org.openapitools.client.model.ModelsParkingSlotData;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -52,12 +52,12 @@ import org.openapitools.client.JSON;
 /**
  * ServiceDocsCallparkGet
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.21.0")
 public class ServiceDocsCallparkGet {
   public static final String SERIALIZED_NAME_DATA = "data";
   @SerializedName(SERIALIZED_NAME_DATA)
   @javax.annotation.Nullable
-  private List<Map<String, ServiceParkingSlotData>> data = new ArrayList<>();
+  private List<Map<String, ModelsParkingSlotData>> data = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_NEXT_START_KEY = "next_start_key";
   @SerializedName(SERIALIZED_NAME_NEXT_START_KEY)
@@ -87,12 +87,12 @@ public class ServiceDocsCallparkGet {
   public ServiceDocsCallparkGet() {
   }
 
-  public ServiceDocsCallparkGet data(@javax.annotation.Nullable List<Map<String, ServiceParkingSlotData>> data) {
+  public ServiceDocsCallparkGet data(@javax.annotation.Nullable List<Map<String, ModelsParkingSlotData>> data) {
     this.data = data;
     return this;
   }
 
-  public ServiceDocsCallparkGet addDataItem(Map<String, ServiceParkingSlotData> dataItem) {
+  public ServiceDocsCallparkGet addDataItem(Map<String, ModelsParkingSlotData> dataItem) {
     if (this.data == null) {
       this.data = new ArrayList<>();
     }
@@ -105,11 +105,11 @@ public class ServiceDocsCallparkGet {
    * @return data
    */
   @javax.annotation.Nullable
-  public List<Map<String, ServiceParkingSlotData>> getData() {
+  public List<Map<String, ModelsParkingSlotData>> getData() {
     return data;
   }
 
-  public void setData(@javax.annotation.Nullable List<Map<String, ServiceParkingSlotData>> data) {
+  public void setData(@javax.annotation.Nullable List<Map<String, ModelsParkingSlotData>> data) {
     this.data = data;
   }
 
@@ -251,10 +251,7 @@ public class ServiceDocsCallparkGet {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
 
@@ -278,7 +275,7 @@ public class ServiceDocsCallparkGet {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ServiceDocsCallparkGet.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in ServiceDocsCallparkGet is not found in the empty JSON string", ServiceDocsCallparkGet.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in ServiceDocsCallparkGet is not found in the empty JSON string", ServiceDocsCallparkGet.openapiRequiredFields.toString()));
         }
       }
 
@@ -286,22 +283,22 @@ public class ServiceDocsCallparkGet {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ServiceDocsCallparkGet.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ServiceDocsCallparkGet` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ServiceDocsCallparkGet` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       // ensure the optional json data is an array if present
       if (jsonObj.get("data") != null && !jsonObj.get("data").isJsonNull() && !jsonObj.get("data").isJsonArray()) {
-        throw new IllegalArgumentException(String.format("Expected the field `data` to be an array in the JSON string but got `%s`", jsonObj.get("data").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `data` to be an array in the JSON string but got `%s`", jsonObj.get("data").toString()));
       }
       if ((jsonObj.get("next_start_key") != null && !jsonObj.get("next_start_key").isJsonNull()) && !jsonObj.get("next_start_key").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `next_start_key` to be a primitive type in the JSON string but got `%s`", jsonObj.get("next_start_key").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `next_start_key` to be a primitive type in the JSON string but got `%s`", jsonObj.get("next_start_key").toString()));
       }
       if ((jsonObj.get("request_id") != null && !jsonObj.get("request_id").isJsonNull()) && !jsonObj.get("request_id").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `request_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("request_id").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `request_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("request_id").toString()));
       }
       if ((jsonObj.get("start_key") != null && !jsonObj.get("start_key").isJsonNull()) && !jsonObj.get("start_key").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `start_key` to be a primitive type in the JSON string but got `%s`", jsonObj.get("start_key").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `start_key` to be a primitive type in the JSON string but got `%s`", jsonObj.get("start_key").toString()));
       }
   }
 

@@ -51,7 +51,7 @@ import org.openapitools.client.JSON;
 /**
  * ModelsDeviceOutputFullProvision
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.21.0")
 public class ModelsDeviceOutputFullProvision {
   public static final String SERIALIZED_NAME_ENDPOINT_BRAND = "endpoint_brand";
   @SerializedName(SERIALIZED_NAME_ENDPOINT_BRAND)
@@ -224,10 +224,7 @@ public class ModelsDeviceOutputFullProvision {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
 
@@ -251,7 +248,7 @@ public class ModelsDeviceOutputFullProvision {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ModelsDeviceOutputFullProvision.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in ModelsDeviceOutputFullProvision is not found in the empty JSON string", ModelsDeviceOutputFullProvision.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in ModelsDeviceOutputFullProvision is not found in the empty JSON string", ModelsDeviceOutputFullProvision.openapiRequiredFields.toString()));
         }
       }
 
@@ -259,28 +256,28 @@ public class ModelsDeviceOutputFullProvision {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ModelsDeviceOutputFullProvision.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ModelsDeviceOutputFullProvision` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ModelsDeviceOutputFullProvision` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("endpoint_brand") != null && !jsonObj.get("endpoint_brand").isJsonNull()) && !jsonObj.get("endpoint_brand").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `endpoint_brand` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endpoint_brand").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `endpoint_brand` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endpoint_brand").toString()));
       }
       if ((jsonObj.get("endpoint_family") != null && !jsonObj.get("endpoint_family").isJsonNull()) && !jsonObj.get("endpoint_family").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `endpoint_family` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endpoint_family").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `endpoint_family` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endpoint_family").toString()));
       }
       if ((jsonObj.get("endpoint_model") != null && !jsonObj.get("endpoint_model").isJsonNull()) && !jsonObj.get("endpoint_model").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `endpoint_model` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endpoint_model").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `endpoint_model` to be a primitive type in the JSON string but got `%s`", jsonObj.get("endpoint_model").toString()));
       }
       if ((jsonObj.get("id") != null && !jsonObj.get("id").isJsonNull()) && !jsonObj.get("id").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("id").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("id").toString()));
       }
       if (jsonObj.get("line_keys") != null && !jsonObj.get("line_keys").isJsonNull()) {
         JsonArray jsonArraylineKeys = jsonObj.getAsJsonArray("line_keys");
         if (jsonArraylineKeys != null) {
           // ensure the json data is an array
           if (!jsonObj.get("line_keys").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `line_keys` to be an array in the JSON string but got `%s`", jsonObj.get("line_keys").toString()));
+            throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `line_keys` to be an array in the JSON string but got `%s`", jsonObj.get("line_keys").toString()));
           }
 
           // validate the optional field `line_keys` (array)

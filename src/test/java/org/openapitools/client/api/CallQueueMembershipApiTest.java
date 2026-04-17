@@ -16,7 +16,7 @@ package org.openapitools.client.api;
 import org.openapitools.client.ApiException;
 import org.openapitools.client.model.CPAASError;
 import org.openapitools.client.model.ServiceAPIResponse;
-import org.openapitools.client.model.ServiceDocsCallQueueMemberGetSingle;
+import org.openapitools.client.model.ServiceDocsQueueMembershipOutput;
 import org.openapitools.client.model.ServiceVOIPCallQueueEnableMembershipData;
 import org.openapitools.client.model.ServiceVOIPQueueMembershipAddData;
 import org.junit.jupiter.api.Disabled;
@@ -46,7 +46,7 @@ public class CallQueueMembershipApiTest {
     public void v1AccountAccountIDQueuemembershipPostTest() throws ApiException {
         String accountID = null;
         ServiceVOIPQueueMembershipAddData reqBody = null;
-        ServiceDocsCallQueueMemberGetSingle response = api.v1AccountAccountIDQueuemembershipPost(accountID, reqBody);
+        ServiceDocsQueueMembershipOutput response = api.v1AccountAccountIDQueuemembershipPost(accountID, reqBody);
         // TODO: test validations
     }
 

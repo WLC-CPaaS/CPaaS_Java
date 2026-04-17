@@ -50,7 +50,7 @@ import org.openapitools.client.JSON;
 /**
  * ServiceCallflowOutputShort
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.21.0")
 public class ServiceCallflowOutputShort {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -239,10 +239,7 @@ public class ServiceCallflowOutputShort {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
 
@@ -266,7 +263,7 @@ public class ServiceCallflowOutputShort {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ServiceCallflowOutputShort.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in ServiceCallflowOutputShort is not found in the empty JSON string", ServiceCallflowOutputShort.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in ServiceCallflowOutputShort is not found in the empty JSON string", ServiceCallflowOutputShort.openapiRequiredFields.toString()));
         }
       }
 
@@ -274,27 +271,27 @@ public class ServiceCallflowOutputShort {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ServiceCallflowOutputShort.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ServiceCallflowOutputShort` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ServiceCallflowOutputShort` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("id") != null && !jsonObj.get("id").isJsonNull()) && !jsonObj.get("id").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("id").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("id").toString()));
       }
       // ensure the optional json data is an array if present
       if (jsonObj.get("modules") != null && !jsonObj.get("modules").isJsonNull() && !jsonObj.get("modules").isJsonArray()) {
-        throw new IllegalArgumentException(String.format("Expected the field `modules` to be an array in the JSON string but got `%s`", jsonObj.get("modules").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `modules` to be an array in the JSON string but got `%s`", jsonObj.get("modules").toString()));
       }
       if ((jsonObj.get("name") != null && !jsonObj.get("name").isJsonNull()) && !jsonObj.get("name").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
       }
       // ensure the optional json data is an array if present
       if (jsonObj.get("numbers") != null && !jsonObj.get("numbers").isJsonNull() && !jsonObj.get("numbers").isJsonArray()) {
-        throw new IllegalArgumentException(String.format("Expected the field `numbers` to be an array in the JSON string but got `%s`", jsonObj.get("numbers").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `numbers` to be an array in the JSON string but got `%s`", jsonObj.get("numbers").toString()));
       }
       // ensure the optional json data is an array if present
       if (jsonObj.get("patterns") != null && !jsonObj.get("patterns").isJsonNull() && !jsonObj.get("patterns").isJsonArray()) {
-        throw new IllegalArgumentException(String.format("Expected the field `patterns` to be an array in the JSON string but got `%s`", jsonObj.get("patterns").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `patterns` to be an array in the JSON string but got `%s`", jsonObj.get("patterns").toString()));
       }
   }
 

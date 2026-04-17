@@ -50,7 +50,7 @@ import org.openapitools.client.JSON;
 /**
  * ServiceTemporalRuleOutputFull
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.21.0")
 public class ServiceTemporalRuleOutputFull {
   public static final String SERIALIZED_NAME_CYCLE = "cycle";
   @SerializedName(SERIALIZED_NAME_CYCLE)
@@ -413,10 +413,7 @@ public class ServiceTemporalRuleOutputFull {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
 
@@ -440,7 +437,7 @@ public class ServiceTemporalRuleOutputFull {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ServiceTemporalRuleOutputFull.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in ServiceTemporalRuleOutputFull is not found in the empty JSON string", ServiceTemporalRuleOutputFull.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in ServiceTemporalRuleOutputFull is not found in the empty JSON string", ServiceTemporalRuleOutputFull.openapiRequiredFields.toString()));
         }
       }
 
@@ -448,29 +445,29 @@ public class ServiceTemporalRuleOutputFull {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ServiceTemporalRuleOutputFull.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ServiceTemporalRuleOutputFull` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ServiceTemporalRuleOutputFull` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("cycle") != null && !jsonObj.get("cycle").isJsonNull()) && !jsonObj.get("cycle").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `cycle` to be a primitive type in the JSON string but got `%s`", jsonObj.get("cycle").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `cycle` to be a primitive type in the JSON string but got `%s`", jsonObj.get("cycle").toString()));
       }
       // ensure the optional json data is an array if present
       if (jsonObj.get("days") != null && !jsonObj.get("days").isJsonNull() && !jsonObj.get("days").isJsonArray()) {
-        throw new IllegalArgumentException(String.format("Expected the field `days` to be an array in the JSON string but got `%s`", jsonObj.get("days").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `days` to be an array in the JSON string but got `%s`", jsonObj.get("days").toString()));
       }
       if ((jsonObj.get("id") != null && !jsonObj.get("id").isJsonNull()) && !jsonObj.get("id").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("id").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("id").toString()));
       }
       if ((jsonObj.get("name") != null && !jsonObj.get("name").isJsonNull()) && !jsonObj.get("name").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
       }
       if ((jsonObj.get("ordinal") != null && !jsonObj.get("ordinal").isJsonNull()) && !jsonObj.get("ordinal").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `ordinal` to be a primitive type in the JSON string but got `%s`", jsonObj.get("ordinal").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `ordinal` to be a primitive type in the JSON string but got `%s`", jsonObj.get("ordinal").toString()));
       }
       // ensure the optional json data is an array if present
       if (jsonObj.get("wdays") != null && !jsonObj.get("wdays").isJsonNull() && !jsonObj.get("wdays").isJsonArray()) {
-        throw new IllegalArgumentException(String.format("Expected the field `wdays` to be an array in the JSON string but got `%s`", jsonObj.get("wdays").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `wdays` to be an array in the JSON string but got `%s`", jsonObj.get("wdays").toString()));
       }
   }
 

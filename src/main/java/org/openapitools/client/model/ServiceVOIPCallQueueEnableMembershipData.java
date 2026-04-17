@@ -48,7 +48,7 @@ import org.openapitools.client.JSON;
 /**
  * ServiceVOIPCallQueueEnableMembershipData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.21.0")
 public class ServiceVOIPCallQueueEnableMembershipData {
   public static final String SERIALIZED_NAME_ACCEPT_CHARGES = "accept_charges";
   @SerializedName(SERIALIZED_NAME_ACCEPT_CHARGES)
@@ -109,10 +109,7 @@ public class ServiceVOIPCallQueueEnableMembershipData {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
 
@@ -136,7 +133,7 @@ public class ServiceVOIPCallQueueEnableMembershipData {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ServiceVOIPCallQueueEnableMembershipData.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in ServiceVOIPCallQueueEnableMembershipData is not found in the empty JSON string", ServiceVOIPCallQueueEnableMembershipData.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in ServiceVOIPCallQueueEnableMembershipData is not found in the empty JSON string", ServiceVOIPCallQueueEnableMembershipData.openapiRequiredFields.toString()));
         }
       }
 
@@ -144,14 +141,14 @@ public class ServiceVOIPCallQueueEnableMembershipData {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ServiceVOIPCallQueueEnableMembershipData.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ServiceVOIPCallQueueEnableMembershipData` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ServiceVOIPCallQueueEnableMembershipData` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
       // check to make sure all required properties/fields are present in the JSON string
       for (String requiredField : ServiceVOIPCallQueueEnableMembershipData.openapiRequiredFields) {
         if (jsonElement.getAsJsonObject().get(requiredField) == null) {
-          throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();

@@ -51,7 +51,7 @@ import org.openapitools.client.JSON;
 /**
  * ServiceMetaflowOutput
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.21.0")
 public class ServiceMetaflowOutput {
   public static final String SERIALIZED_NAME_BINDING_DIGIT = "binding_digit";
   @SerializedName(SERIALIZED_NAME_BINDING_DIGIT)
@@ -180,10 +180,7 @@ public class ServiceMetaflowOutput {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
 
@@ -207,7 +204,7 @@ public class ServiceMetaflowOutput {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ServiceMetaflowOutput.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in ServiceMetaflowOutput is not found in the empty JSON string", ServiceMetaflowOutput.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in ServiceMetaflowOutput is not found in the empty JSON string", ServiceMetaflowOutput.openapiRequiredFields.toString()));
         }
       }
 
@@ -215,12 +212,12 @@ public class ServiceMetaflowOutput {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ServiceMetaflowOutput.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ServiceMetaflowOutput` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ServiceMetaflowOutput` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("binding_digit") != null && !jsonObj.get("binding_digit").isJsonNull()) && !jsonObj.get("binding_digit").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `binding_digit` to be a primitive type in the JSON string but got `%s`", jsonObj.get("binding_digit").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `binding_digit` to be a primitive type in the JSON string but got `%s`", jsonObj.get("binding_digit").toString()));
       }
   }
 

@@ -48,14 +48,16 @@ import org.openapitools.client.JSON;
 /**
  * ServiceVOIPDeviceAddEdit3a
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.11.0-SNAPSHOT")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", comments = "Generator version: 7.21.0")
 public class ServiceVOIPDeviceAddEdit3a {
   /**
    * Gets or Sets inviteFormat
    */
   @JsonAdapter(InviteFormatEnum.Adapter.class)
   public enum InviteFormatEnum {
-    USERNAME("username");
+    USERNAME("username"),
+    
+    ROUTE("route");
 
     private String value;
 
@@ -110,9 +112,14 @@ public class ServiceVOIPDeviceAddEdit3a {
   @javax.annotation.Nullable
   private String password;
 
+  public static final String SERIALIZED_NAME_ROUTE = "route";
+  @SerializedName(SERIALIZED_NAME_ROUTE)
+  @javax.annotation.Nullable
+  private String route;
+
   public static final String SERIALIZED_NAME_USERNAME = "username";
   @SerializedName(SERIALIZED_NAME_USERNAME)
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
   private String username;
 
   public ServiceVOIPDeviceAddEdit3a() {
@@ -156,7 +163,26 @@ public class ServiceVOIPDeviceAddEdit3a {
   }
 
 
-  public ServiceVOIPDeviceAddEdit3a username(@javax.annotation.Nonnull String username) {
+  public ServiceVOIPDeviceAddEdit3a route(@javax.annotation.Nullable String route) {
+    this.route = route;
+    return this;
+  }
+
+  /**
+   * Get route
+   * @return route
+   */
+  @javax.annotation.Nullable
+  public String getRoute() {
+    return route;
+  }
+
+  public void setRoute(@javax.annotation.Nullable String route) {
+    this.route = route;
+  }
+
+
+  public ServiceVOIPDeviceAddEdit3a username(@javax.annotation.Nullable String username) {
     this.username = username;
     return this;
   }
@@ -165,12 +191,12 @@ public class ServiceVOIPDeviceAddEdit3a {
    * Get username
    * @return username
    */
-  @javax.annotation.Nonnull
+  @javax.annotation.Nullable
   public String getUsername() {
     return username;
   }
 
-  public void setUsername(@javax.annotation.Nonnull String username) {
+  public void setUsername(@javax.annotation.Nullable String username) {
     this.username = username;
   }
 
@@ -187,12 +213,13 @@ public class ServiceVOIPDeviceAddEdit3a {
     ServiceVOIPDeviceAddEdit3a serviceVOIPDeviceAddEdit3a = (ServiceVOIPDeviceAddEdit3a) o;
     return Objects.equals(this.inviteFormat, serviceVOIPDeviceAddEdit3a.inviteFormat) &&
         Objects.equals(this.password, serviceVOIPDeviceAddEdit3a.password) &&
+        Objects.equals(this.route, serviceVOIPDeviceAddEdit3a.route) &&
         Objects.equals(this.username, serviceVOIPDeviceAddEdit3a.username);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(inviteFormat, password, username);
+    return Objects.hash(inviteFormat, password, route, username);
   }
 
   @Override
@@ -201,6 +228,7 @@ public class ServiceVOIPDeviceAddEdit3a {
     sb.append("class ServiceVOIPDeviceAddEdit3a {\n");
     sb.append("    inviteFormat: ").append(toIndentedString(inviteFormat)).append("\n");
     sb.append("    password: ").append(toIndentedString(password)).append("\n");
+    sb.append("    route: ").append(toIndentedString(route)).append("\n");
     sb.append("    username: ").append(toIndentedString(username)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -211,10 +239,7 @@ public class ServiceVOIPDeviceAddEdit3a {
    * (except the first line).
    */
   private String toIndentedString(Object o) {
-    if (o == null) {
-      return "null";
-    }
-    return o.toString().replace("\n", "\n    ");
+    return o == null ? "null" : o.toString().replace("\n", "\n    ");
   }
 
 
@@ -223,10 +248,10 @@ public class ServiceVOIPDeviceAddEdit3a {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>(Arrays.asList("invite_format", "password", "username"));
+    openapiFields = new HashSet<String>(Arrays.asList("invite_format", "password", "route", "username"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>(Arrays.asList("invite_format", "username"));
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("invite_format"));
   }
 
   /**
@@ -238,7 +263,7 @@ public class ServiceVOIPDeviceAddEdit3a {
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ServiceVOIPDeviceAddEdit3a.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format("The required field(s) %s in ServiceVOIPDeviceAddEdit3a is not found in the empty JSON string", ServiceVOIPDeviceAddEdit3a.openapiRequiredFields.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in ServiceVOIPDeviceAddEdit3a is not found in the empty JSON string", ServiceVOIPDeviceAddEdit3a.openapiRequiredFields.toString()));
         }
       }
 
@@ -246,27 +271,30 @@ public class ServiceVOIPDeviceAddEdit3a {
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
         if (!ServiceVOIPDeviceAddEdit3a.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ServiceVOIPDeviceAddEdit3a` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `ServiceVOIPDeviceAddEdit3a` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
       // check to make sure all required properties/fields are present in the JSON string
       for (String requiredField : ServiceVOIPDeviceAddEdit3a.openapiRequiredFields) {
         if (jsonElement.getAsJsonObject().get(requiredField) == null) {
-          throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if (!jsonObj.get("invite_format").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `invite_format` to be a primitive type in the JSON string but got `%s`", jsonObj.get("invite_format").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `invite_format` to be a primitive type in the JSON string but got `%s`", jsonObj.get("invite_format").toString()));
       }
       // validate the required field `invite_format`
       InviteFormatEnum.validateJsonElement(jsonObj.get("invite_format"));
       if ((jsonObj.get("password") != null && !jsonObj.get("password").isJsonNull()) && !jsonObj.get("password").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `password` to be a primitive type in the JSON string but got `%s`", jsonObj.get("password").toString()));
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `password` to be a primitive type in the JSON string but got `%s`", jsonObj.get("password").toString()));
       }
-      if (!jsonObj.get("username").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `username` to be a primitive type in the JSON string but got `%s`", jsonObj.get("username").toString()));
+      if ((jsonObj.get("route") != null && !jsonObj.get("route").isJsonNull()) && !jsonObj.get("route").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `route` to be a primitive type in the JSON string but got `%s`", jsonObj.get("route").toString()));
+      }
+      if ((jsonObj.get("username") != null && !jsonObj.get("username").isJsonNull()) && !jsonObj.get("username").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `username` to be a primitive type in the JSON string but got `%s`", jsonObj.get("username").toString()));
       }
   }
 

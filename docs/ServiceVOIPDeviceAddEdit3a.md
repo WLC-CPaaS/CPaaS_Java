@@ -9,7 +9,8 @@
 |------------ | ------------- | ------------- | -------------|
 |**inviteFormat** | [**InviteFormatEnum**](#InviteFormatEnum) |  |  |
 |**password** | **String** |  |  [optional] |
-|**username** | **String** |  |  |
+|**route** | **String** |  |  [optional] |
+|**username** | **String** |  |  [optional] |
 
 
 
@@ -18,6 +19,7 @@
 | Name | Value |
 |---- | -----|
 | USERNAME | &quot;username&quot; |
+| ROUTE | &quot;route&quot; |
 
 
 

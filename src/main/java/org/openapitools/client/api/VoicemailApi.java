@@ -145,7 +145,7 @@ public class VoicemailApi {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
 
-        String[] localVarAuthNames = new String[] { "BearerAuth" };
+        String[] localVarAuthNames = new String[] { "bearerauth" };
         return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
@@ -284,7 +284,7 @@ public class VoicemailApi {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
 
-        String[] localVarAuthNames = new String[] { "BearerAuth" };
+        String[] localVarAuthNames = new String[] { "bearerauth" };
         return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
@@ -425,7 +425,7 @@ public class VoicemailApi {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
 
-        String[] localVarAuthNames = new String[] { "BearerAuth" };
+        String[] localVarAuthNames = new String[] { "bearerauth" };
         return localVarApiClient.buildCall(basePath, localVarPath, "DELETE", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
@@ -566,7 +566,7 @@ public class VoicemailApi {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
 
-        String[] localVarAuthNames = new String[] { "BearerAuth" };
+        String[] localVarAuthNames = new String[] { "bearerauth" };
         return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
@@ -717,7 +717,7 @@ public class VoicemailApi {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
 
-        String[] localVarAuthNames = new String[] { "BearerAuth" };
+        String[] localVarAuthNames = new String[] { "bearerauth" };
         return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
@@ -866,7 +866,7 @@ public class VoicemailApi {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
 
-        String[] localVarAuthNames = new String[] { "BearerAuth" };
+        String[] localVarAuthNames = new String[] { "bearerauth" };
         return localVarApiClient.buildCall(basePath, localVarPath, "DELETE", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
@@ -959,6 +959,322 @@ public class VoicemailApi {
         return localVarCall;
     }
     /**
+     * Build call for v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFileGet
+     * @param accountID Account ID, unique 32-character alphanumeric identifier (required)
+     * @param voicemailID Voicemail Box ID, unique 32-character alphanumeric identifier (required)
+     * @param messageID Message ID, unique 32-character alphanumeric identifier (required)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFileGetCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v1/account/{accountID}/voicemail/{voicemailID}/message/{messageID}/file"
+            .replace("{" + "accountID" + "}", localVarApiClient.escapeString(accountID.toString()))
+            .replace("{" + "voicemailID" + "}", localVarApiClient.escapeString(voicemailID.toString()))
+            .replace("{" + "messageID" + "}", localVarApiClient.escapeString(messageID.toString()));
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        final String[] localVarAccepts = {
+            "application/octet-stream"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "bearerauth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFileGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, final ApiCallback _callback) throws ApiException {
+        // verify the required parameter 'accountID' is set
+        if (accountID == null) {
+            throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFileGet(Async)");
+        }
+
+        // verify the required parameter 'voicemailID' is set
+        if (voicemailID == null) {
+            throw new ApiException("Missing the required parameter 'voicemailID' when calling v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFileGet(Async)");
+        }
+
+        // verify the required parameter 'messageID' is set
+        if (messageID == null) {
+            throw new ApiException("Missing the required parameter 'messageID' when calling v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFileGet(Async)");
+        }
+
+        return v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFileGetCall(accountID, voicemailID, messageID, _callback);
+
+    }
+
+    /**
+     * Get Voicemail Message File
+     * Get the original audio content of a specific voicemail message identified by its unique ID within an account&#39;s voicemail box. URL Param \&quot;voicemailID\&quot; is a unique 32-character alphanumeric identifier assigned by the system, which refers to a specific voicemail box. URL Param \&quot;messageID\&quot; is a unique 32-character alphanumeric identifier assigned by the system, which refers to a specific message within a voicemail box.
+     * @param accountID Account ID, unique 32-character alphanumeric identifier (required)
+     * @param voicemailID Voicemail Box ID, unique 32-character alphanumeric identifier (required)
+     * @param messageID Message ID, unique 32-character alphanumeric identifier (required)
+     * @return File
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
+     </table>
+     */
+    public File v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFileGet(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID) throws ApiException {
+        ApiResponse<File> localVarResp = v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFileGetWithHttpInfo(accountID, voicemailID, messageID);
+        return localVarResp.getData();
+    }
+
+    /**
+     * Get Voicemail Message File
+     * Get the original audio content of a specific voicemail message identified by its unique ID within an account&#39;s voicemail box. URL Param \&quot;voicemailID\&quot; is a unique 32-character alphanumeric identifier assigned by the system, which refers to a specific voicemail box. URL Param \&quot;messageID\&quot; is a unique 32-character alphanumeric identifier assigned by the system, which refers to a specific message within a voicemail box.
+     * @param accountID Account ID, unique 32-character alphanumeric identifier (required)
+     * @param voicemailID Voicemail Box ID, unique 32-character alphanumeric identifier (required)
+     * @param messageID Message ID, unique 32-character alphanumeric identifier (required)
+     * @return ApiResponse&lt;File&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<File> v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFileGetWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID) throws ApiException {
+        okhttp3.Call localVarCall = v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFileGetValidateBeforeCall(accountID, voicemailID, messageID, null);
+        Type localVarReturnType = new TypeToken<File>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     * Get Voicemail Message File (asynchronously)
+     * Get the original audio content of a specific voicemail message identified by its unique ID within an account&#39;s voicemail box. URL Param \&quot;voicemailID\&quot; is a unique 32-character alphanumeric identifier assigned by the system, which refers to a specific voicemail box. URL Param \&quot;messageID\&quot; is a unique 32-character alphanumeric identifier assigned by the system, which refers to a specific message within a voicemail box.
+     * @param accountID Account ID, unique 32-character alphanumeric identifier (required)
+     * @param voicemailID Voicemail Box ID, unique 32-character alphanumeric identifier (required)
+     * @param messageID Message ID, unique 32-character alphanumeric identifier (required)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFileGetAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, final ApiCallback<File> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFileGetValidateBeforeCall(accountID, voicemailID, messageID, _callback);
+        Type localVarReturnType = new TypeToken<File>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
+     * Build call for v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFilePost
+     * @param accountID Account ID, 32 alphanumeric characters (required)
+     * @param voicemailID Voicemail ID, 32 alphanumeric characters (required)
+     * @param messageID Message ID, 32 alphanumeric characters (required)
+     * @param _file Audio file to upload (required)
+     * @param _callback Callback for upload/download progress
+     * @return Call to execute
+     * @throws ApiException If fail to serialize the request body object
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFilePostCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, @javax.annotation.Nonnull File _file, final ApiCallback _callback) throws ApiException {
+        String basePath = null;
+        // Operation Servers
+        String[] localBasePaths = new String[] {  };
+
+        // Determine Base Path to Use
+        if (localCustomBaseUrl != null){
+            basePath = localCustomBaseUrl;
+        } else if ( localBasePaths.length > 0 ) {
+            basePath = localBasePaths[localHostIndex];
+        } else {
+            basePath = null;
+        }
+
+        Object localVarPostBody = null;
+
+        // create path and map variables
+        String localVarPath = "/v1/account/{accountID}/voicemail/{voicemailID}/message/{messageID}/file"
+            .replace("{" + "accountID" + "}", localVarApiClient.escapeString(accountID.toString()))
+            .replace("{" + "voicemailID" + "}", localVarApiClient.escapeString(voicemailID.toString()))
+            .replace("{" + "messageID" + "}", localVarApiClient.escapeString(messageID.toString()));
+
+        List<Pair> localVarQueryParams = new ArrayList<Pair>();
+        List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
+        if (_file != null) {
+            localVarFormParams.put("file", _file);
+        }
+
+        final String[] localVarAccepts = {
+            "application/json"
+        };
+        final String localVarAccept = localVarApiClient.selectHeaderAccept(localVarAccepts);
+        if (localVarAccept != null) {
+            localVarHeaderParams.put("Accept", localVarAccept);
+        }
+
+        final String[] localVarContentTypes = {
+            "multipart/form-data"
+        };
+        final String localVarContentType = localVarApiClient.selectHeaderContentType(localVarContentTypes);
+        if (localVarContentType != null) {
+            localVarHeaderParams.put("Content-Type", localVarContentType);
+        }
+
+        String[] localVarAuthNames = new String[] { "bearerauth" };
+        return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
+    }
+
+    @SuppressWarnings("rawtypes")
+    private okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFilePostValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, @javax.annotation.Nonnull File _file, final ApiCallback _callback) throws ApiException {
+        // verify the required parameter 'accountID' is set
+        if (accountID == null) {
+            throw new ApiException("Missing the required parameter 'accountID' when calling v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFilePost(Async)");
+        }
+
+        // verify the required parameter 'voicemailID' is set
+        if (voicemailID == null) {
+            throw new ApiException("Missing the required parameter 'voicemailID' when calling v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFilePost(Async)");
+        }
+
+        // verify the required parameter 'messageID' is set
+        if (messageID == null) {
+            throw new ApiException("Missing the required parameter 'messageID' when calling v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFilePost(Async)");
+        }
+
+        // verify the required parameter '_file' is set
+        if (_file == null) {
+            throw new ApiException("Missing the required parameter '_file' when calling v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFilePost(Async)");
+        }
+
+        return v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFilePostCall(accountID, voicemailID, messageID, _file, _callback);
+
+    }
+
+    /**
+     * Add Voicemail Message File
+     * Associate an audio recording file with the voicemail to fully complete the message.
+     * @param accountID Account ID, 32 alphanumeric characters (required)
+     * @param voicemailID Voicemail ID, 32 alphanumeric characters (required)
+     * @param messageID Message ID, 32 alphanumeric characters (required)
+     * @param _file Audio file to upload (required)
+     * @return Map&lt;String, Object&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
+     </table>
+     */
+    public Map<String, Object> v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFilePost(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, @javax.annotation.Nonnull File _file) throws ApiException {
+        ApiResponse<Map<String, Object>> localVarResp = v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFilePostWithHttpInfo(accountID, voicemailID, messageID, _file);
+        return localVarResp.getData();
+    }
+
+    /**
+     * Add Voicemail Message File
+     * Associate an audio recording file with the voicemail to fully complete the message.
+     * @param accountID Account ID, 32 alphanumeric characters (required)
+     * @param voicemailID Voicemail ID, 32 alphanumeric characters (required)
+     * @param messageID Message ID, 32 alphanumeric characters (required)
+     * @param _file Audio file to upload (required)
+     * @return ApiResponse&lt;Map&lt;String, Object&gt;&gt;
+     * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
+     </table>
+     */
+    public ApiResponse<Map<String, Object>> v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFilePostWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, @javax.annotation.Nonnull File _file) throws ApiException {
+        okhttp3.Call localVarCall = v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFilePostValidateBeforeCall(accountID, voicemailID, messageID, _file, null);
+        Type localVarReturnType = new TypeToken<Map<String, Object>>(){}.getType();
+        return localVarApiClient.execute(localVarCall, localVarReturnType);
+    }
+
+    /**
+     * Add Voicemail Message File (asynchronously)
+     * Associate an audio recording file with the voicemail to fully complete the message.
+     * @param accountID Account ID, 32 alphanumeric characters (required)
+     * @param voicemailID Voicemail ID, 32 alphanumeric characters (required)
+     * @param messageID Message ID, 32 alphanumeric characters (required)
+     * @param _file Audio file to upload (required)
+     * @param _callback The callback to be executed when the API call finishes
+     * @return The request call
+     * @throws ApiException If fail to process the API call, e.g. serializing the request body object
+     * @http.response.details
+     <table border="1">
+       <caption>Response Details</caption>
+        <tr><td> Status Code </td><td> Description </td><td> Response Headers </td></tr>
+        <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
+        <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
+     </table>
+     */
+    public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFilePostAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, @javax.annotation.Nonnull File _file, final ApiCallback<Map<String, Object>> _callback) throws ApiException {
+
+        okhttp3.Call localVarCall = v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDFilePostValidateBeforeCall(accountID, voicemailID, messageID, _file, _callback);
+        Type localVarReturnType = new TypeToken<Map<String, Object>>(){}.getType();
+        localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
+        return localVarCall;
+    }
+    /**
      * Build call for v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDGet
      * @param accountID Account ID, 32 alpha numeric (required)
      * @param voicemailID Voicemail ID, 32 alpha numeric (required)
@@ -1017,7 +1333,7 @@ public class VoicemailApi {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
 
-        String[] localVarAuthNames = new String[] { "BearerAuth" };
+        String[] localVarAuthNames = new String[] { "bearerauth" };
         return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
@@ -1170,7 +1486,7 @@ public class VoicemailApi {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
 
-        String[] localVarAuthNames = new String[] { "BearerAuth" };
+        String[] localVarAuthNames = new String[] { "bearerauth" };
         return localVarApiClient.buildCall(basePath, localVarPath, "PUT", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
@@ -1285,7 +1601,9 @@ public class VoicemailApi {
         <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
+     * @deprecated
      */
+    @Deprecated
     public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGetCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
@@ -1329,10 +1647,11 @@ public class VoicemailApi {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
 
-        String[] localVarAuthNames = new String[] { "BearerAuth" };
+        String[] localVarAuthNames = new String[] {  };
         return localVarApiClient.buildCall(basePath, localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
+    @Deprecated
     @SuppressWarnings("rawtypes")
     private okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGetValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
@@ -1355,7 +1674,7 @@ public class VoicemailApi {
     }
 
     /**
-     * Get Voicemail Message File
+     * Get Voicemail Message File (Deprecated)
      * Get the original audio content of a specific voicemail message identified by its unique ID within an account&#39;s voicemail box. URL Param \&quot;voicemailID\&quot; is a unique 32-character alphanumeric identifier assigned by the system, which refers to a specific voicemail box. URL Param \&quot;messageID\&quot; is a unique 32-character alphanumeric identifier assigned by the system, which refers to a specific message within a voicemail box.
      * @param accountID Account ID, unique 32-character alphanumeric identifier (required)
      * @param voicemailID Voicemail Box ID, unique 32-character alphanumeric identifier (required)
@@ -1369,14 +1688,16 @@ public class VoicemailApi {
         <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
+     * @deprecated
      */
+    @Deprecated
     public File v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGet(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID) throws ApiException {
         ApiResponse<File> localVarResp = v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGetWithHttpInfo(accountID, voicemailID, messageID);
         return localVarResp.getData();
     }
 
     /**
-     * Get Voicemail Message File
+     * Get Voicemail Message File (Deprecated)
      * Get the original audio content of a specific voicemail message identified by its unique ID within an account&#39;s voicemail box. URL Param \&quot;voicemailID\&quot; is a unique 32-character alphanumeric identifier assigned by the system, which refers to a specific voicemail box. URL Param \&quot;messageID\&quot; is a unique 32-character alphanumeric identifier assigned by the system, which refers to a specific message within a voicemail box.
      * @param accountID Account ID, unique 32-character alphanumeric identifier (required)
      * @param voicemailID Voicemail Box ID, unique 32-character alphanumeric identifier (required)
@@ -1390,7 +1711,9 @@ public class VoicemailApi {
         <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
+     * @deprecated
      */
+    @Deprecated
     public ApiResponse<File> v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGetWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGetValidateBeforeCall(accountID, voicemailID, messageID, null);
         Type localVarReturnType = new TypeToken<File>(){}.getType();
@@ -1398,7 +1721,7 @@ public class VoicemailApi {
     }
 
     /**
-     * Get Voicemail Message File (asynchronously)
+     * Get Voicemail Message File (Deprecated) (asynchronously)
      * Get the original audio content of a specific voicemail message identified by its unique ID within an account&#39;s voicemail box. URL Param \&quot;voicemailID\&quot; is a unique 32-character alphanumeric identifier assigned by the system, which refers to a specific voicemail box. URL Param \&quot;messageID\&quot; is a unique 32-character alphanumeric identifier assigned by the system, which refers to a specific message within a voicemail box.
      * @param accountID Account ID, unique 32-character alphanumeric identifier (required)
      * @param voicemailID Voicemail Box ID, unique 32-character alphanumeric identifier (required)
@@ -1413,7 +1736,9 @@ public class VoicemailApi {
         <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
+     * @deprecated
      */
+    @Deprecated
     public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGetAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, final ApiCallback<File> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawGetValidateBeforeCall(accountID, voicemailID, messageID, _callback);
@@ -1437,7 +1762,9 @@ public class VoicemailApi {
         <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
+     * @deprecated
      */
+    @Deprecated
     public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPostCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, @javax.annotation.Nonnull File _file, final ApiCallback _callback) throws ApiException {
         String basePath = null;
         // Operation Servers
@@ -1486,10 +1813,11 @@ public class VoicemailApi {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
 
-        String[] localVarAuthNames = new String[] { "BearerAuth" };
+        String[] localVarAuthNames = new String[] {  };
         return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
+    @Deprecated
     @SuppressWarnings("rawtypes")
     private okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPostValidateBeforeCall(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, @javax.annotation.Nonnull File _file, final ApiCallback _callback) throws ApiException {
         // verify the required parameter 'accountID' is set
@@ -1517,7 +1845,7 @@ public class VoicemailApi {
     }
 
     /**
-     * Add Voicemail Message File
+     * Add Voicemail Message File (Deprecated)
      * Associate an audio recording file with the voicemail to fully complete the message.
      * @param accountID Account ID, 32 alphanumeric characters (required)
      * @param voicemailID Voicemail ID, 32 alphanumeric characters (required)
@@ -1532,14 +1860,16 @@ public class VoicemailApi {
         <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
+     * @deprecated
      */
+    @Deprecated
     public Map<String, Object> v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPost(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, @javax.annotation.Nonnull File _file) throws ApiException {
         ApiResponse<Map<String, Object>> localVarResp = v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPostWithHttpInfo(accountID, voicemailID, messageID, _file);
         return localVarResp.getData();
     }
 
     /**
-     * Add Voicemail Message File
+     * Add Voicemail Message File (Deprecated)
      * Associate an audio recording file with the voicemail to fully complete the message.
      * @param accountID Account ID, 32 alphanumeric characters (required)
      * @param voicemailID Voicemail ID, 32 alphanumeric characters (required)
@@ -1554,7 +1884,9 @@ public class VoicemailApi {
         <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
+     * @deprecated
      */
+    @Deprecated
     public ApiResponse<Map<String, Object>> v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPostWithHttpInfo(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, @javax.annotation.Nonnull File _file) throws ApiException {
         okhttp3.Call localVarCall = v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPostValidateBeforeCall(accountID, voicemailID, messageID, _file, null);
         Type localVarReturnType = new TypeToken<Map<String, Object>>(){}.getType();
@@ -1562,7 +1894,7 @@ public class VoicemailApi {
     }
 
     /**
-     * Add Voicemail Message File (asynchronously)
+     * Add Voicemail Message File (Deprecated) (asynchronously)
      * Associate an audio recording file with the voicemail to fully complete the message.
      * @param accountID Account ID, 32 alphanumeric characters (required)
      * @param voicemailID Voicemail ID, 32 alphanumeric characters (required)
@@ -1578,7 +1910,9 @@ public class VoicemailApi {
         <tr><td> 200 </td><td> OK </td><td>  -  </td></tr>
         <tr><td> 400 </td><td> Bad Request </td><td>  -  </td></tr>
      </table>
+     * @deprecated
      */
+    @Deprecated
     public okhttp3.Call v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPostAsync(@javax.annotation.Nonnull String accountID, @javax.annotation.Nonnull String voicemailID, @javax.annotation.Nonnull String messageID, @javax.annotation.Nonnull File _file, final ApiCallback<Map<String, Object>> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = v1AccountAccountIDVoicemailVoicemailIDMessageMessageIDRawPostValidateBeforeCall(accountID, voicemailID, messageID, _file, _callback);
@@ -1645,7 +1979,7 @@ public class VoicemailApi {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
 
-        String[] localVarAuthNames = new String[] { "BearerAuth" };
+        String[] localVarAuthNames = new String[] { "bearerauth" };
         return localVarApiClient.buildCall(basePath, localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
@@ -1796,7 +2130,7 @@ public class VoicemailApi {
             localVarHeaderParams.put("Content-Type", localVarContentType);
         }
 
-        String[] localVarAuthNames = new String[] { "BearerAuth" };
+        String[] localVarAuthNames = new String[] { "bearerauth" };
         return localVarApiClient.buildCall(basePath, localVarPath, "PUT", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarCookieParams, localVarFormParams, localVarAuthNames, _callback);
     }
 
